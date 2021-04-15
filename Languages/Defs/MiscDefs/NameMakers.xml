@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerPersonGreece</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[NamesGreek] of [PlacesGreek]</li>
+        <li>name-&gt;[NamesGreek] [NamesGreek]</li>
+        <li>name-&gt;[NamesGreek] [NamesGreek] the [Numbers].</li>
+        <li>name-&gt;[NamesGreek] [NamesGreek] of [PlacesGreek]</li>
+        <li>name-&gt;[NamesGreek] [NamesGreek] [NamesGreek]</li>
+        <li>name-&gt;[NamesGreek] [NamesGreek] the [Numbers].</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Numbers</keyword>
+          <path>Words/Foreign/Numbers</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>NamesGreek</keyword>
+          <path>Words/Foreign/NamesGreek</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>PlacesGreek</keyword>
+          <path>Words/Foreign/PlacesGreek</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerFactionBaseGreek</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[PlacesGreek]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>PlacesGreek</keyword>
+          <path>Words/Foreign/PlacesGreek</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

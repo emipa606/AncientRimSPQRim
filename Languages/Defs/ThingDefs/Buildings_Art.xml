@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SculptureBase">
+    <defName>AR_ClassicalSculpture</defName>
+    <label>classical sculpture</label>
+    <description>A person-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Buildings/Art/SculptureClassic</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>100</Mass>
+      <Beauty>100</Beauty>
+      <WorkToMake>35000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+      <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+  </ThingDef>
+  <ThingDef Name="Mosaic" ParentName="SculptureBase" Abstract="True">
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <description>Many pieces of stone, like tiny tiles putted together to an artwork.</description>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <rotatable>true</rotatable>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <passability>Standable</passability>
+  </ThingDef>
+  <ThingDef ParentName="Mosaic">
+    <defName>AR_1x1Mosaic</defName>
+    <label>Mosaic (1x1)</label>
+    <graphicData>
+      <texPath>Buildings/Art/Mosaic/1x1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>10</Mass>
+      <WorkToMake>12000</WorkToMake>
+      <Beauty>10</Beauty>
+    </statBases>
+    <costStuffCount>10</costStuffCount>
+    <size>(1,1)</size>
+  </ThingDef>
+  <ThingDef ParentName="Mosaic">
+    <defName>AR_2x1Mosaic</defName>
+    <label>Mosaic (2x1)</label>
+    <graphicData>
+      <texPath>Buildings/Art/Mosaic/2x1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>20</Mass>
+      <WorkToMake>24000</WorkToMake>
+      <Beauty>20</Beauty>
+    </statBases>
+    <costStuffCount>20</costStuffCount>
+    <size>(2,1)</size>
+  </ThingDef>
+  <ThingDef ParentName="Mosaic">
+    <defName>AR_2x2Mosaic</defName>
+    <label>Mosaic (2x2)</label>
+    <graphicData>
+      <texPath>Buildings/Art/Mosaic/2x2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>40</Mass>
+      <WorkToMake>48000</WorkToMake>
+      <Beauty>40</Beauty>
+    </statBases>
+    <costStuffCount>40</costStuffCount>
+    <size>(2,2)</size>
+  </ThingDef>
+  <ThingDef ParentName="Mosaic">
+    <defName>AR_3x2Mosaic</defName>
+    <label>Mosaic (3x2)</label>
+    <graphicData>
+      <texPath>Buildings/Art/Mosaic/3x2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>60</Mass>
+      <WorkToMake>72000</WorkToMake>
+      <Beauty>60</Beauty>
+    </statBases>
+    <costStuffCount>60</costStuffCount>
+    <size>(3,2)</size>
+  </ThingDef>
+  <ThingDef ParentName="Mosaic">
+    <defName>AR_3x3Mosaic</defName>
+    <label>Mosaic (3x3)</label>
+    <graphicData>
+      <texPath>Buildings/Art/Mosaic/3x3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>90</Mass>
+      <WorkToMake>108000</WorkToMake>
+      <Beauty>90</Beauty>
+    </statBases>
+    <costStuffCount>90</costStuffCount>
+    <size>(3,3)</size>
+  </ThingDef>
+</Defs>

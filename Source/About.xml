@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ancient Rim - SPQRim</name>
+  <author>koni</author>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>koni.ar.spqrim</packageId>
+  <description>Ancient Rim is a mod series that expands the cultural and technological timeline beyond the vanilla neolithic, industrial and spacer stages.
+This submod contains everything related to the ancient civilizations of Rome and the various city states of Greece.
+
+Details:
+
+Ancient Rim - Mediterranean Edition has following content:
+Furniture: Beds, tables, stools and oil lamps that can be placed on tables, fountains and aqueducts that are pleasant to look at and do constantly cool any room, if placed inside.
+Agriculture: Crops and meals that were important to ancient Roman cuisine, as well as wine
+Work stations: A fueled smithy only for Mediterranean items and an oil press
+Weapons: Swords, a belly bow and siege engines
+Shields: variants of the Hoplon and Scutum shields and the light Roman Parma Shield
+Armor: Various helmets and armors like the famous Lorica Segmentata
+Apparel: Anything a proper citizen of Rome would wear.
+	</description>
+  <modDependencies>
+    <li>
+      <packageId>koni.ar.core</packageId>
+      <displayName>Ancient Rim - core</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1734135259</steamWorkshopUrl>
+      <downloadUrl>https://moddername.com/modname</downloadUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
