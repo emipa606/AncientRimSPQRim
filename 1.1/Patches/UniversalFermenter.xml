@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/RoyalTitleDef[defName = "UniversalFermenter"]</xpath>
+    <xpath>/Defs/ThingDef[defName = "UniversalFermenter"]</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[defName = "UniversalFermenter"]/comps/li[@Class="UniversalProcessors.CompProperties_UniversalFermenter"]/products</xpath>
+      <xpath>Defs/ThingDef[defName = "UniversalFermenter"]/comps/li[@Class="UniversalFermenter.CompProperties_UniversalFermenter"]/processes</xpath>
       <value>
         <li>
           <thingDef>AR_Wine</thingDef>
@@ -12,7 +12,7 @@
               <li>AR_Mash</li>
             </thingDefs>
           </ingredientFilter>
-          <baseFermentationDuration>360000</baseFermentationDuration>
+          <processDays>10</processDays>
         </li>
       </value>
     </match>
