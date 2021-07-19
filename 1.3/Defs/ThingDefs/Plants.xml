@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Food crops -->
+  <ThingDef ParentName="PlantBase">
+    <defName>AR_PlantArtichoke</defName>
+    <label>artichoke plant</label>
+    <description>A variety of a species of thistle cultivated as a food.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Items/Plants/ArtichokePlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <plant>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>AR_RawArtichoke</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>3.67</growDays>
+      <visualSizeRange>0.3~1.05</visualSizeRange>
+      <sowResearchPrerequisites>
+        <li>AR_Project_Mediterranean_Culture</li>
+      </sowResearchPrerequisites>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>AR_PlantGrape</defName>
+    <label>grape plant</label>
+    <description>A tasty fruit, that could easy fermented into wine. Delicious even when raw.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Items/Plants/GrapesPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <plant>
+      <fertilitySensitivity>0.6</fertilitySensitivity>
+      <growDays>4.4</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>AR_RawGrapes</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <sowMinSkill>5</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>Items/Plants/GrapesPlantImmature</immatureGraphicPath>
+      <visualSizeRange>0.3~1.05</visualSizeRange>
+      <sowResearchPrerequisites>
+        <li>AR_Project_Mediterranean_Culture</li>
+      </sowResearchPrerequisites>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>AR_PlantGrapeWild</defName>
+    <label>wild grape plant</label>
+    <description>A tasty fruit, that could easy fermented into wine. Delicious even when raw.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Items/Plants/GrapesWild</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <plant>
+      <fertilitySensitivity>0.6</fertilitySensitivity>
+      <growDays>4.4</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>AR_RawGrapes</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>Items/Plants/GrapesWildImmature</immatureGraphicPath>
+      <wildClusterWeight>100</wildClusterWeight>
+      <visualSizeRange>1.3~2.0</visualSizeRange>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildBiomes>
+        <AridShrubland>0.15</AridShrubland>
+        <TemperateForest>0.15</TemperateForest>
+        <BorealForest>0.15</BorealForest>
+      </wildBiomes>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  <!-- tree -->
+  <ThingDef ParentName="TreeBase">
+    <defName>AR_TreeOlive</defName>
+    <label>olive tree</label>
+    <description>A strong hardwood tree. Slow-growing, but its amount of fruits is higher than that of the cultivated small plants.</description>
+    <graphicData>
+      <texPath>Items/Plants/OliveTree</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.3, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <growDays>16</growDays>
+      <harvestedThingDef>AR_RawOlives</harvestedThingDef>
+      <harvestTag>Standard</harvestTag>
+      <harvestMinGrowth>0.40</harvestMinGrowth>
+      <harvestWork>800</harvestWork>
+      <harvestYield>100</harvestYield>
+      <wildClusterWeight>50</wildClusterWeight>
+      <visualSizeRange>1.3~2.0</visualSizeRange>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildBiomes>
+        <AridShrubland>0.15</AridShrubland>
+        <TemperateForest>0.03</TemperateForest>
+      </wildBiomes>
+      <wildOrder>2</wildOrder>
+      <topWindExposure>0.15</topWindExposure>
+      <mustBeWildToSow>false</mustBeWildToSow>
+      <sowResearchPrerequisites>
+        <li>AR_Project_OliveTree</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="TreeBase">
+    <defName>AR_TreePomegranate</defName>
+    <label>pomegranate tree</label>
+    <altitudeLayer>Building</altitudeLayer>
+    <description>A strong hardwood tree. Slow-growing, but its amount of fruits is higher than that of the cultivated small plants.</description>
+    <graphicData>
+      <texPath>Items/Plants/PomegranateTree</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.3, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <plant>
+      <growDays>16</growDays>
+      <harvestedThingDef>AR_RawPomegranate</harvestedThingDef>
+      <harvestTag>Standard</harvestTag>
+      <harvestMinGrowth>0.40</harvestMinGrowth>
+      <harvestWork>800</harvestWork>
+      <harvestYield>100</harvestYield>
+      <wildClusterWeight>50</wildClusterWeight>
+      <visualSizeRange>1.3~2.0</visualSizeRange>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildBiomes>
+        <AridShrubland>0.15</AridShrubland>
+        <TemperateForest>0.05</TemperateForest>
+        <TropicalRainforest>0.05</TropicalRainforest>
+      </wildBiomes>
+      <immatureGraphicPath>Items/Plants/PomegranateTreeImmature</immatureGraphicPath>
+      <wildOrder>2</wildOrder>
+      <topWindExposure>0.15</topWindExposure>
+      <mustBeWildToSow>false</mustBeWildToSow>
+      <sowResearchPrerequisites>
+        <li>AR_Project_PomegranteTree</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+</Defs>

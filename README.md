@@ -33,7 +33,7 @@ Armor: Various helmets and armors like the famous Lorica Segmentata
 Apparel: Anything a proper citizen of Rome would wear.
 
 Compatibility:
-I haven't tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
+I haven&apos;t tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
 
 ![Image](https://i.imgur.com/Rs6T6cr.png)
 

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>AR_Project_Mediterranean_Culture</defName>
+    <label>Mediterranean culture</label>
+    <description>Discover the Roman and Greek way of life, like furniture and clothing.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>RomanStart</li>
+    </tags>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Hypocaustum</defName>
+    <label>hypocaustum</label>
+    <description>Digging a hole under the whole floor makes a fireplace much more efficient. No Roman will ever miss this luxury.</description>
+    <baseCost>400</baseCost>
+    <prerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+    <tags>
+      <li>RomanStart</li>
+    </tags>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_OliveTree</defName>
+    <label>Olive Tree</label>
+    <description>Sow olive trees necessary to make olive oil.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>TreeSowing</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_PomegranteTree</defName>
+    <label>Pomegrante Tree</label>
+    <description>Sow Pomegrante trees which yield a sweet fruit</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>TreeSowing</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+</Defs>
