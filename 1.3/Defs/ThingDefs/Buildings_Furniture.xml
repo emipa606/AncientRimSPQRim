@@ -364,7 +364,7 @@
       <li Class="CompProperties_Forbiddable" />
     </comps>
     <modExtensions>
-      <li Class="AncientRim.BuildingExtension">
+      <li Class="JecsTools.BuildingExtension">
         <wipeCategories>
           <li>OnFurniture</li>
         </wipeCategories>
@@ -648,7 +648,7 @@
         <fireSize>1</fireSize>
         <offset>(0,0,-0.1)</offset>
       </li>
-      <li Class="AncientRimCompOverlays.CompProperties_Overlays">
+      <li Class="CompOverlays.CompProperties_Overlays">
         <overlays>
           <li>
             <usesStuff>true</usesStuff>

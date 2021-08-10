@@ -64,7 +64,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-      <li Class="AncientRimShields.CompProperties_Shield">
+      <li Class="PawnShields.CompProperties_Shield">
         <wieldedGraphic>
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Scutum1</texPath>
@@ -100,7 +100,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-      <li Class="AncientRimShields.CompProperties_Shield">
+      <li Class="PawnShields.CompProperties_Shield">
         <wieldedGraphic>
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Scutum2</texPath>
@@ -137,7 +137,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-      <li Class="AncientRimShields.CompProperties_Shield">
+      <li Class="PawnShields.CompProperties_Shield">
         <wieldedGraphic>
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Scutum3</texPath>
@@ -211,7 +211,7 @@
       </li>
     </tools>
     <comps>
-      <li Class="AncientRimShields.CompProperties_Shield">
+      <li Class="PawnShields.CompProperties_Shield">
         <wieldedGraphic>
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Parma</texPath>
@@ -286,7 +286,7 @@
       <li>ShieldsGreek</li>
     </weaponTags>
     <comps>
-      <li Class="AncientRimShields.CompProperties_Shield">
+      <li Class="PawnShields.CompProperties_Shield">
         <wieldedGraphic>
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/HoplonBlank</texPath>
@@ -326,7 +326,7 @@
       <li>ShieldsGreekMacedon</li>
     </weaponTags>
     <comps>
-      <li Class="AncientRimShields.CompProperties_Shield">
+      <li Class="PawnShields.CompProperties_Shield">
         <wieldedGraphic>
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/HoplonMacedon</texPath>
@@ -366,7 +366,7 @@
       <li>ShieldsGreekSparta</li>
     </weaponTags>
     <comps>
-      <li Class="AncientRimShields.CompProperties_Shield">
+      <li Class="PawnShields.CompProperties_Shield">
         <wieldedGraphic>
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/HoplonSparta</texPath>
