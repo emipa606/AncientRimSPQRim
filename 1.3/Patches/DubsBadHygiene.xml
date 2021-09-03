@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "sewagePipeStuff"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName = "AR_Aqueduct"]/comps</xpath>
+      <value>
+        <li Class="DubsBadHygiene.CompProperties_Pipe">
+          <mode>Sewage</mode>
+        </li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

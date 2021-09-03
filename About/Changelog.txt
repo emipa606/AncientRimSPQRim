@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.0.6.0 - Added support for Dubs bad hygiene, aqueducts are now pipes
+
+
 1.0.5.0 - Republish to verify files since steam acted wierd last time
 
 
