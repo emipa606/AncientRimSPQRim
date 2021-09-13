@@ -547,7 +547,7 @@
     </stuffCategories>
     <costStuffCount>8</costStuffCount>
     <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
+    <pathCost>25</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
     <coversFloor>true</coversFloor>

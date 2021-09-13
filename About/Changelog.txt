@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.0.7.0 - Lowered the passability of aqueducs to simulate them being above ground
+
+
 1.0.6.0 - Added support for Dubs bad hygiene, aqueducts are now pipes
 
 
