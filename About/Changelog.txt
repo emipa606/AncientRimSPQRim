@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.0.9.0 - Added VGP support for grapes and olives
+
+
 1.0.8.0 - Further integration with Dubs Bad Hygiene
 
 

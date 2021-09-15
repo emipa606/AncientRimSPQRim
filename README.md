@@ -5,6 +5,11 @@
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653
 
+Added integrations with https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene
+- The fountains are considered Basins
+- Aqueduct can carry water as pipes
+- Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 
