@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.0.8.0 - Further integration with Dubs Bad Hygiene
+
+
 1.0.7.0 - Lowered the passability of aqueducs to simulate them being above ground
 
 
