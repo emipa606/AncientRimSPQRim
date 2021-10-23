@@ -9,18 +9,11 @@ Added integrations with https://steamcommunity.com/sharedfiles/filedetails/?id=8
 - The fountains are considered Basins
 - Aqueduct can carry water as pipes
 - Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
+- Added grapes and olives from https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826]VGP to recipes
+- Scenario can be found using https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073]The Ancient Rims by Raven
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-    [tr]
-        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-        [td]https://github.com/emipa606/AncientRimSPQRim]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-    [/tr]
-[/table]
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Ancient Rim - SPQRim (Continued)</name>
   <packageId>Mlie.AncientRimSPQRim</packageId>
@@ -40,6 +40,8 @@ Added integrations with [url=https://steamcommunity.com/sharedfiles/filedetails/
 - The fountains are considered Basins
 - Aqueduct can carry water as pipes
 - Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
+- Added grapes and olives from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826]VGP[/url] to recipes
+- Scenario can be found using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073]The Ancient Rims[/url] by Raven
 
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
