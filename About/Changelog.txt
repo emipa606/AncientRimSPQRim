@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.0.11.0 - The smithy is now buildable of any metal
+
+
 1.0.10.0 - Added support for Simple FX: Smoke
 
 

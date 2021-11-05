@@ -11,6 +11,7 @@ Added integrations with https://steamcommunity.com/sharedfiles/filedetails/?id=8
 - Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
 - Added grapes and olives from https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826]VGP to recipes
 - Scenario can be found using https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073]The Ancient Rims by Raven
+- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
