@@ -2,37 +2,42 @@
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
-Update of konis mod
-https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653
+Rework of Antharann Fireblades mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1782693188
+with permission
 
-Added integrations with https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene
-- The fountains are considered Basins
-- Aqueduct can carry water as pipes
-- Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
-- Added grapes and olives from https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826]VGP to recipes
-- Scenario can be found using https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073]The Ancient Rims by Raven
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke
+- Reworked the mod as an addon for SOS2
+
+Mod contents
+
+
+-  Civilian space undersuit
+-  Military space undersuit
+-  Light EVA gear
+-  Light EVA helmet
+-  Anti grain charge rifle
+
+
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
-Ancient Rim is a mod series that expands the cultural and technological timeline beyond the vanilla neolithic, industrial and spacer stages.
-This submod contains everything related to the ancient civilizations of Rome and the various city states of Greece.
+Small mod that adds in gear for a (potential) future update of the "Save our Ship" mod, mainly gear for space work 
+(only gear, functionality for the mod will be added later when the main mod gets released by the actual devs)
 
-Details:
-Ancient Rim - Mediterranean Edition has following content:
-Furniture: Beds, tables, stools and oil lamps that can be placed on tables, fountains and aqueducts that are pleasant to look at and do constantly cool any room, if placed inside.
-Agriculture: Crops and meals that were important to ancient Roman cuisine, as well as wine
-Work stations: A fueled smithy only for Mediterranean items and an oil press
-Weapons: Swords, a belly bow and siege engines
-Shields: variants of the Hoplon and Scutum shields and the light Roman Parma Shield
-Armor: Various helmets and armors like the famous Lorica Segmentata
-Apparel: Anything a proper citizen of Rome would wear.
+V1.0.0
+-Adds Space undersuit, a spacer age skintight body suit that insulates well aswell as protect against thermal damage.
+-Adds in light EVA Gear, light armor that boosts movement speed but does not allow you to wear gear over it, expensiv. (kinda useless atm)
+-Adds in light Space helmets, okish protection for the head, expensiv. (also kinda useless atm)
 
-Compatibility:
-I haven't tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
+
+Credits to @sma342#9694,aka Me from the rimworld discord for the amazing preview pic he made.
+
+[strike]Save our Ship Mod:
+https://steamcommunity.com/sharedfiles/filedetails/?id=1541262111[/strike]
+Now uses https://steamcommunity.com/workshop/filedetails/?id=1909914131]SOS2
 
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
