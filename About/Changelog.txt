@@ -3,6 +3,7 @@
 1.0.12.0 - Added cape-tag to the cape
 
 
+
 1.0.11.0 - The smithy is now buildable of any metal
 
 
