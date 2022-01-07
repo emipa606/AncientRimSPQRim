@@ -14,6 +14,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
     <pathCost>10</pathCost>
     <plant>
       <fertilitySensitivity>0.4</fertilitySensitivity>
@@ -48,6 +49,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
     <pathCost>10</pathCost>
     <plant>
       <fertilitySensitivity>0.6</fertilitySensitivity>
@@ -84,6 +86,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
     <pathCost>10</pathCost>
     <plant>
       <fertilitySensitivity>0.6</fertilitySensitivity>
@@ -118,6 +121,7 @@
         <volume>(0.3, 0.3, 0.3)</volume>
       </shadowData>
     </graphicData>
+    <neverMultiSelect>false</neverMultiSelect>
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <growDays>16</growDays>
@@ -153,6 +157,7 @@
         <volume>(0.3, 0.3, 0.3)</volume>
       </shadowData>
     </graphicData>
+    <neverMultiSelect>false</neverMultiSelect>
     <plant>
       <growDays>16</growDays>
       <harvestedThingDef>AR_RawPomegranate</harvestedThingDef>
