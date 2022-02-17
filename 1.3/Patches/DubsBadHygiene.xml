@@ -39,6 +39,72 @@
                 <Beauty>-5</Beauty>
               </statBases>
             </ThingDef>
+            <ThingDef ParentName="BasedHygieneMom" DBHLite="true">
+              <defName>Cloaca</defName>
+              <label>cloaca</label>
+              <description>Can be placed anywhere. Sewage will pool and spread on land or disperse in water. Sewage cleans up over time; the presence of trees, water, or rain will speed this up.</description>
+              <graphicData>
+                <texPath>Buildings/Furniture/Cloaca/cloaca</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3,3)</drawSize>
+                <damageData>
+                  <rect>(0.05,0.05,0.95,0.95)</rect>
+                </damageData>
+              </graphicData>
+              <size>(1,1)</size>
+              <category>Building</category>
+              <tickerType>Normal</tickerType>
+              <drawerType>RealtimeOnly</drawerType>
+              <altitudeLayer>Building</altitudeLayer>
+              <passability>PassThroughOnly</passability>
+              <blockWind>false</blockWind>
+              <castEdgeShadows>false</castEdgeShadows>
+              <pathCost>60</pathCost>
+              <uiIconPath>Buildings/Furniture/Cloaca/cloaca_ui</uiIconPath>
+              <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+              <stuffCategories>
+                <li>Stony</li>
+              </stuffCategories>
+              <costStuffCount>50</costStuffCount>
+              <building>
+                <watchBuildingStandDistanceRange>
+                  <min>1</min>
+                  <max>5</max>
+                </watchBuildingStandDistanceRange>
+                <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+                <ai_chillDestination>false</ai_chillDestination>
+              </building>
+              <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+              <rotatable>true</rotatable>
+              <statBases>
+                <MaxHitPoints>250</MaxHitPoints>
+                <WorkToBuild>1700</WorkToBuild>
+                <Flammability>0.0</Flammability>
+                <Beauty>-25</Beauty>
+                <Cleanliness>-100</Cleanliness>
+              </statBases>
+              <comps>
+                <li Class="DubsBadHygiene.CompProperties_Pipe">
+                  <mode>Sewage</mode>
+                </li>
+                <li Class="DubsBadHygiene.CompProperties_SewageHandler">
+                  <compClass>DubsBadHygiene.CompSewageOutlet</compClass>
+                  <capacity>3200</capacity>
+                  <priority>0</priority>
+                </li>
+                <li Class="DubsBadHygiene.CompProperties_Blockage" />
+              </comps>
+              <researchPrerequisites>
+                <li MayRequire="dbhlitemode">Plumbing</li>
+              </researchPrerequisites>
+              <placeWorkers>
+                <li>DubsBadHygiene.PlaceWorker_SewageArea</li>
+                <li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
+              </placeWorkers>
+              <modExtensions>
+                <li Class="DubsBadHygiene.BuildWaterExt" />
+              </modExtensions>
+            </ThingDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
