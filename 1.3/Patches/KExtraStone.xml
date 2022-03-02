@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Emperadordark"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikAndesite</defName>
+          <label>andesite mosaik</label>
+          <color>(112,118,118)</color>
+          <costList>
+            <BlocksAndesite>20</BlocksAndesite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikBasalt</defName>
+          <label>basalt mosaik</label>
+          <color>(73,77,79)</color>
+          <costList>
+            <BlocksBasalt>20</BlocksBasalt>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikBlueschist</defName>
+          <label>blueschist mosaik</label>
+          <color>(159,191,214)</color>
+          <costList>
+            <BlocksBlueschist>20</BlocksBlueschist>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikChalk</defName>
+          <label>chalk mosaik</label>
+          <color>(220,220,220)</color>
+          <costList>
+            <BlocksChalk>20</BlocksChalk>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikCharnockite</defName>
+          <label>charnockite mosaik</label>
+          <color>(141,120,79)</color>
+          <costList>
+            <BlocksCharnockite>20</BlocksCharnockite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikCreoleMarble</defName>
+          <label>creole marble mosaik</label>
+          <color>(174,211,210)</color>
+          <costList>
+            <BlocksCreoleMarble>20</BlocksCreoleMarble>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikDacite</defName>
+          <label>dacite mosaik</label>
+          <color>(177,178,172)</color>
+          <costList>
+            <BlocksDacite>20</BlocksDacite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikDunite</defName>
+          <label>dunite mosaik</label>
+          <color>(153,176,110)</color>
+          <costList>
+            <BlocksDunite>20</BlocksDunite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikEmperadorDark</defName>
+          <label>emperador dark mosaik</label>
+          <color>(72,46,38)</color>
+          <costList>
+            <BlocksEmperadordark>20</BlocksEmperadordark>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikEtowahMarble</defName>
+          <label>etowah marble mosaik</label>
+          <color>(246,200,184)</color>
+          <costList>
+            <BlocksEtowahMarble>20</BlocksEtowahMarble>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikGabbro</defName>
+          <label>gabbro mosaik</label>
+          <color>(82,85,66)</color>
+          <costList>
+            <BlocksGabbro>20</BlocksGabbro>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikGreenSchist</defName>
+          <label>greenschist mosaik</label>
+          <color>(82,98,71)</color>
+          <costList>
+            <BlocksGreenSchist>20</BlocksGreenSchist>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikJaspillite</defName>
+          <label>jaspillite mosaik</label>
+          <color>(208,103,84)</color>
+          <costList>
+            <BlocksJaspillite>20</BlocksJaspillite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikLepidolite</defName>
+          <label>lepidolite mosaik</label>
+          <color>(124,92,111)</color>
+          <costList>
+            <BlocksLepidolite>20</BlocksLepidolite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikLherzolite</defName>
+          <label>lherzolite mosaik</label>
+          <color>(150,176,81)</color>
+          <costList>
+            <BlocksLherzolite>20</BlocksLherzolite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikLignite</defName>
+          <label>lignite mosaik</label>
+          <color>(82,72,70)</color>
+          <costList>
+            <BlocksLignite>20</BlocksLignite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikMigmatite</defName>
+          <label>migmatite mosaik</label>
+          <color>(136,146,155)</color>
+          <costList>
+            <BlocksMigmatite>20</BlocksMigmatite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikMonzonite</defName>
+          <label>monzonite mosaik</label>
+          <color>(193,184,186)</color>
+          <costList>
+            <BlocksMonzonite>20</BlocksMonzonite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikObsidian</defName>
+          <label>obsidian mosaik</label>
+          <color>(35,35,35)</color>
+          <costList>
+            <BlocksObsidian>20</BlocksObsidian>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikRhyolite</defName>
+          <label>rhyolite mosaik</label>
+          <color>(201,159,134)</color>
+          <costList>
+            <BlocksRhyolite>20</BlocksRhyolite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikScoria</defName>
+          <label>scoria mosaik</label>
+          <color>(87,80,73)</color>
+          <costList>
+            <BlocksScoria>20</BlocksScoria>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikSerpentinite</defName>
+          <label>serpentinite mosaik</label>
+          <color>(60,96,58)</color>
+          <costList>
+            <BlocksSerpentinite>20</BlocksSerpentinite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikSiltstone</defName>
+          <label>siltstone mosaik</label>
+          <color>(167,146,117)</color>
+          <costList>
+            <BlocksSiltstone>20</BlocksSiltstone>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikSovite</defName>
+          <label>sovite mosaik</label>
+          <color>(187,181,135)</color>
+          <costList>
+            <BlocksSovite>20</BlocksSovite>
+          </costList>
+        </TerrainDef>
+        <TerrainDef ParentName="MosaikBase">
+          <defName>AR_MosaikThometzekite</defName>
+          <label>thometzekite mosaik</label>
+          <color>(180,213,197)</color>
+          <costList>
+            <BlocksThometzekite>20</BlocksThometzekite>
+          </costList>
+        </TerrainDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>
