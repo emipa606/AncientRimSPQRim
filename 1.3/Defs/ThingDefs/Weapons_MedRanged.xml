@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="BaseWeaponRangedRome" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>Neolithic</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+		<li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		</li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>FueledSmithy</li><li>ElectricSmithy</li>
+      </recipeUsers>
+      <effectWorking>Smelt</effectWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  <!-- ======================================================== -->
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>AR_Arrow_Gastraphetes</defName>
+    <label>Gastraphetes arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>51</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>AR_Gastraphetes</defName>
+    <label>Gastraphetes</label>
+    <description>Greek for "belly-releaser". It's a quite simple kind of crossbow. To load it after firing a shot, one would place the arrow in the slot, place the Gastraphetes on their stomach, and push forward towards the ground, pushing the slot upwards until it was locked in place.</description>
+    <graphicData>
+      <texPath>Items/Weapons/Gastraphetes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+	<!-- SHUT YOUR MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF! -->
+	<costStuffCount>120</costStuffCount>
+    <stuffCategories>
+		<li>Metallic</li>
+	  
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+	<costList>
+		<WoodLog>40</WoodLog>
+	</costList>
+    <statBases>
+      <WorkToMake>19000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.96</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+    </statBases>
+    <generateCommonality>0.45</generateCommonality>
+    <weaponTags>
+      <li>BowMen</li>
+	  <li>NeolithicRangedAdvanced</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>ClassicalScorpion</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>AR_Arrow_Gastraphetes</defaultProjectile>
+        <warmupTime>2.1</warmupTime>
+        <range>37</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+		<label>bow grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+		<label>bow limb</label>
+        <capacities>
+			<li>Blunt</li>
+			<li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+	  <li>
+		<label>slider mechanism</label>
+		<capacities>
+			<li>Poke</li>
+		</capacities>
+		<power>8</power>
+		<cooldownTime>2</cooldownTime>
+	  </li>
+    </tools>
+	<comps>
+		<li Class="CompProperties_Biocodable"/>
+	</comps>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Mechanical_Weapons</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

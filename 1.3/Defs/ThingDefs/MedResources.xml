@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Raw Vegetables -->
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>AR_RawOlives</defName>
+    <label>olives</label>
+    <description>Tiny green berries with a high amount of oil and fat.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/Olives</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+	<thingCategories Inherit="False">
+		<li>PlantFoodRaw</li>
+
+		<!-- If you have the Mod -->
+		<li MayRequire="VanillaExpanded.VPlantsE">VCE_Fruit</li>
+	</thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>AR_RawArtichoke</defName>
+    <label>artichokes</label>
+    <description>Edible blooms of a thistle.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/Artichoke</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>AR_RawGrapes</defName>
+    <label>grapes</label>
+    <description>Assorted wine berries. Nice to eat, even when raw. Also good to ferment</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/Grapes</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+		<li>PlantFoodRaw</li>
+
+		<!-- If you have the Mod -->
+		<li MayRequire="VanillaExpanded.VPlantsE" Inherit="False">VCE_Fruit</li>
+	</thingCategories>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought>
+      </tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>AR_RawPomegranate</defName>
+    <label>Pomegranates</label>
+    <description>Tasty red fruids, full of seeds.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/Pomegranate</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.0</MarketValue>
+	  <Nutrition>0.035</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+		<li Inherit="False">PlantFoodRaw</li>
+
+		<!-- If you have the Mod -->
+		<li MayRequire="VanillaExpanded.VPlantsE" Inherit="False">VCE_Fruit</li>
+	</thingCategories>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought>
+      </tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+  <!-- Foods -->
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>AR_OliveOil</defName>
+    <label>olive oil</label>
+    <description>Oil of olives.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/OliveOil</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <thingCategories>
+		<li MayRequire="VanillaExpanded.VCookE">VCE_Condiments</li>
+		<li MayRequire="tikubonn.RimSeasoning">RimSeasoning_Seasoning</li>
+		<li>PlantMatter</li>
+    </thingCategories>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<healthAffectsPrice>false</healthAffectsPrice>
+    <ingestible>
+		<foodType>Processed, Fluid, Plant, VegetableOrFruit, VegetarianRoughAnimal</foodType>
+		<preferability>DesperateOnly</preferability>
+		<!-- <tasteThought>AR_DrankOil</tasteThought> -->
+		<specialThoughtDirect>AR_DrankOil</specialThoughtDirect>
+		<specialThoughtAsIngredient>TSP_AR_DrankOilAsIngredient</specialThoughtAsIngredient>
+		<optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+		<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<MarketValue>18</MarketValue>
+		<Mass>0.005</Mass>
+		<Flammability>2</Flammability>
+		<DeteriorationRate>2</DeteriorationRate>
+		<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		<Nutrition>0.07</Nutrition>
+    </statBases>
+    <comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>180</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+		
+		<!-- If you have the Mod, you can season non-Mediterranean food with olive oil too! -->
+		<li Class="RimSeasoning.CompProperties_Seasoning" MayRequire="tikubonn.RimSeasoning">
+			<compClass MayRequire="tikubonn.RimSeasoning">RimSeasoning.CompSeasoning</compClass>
+			<consumedThought MayRequire="tikubonn.RimSeasoning">TSP_AR_DrankOilAsIngredient</consumedThought>
+		</li>
+	</comps>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>AR_Mash</defName>
+    <label>mashed grapes</label>
+    <description>Grape mash. Safe to eat but intended for wine fermenting.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/Mash</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <ingestible>
+      <foodType>Plant, VegetarianRoughAnimal</foodType>
+      <preferability>DesperateOnly</preferability>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+      <Nutrition>0.025</Nutrition>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>5</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+		<li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+		</li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MealCooked">
+    <defName>AR_FryedEgg</defName>
+    <label>fried animal products in olive oil</label>
+    <description>A simple meal quickly fried in the fat of olive oil, with animal products as the main ingredient.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/FryedEgg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>28</MarketValue>
+      <WorkToMake>300</WorkToMake>
+      <Nutrition>0.8</Nutrition>
+    </statBases>
+    <ingestible>
+		<foodType>Meal, Processed, AnimalProduct, OvivoreAnimal</foodType>
+		<preferability>MealSimple</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<tasteThought>AR_AteFryedMeal</tasteThought>
+		<ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+	<comps>
+		<li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MealCooked">
+    <defName>AR_FryedMeat</defName>
+    <label>fried meat in olive oil</label>
+    <description>A simple meal consisting of meat quickly fried in olive oil.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/FryedMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>28</MarketValue>
+      <WorkToMake>300</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+		<foodType>Meal, Processed, Meat, CarnivoreAnimal, CarnivoreAnimalStrict, OmnivoreHuman</foodType>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<tasteThought>AR_AteFryedMeal</tasteThought>
+		<ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+	<comps>
+		<li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>AR_Salad</defName>
+    <label>Roman salad</label>
+    <description>Diverse fruits, vegetables, and plant matter with a whole bunch of olive-based dressing.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/Salad</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>28</MarketValue>
+      <WorkToMake>100</WorkToMake>
+      <Nutrition>0.8</Nutrition>
+    </statBases>
+    <ingestible>
+		<!-- This should fix the issue where Pawns cannot eat it -->
+		<foodType Inherit="False">Meal, Processed, Plant, VegetableOrFruit, VegetarianRoughAnimal, OmnivoreHuman</foodType>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<tasteThought>AR_AteSalad</tasteThought>
+		<ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+	<comps>
+		<li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugBase">
+    <defName>AR_Wine</defName>
+    <label>wine</label>
+    <description>A more exclusive and more civilized kind of alcoholic drink made of fermented fruit. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Foods/Wine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-150</equippedAngleOffset>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>12</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.010</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>bottle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>neck</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- Ammo -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>AR_AmmoStone</defName>
+    <label>ballistae stone</label>
+    <description>Stones to shoot.</description>
+    <graphicData>
+      <texPath>Items/Stuff/Ammo/Stones</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>AR_CategoryAmmo</li>
+    </thingCategories>
+    <projectileWhenLoaded>AR_Bullet_BallistaeRocky</projectileWhenLoaded>
+    <tickerType>Normal</tickerType>
+	<comps>
+		<li Class="CompProperties_Ingredients"></li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>AR_AmmoFire</defName>
+    <label>ballistae incendiary ammo</label>
+    <description>fireballs</description>
+    <graphicData>
+      <texPath>Items/Stuff/Ammo/Fire</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>1</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>AR_CategoryAmmo</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+        <wickTicks>
+          <min>9</min>
+          <max>10</max>
+        </wickTicks>
+      </li>
+		<li Class="CompProperties_Ingredients"></li>
+    </comps>
+    <projectileWhenLoaded>AR_Bullet_BallistaeFire</projectileWhenLoaded>
+    <tickerType>Normal</tickerType>
+  </ThingDef>
+</Defs>

@@ -18,10 +18,10 @@
   <JobDef>
     <defName>AR_DrinkWaterJob</defName>
     <driverClass>JobDriver_WatchBuilding</driverClass>
-    <reportString>drinking fresh cold water.</reportString>
+    <reportString>drinking fresh cold water</reportString>
     <joyDuration>1000</joyDuration>
-    <joyMaxParticipants>3</joyMaxParticipants>
-    <joyGainRate>1</joyGainRate>
-    <joyKind>Gluttonous</joyKind>
+    <joyMaxParticipants>5</joyMaxParticipants>
+    <joyGainRate>1.2</joyGainRate>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
   </JobDef>
 </Defs>

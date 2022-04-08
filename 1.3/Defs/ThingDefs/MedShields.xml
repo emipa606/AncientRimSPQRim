@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="RomeShields" Abstract="True" ParentName="BaseAncientShield">
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li><li>ElectricSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <!--0==============================0 Roman 0==============================0 -->
+  <ThingDef ParentName="RomeShields" Name="Scutum" Abstract="true">
+    <description>The "scales" that make up a turtle's shell are called "scutes", and this is the reason why. A scutum is a rectangular shield known to be used by the by the Legions of Rome. Its shape is ideal to perform the 'testudo' formation (from where "testudines", meaning "turtle", originates), where the Legionaries create a cube of shields, nearly immune to arrow fire. It is made of three glued layers of wood with a bronze overlay.</description>
+    <equipmentType>None</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.0</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+      <MoveSpeed>-0.5</MoveSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <AR_Bronze>40</AR_Bronze>
+      <WoodLog>120</WoodLog>
+    </costList>
+    <weaponTags>
+      <li>ShieldsRomeLegion</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>side</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>buckle</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="Scutum">
+    <defName>AR_ScutumA</defName>
+    <label>Scutum (lightning)</label>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Items/Shields/Scutum1_south</texPath>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/Scutum1</texPath>
+          <drawSize>(1.2, 1.2)</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.95</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
+        <!-- <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold> -->
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="Scutum">
+    <defName>AR_ScutumB</defName>
+    <label>Scutum (laurel wreath)</label>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Items/Shields/Scutum2_south</texPath>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/Scutum2</texPath>
+          <drawSize>(1.2, 1.2)</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.95</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
+        <!-- <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold> -->
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="Scutum">
+    <defName>AR_ScutumC</defName>
+    <label>Scutum (wings)</label>
+    <equipmentType>None</equipmentType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Items/Shields/Scutum3_south</texPath>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/Scutum3</texPath>
+          <drawSize>(1.2, 1.2)</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.95</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
+        <!-- <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold> -->
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="Scutum">
+    <defName>AR_ScutumD</defName>
+    <label>Scutum (Testudo)</label>
+    <equipmentType>None</equipmentType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Items/Shields/Scutum4_south</texPath>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/Scutum4</texPath>
+          <drawSize>(1.2, 1.2)</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>10.1</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.97</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.45</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
+        <!-- <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold> -->
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RomeShields">
+    <defName>AR_Parma</defName>
+    <label>Parma</label>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Items/Shields/Parma_south</texPath>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <description>Small circular shield used by the by the Centurios and by light infantry of the Roman Legions</description>
+    <equipmentType>None</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.0</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <AR_Bronze>40</AR_Bronze>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <weaponTags>
+      <li>ShieldsRomeLight</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>side</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>buckle</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.0</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/Parma</texPath>
+          <drawSize>(1.2, 1.2)</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.5</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- 0==============================0 Greek 0==============================0 -->
+  <ThingDef ParentName="RomeShields" Name="Hoplon" Abstract="true">
+    <equipmentType>None</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>1.25</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-0.6</ShootingAccuracyPawn>
+      <MoveSpeed>-0.6</MoveSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <AR_Bronze>80</AR_Bronze>
+      <WoodLog>80</WoodLog>
+    </costList>
+    <tools>
+      <li>
+        <label>side</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="Hoplon">
+    <defName>AR_HoplonBlank</defName>
+    <label>Hoplon</label>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze</description>
+    <graphicData>
+      <texPath>Items/Shields/HoplonBlank_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7, 0.7 )</drawSize>
+    </graphicData>
+    <weaponTags>
+      <li>ShieldsGreek</li>
+    </weaponTags>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/HoplonBlank</texPath>
+          <drawSize>(0.7, 0.7 )</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.8</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.6</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="Hoplon">
+    <defName>AR_HoplonMacedon</defName>
+    <label>Macedonian Hoplon</label>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The star drawn on its canter is the emblem of the Macedonian King's house sigil.</description>
+    <graphicData>
+      <texPath>Items/Shields/HoplonMacedon_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7, 0.7 )</drawSize>
+    </graphicData>
+    <weaponTags>
+      <li>ShieldsGreekMacedon</li>
+    </weaponTags>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/HoplonMacedon</texPath>
+          <drawSize>(0.7, 0.7 )</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.8</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.6</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="Hoplon">
+    <defName>AR_HoplonSpartan</defName>
+    <label>Spartan Hoplon</label>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The letter 'Lambda' on its center is the first letter of the region around Sparta, which is called "Laconia".</description>
+    <graphicData>
+      <texPath>Items/Shields/HoplonSparta_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7, 0.7 )</drawSize>
+    </graphicData>
+    <weaponTags>
+      <li>ShieldsGreekSparta</li>
+    </weaponTags>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/HoplonSparta</texPath>
+          <drawSize>(0.7, 0.7 )</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>false</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.8</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.6</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

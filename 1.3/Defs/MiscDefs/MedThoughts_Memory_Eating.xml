@@ -6,8 +6,8 @@
     <durationDays>1</durationDays>
     <stages>
       <li>
-        <label>ate fryed meal</label>
-        <description>I ate a tasty flavorful fryed meal.</description>
+        <label>ate fried meal</label>
+        <description>I ate a tasty, flavorful, fried meal!</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -18,7 +18,7 @@
     <stages>
       <li>
         <label>ate salad</label>
-        <description>I ate a fresh salad. It was tasty and felt healthy</description>
+        <description>I ate a fresh salad with olive oil. It was tasty and felt healthy!</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -27,15 +27,29 @@
     <defName>AR_DrankOil</defName>
     <showBubble>true</showBubble>
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
-    <durationDays>1</durationDays>
+    <durationDays>0.5</durationDays>
     <stages>
       <li>
-        <label>drank olive oil</label>
-        <description>Uwaah, I had to drink pure olive oil. I feel like I'm a salad now.</description>
+        <label>drank olive oil straight</label>
+        <description>I had to drink pure olive oil. I feel like I'M the salad now.</description>
         <baseMoodEffect>-12</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
+  <ThoughtDef>
+    <defName>TSP_AR_DrankOilAsIngredient</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>0.5</durationDays>
+    <stages>
+      <li>
+        <label>ate dish with olive oil</label>
+        <description>I enjoyed a meal that was enhanced with savory, delicious olive oil. I feel so cultured!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--
   <ThoughtDef>
     <defName>AteCorpse</defName>
     <showBubble>true</showBubble>
@@ -49,4 +63,5 @@
       </li>
     </stages>
   </ThoughtDef>
+  -->
 </Defs>

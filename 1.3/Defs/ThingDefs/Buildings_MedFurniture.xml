@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Beds -->
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>AR_Kliani</defName>
+    <label>kline</label>
+    <description>A cozy mattress and sheets on a frame for resting.</description>
+    <graphicData>
+      <texPath>Buildings/Furniture/Beds/Klinai</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>9</Beauty>
+      <WorkToBuild>870</WorkToBuild>
+      <Mass>50</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.8</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <techLevel>Neolithic</techLevel>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>AR_DoubleKlinai</defName>
+    <label>double kline</label>
+    <description>A simple double-wide bed that fits two people.</description>
+    <graphicData>
+      <texPath>Buildings/Furniture/Beds/DoubleKlinai</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>1740</WorkToBuild>
+      <Mass>85</Mass>
+      <Comfort>0.85</Comfort>
+      <Beauty>10</Beauty>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <techLevel>Neolithic</techLevel>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+  <!-- Basic domestic furniture -->
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>AR_FoldingStool</defName>
+    <label>folding stool</label>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>Buildings/Furniture/Stools/FoldingStool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+        <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+        <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+        <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+      <Comfort>0.5</Comfort>
+    </statBases>
+    <description>A simple platform on which to sit.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <costList>
+      <AR_Copper>5</AR_Copper>
+    </costList>
+    <pathCost>30</pathCost>
+    <fillPercent>0.30</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+  <!-- Tables -->
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>AR_CartibulumShort</defName>
+    <label>cartibulum (2x2)</label>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>Buildings/Furniture/Tables/CartibulumShort</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.05,0.27,1.9,1.73)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>15</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>9</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>60</costStuffCount>
+    <rotatable>true</rotatable>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>AR_CartibulumLong</defName>
+    <label>cartibulum (2x4)</label>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>Buildings/Furniture/Tables/CartibulumLong</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+      <damageData>
+        <rectN>(0,0.27,2,3.73)</rectN>
+        <rectS>(0,0.27,2,3.73)</rectS>
+        <rectE>(0.125,0.27,3.75,1.73)</rectE>
+        <rectW>(0.125,0.27,3.75,1.73)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>3500</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>14</Beauty>
+    </statBases>
+    <size>(2,4)</size>
+    <costStuffCount>120</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>AR_MonopodiumSquareBig</defName>
+    <label>monopodium (2x2)</label>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>Buildings/Furniture/Tables/SquareMonopodiumBig</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.05,0.27,1.9,1.73)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>9</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>7</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>45</costStuffCount>
+    <rotatable>false</rotatable>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>AR_MonopodiumRoundBig</defName>
+    <label>monopodium (2x2,round)</label>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>Buildings/Furniture/Tables/RoundMonopodiumBig</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.05,0.27,1.9,1.73)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>9</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>7</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>45</costStuffCount>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <!-- Light -->
+  <ThingDef ParentName="FurnitureBase">
+    <defName>AR_OilLamp</defName>
+    <label>oil lamp</label>
+    <uiIconPath>Icon/OilLamp</uiIconPath>
+    <clearBuildingArea>false</clearBuildingArea>
+    <building>
+      <isEdifice>false</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
+    <researchPrerequisites>
+      <li>AR_Project_OliveTree</li>
+    </researchPrerequisites>
+    <description>A simple Lamp. Burns olive oil to work.</description>
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/Furniture/OilLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>8</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+    </statBases>
+    <selectable>true</selectable>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  
+		<!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <costList>
+      <AR_OliveOil>10</AR_OliveOil>
+    </costList>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>1</fuelConsumptionRate>
+        <fuelCapacity>40</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.001</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <destroyOnNoFuel>false</destroyOnNoFuel>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>11</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>0.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_FireOverlay">
+        <fireSize>0.2</fireSize>
+        <offset>(-0.3,0,0.4)</offset>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <modExtensions>
+      <li Class="JecsTools.BuildingExtension">
+        <wipeCategories>
+          <li>OnFurniture</li>
+        </wipeCategories>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>
