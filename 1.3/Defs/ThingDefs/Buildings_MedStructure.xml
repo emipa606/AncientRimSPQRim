@@ -83,7 +83,7 @@
     <costStuffCount>5</costStuffCount>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <costList>
-      <Cloth>2</Cloth>
+      <Dye>1</Dye>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>

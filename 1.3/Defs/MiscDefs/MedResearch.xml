@@ -3,7 +3,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Mediterranean_Culture</defName>
     <label>Mediterranean culture</label>
-    <description>Discover the Roman and Greek way of life, like furniture and clothing.</description>
+    <description>Discover the Roman and Greek ways of life, like furniture and clothing.</description>
     <baseCost>3000</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
@@ -26,7 +26,6 @@
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>RomanStart</li>
-	  <li>ClassicStart</li>
 	  <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
