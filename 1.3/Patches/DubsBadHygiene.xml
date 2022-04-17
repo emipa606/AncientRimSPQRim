@@ -200,7 +200,8 @@
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/graphicData/linkFlags</xpath>
-			<value> <!-- Same as Pipes -->
+			<!-- Same as Pipes -->
+			<value>
 				<linkFlags>
 					<li>Custom5</li>
 				</linkFlags>
@@ -218,6 +219,25 @@
 			<xpath>/Defs/JobDef[defName="AR_DrinkWaterJob"]/driverClass</xpath>
 			<value>
 				<driverClass>DubsBadHygiene.JobDriver_DrinkFromBasin</driverClass>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+			<value>
+				<tags>
+					<li>ClassicStart</li>
+					<li>RomanStart</li>
+					<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+					<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+					<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+				</tags>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

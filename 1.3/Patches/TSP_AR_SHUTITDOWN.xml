@@ -514,7 +514,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/description</xpath>
 			<value>
-				<description>Construct Manuballistae, basically a miniaturized, portable Scorpio. Like its predecessors, a Manuballista was a torsion-based siege engines, except they were small enough to be used like later hand held crossbows.</description>
+				<description>Construct Manuballistae, basically miniaturized, portable Scorpioes. Like its predecessors, a Manuballista was a torsion-based siege engines, except they were small enough to be used like later hand held crossbows.</description>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -920,7 +920,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/disallowedMemes</xpath>
 			<value>
-				<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 				<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li> -->
@@ -1309,7 +1309,6 @@
 			<value>
 				<apparelTags>
 					<li>RomeCivil</li>
-					<li>RomeNoble</li>
 					<li>RomeOfficer</li>
 					<li>Praetorian</li>
 				</apparelTags>
@@ -1385,7 +1384,7 @@
 					<VFEC_TownGuard>80</VFEC_TownGuard>
 					<VFEC_RepublicArcher>50</VFEC_RepublicArcher>
 					<VFEC_RepublicAuxilia>40</VFEC_RepublicAuxilia>
-					<VFEC_Legionnaire>30</VFEC_Legionnaire>
+					<VFEC_Legionnaire>50</VFEC_Legionnaire>
 					<VFEC_Centurion>20</VFEC_Centurion>
 					<VFEC_Praetorian>15</VFEC_Praetorian>
 					<VFEC_ScorpionOperator>10</VFEC_ScorpionOperator>
@@ -1393,13 +1392,13 @@
 					<AR_Citizen>100</AR_Citizen>
 					<AR_Preatorian>15</AR_Preatorian>
 					<AR_Hastatus>35</AR_Hastatus>
-					<AR_Councilman>40</AR_Councilman>
+					<AR_Councilman>5</AR_Councilman>
 					<AR_Sagittarius>50</AR_Sagittarius>
 					<AR_Triarius>50</AR_Triarius>
-					<AR_Centurion>10</AR_Centurion>
-					<AR_Legionary>25</AR_Legionary>
+					<AR_Centurion>15</AR_Centurion>
+					<AR_Legionary>30</AR_Legionary>
 					<AR_General>30</AR_General>
-					<TSP_AR_CitizenGirl>10</TSP_AR_CitizenGirl>
+					<TSP_AR_CitizenGirl>40</TSP_AR_CitizenGirl>
 				</options>
 			</value>
 		</match>

@@ -3,17 +3,17 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Pillar</defName>
     <label>pillar</label>
-    <description>Holds roofs with style.</description>
+    <description>Holds rooves with style.</description>
     <designationCategory>Structure</designationCategory>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.25</fillPercent>
     <pathCost>0</pathCost>
     <statBases>
-      <MaxHitPoints>160</MaxHitPoints>
+      <MaxHitPoints>200</MaxHitPoints>
       <WorkToBuild>750</WorkToBuild>
       <Mass>10</Mass>
-      <Flammability>1.0</Flammability>
+      <Flammability>0.9</Flammability>
       <Beauty>5</Beauty>
     </statBases>
     <stuffCategories>
@@ -28,7 +28,7 @@
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>20</costStuffCount>
+    <costStuffCount>15</costStuffCount>
     <holdsRoof>true</holdsRoof>
     <canOverlapZones>false</canOverlapZones>
     <rotatable>false</rotatable>
@@ -45,6 +45,10 @@
       </damageData>
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
+    <researchPrerequisites>
+		<li>ComplexFurniture</li>
+		<li>AR_Project_Mediterranean_Culture</li>
+    </researchPrerequisites>
   </ThingDef>
   <!--========================= Walls =============================-->
   <ThingDef ParentName="BuildingBase" Name="WallRome">
@@ -77,13 +81,13 @@
     <statBases>
       <MaxHitPoints>350</MaxHitPoints>
       <WorkToBuild>150</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>5</Beauty>
+      <Flammability>1</Flammability>
+      <Beauty>7</Beauty>
     </statBases>
-    <costStuffCount>5</costStuffCount>
+    <costStuffCount>3</costStuffCount>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <costList>
-      <Dye>1</Dye>
+		<Dye>1</Dye>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
@@ -113,6 +117,7 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="taoschagic.igloo">Snowy</li>
     </stuffCategories>
     <building>
       <isInert>true</isInert>
@@ -122,26 +127,34 @@
       </blueprintGraphicData>
     </building>
     <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>2</multiplier>
-      </li>
+		<li>
+			<damageDef>Bomb</damageDef>
+			<multiplier>2</multiplier>
+		</li>
+		<li>
+			<damageDef>Flame</damageDef>
+			<multiplier>1.01</multiplier>
+		</li>
     </damageMultipliers>
     <researchPrerequisites>
-      <li>AR_Project_Mediterranean_Culture</li>
+		<li>ComplexFurniture</li>
+		<li>AR_Project_Mediterranean_Culture</li>
+		<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Wallpapers</li>
     </researchPrerequisites>
   </ThingDef>
+  
   <ThingDef ParentName="WallRome">
-    <defName>AR_GreenWall</defName>
-    <label>green dyed wall</label>
+    <defName Inherit="False">AR_GreenWall</defName>
+    <label Inherit="False">green dyed wall</label>
     <graphicData>
       <texPath>Buildings/Structure/GreenWall_Atlas</texPath>
     </graphicData>
     <uiIconPath>Icon/GreenWall_MenuIcon</uiIconPath>
   </ThingDef>
+
   <ThingDef ParentName="WallRome">
-    <defName>AR_BlueWall</defName>
-    <label>blue dyed wall</label>
+    <defName Inherit="False">AR_BlueWall</defName>
+    <label Inherit="False">blue dyed wall</label>
     <graphicData>
       <texPath>Buildings/Structure/BlueWall_Atlas</texPath>
     </graphicData>

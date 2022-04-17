@@ -347,7 +347,7 @@
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1</fuelConsumptionRate>
         <fuelCapacity>40</fuelCapacity>
-        <fuelConsumptionPerTickInRain>0.001</fuelConsumptionPerTickInRain>
+        <fuelConsumptionPerTickInRain>0.01</fuelConsumptionPerTickInRain>
         <fuelFilter>
           <thingDefs>
             <li>AR_OliveOil</li>

@@ -351,8 +351,8 @@
       <MaxHitPoints>360</MaxHitPoints>
       <WorkToMake>31000</WorkToMake>
       <Mass>15</Mass>
-      <StuffEffectMultiplierArmor>0.43</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>15</EquipDelay>
     </statBases>
@@ -411,9 +411,9 @@
       <MaxHitPoints>360</MaxHitPoints>
       <WorkToMake>31000</WorkToMake>
       <Mass>15</Mass>
-      <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierArmor>0.77</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>15</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -511,6 +511,7 @@
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
   </thingDef>
+
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Sagum</defName>
     <description>A bigger cape of fabric or leather and a silver broach. Originally worn by rich soldiers, it has become a symbol of both the Roman officer corps and even, during triumphs, the Roman Emperor himself.</description>
@@ -553,17 +554,17 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>RomeCivil</li>
 		<li>RomeNoble</li>
 		<li>RomeOfficer</li>
 		<li>Praetorian</li>
 		<li>RomanEmperor</li>
-        <li>RomePlayer</li>
-        <li>HellenicHeavy</li>
+		<li>RomePlayer</li>
+		<li>HellenicHeavy</li>
 		<li>Cape</li>
 		<li>BeetElite</li>
 		<li>JeubKing</li>
 		<li>King</li>
+		<li>FrenchNapoleonsUniformApparel</li>
 		<li>ClassicalMilitaryClassy</li>
 		<li>Royal</li>
 		<li>RoyalTier1</li>
@@ -582,13 +583,13 @@
 
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Himation</defName>
-    <description>A simple piece of cloth worn around the loin and the shoulders.</description>
+    <description>A simple piece of cloth worn around a man's loin and over his shoulders. Women did not wear this garment because it only covered their groins and hips.</description>
     <label>himation</label>
     <graphicData>
       <texPath>Items/Apparel/HimationOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>30</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
 	  <li>Leathery</li>
@@ -597,10 +598,10 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-      <WorkToMake>9000</WorkToMake>
+      <WorkToMake>900</WorkToMake>
       <Mass>1.5</Mass>
       <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <apparel>
@@ -616,18 +617,21 @@
         <li>Barbarian</li>
 		<li>BarbarianNoble</li>
         <li>RomePlayer</li>
-        <li>Hellenic</li>
+        <li>Macedon</li>
+		<li>Spartan</li>
 		<li>Tribal</li>
 		<li>Neolithic</li>
 		<li>ST_BeetClothing</li>
 		<li>Classical</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+		<li>Worker</li>
+		<li>Soldier</li>
+		<li>Slave</li>
       </defaultOutfitTags>
 	  <gender>Male</gender>
     </apparel>
-    <generateCommonality>15</generateCommonality>
+    <generateCommonality>1</generateCommonality>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
@@ -682,6 +686,7 @@
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
   </thingDef>
+
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_LightCape</defName>
     <description>It's a small cape. It is just as stylish as the larger shoulder cape commonly worn by noblemen.</description>
@@ -709,7 +714,7 @@
       <EquipDelay>2</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>0.1</SocialImpact>
+		<SocialImpact>0.1</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -723,13 +728,13 @@
         <li>Shell</li>
       </layers>
       <tags>
+		<li>Officer</li>
         <li>RomeOfficer</li>
         <li>BarbarianNoble</li>
         <li>Cape</li>
 		<li>Royal</li>
 		<li>RoyalTier1</li>
 		<li>RoyalTier2</li>
-		<li>RoyalTier3</li>
 		<li>ClassicalMilitary</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
