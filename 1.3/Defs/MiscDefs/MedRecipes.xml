@@ -198,7 +198,8 @@
       <AR_Mash>5</AR_Mash>
     </products>
     <recipeUsers>
-      <li>Brewery</li>
+		<li>CraftingSpot</li>
+		<li>Brewery</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -257,6 +258,7 @@
       <li>FueledStove</li>
 	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
 	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
   
@@ -314,6 +316,7 @@
       <li>FueledStove</li>
 	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
 	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
   
@@ -371,6 +374,7 @@
       <li>FueledStove</li>
 	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
 	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -428,6 +432,7 @@
       <li>FueledStove</li>
 	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
 	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
   
@@ -485,6 +490,7 @@
       <li>FueledStove</li>
 	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
 	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -542,6 +548,7 @@
       <li>FueledStove</li>
 	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
 	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
   
@@ -599,6 +606,7 @@
       <li>FueledStove</li>
 	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
 	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -653,6 +661,7 @@
 		<li>FueledStove</li>
 		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
 		<li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
   
@@ -707,6 +716,7 @@
 		<li>FueledStove</li>
 		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
 		<li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -744,6 +754,9 @@
 		<li>TableStonecutter</li>
 		<li>TableMachining</li>
 		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
   </RecipeDef>
@@ -781,9 +794,9 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AR_OliveOil</li>
+		<li>AR_OliveOil</li>
 		<li>Chemfuel</li>
-        <li>WoodLog</li>
+		<li>WoodLog</li>
 		<li MayRequire="sihv.rombones">BoneItem</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -791,9 +804,12 @@
       <AR_AmmoFire>10</AR_AmmoFire>
     </products>
     <recipeUsers>
-      <li>TableStonecutter</li>
-	  <li>TableMachining</li>
-	  <li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+		<li>TableStonecutter</li>
+		<li>TableMachining</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
   </RecipeDef>

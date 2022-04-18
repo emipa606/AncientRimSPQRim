@@ -53,7 +53,7 @@
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawGrapes</defName>
     <label>grapes</label>
-    <description>Assorted wine berries. Nice to eat, even when raw. Also good to ferment</description>
+    <description>Assorted wine berries. Nice to eat, even when raw, and it easily ferments into rich, smooth wine.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Grapes</texPath>
     </graphicData>
@@ -147,6 +147,7 @@
 		<Mass>0.005</Mass>
 		<Flammability>2</Flammability>
 		<DeteriorationRate>2</DeteriorationRate>
+		<FoodPoisonChance>0</FoodPoisonChance>
 		<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
 		<Nutrition>0.07</Nutrition>
     </statBases>
@@ -163,6 +164,7 @@
 		</li>
 	</comps>
   </ThingDef>
+
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Mash</defName>
     <label>mashed grapes</label>
@@ -189,6 +191,7 @@
       <ingestSound>RawVegetable_Eat</ingestSound>
     </ingestible>
     <statBases>
+		<MarketValue>4</MarketValue>
       <DeteriorationRate>1.0</DeteriorationRate>
       <MarketValue>2.5</MarketValue>
       <Mass>0.8</Mass>
@@ -200,7 +203,7 @@
     <tickerType>Rare</tickerType>
     <comps>
 		<li Class="CompProperties_Rottable">
-			<daysToRotStart>5</daysToRotStart>
+			<daysToRotStart>1</daysToRotStart>
 			<rotDestroys>true</rotDestroys>
 		</li>
 		<li Class="CompProperties_Ingredients">

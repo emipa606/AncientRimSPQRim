@@ -71,9 +71,44 @@
       </sowResearchPrerequisites>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>AR_PlantGrapeWild</defName>
+    <label>wild grape plant</label>
+    <description>A tasty fruit, that could easy fermented into wine. Delicious even when raw.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Items/Plants/GrapesWild</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <plant>
+      <fertilitySensitivity>0.6</fertilitySensitivity>
+      <growDays>4.4</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>AR_RawGrapes</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>Items/Plants/GrapesWildImmature</immatureGraphicPath>
+      <wildClusterWeight>100</wildClusterWeight>
+      <visualSizeRange>1.3~2.0</visualSizeRange>
+      <wildClusterRadius>4</wildClusterRadius>
 		<wildBiomes>
 				<!-- RimWorld.Core -->
 				<!-- VANILLA RENDITION -->
+				
+				<AridShrubland>0.15</AridShrubland>
+				
+				<TemperateForest>0.15</TemperateForest>
+				
+				<BorealForest>0.15</BorealForest>
 
 				<BorealForest>0.001</BorealForest>
 
@@ -171,17 +206,29 @@
 				<!-- biomesteam.biomesislands -->
 				<!-- BIOMES ISLANDS -->
 				
-				<BiomesIslands_BorealIsland MayRequire="biomesteam.biomesislands">0.01</BiomesIslands_BorealIsland>
+			
+				<!-- _________________ -->
+				
+				<!-- biomesteam.biomesislands -->
+				<!-- BIOMES ISLANDS -->
+				
+				<BiomesIslands_Atoll MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_Atoll>
+				
+				<BiomesIslands_BorealIsland MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_BorealIsland>
 				
 				<BiomesIslands_DesertIsland MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_DesertIsland>
 				
-				<BiomesIslands_DesertArchipelago MayRequire="biomesteam.biomesislands">0.2</BiomesIslands_DesertArchipelago>
+				<BiomesIslands_DesertArchipelago MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_DesertArchipelago>
 				
-				<BiomesIslands_TemperateIsland MayRequire="biomesteam.biomesislands">0.03</BiomesIslands_TemperateIsland>
+				<BiomesIslands_TemperateIsland MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_TemperateIsland>
 				
-				<BiomesIslands_TemperateArchipelago MayRequire="biomesteam.biomesislands">0.03</BiomesIslands_TemperateArchipelago>
+				<BiomesIslands_TemperateArchipelago MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_TemperateArchipelago>
 				
-				<BiomesIslands_TundraIsland MayRequire="biomesteam.biomesislands">0.001</BiomesIslands_TundraIsland>
+				<BiomesIslands_TropicalIsland MayRequire="biomesteam.biomesislands">0.15</BiomesIslands_TropicalIsland>
+				
+				<BiomesIslands_TropicalArchipelago MayRequire="biomesteam.biomesislands">0.16</BiomesIslands_TropicalArchipelago>
+				
+				<BiomesIslands_TundraIsland MayRequire="biomesteam.biomesislands">0.01</BiomesIslands_TundraIsland>
 				
 				
 				
@@ -209,141 +256,6 @@
 				<!-- FOREST OF GOLD -->
 				<TemperateGuldenForest MayRequire="pphhyy.gulden">0.1</TemperateGuldenForest>
 		</wildBiomes>
-    </plant>
-  </ThingDef>
-
-  <ThingDef ParentName="PlantBase">
-    <defName>AR_PlantGrapeWild</defName>
-    <label>wild grape plant</label>
-    <description>A tasty fruit, that could easy fermented into wine. Delicious even when raw.</description>
-    <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
-      <Nutrition>0.2</Nutrition>
-    </statBases>
-    <graphicData>
-      <texPath>Items/Plants/GrapesWild</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <selectable>true</selectable>
-    <pathCost>10</pathCost>
-    <plant>
-      <fertilitySensitivity>0.6</fertilitySensitivity>
-      <growDays>4.4</growDays>
-      <dieIfLeafless>true</dieIfLeafless>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>AR_RawGrapes</harvestedThingDef>
-      <harvestYield>10</harvestYield>
-      <topWindExposure>0.1</topWindExposure>
-      <immatureGraphicPath>Items/Plants/GrapesWildImmature</immatureGraphicPath>
-      <wildClusterWeight>100</wildClusterWeight>
-      <visualSizeRange>1.3~2.0</visualSizeRange>
-      <wildClusterRadius>4</wildClusterRadius>
-      <wildBiomes>
-        <AridShrubland>0.15</AridShrubland>
-        <TemperateForest>0.15</TemperateForest>
-        <BorealForest>0.15</BorealForest>
-		
-		
-			<AB_FeraliskInfestedJungle MayRequire="sarg.alphabiomes">0.04</AB_FeraliskInfestedJungle>
-
-			<AB_GallatrossGraveyard MayRequire="sarg.alphabiomes">0.001</AB_GallatrossGraveyard>
-
-			<AB_GelatinousSuperorganism MayRequire="sarg.alphabiomes">0.01</AB_GelatinousSuperorganism>
-
-			<AB_MycoticJungle MayRequire="sarg.alphabiomes">0.04</AB_MycoticJungle>
-
-			<AB_OcularForest MayRequire="sarg.alphabiomes">0.01</AB_OcularForest>
-
-			<AB_PyroclasticConflagration MayRequire="sarg.alphabiomes">0.07</AB_PyroclasticConflagration>
-
-			<AB_RockyCrags MayRequire="sarg.alphabiomes">0.01</AB_RockyCrags>
-
-			<AB_TarPits MayRequire="sarg.alphabiomes">0.04</AB_TarPits>
-
-
-			<!-- ___________________ -->
-
-			<!-- BiomesTeam.Oasis -->
-			<!-- CHROMATIC OASIS -->
-
-			<BMT_ChromaticOasis MayRequire="BiomesTeam.Oasis">0.15</BMT_ChromaticOasis>
-
-
-			<!-- ___________________ -->
-
-			<!-- Mlie.AdvancedBiomes -->
-			<!-- ADVANCED BIOMES -->
-
-			<PoisonForest MayRequire="Mlie.AdvancedBiomes">0.01</PoisonForest>
-
-			<Wetland MayRequire="Mlie.AdvancedBiomes">0.25</Wetland>
-
-
-			<!-- ____________________ -->
-
-			<!-- zylle.MoreVanillaBiomes -->
-			<!-- More Vanilla Biomes -->
-
-			<ZBiome_AlpineMeadow MayRequire="zylle.MoreVanillaBiomes">0.03</ZBiome_AlpineMeadow>
-
-			<ZBiome_CloudForest MayRequire="zylle.MoreVanillaBiomes">0.08</ZBiome_CloudForest>
-
-			<ZBiome_CoastalDunes MayRequire="zylle.MoreVanillaBiomes">0.03</ZBiome_CoastalDunes>
-
-			<ZBiome_DesertOasis MayRequire="zylle.MoreVanillaBiomes">0.15</ZBiome_DesertOasis>
-
-			<ZBiome_Grasslands MayRequire="zylle.MoreVanillaBiomes">0.01</ZBiome_Grasslands>
-
-			<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes">0.25</ZBiome_Marsh>
-
-			<ZBiome_Sandbar_NoBeach MayRequire="zylle.MoreVanillaBiomes">0.03</ZBiome_Sandbar_NoBeach>
-
-
-			<!-- ___________________ -->
-
-			<!-- Mlie.NaturesPrettySweet -->
-			<!-- NATURE IS PRETTY SWEET -->
-
-			<TKKN_VolcanicFlow MayRequire="Mlie.NaturesPrettySweet">0.01</TKKN_VolcanicFlow>
-
-			<TKKN_RedwoodForest MayRequire="Mlie.NaturesPrettySweet">0.08</TKKN_RedwoodForest>
-
-			<TKKN_Grasslands MayRequire="Mlie.NaturesPrettySweet">0.01</TKKN_Grasslands> <!-- PRAIRIE -->
-
-			<TKKN_Oasis MayRequire="Mlie.NaturesPrettySweet">0.15</TKKN_Oasis>
-
-
-			<!-- ___________________ -->
-
-			<!-- Heis.Edo.Themed.Expansion -->
-			<!-- HISTORICALLY ACCURATE WEEABOO MOD -->
-
-			<HSBambooForest MayRequire="Heis.Edo.Themed.Expansion">0.05</HSBambooForest>
-			
-			
-				<!-- _________________ -->
-				
-				<!-- biomesteam.biomesislands -->
-				<!-- BIOMES ISLANDS -->
-				
-				<BiomesIslands_Atoll MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_Atoll>
-				
-				<BiomesIslands_BorealIsland MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_BorealIsland>
-				
-				<BiomesIslands_DesertIsland MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_DesertIsland>
-				
-				<BiomesIslands_DesertArchipelago MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_DesertArchipelago>
-				
-				<BiomesIslands_TemperateIsland MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_TemperateIsland>
-				
-				<BiomesIslands_TemperateArchipelago MayRequire="biomesteam.biomesislands">0.1</BiomesIslands_TemperateArchipelago>
-				
-				<BiomesIslands_TropicalIsland MayRequire="biomesteam.biomesislands">0.15</BiomesIslands_TropicalIsland>
-				
-				<BiomesIslands_TropicalArchipelago MayRequire="biomesteam.biomesislands">0.16</BiomesIslands_TropicalArchipelago>
-				
-				<BiomesIslands_TundraIsland MayRequire="biomesteam.biomesislands">0.01</BiomesIslands_TundraIsland>
-      </wildBiomes>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
     </plant>
@@ -376,10 +288,6 @@
       <wildClusterRadius>4</wildClusterRadius>
 	  <harvestFailable>false</harvestFailable>
 	  <fertilityMin>0.3</fertilityMin>
-      <wildBiomes>
-        <AridShrubland>0.15</AridShrubland>
-        <TemperateForest>0.03</TemperateForest>
-      </wildBiomes>
       <wildOrder>2</wildOrder>
       <topWindExposure>0.15</topWindExposure>
       <mustBeWildToSow>false</mustBeWildToSow>
@@ -390,14 +298,13 @@
       <sowResearchPrerequisites>
 		<li>AR_Project_OliveTree</li>
       </sowResearchPrerequisites>
-    </plant>
 		<wildBiomes>
 				<!-- RimWorld.Core -->
 				<!-- VANILLA RENDITION -->
 
-				<TemperateForest>0.001</TemperateForest>
-
 				<AridShrubland>0.2</AridShrubland>
+				
+				<TemperateForest>0.03</TemperateForest>
 
 				<Desert>0.1</Desert>
 
@@ -418,7 +325,7 @@
 
 				<AB_GelatinousSuperorganism MayRequire="sarg.alphabiomes">0.1</AB_GelatinousSuperorganism>
 
-				<!-- Same climate -->
+				<!-- Same climate except dryer -->
 				<AB_MechanoidIntrusion MayRequire="sarg.alphabiomes">0.2</AB_MechanoidIntrusion>
 
 				<!-- Olives look like eyes -->
@@ -535,6 +442,7 @@
 				<!-- FOREST OF GOLD -->
 				<TemperateGuldenForest MayRequire="pphhyy.gulden">0.005</TemperateGuldenForest>
 		</wildBiomes>
+    </plant>
   </ThingDef>
 
   <ThingDef ParentName="TreeBase">
