@@ -106,23 +106,18 @@
 				
 				<AridShrubland>0.15</AridShrubland>
 				
-				<TemperateForest>0.15</TemperateForest>
+				<TemperateForest>0.1</TemperateForest>
 				
-				<BorealForest>0.15</BorealForest>
-
-				<BorealForest>0.001</BorealForest>
+				<BorealForest>0.04</BorealForest>
 
 				<Tundra>0.001</Tundra>
 
 				<ColdBog>0.01</ColdBog>
 
-				<TemperateForest>0.004</TemperateForest>
-
 				<TemperateSwamp>0.001</TemperateSwamp>
 
-				<AridShrubland>0.15</AridShrubland>
 
-				<Desert>0.01</Desert>
+				<Desert>0.05</Desert>
 
 				<ExtremeDesert>0.05</ExtremeDesert>
 
