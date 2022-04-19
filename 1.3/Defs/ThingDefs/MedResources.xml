@@ -191,8 +191,7 @@
       <ingestSound>RawVegetable_Eat</ingestSound>
     </ingestible>
     <statBases>
-		<MarketValue>4</MarketValue>
-      <DeteriorationRate>1.0</DeteriorationRate>
+      <DeteriorationRate>2</DeteriorationRate>
       <MarketValue>2.5</MarketValue>
       <Mass>0.8</Mass>
       <Flammability>0.2</Flammability>
@@ -203,7 +202,7 @@
     <tickerType>Rare</tickerType>
     <comps>
 		<li Class="CompProperties_Rottable">
-			<daysToRotStart>1</daysToRotStart>
+			<daysToRotStart>3</daysToRotStart>
 			<rotDestroys>true</rotDestroys>
 		</li>
 		<li Class="CompProperties_Ingredients">
@@ -226,7 +225,7 @@
       <Nutrition>0.8</Nutrition>
     </statBases>
     <ingestible>
-		<foodType>Meal, Processed, AnimalProduct, OvivoreAnimal</foodType>
+		<foodType>Meal, Processed, AnimalProduct, OvivoreAnimal, OmnivoreHuman</foodType>
 		<preferability>MealSimple</preferability>
 		<ingestEffect>EatVegetarian</ingestEffect>
 		<tasteThought>AR_AteFryedMeal</tasteThought>
@@ -281,7 +280,7 @@
     </statBases>
     <ingestible>
 		<!-- This should fix the issue where Pawns cannot eat it -->
-		<foodType Inherit="False">Meal, Processed, Plant, VegetableOrFruit, VegetarianRoughAnimal, OmnivoreHuman</foodType>
+		<foodType Inherit="False">Meal, Processed, Plant, VegetableOrFruit, VegetarianRoughAnimal, OmnivoreHuman, Kibble</foodType>
 		<preferability>MealFine</preferability>
 		<ingestEffect>EatVegetarian</ingestEffect>
 		<tasteThought>AR_AteSalad</tasteThought>
@@ -315,7 +314,7 @@
     <ingestible>
       <foodType>Fluid, Processed, Liquor</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>0.17</joy>
+      <joy>0.19</joy>
       <nurseable>true</nurseable>
       <drugCategory>Social</drugCategory>
       <ingestSound>Ingest_Beer</ingestSound>
@@ -430,8 +429,8 @@
         <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
         <startWickHitPointsPercent>0.4</startWickHitPointsPercent>
         <wickTicks>
-          <min>9</min>
-          <max>10</max>
+          <min>15</min>
+          <max>30</max>
         </wickTicks>
       </li>
 		<li Class="CompProperties_Ingredients"></li>

@@ -235,7 +235,6 @@
 				<HSBambooForest MayRequire="Heis.Edo.Themed.Expansion">0.1</HSBambooForest>
 				
 				
-				
 				<!-- ___________________ -->
 				
 				<!-- reel.frozenforest -->
@@ -269,6 +268,7 @@
         <volume>(0.3, 0.3, 0.3)</volume>
       </shadowData>
     </graphicData>
+	<blockWind>false</blockWind>
     <plant>
       <dieIfLeafless Inherit="False">false</dieIfLeafless>
       <growDays>20</growDays>
@@ -290,9 +290,6 @@
 	  <leaflessGraphicPath>Items/Plants/Tree_OliveNotPoplar_Leafless</leaflessGraphicPath>
 	  <forceIsTree>true</forceIsTree>
 	  <harvestAfterGrowth>0.2</harvestAfterGrowth>
-      <sowResearchPrerequisites>
-		<li>AR_Project_OliveTree</li>
-      </sowResearchPrerequisites>
 		<wildBiomes>
 				<!-- RimWorld.Core -->
 				<!-- VANILLA RENDITION -->
@@ -306,7 +303,7 @@
 				<ExtremeDesert>0.05</ExtremeDesert>
 
 
-
+ 
 
 
 				<!-- ___________________ -->			
@@ -375,7 +372,7 @@
 
 				<TKKN_RedwoodForest MayRequire="Mlie.NaturesPrettySweet">0.01</TKKN_RedwoodForest>
 
-				<TKKN_Grasslands MayRequire="Mlie.NaturesPrettySweet">0.065</TKKN_Grasslands> <!-- PRAIRIE -->
+				<TKKN_Grasslands MayRequire="Mlie.NaturesPrettySweet">0.006</TKKN_Grasslands> <!-- PRAIRIE -->
 
 				<TKKN_Savanna MayRequire="Mlie.NaturesPrettySweet">0.1</TKKN_Savanna>
 
@@ -388,7 +385,7 @@
 				<!-- biomesteam.biomesislands -->
 				<!-- BIOMES ISLANDS -->
 				
-				<BiomesIslands_BorealIsland MayRequire="biomesteam.biomesislands">0.04</BiomesIslands_BorealIsland>
+				<BiomesIslands_BorealIsland MayRequire="biomesteam.biomesislands">0.001</BiomesIslands_BorealIsland>
 				
 				<BiomesIslands_DesertIsland MayRequire="biomesteam.biomesislands">0.15</BiomesIslands_DesertIsland>
 				
@@ -437,6 +434,10 @@
 				<!-- FOREST OF GOLD -->
 				<TemperateGuldenForest MayRequire="pphhyy.gulden">0.005</TemperateGuldenForest>
 		</wildBiomes>
+	  <interferesWithRoof>false</interferesWithRoof>
+      <sowResearchPrerequisites>
+		<li>AR_Project_OliveTree</li>
+      </sowResearchPrerequisites>
     </plant>
   </ThingDef>
 
@@ -452,6 +453,7 @@
         <volume>(0.3, 0.3, 0.3)</volume>
       </shadowData>
     </graphicData>
+	<blockWind>false</blockWind>
     <plant>
 	  <dieIfLeafless Inherit="False">false</dieIfLeafless>
       <growDays>20</growDays>
@@ -632,6 +634,7 @@
       <mustBeWildToSow>false</mustBeWildToSow>
 	  <forceIsTree>true</forceIsTree>
 	  <harvestAfterGrowth>0.2</harvestAfterGrowth>
+	  <interferesWithRoof>false</interferesWithRoof>
       <sowResearchPrerequisites>
 		<li>AR_Project_PomegranteTree</li>
       </sowResearchPrerequisites>

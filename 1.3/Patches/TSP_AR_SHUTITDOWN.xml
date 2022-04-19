@@ -65,6 +65,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
 		If they do, SHUT IT DOWN.
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
 		</match>
 		If the first XPATH does not exist, the original code stands. All according to plan.
@@ -216,6 +217,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel/layers</xpath>
 			<value>
 				<layers>
@@ -303,6 +305,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireHelmet"]/recipeMaker/researchPrerequisite</xpath>
 			<value>
 				<researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
@@ -347,9 +350,9 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]</xpath>
 			<value>
-				<success>Always</success>
 				<prerequisites>
 					<li>AR_Project_Mediterranean_Culture</li>
 					<li>ComplexFurniture</li>
@@ -548,7 +551,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/description</xpath>
 			<value>
-				<description>Construct Manuballistae, basically miniaturized, portable Scorpioes. Like its predecessors, a Manuballista was a torsion-based siege engines, except they were small enough to be used like later hand held crossbows.</description>
+				<description>Construct Manuballistae, which are basically miniaturized, portable Scorpioes. Like its predecessors, a Manuballista was a torsion-based siege engines, except they were small enough to be used like later hand held crossbows.</description>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -741,6 +744,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/tags</xpath>
 			<value>
 				<li>Knife</li>
@@ -1115,6 +1119,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
 			<value>
 				<li>AR_LaurelWreath</li>
@@ -1202,7 +1207,7 @@
 						  </countRange>
 						</li>
 						<li>
-							<choiceChance>10</choiceChance>
+							<choiceChance>45</choiceChance>
 							<thingDef>VFEC_Jerky</thingDef>
 							<countRange>
 								<min>20</min>
@@ -1506,6 +1511,66 @@
 					<AR_General>50</AR_General>
 				</options>
 			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
 		</match>
 	</Operation>
 </Patch>
