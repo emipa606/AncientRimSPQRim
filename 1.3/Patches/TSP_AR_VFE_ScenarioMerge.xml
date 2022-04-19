@@ -6,6 +6,7 @@
 		<xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]/scenario/parts</xpath>
 			<value>
 				<parts>

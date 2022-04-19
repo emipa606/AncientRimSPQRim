@@ -6,6 +6,9 @@
     <description>Discover the Roman and Greek ways of life, like furniture and clothing.</description>
     <baseCost>3000</baseCost>
     <techLevel>Neolithic</techLevel>
+	<prerequisites>
+		<li>Stonecutting</li>
+	</prerequisites>
     <tags>
       <li>RomanStart</li>
 	  <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>

@@ -8,6 +8,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Toga"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -18,6 +19,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Wreath"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -28,6 +30,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Togas"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -38,6 +41,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -48,6 +52,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -71,6 +76,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/apparelRequired</xpath>
 			<value>
 				<apparelRequired>
@@ -86,6 +92,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_RepublicSenator"]/apparelRequired</xpath>
 			<value>
 				<apparelRequired>
@@ -101,6 +108,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- Does this exist? -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_RepublicSenator"]/apparelRequired</xpath>
 			<value>
 				<apparelRequired>
@@ -116,6 +124,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_Centurion"]/apparelTags</xpath>
 			<value>
 				<apparelTags>
@@ -134,6 +143,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_Centurion"]/weaponTags</xpath>
 			<value>
 				<weaponTags>
@@ -151,6 +161,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_Centurion"]/apparelRequired</xpath>
 			<value>
 				<apparelRequired>
@@ -167,6 +178,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_Centurion"]/apparelTags</xpath>
 			<value>
 				<apparelTags>
@@ -185,6 +197,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelTags</xpath>
 			<value>
 				<apparelTags>
@@ -218,6 +231,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelRequired</xpath>
 			<value>
 				<li>AR_Sagum</li>
@@ -231,6 +245,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/apparelTags</xpath>
 			<value>
 				<li>RomeCivil</li>
@@ -245,6 +260,7 @@
 	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_RepublicSenator"]/apparelTags</xpath>
 			<value>
 				<li>RomeCivil</li>
@@ -259,6 +275,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]/recipeMaker/researchPrerequisite</xpath>
 			<value>
 				<researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
@@ -272,6 +289,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/recipeMaker/researchPrerequisite</xpath>
 			<value>
 				<researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>	
@@ -298,6 +316,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionHelmet"]/recipeMaker/researchPrerequisite</xpath>
 			<value>
 				<researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>	
@@ -311,6 +330,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
 			<value>
 				<prerequisites>
@@ -329,6 +349,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]</xpath>
 			<value>
+				<success>Always</success>
 				<prerequisites>
 					<li>AR_Project_Mediterranean_Culture</li>
 					<li>ComplexFurniture</li>
@@ -343,6 +364,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
 			<value>
 				<prerequisites>
@@ -364,6 +386,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
 			<value>
 				<prerequisites>
@@ -380,6 +403,7 @@
 		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="HotTubs"]/prerequisites</xpath>
 			<value>
 				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Thermaebath</li>
@@ -393,6 +417,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
 			<value>
 				<prerequisites>
@@ -409,6 +434,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_TyrianProduction"]</xpath>
 			<value>
 				<prerequisites>
@@ -424,6 +450,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/prerequisites</xpath>
 			<value>
 				<li MayRequire="oskarpotocki.vfe.classical">VFEC_TyrianProduction</li>
@@ -437,6 +464,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFEM_NobleMedievalApparel"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEM_NobleMedievalApparel"]/prerequisites</xpath>
 			<value>
 				<li MayRequire="oskarpotocki.vfe.classical">VFEC_TyrianProduction</li>
@@ -451,6 +479,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/recipeMaker/researchPrerequisite</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -461,6 +490,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]/recipeMaker/researchPrerequisite</xpath>
 			<value>
 				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>	
@@ -474,6 +504,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Tent"]/researchPrerequisites</xpath>
 			<value>
 				<researchPrerequisites>
@@ -489,6 +520,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -499,6 +531,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/label</xpath>
 			<value>
 				<label>Manuballista</label>
@@ -512,6 +545,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/description</xpath>
 			<value>
 				<description>Construct Manuballistae, basically miniaturized, portable Scorpioes. Like its predecessors, a Manuballista was a torsion-based siege engines, except they were small enough to be used like later hand held crossbows.</description>
@@ -525,6 +559,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/label</xpath>
 			<value>
 				<label>Manuballista</label>
@@ -538,6 +573,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/description</xpath>
 			<value>
 				<description>The masterpiece of Roman siege technology. The Manuballista was invented as a further, portable improvement to the Scorpio. A Manuballista was a torsion-based siege engine small enough to be a hand held crossbow (as opposed to ballistae and the Scorpio). As with its predecessors, its shooting involved "storing" kinetic energy by applying torque (force applied to a rotating object) to ropes. Releasing this launched the missile to spectacular results. It shoots diverse kinds of munitions, such as jagged stones and single pointed bolts.</description>
@@ -551,6 +587,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/thingClass</xpath>
 			<value>
 				<thingClass>ThingWithComps</thingClass>
@@ -564,6 +601,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Turret_Scorpion"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Turret_Scorpion"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -574,6 +612,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/minifiedDef</xpath>
 			<value>
 				<minifiedDef>MinifiedThing</minifiedDef>
@@ -587,6 +626,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -597,6 +637,7 @@
 		<xpath>/Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -607,6 +648,7 @@
 		<xpath>/Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -617,12 +659,14 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
 			<value>
 				<li>NeolithicRangedChief</li>
 				<li>NeolithicChief</li>
 				<li>NeolithicRangedHeavy</li>
-				<li>NeolithicRangedAdvanced</li>
+				<li>MedievalRangedHeavy</li>
+				<li>MedievalRangedAdvanced</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -633,6 +677,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
 			<value>
 				<recipeMaker>
@@ -660,6 +705,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/comps</xpath>
 			<value>
 				<li>
@@ -681,6 +727,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/statBases</xpath>
 			<value>
 				<WorkToMake>18000</WorkToMake>
@@ -713,6 +760,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/verbs/li/defaultProjectile</xpath>
 			<value>
 				<defaultProjectile>AR_Bullet_Scorpio</defaultProjectile>
@@ -726,6 +774,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewX</xpath>
 			<value>
 				<researchViewX>6</researchViewX>
@@ -739,6 +788,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewY</xpath>
 			<value>
 				<researchViewY>3</researchViewY>
@@ -752,6 +802,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
 			<value>
 				<prerequisites>
@@ -767,6 +818,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tab</xpath>
 			<value>
 				<tab>AR_ResearchTab</tab>
@@ -780,6 +832,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
 			<value>
 				<senatorResearch>
@@ -799,6 +852,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
 			<value>
 				<senatorResearch>
@@ -818,6 +872,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
 			<value>
 				<senatorResearch>
@@ -837,6 +892,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[@Name="Scutum"]/recipeMaker/researchPrerequisite</xpath>
 			<value>
 				<researchPrerequisite>VFEC_HeavyShieldMaking</researchPrerequisite>
@@ -850,6 +906,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[defName="AR_Faction_Hellas"]/caravanTraderKinds</xpath>
 			<value>
 				<caravanTraderKinds>
@@ -867,6 +924,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[defName="AR_Faction_Hellas"]/baseTraderKinds</xpath>
 			<value>
 				<baseTraderKinds>
@@ -882,6 +940,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/disallowedPrecepts</xpath>
 			<value>
 				<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
@@ -918,9 +977,9 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/disallowedMemes</xpath>
 			<value>
-				<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 				<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li> -->
@@ -944,6 +1003,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/allowedCultures</xpath>
 			<value>
 				<li>Romulus</li>
@@ -957,6 +1017,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
 			<value>
 				<li>AR_Toga</li>
@@ -970,6 +1031,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
 			<value>
 				<li>AR_LaurelWreath</li>
@@ -983,6 +1045,7 @@
 		<xpath>/Defs/MemeDef[defName="VME_Republic"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
 			<value>
 				<li>AR_Toga</li>
@@ -996,6 +1059,7 @@
 		<xpath>/Defs/MemeDef[defName="VME_Republic"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
 			<value>
 				<li>AR_LaurelWreath</li>
@@ -1009,6 +1073,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
 			<value>
 				<li>AR_Toga</li>
@@ -1022,6 +1087,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
 			<value>
 				<li>AR_LaurelWreath</li>
@@ -1035,6 +1101,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
 			<value>
 				<li>AR_Toga</li>
@@ -1061,6 +1128,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_RepublicSenator"]/apparelTags</xpath>
 			<value>
 				<apparelTags Inherit="False">
@@ -1078,6 +1146,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[@Name="VFEC_RepublicPawnBase"]</xpath>
 			<value>
 				<PawnKindDef Name="VFEC_RepublicPawnBase" Abstract="True">
@@ -1153,6 +1222,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/weaponTags</xpath>
 			<value>
 				<li>Toolagri</li>
@@ -1169,6 +1239,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/apparelTags</xpath>
 			<value>
 				<li>RomeCivil</li>
@@ -1182,6 +1253,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/weaponTags</xpath>
 			<value>
 				<li>Lance</li>
@@ -1197,6 +1269,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/weaponTags</xpath>
 			<value>
 				<li>Lance</li>
@@ -1211,6 +1284,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_RepublicArcher"]/weaponTags</xpath>
 			<value>
 				<li>BowMen</li>
@@ -1224,6 +1298,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_RepublicAuxilia"]/weaponTags</xpath>
 			<value>
 				<li>Javiliner</li>
@@ -1237,6 +1312,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_Legionnaire"]/weaponTags</xpath>
 			<value>
 				<weaponTags>
@@ -1254,6 +1330,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_Centurion"]/weaponTags</xpath>
 			<value>
 				<weaponTags>
@@ -1271,6 +1348,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_Centurion"]/apparelTags</xpath>
 			<value>
 				<apparelTags>
@@ -1288,6 +1366,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_Praetorian"]/weaponTags</xpath>
 			<value>
 				<li>RomeSoldier</li>
@@ -1305,6 +1384,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelTags</xpath>
 			<value>
 				<apparelTags>
@@ -1322,6 +1402,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
 			<value>
 				<requiredMemes>
@@ -1339,6 +1420,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 			<value>
 				<AR_Hoplite>1</AR_Hoplite>
@@ -1352,6 +1434,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Trader"]/traders</xpath>
 			<value>
 				<AR_Trader>1</AR_Trader>
@@ -1364,6 +1447,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
 			<value>
 				<AR_Citizen>30</AR_Citizen>
@@ -1377,6 +1461,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 			<value>
 				<options>
@@ -1409,6 +1494,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Settlement_RangedOnly"]/options</xpath>
 			<value>
 				<options>
