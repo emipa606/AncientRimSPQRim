@@ -166,7 +166,7 @@
   </ThingDef>
   <ThingDef ParentName="Scutum">
     <defName>AR_ScutumD</defName>
-    <label>Scutum (Testudo)</label>
+    <label>Scutum (testudo)</label>
     <equipmentType>None</equipmentType>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -321,6 +321,7 @@
     </graphicData>
     <weaponTags>
       <li>ShieldsGreek</li>
+	  <li>ShieldHoplite</li>
     </weaponTags>
     <comps>
       <li Class="PawnShields.CompProperties_Shield">
