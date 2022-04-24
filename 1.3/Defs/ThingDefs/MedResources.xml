@@ -120,6 +120,7 @@
       <texPath>Items/Stuff/Foods/OliveOil</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+	<healthAffectsPrice>true</healthAffectsPrice>
     <thingCategories>
 		<li MayRequire="VanillaExpanded.VCookE">VCE_Condiments</li>
 		<li MayRequire="tikubonn.RimSeasoning">RimSeasoning_Seasoning</li>
@@ -129,7 +130,6 @@
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
     <socialPropernessMatters>true</socialPropernessMatters>
-	<healthAffectsPrice>false</healthAffectsPrice>
     <ingestible>
 		<foodType>Processed, Fluid, Plant, VegetableOrFruit, VegetarianRoughAnimal</foodType>
 		<preferability>DesperateOnly</preferability>
@@ -142,7 +142,7 @@
 		<ingestSound>RawVegetable_Eat</ingestSound>
     </ingestible>
     <statBases>
-		<MaxHitPoints>100</MaxHitPoints>
+		<MaxHitPoints>200</MaxHitPoints>
 		<MarketValue>18</MarketValue>
 		<Mass>0.005</Mass>
 		<Flammability>2</Flammability>
@@ -177,13 +177,13 @@
     <rotatable>false</rotatable>
     <stackLimit>25</stackLimit>
     <thingCategories>
-      <li>Manufactured</li>
+		<li>Manufactured</li>
     </thingCategories>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <socialPropernessMatters>true</socialPropernessMatters>
     <ingestible>
-      <foodType>Plant, VegetarianRoughAnimal</foodType>
+      <foodType>Plant, Liquor, VegetarianRoughAnimal</foodType>
       <preferability>DesperateOnly</preferability>
       <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
@@ -192,7 +192,7 @@
     </ingestible>
     <statBases>
       <DeteriorationRate>2</DeteriorationRate>
-      <MarketValue>2.5</MarketValue>
+      <MarketValue>2</MarketValue>
       <Mass>0.8</Mass>
       <Flammability>0.2</Flammability>
       <MaxHitPoints>60</MaxHitPoints>
@@ -220,7 +220,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>28</MarketValue>
+      <MarketValue>12</MarketValue>
       <WorkToMake>300</WorkToMake>
       <Nutrition>0.8</Nutrition>
     </statBases>
@@ -247,7 +247,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>28</MarketValue>
+      <MarketValue>15</MarketValue>
       <WorkToMake>300</WorkToMake>
       <Nutrition>0.9</Nutrition>
     </statBases>
@@ -274,7 +274,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>28</MarketValue>
+      <MarketValue>13</MarketValue>
       <WorkToMake>100</WorkToMake>
       <Nutrition>0.8</Nutrition>
     </statBases>

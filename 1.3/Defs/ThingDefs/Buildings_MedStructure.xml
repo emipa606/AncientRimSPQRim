@@ -79,7 +79,7 @@
     </graphicData>
     <uiIconPath>Icon/RedWall_MenuIcon</uiIconPath>
     <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
+      <MaxHitPoints>315</MaxHitPoints>
       <WorkToBuild>150</WorkToBuild>
       <Flammability>1</Flammability>
       <Beauty>7</Beauty>
@@ -133,7 +133,7 @@
 		</li>
 		<li>
 			<damageDef>Flame</damageDef>
-			<multiplier>1.01</multiplier>
+			<multiplier>1.025</multiplier>
 		</li>
     </damageMultipliers>
     <researchPrerequisites>
