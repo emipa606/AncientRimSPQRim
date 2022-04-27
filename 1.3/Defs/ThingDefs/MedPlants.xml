@@ -549,7 +549,7 @@
 
 				<ZBiome_Grasslands MayRequire="zylle.MoreVanillaBiomes">0.2</ZBiome_Grasslands>
 
-				<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes"></ZBiome_Marsh>
+				<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes">0.35</ZBiome_Marsh>
 
 				<ZBiome_Sandbar_NoBeach MayRequire="zylle.MoreVanillaBiomes">0.04</ZBiome_Sandbar_NoBeach>
 
