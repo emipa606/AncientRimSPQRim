@@ -140,6 +140,14 @@
 						<thingDef>AR_ClassicalSculpture</thingDef>
 						<stuff>BlocksMarble</stuff>
 					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined" MayRequire="sasha.legionaryequipment">
+						<def MayRequire="sasha.legionaryequipment">StartingThing_Defined</def>
+						<thingDef MayRequire="sasha.legionaryequipment">Roman_Standard</thingDef>
+						<stuff MayRequire="sasha.legionaryequipment">AR_Bronze</stuff>
+						<count MayRequire="sasha.legionaryequipment">1</count>
+						<allowRoofed MayRequire="sasha.legionaryequipment">True</allowRoofed>
+					</li>
 
 					<!-- Scatter some things near player start -->
 					<li Class="ScenPart_ScatterThingsNearPlayerStart">

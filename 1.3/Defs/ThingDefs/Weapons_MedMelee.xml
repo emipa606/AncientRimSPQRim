@@ -3,9 +3,9 @@
   <ThingDef Name="BaseMeleeWeapon_Rome" Abstract="True" ParentName="BaseWeapon">
     <techLevel>Neolithic</techLevel>
     <smeltable>true</smeltable>
-    <thingCategories>
-      <li>WeaponsMelee</li>
-    </thingCategories>
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanMelee</li>
+	</thingCategories>
     <recipeMaker>
       <recipeUsers>
         <li>FueledSmithy</li><li>ElectricSmithy</li>
@@ -34,6 +34,7 @@
       </li>
     </comps>
   </ThingDef>
+
   <ThingDef ParentName="BaseMeleeWeapon_Rome">
     <defName>AR_Xiphos</defName>
     <label>xiphos</label>
@@ -42,22 +43,31 @@
       <texPath>Items/Weapons/Xiphos</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costStuffCount>70</costStuffCount>
+
 	<uiIconScale>1.2</uiIconScale>
 	<techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>10000</WorkToMake>
-      <Mass>0.85</Mass>
+      <Mass>0.9</Mass>
     </statBases>
     <equippedAngleOffset>-50</equippedAngleOffset>
+	<costStuffCount>90</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
+	  
+	  <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <weaponTags>
       <li>Hellenic</li>
 	  <li>MeleePiercer</li>
 	  <li>NeolithicMeleeDecent</li>
 	  <li>NeolithicMeleeAdvanced</li>
+	  <li>MedievalMeleeDecent</li>
+	  <li>MedievalMeleeAdvanced</li>
 	  <li>ClassicalTrader</li>
 	  <li>ClassicalAdvanced</li>
     </weaponTags>
@@ -105,6 +115,12 @@
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
+	  
+	  <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -124,6 +140,7 @@
         <label>handle</label>
         <capacities>
           <li>Blunt</li>
+		  <li>Poke</li>
         </capacities>
         <power>9</power>
         <cooldownTime>2</cooldownTime>

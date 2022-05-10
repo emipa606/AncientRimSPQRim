@@ -209,7 +209,7 @@
       <texPath>Items/Shields/Parma_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
-    <description>Small circular shield used by the by the Centurios and by light infantry of the Roman Legions</description>
+    <description>Small circular shield used by the by the Centurions and by light infantry of the Roman Legions.</description>
     <equipmentType>None</equipmentType>
     <techLevel>Neolithic</techLevel>
     <statBases>

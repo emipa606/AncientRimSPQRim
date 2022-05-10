@@ -5,9 +5,9 @@
     <weaponTags>
       <li>Neolithic</li>
     </weaponTags>
-    <thingCategories>
-      <li>WeaponsRanged</li>
-    </thingCategories>
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanRanged</li>
+	</thingCategories>
     <comps>
       <li>
         <compClass>CompQuality</compClass>
@@ -28,6 +28,7 @@
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
+
   <!-- ======================================================== -->
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>AR_Arrow_Gastraphetes</defName>
@@ -39,10 +40,11 @@
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>Arrow</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>26</damageAmountBase>
       <speed>51</speed>
     </projectile>
   </ThingDef>
+
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Gastraphetes</defName>
     <label>Gastraphetes</label>
@@ -56,12 +58,14 @@
 	<costStuffCount>120</costStuffCount>
     <stuffCategories>
 		<li>Metallic</li>
+		<li>Woody</li>
 	  
 		<!-- Mod support -->
 		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
 		<li MayRequire="Dubwise.Rimefeller">Composite</li>
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
     </stuffCategories>
 	<costList>
 		<WoodLog>40</WoodLog>
@@ -75,7 +79,7 @@
       <AccuracyLong>0.90</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
     </statBases>
-    <generateCommonality>0.45</generateCommonality>
+    <generateCommonality>0.5</generateCommonality>
     <weaponTags>
       <li>BowMen</li>
 	  <li>NeolithicRangedAdvanced</li>

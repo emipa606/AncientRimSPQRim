@@ -27,7 +27,6 @@
           <li>Silver</li>
           <li>Plasteel</li>
           <li>Jade</li>
-          <li>Uranium</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
@@ -36,35 +35,38 @@
   <!-- Roman -->
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_TripleDisc</defName>
-    <description>An pre-roman Armour type worn by the Italian tribe of the Samnites. Basically a torso plate decorated with three discs</description>
-    <label>Triple-disc-Armour</label>
+	<label>triple-disc armor</label>
+    <description>A pre-Roman armor type worn by the Italian tribe of the Samnites. Basically a torso plate decorated with three discs. Extremely heavy and significantly weaker than plate armor, but far easier to craft.</description>
     <graphicData>
       <texPath>Items/Apparel/TripleDiscOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costStuffCount>100</costStuffCount>
+    <costStuffCount>60</costStuffCount>
 	<stuffCategories>
+		<li>Woody</li>
 		<li>Metallic</li>
+		<li>Stony</li>
 	  
 		<!-- Mod support -->
 		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
 		<li MayRequire="Dubwise.Rimefeller">Composite</li>
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
 	</stuffCategories>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <equippedStatOffsets>
-      <MoveSpeed>-0.05</MoveSpeed>
+      <MoveSpeed>-0.15</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
-      <WorkToMake>15000</WorkToMake>
-      <Mass>5</Mass>
-      <StuffEffectMultiplierArmor>0.66</StuffEffectMultiplierArmor>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>6</Mass>
+      <StuffEffectMultiplierArmor>0.56</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>5</EquipDelay>
+      <EquipDelay>6</EquipDelay>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -75,8 +77,11 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>RomeSoldier</li>
+		<li>HellenicSoldier</li>
+		<li>RomeSoldier</li>
+		<li>MedievalMilitary</li>
 		<li>ClassicalMilitary</li>
+		<li>NeolithicAdvanced</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -84,15 +89,18 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
     <recipeMaker>
-      <skillRequirements>
-        <Crafting>3</Crafting>
-      </skillRequirements>
+		<researchPrerequisites>
+			<li>AR_Project_Light_Armour</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+		</skillRequirements>
     </recipeMaker>
   </thingDef>
 
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaSegmentata</defName>
-    <description>The standard Armour of the earliest standing armies. Made of many metal stripes.</description>
+    <description>The standard armor of the earliest standing armies. Made of many metal stripes.</description>
     <label>Lorica Segmentata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaSegmentataOnMap</texPath>
@@ -110,7 +118,7 @@
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 	</stuffCategories>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
@@ -153,14 +161,14 @@
  
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaHamata</defName>
-    <description>Early Roman chain mail, kept in the style of Greek armour from which it was derived.</description>
+    <description>Early Roman chainmail, kept in the style of Greek armor from which it was derived.</description>
     <label>Lorica Hamata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaHamataOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
@@ -231,7 +239,7 @@
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 	</stuffCategories>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
@@ -259,7 +267,9 @@
         <li>Middle</li>
       </layers>
       <tags>
+		<li>Centurion</li>
         <li>Praetorian</li>
+		<li>RomeOfficer</li>
         <li>RomeNoble</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
@@ -274,32 +284,34 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
+
   <!-- Greek -->
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_Linothorax</defName>
-    <description>A Greek kind of Armour, which is made of many glued layers of cloth.</description>
+    <description>A Greek kind of armor, which is made of many glued layers of cloth.</description>
     <label>Linothorax</label>
     <graphicData>
       <texPath>Items/Apparel/LinothoraxOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<costStuffCount>120</costStuffCount>
+	<costStuffCount>100</costStuffCount>
     <stuffCategories>
-		<li>Fabric</li>
+		<!-- <li>Fabric</li> -->
 		<li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <statBases>
-      <WorkToMake>13000</WorkToMake>
-      <Mass>7</Mass>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>5</Mass>
       <Flammability>0.6</Flammability>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>3</Insulation_Cold>
-      <Insulation_Heat>3</Insulation_Heat>
+       <!-- <StuffEffectMultiplierArmor>0.43</StuffEffectMultiplierArmor> -->
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <apparel>
@@ -318,6 +330,8 @@
         <li>Macedon</li>
 		<li>ClassicalMilitary</li>
 		<li>Tribal</li>
+		<li>MedievalMilitary</li>
+		<li>NeolithicMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -345,15 +359,15 @@
       <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
-      <WorkToMake>31000</WorkToMake>
+      <WorkToMake>8000</WorkToMake>
       <Mass>15</Mass>
-      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>15</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -375,7 +389,9 @@
         <li>HellenicSoldier</li>
 		<li>ClassicalMilitary</li>
 		<li>MedievalArmorBasic</li>
+		<li>NeolithicMilitary</li>
 		<li>Tribal</li>
+		<li>MedievalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -384,10 +400,10 @@
 	<recipeMaker>
 		<researchPrerequisite>AR_Project_Light_Armour</researchPrerequisite>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Crafting>4</Crafting>
 		</skillRequirements>
 		<recipeUsers Inherit="False">
-			<li>FueledSmithy</li><li>ElectricSmithy</li>
+			<li>FueledSmithy</li><li>ElectricSmithy</li><li>CraftingSpot</li>
 		</recipeUsers>
 	</recipeMaker>
   </thingDef>
@@ -402,10 +418,16 @@
     </graphicData>
     <costStuffCount>170</costStuffCount>
     <stuffCategories>
-      <li>Metallic</li>
+		<li>Metallic</li>
+
+		<!-- Mod Support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
@@ -433,9 +455,8 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>RomeOfficer</li>
+        <li>ClassicalMilitary</li>
         <li>HellenicHeavy</li>
-        <li>RomeNoble</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
@@ -468,8 +489,8 @@
     </thingCategories>
     <statBases>
       <WorkToMake>8000</WorkToMake>
-      <Mass>2.2</Mass>
-      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <Mass>1.8</Mass>
+      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.66</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -501,6 +522,7 @@
 		<li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
+		<li>Roman</li>
         <li>Worker</li>
 		<li>Soldier</li>
       </defaultOutfitTags>
@@ -572,6 +594,7 @@
 		<li>RoyalTier3</li>
       </tags>
       <defaultOutfitTags>
+		<li>Roman</li>
         <li>Worker</li>
 		<li>Soldier</li>
       </defaultOutfitTags>
@@ -583,7 +606,7 @@
 
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Himation</defName>
-    <description>A simple piece of cloth worn around a man's loin and over his shoulders. Women did not wear this garment because it only covered their groins and hips.</description>
+    <description>A primitive piece of cloth worn around a man's loins and over his shoulders. Women did not wear this garment because it only covered their groins and hips.</description>
     <label>himation</label>
     <graphicData>
       <texPath>Items/Apparel/HimationOnMap</texPath>

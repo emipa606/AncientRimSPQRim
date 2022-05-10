@@ -34,6 +34,9 @@
 	<li>vanillaexpanded.vmemese</li>
 	<li>sarg.alphamemes</li>
   </loadAfter>
+  <loadBefore>
+	<li>sasha.legionaryequipment</li>
+  </loadBefore>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653

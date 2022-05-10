@@ -1,9 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingCategoryDef>
-    <defName>AR_CategoryAmmo</defName>
-    <label>ballista ammo</label>
-    <parent>MortarShells</parent>
-    <iconPath>Items/Stuff/Ammo/Stones/Stones_C</iconPath>
-  </ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>AR_CategoryAmmo</defName>
+		<label>ballista ammo</label>
+		<parent>MortarShells</parent>
+		<iconPath>Items/Stuff/Ammo/Stones/Stones_C</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>TSP_AR_RomanArmorHeadgear</defName>
+		<label>Mediterranean helmets</label>
+		<parent>ArmorHeadgear</parent>
+		<iconPath>Items/Apparel/AtticOnMap</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>TSP_AR_RomanArmor</defName>
+		<label>Mediterranean armor</label>
+		<parent>ApparelArmor</parent>
+		<iconPath>Items/Apparel/LoricaMusculataRomeOnMap</iconPath>
+	</ThingCategoryDef>
 </Defs>
