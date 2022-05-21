@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Code shamelessly derived from the Starting Cloth Mod by Radiant Dawn. -->
+	<!-- https://www.steamcommunity.com/sharedfiles/filedetails/?id=1651219763 -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ScenarioDef[defName="LostTribe"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>AR_Bronze</thingDef>
+			  <count>500</count>
+			</li>
+		</value>
+	</Operation>
+</Patch>
+

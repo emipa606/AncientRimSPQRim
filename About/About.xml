@@ -26,12 +26,23 @@
       <displayName>Ancient Rim - Core</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2458180650</steamWorkshopUrl>
     </li>
+	<li>
+		<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+		<displayName>Vanilla Expanded Framework</displayName>
+		<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+	</li>
   </modDependencies>
   <loadAfter>
+	<li>oskarpotocki.vanillafactionsexpanded.core</li>
     <li>jecrell.jecstools</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>Mlie.AncientRimCore</li>
+	<li>vanillaexpanded.vmemese</li>
+	<li>sarg.alphamemes</li>
   </loadAfter>
+  <loadBefore>
+	<li>sasha.legionaryequipment</li>
+  </loadBefore>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653

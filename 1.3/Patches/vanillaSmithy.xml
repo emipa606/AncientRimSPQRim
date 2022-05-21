@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef/recipeMaker/recipeUsers/li[text()="FueledSmithy"]/..</xpath>
     <value>
-      <li>AR_Smithy_Rome</li>
+		<li>ElectricSmithy</li>
     </value>
   </Operation>
 </Patch>
