@@ -61,6 +61,10 @@
         <li>RomeSoldier</li>
         <li>Barbarian</li>
 		<li>ClassicalMilitary</li>
+		<li>HellenicSoldier</li>
+		<li>NeolithicMilitary</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -167,6 +171,7 @@
       </layers>
       <tags>
         <li>RomeSoldier</li>
+		<li>RomeLegion</li>
 		<li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
@@ -292,10 +297,11 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
+
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_GaleaCenturio</defName>
     <label>centurion's galea</label>
-    <description>An helmet of Celtic origin, but adapted and newly defined by the Roman people. It became popular in the Legions of Rome. This helmet was only worn by officers ranked centurion and above.</description>
+    <description>A helmet of Celtic origin, but adapted and newly defined by the Roman people. It became popular in the Legions of Rome. This helmet was only worn by officers ranked centurion and above.</description>
     <techLevel>Neolithic</techLevel>
     <graphicData>
       <texPath>Items/Apparel/GaleaCenturioOnMap</texPath>
@@ -342,6 +348,7 @@
       <tags>
 		<li>ClassicalMilitaryClassy</li>
 		<li>Centurion</li>
+		<li>RomeOfficer</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -404,8 +411,10 @@
       </layers>
       <tags>
         <li>RomeOfficer</li>
+		<li>HellenicSoldier</li>
         <li>HellenicHeavy</li>
         <li>RomeNoble</li>
+		<li>RomeLegion</li>
 		<li>ClassicalMilitary</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
@@ -577,7 +586,7 @@
       <SocialImpact>0.1</SocialImpact>
       <AimingDelayFactor>0.5</AimingDelayFactor>
     </equippedStatOffsets>
-    <generateCommonality>1.05</generateCommonality>
+    <generateCommonality>0.85</generateCommonality>
     <costList>
       <Silver>10</Silver>
     </costList>
@@ -595,9 +604,9 @@
       </layers>
 	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <tags>
-        <li>HellenicSoldier</li>
+        <!-- <li>HellenicSoldier</li> -->
         <li>HellenicHeavy</li>
-		<li>Macedon</li>
+		<!-- <li>Macedon</li> -->
         <li>Spartan</li>
         <li>RomeNoble</li>
 		<li>ClassicalMilitaryClassy</li>
@@ -645,7 +654,7 @@
       <EquipDelay>2.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.04</MoveSpeed>
+      <MoveSpeed>-0.02</MoveSpeed>
       <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
     <thingCategories>
@@ -714,6 +723,7 @@
       <PsychicSensitivity>-0.10</PsychicSensitivity>
       <SocialImpact>0.2</SocialImpact>
     </equippedStatOffsets>
+	<generateCommonality>0.85</generateCommonality>
     <thingCategories>
       <li>TSP_AR_RomanArmorHeadgear</li>
     </thingCategories>

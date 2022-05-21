@@ -110,6 +110,7 @@
 				<weaponTags>
 					<li>ClassicalSimple</li>
 					<li>Hellenic</li>
+					<li>Macedon</li>
 					<li>NeolithicRangedBasic</li>
 					<li>ClassicalRangedJavelin</li>
 				</weaponTags>
@@ -154,7 +155,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="Apparel_Tunic"]</xpath>
 			<value>
-				<generateCommonality>0.9</generateCommonality>
+				<generateCommonality>0.8</generateCommonality>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -171,6 +172,8 @@
 				<tags>
 					<li>Roman</li>
 					<li>RomeCivil</li>
+					<li>RomePlayer</li>
+					<li>RomeLegion</li>
 					<li>RomeNoble</li>
 					<li>RomeOfficer</li>
 					<li>RomeRoyal</li>
@@ -181,7 +184,24 @@
 					<li>Macedon</li>
 					<li>Classical</li>
 					<li>ClassicalSimple</li>
+					<li>RomeBannerman</li>
 				</tags>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/recipeMaker</xpath>
+			<value>
+				<disallowedThingDefs>
+					<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+				</disallowedThingDefs>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -206,7 +226,40 @@
 					<li>RomeOfficer</li>
 					<li>Centurion</li>
 					<li>Legate</li>
+					<li>RomeBannerman</li>
 				</tags>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Apparel_Cloth"]/apparel/bodyPartGroups</xpath>
+			<value>
+				<bodyPartGroups>
+					<li>Neck</li>
+				</bodyPartGroups>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Apparel_Cloth"]/apparel/layers</xpath>
+			<value>
+				<layers>
+					<li>VFEC_OuterShell</li>
+				</layers>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

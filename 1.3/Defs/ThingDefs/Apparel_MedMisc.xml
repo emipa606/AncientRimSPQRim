@@ -271,6 +271,7 @@
         <li>Praetorian</li>
 		<li>RomeOfficer</li>
         <li>RomeNoble</li>
+		<li>RomeBannerman</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
@@ -387,7 +388,9 @@
       </layers>
       <tags>
         <li>HellenicSoldier</li>
+		<li>RomeSoldier</li>
 		<li>ClassicalMilitary</li>
+		<li>MedievalArmor</li>
 		<li>MedievalArmorBasic</li>
 		<li>NeolithicMilitary</li>
 		<li>Tribal</li>
@@ -457,6 +460,7 @@
       <tags>
         <li>ClassicalMilitary</li>
         <li>HellenicHeavy</li>
+		<li>RomeBannerman</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
@@ -573,7 +577,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Sagum/Sagum</wornGraphicPath>
       <layers>
-        <li>Shell</li>
+		<li>VFEC_OuterShell</li>
       </layers>
       <tags>
 		<li>RomeNoble</li>
@@ -654,7 +658,7 @@
       </defaultOutfitTags>
 	  <gender>Male</gender>
     </apparel>
-    <generateCommonality>1</generateCommonality>
+    <generateCommonality>0.95</generateCommonality>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
@@ -671,6 +675,7 @@
     <costStuffCount>100</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
+	  <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
       <li>Apparel</li>
@@ -679,7 +684,7 @@
       <WorkToMake>25000</WorkToMake>
       <Mass>2.2</Mass>
       <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
     </statBases>
@@ -690,11 +695,10 @@
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
-        <li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Chalmys/Chalmys</wornGraphicPath>
       <layers>
-        <li>Shell</li>
+        <li>VFEC_OuterShell</li>
       </layers>
       <tags>
         <li>Spartan</li>
@@ -728,7 +732,7 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>5000</WorkToMake>
       <MaxHitPoints>170</MaxHitPoints>
       <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
@@ -748,7 +752,7 @@
       <wornGraphicPath>Items/Apparel/Cape/Cape2</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
-        <li>Shell</li>
+        <li>VFEC_OuterShell</li>
       </layers>
       <tags>
 		<li>Officer</li>

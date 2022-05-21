@@ -55,6 +55,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
+
   <ThingDef ParentName="Scutum">
     <defName>AR_ScutumA</defName>
     <label>Scutum (lightning)</label>

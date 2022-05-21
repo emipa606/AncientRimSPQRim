@@ -63,7 +63,7 @@
 					<WorkSpeedGlobal>0.02</WorkSpeedGlobal>
 					<PainShockThreshold>0.2</PainShockThreshold>
 					<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1</SlaveSuppressionOffset>
-					<MoveSpeed>0.25</MoveSpeed> <!-- Caesar's Aquilifer famously stormed the beaches of ancient England/Briton/Anglia at a rapid speed, inspiring the legionnaires to charge with him. It backfired. -->
+					<MoveSpeed>0.5</MoveSpeed> <!-- Caesar's Aquilifer famously stormed the beaches of ancient England/Briton/Anglia at a rapid speed, inspiring the legionnaires to charge with him. It backfired. -->
 				</equippedStatOffsets>
 			</value>
 		</match>
@@ -78,7 +78,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
 			<value>
-				<generateCommonality>0</generateCommonality> <!-- It is only capable of being spawned by the proper Aquilifer that bares it. -->
+				<generateCommonality>999</generateCommonality> <!-- It is only capable of being spawned by the proper Aquilifer that bares it. No other Pawn will ever bare it. -->
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -163,12 +163,13 @@
 			<xpath>/Defs/ThingDef[defName="Roman_Standard"]/statBases</xpath>
 			<value>
 				<statBases>
-					<MaxHitPoints>5000</MaxHitPoints>
+					<MaxHitPoints>500</MaxHitPoints>
 					<Flammability>1</Flammability>
-					<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-					<WorkToMake>30000</WorkToMake>
+					<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+					<WorkToMake>38000</WorkToMake>
 					<Mass>1.5</Mass>
 					<EquipDelay>0.1</EquipDelay>
+					<MarketValue>1000</MarketValue>
 				</statBases>
 			</value>
 		</match>
