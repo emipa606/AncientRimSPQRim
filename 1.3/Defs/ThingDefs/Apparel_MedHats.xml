@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <thingDef Name="RomeArmourHelmetMakeableBase" ParentName="RomeArmourMakeableBase" Abstract="True">
-	<!--
-    <thingCategories>
-      <li>Headgear</li>
-    </thingCategories>
-	-->
+		<thingCategories>
+			<li>TSP_AR_RomanArmorHeadgear</li>
+		</thingCategories>
   </thingDef>
  
   <!-- Roman -->
@@ -80,7 +78,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Samnite</defName>
     <label>Samnitic helmet</label>
-    <description>A pre-Roman helmet type worn by the Italian tribe of the Samnites. Though long abandoned by the armies of classical antiquity, it has seen widespread use by lower-level,  neolithic tribesmen across the galaxy.</description>
+    <description>A pre-Roman helmet type worn by the Italian tribe of the Samnites. Though long abandoned by the armies of classical antiquity, it has seen widespread use by lower-level, neolithic tribesmen across the galaxy.</description>
     <techLevel>Neolithic</techLevel>
     <graphicData>
       <texPath>Items/Apparel/SamniteOnMap</texPath>
@@ -396,7 +394,7 @@
       <PsychicSensitivity>-0.08</PsychicSensitivity>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
-    <generateCommonality>1.2</generateCommonality>
+    <generateCommonality>1.1</generateCommonality>
     <thingCategories>
       <li>TSP_AR_RomanArmorHeadgear</li>
     </thingCategories>
@@ -415,6 +413,8 @@
         <li>HellenicHeavy</li>
         <li>RomeNoble</li>
 		<li>RomeLegion</li>
+		<li>JeubWear</li>
+		<li>RomeSoldier</li>
 		<li>ClassicalMilitary</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
@@ -513,7 +513,7 @@
       <WorkToMake>6000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor> <!-- Same as Vanilla rendition Flak Helmet -->
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -575,7 +575,7 @@
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -626,7 +626,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Phrygian</defName>
     <label>Phrygian helmet</label>
-    <description>A Hellenic helmet that is named after its civilian equivalent and original inventors. Commonly worn by the soldiers of Macedonia.</description>
+    <description>A Hellenic helmet that is named after its civilian equivalent and original inventors. Commonly worn by low-ranking soldiers of Macedonia.</description>
     <techLevel>Neolithic</techLevel>
     <graphicData>
       <texPath>Items/Apparel/PhrygianOnMap</texPath>
@@ -713,7 +713,7 @@
       <WorkToMake>6000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.59</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -840,7 +840,7 @@
       <WorkToMake>6000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.54</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -926,6 +926,8 @@
 		<li>Macedon</li>
 		<li>ClassicalMilitary</li>
 		<li>Tribal</li>
+		<li>MedievalMilitary</li>
+		<li>JeubWear</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -969,6 +971,7 @@
     </equippedStatOffsets>
     <thingCategories Inherit="False">
       <li>HeadgearNoble</li>
+	  <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <apparel>
       <bodyPartGroups>
@@ -1021,12 +1024,12 @@
       <WorkToMake>4000</WorkToMake>
       <Mass>0.14</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Cold>0.60</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.80</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
     <thingCategories Inherit="False">
-		<li>Headgear</li>
+		<li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <apparel>
       <bodyPartGroups>
@@ -1039,7 +1042,10 @@
       <tags>
 		<li>Macedon</li>
 		<li>Hellenic</li>
+		<li>ST_GnomeClothing</li>
+		<li>BeetWear</li>
 		<li>JeubWear</li>
+		<li>Neolithic</li>
 		<li>Tribal</li>
 		<li>Medieval</li>
 		<li>MedievalApparel</li>

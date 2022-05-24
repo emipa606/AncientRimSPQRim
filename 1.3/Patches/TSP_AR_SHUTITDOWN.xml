@@ -266,6 +266,7 @@
 			<success>Always</success>
 			<xpath>Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/apparelTags</xpath>
 			<value>
+				<li>Hellenic</li>
 				<li>RomeCivil</li>
 				<li>RomeNoble</li>
 			</value>
@@ -750,7 +751,7 @@
 			<value>
 				<recipeMaker>
 					<skillRequirements>
-						<Crafting>7</Crafting>
+						<Crafting>8</Crafting>
 					</skillRequirements>
 					<researchPrerequisite>VFEC_Scorpion</researchPrerequisite>
 					<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
@@ -1238,7 +1239,7 @@
 						<li>Classical</li>
 					</apparelTags>
 					<inventoryOptions>
-					  <skipChance>0.5</skipChance>
+					  <skipChance>0.38</skipChance>
 					  <subOptionsChooseOne>
 						<li>
 						  <choiceChance>33</choiceChance>
@@ -1325,7 +1326,7 @@
 			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/initialResistanceRange</xpath>
 			<value>
-				<initialResistanceRange>1~6</initialResistanceRange>
+				<initialResistanceRange>1~4</initialResistanceRange>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

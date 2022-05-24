@@ -86,4 +86,79 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ResearchProjectDef[defName="pizzaTime"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="pizzaTime"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Make_CheesePizza"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="ST_CheesePizza"]/descriptionHyperlinks</xpath>
+			<value>
+				<descriptionHyperlinks>
+					<ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
+				</descriptionHyperlinks>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Make_WormPizza"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="ST_WormPizza"]/descriptionHyperlinks</xpath>
+			<value>
+				<descriptionHyperlinks>
+					<ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
+				</descriptionHyperlinks>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Make_VeggiePizza"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="ST_VeggiePizza"]/descriptionHyperlinks</xpath>
+			<value>
+				<descriptionHyperlinks>
+					<ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
+				</descriptionHyperlinks>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Make_MeatPizza"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="ST_MeatPizza"]/descriptionHyperlinks</xpath>
+			<value>
+				<descriptionHyperlinks>
+					<ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
+				</descriptionHyperlinks>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

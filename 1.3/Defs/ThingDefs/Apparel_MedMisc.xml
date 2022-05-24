@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-  <ThingDef Name="RomeArmourMakeableBase" ParentName="ApparelBase" Abstract="True">
+  <ThingDef Name="RomeArmourMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>1.0</Flammability>
@@ -9,6 +9,9 @@
       <Beauty>-4</Beauty>
       <SellPriceFactor>0.70</SellPriceFactor>
     </statBases>
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanArmor</li>
+	</thingCategories>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -16,7 +19,8 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
       <recipeUsers>
-        <li>FueledSmithy</li><li>ElectricSmithy</li>
+		<li>FueledSmithy</li>
+		<li>ElectricSmithy</li>
       </recipeUsers>
       <defaultIngredientFilter>
         <categories>
@@ -36,7 +40,7 @@
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_TripleDisc</defName>
 	<label>triple-disc armor</label>
-    <description>A pre-Roman armor type worn by the Italian tribe of the Samnites. Basically a torso plate decorated with three discs. Extremely heavy and significantly weaker than plate armor, but far easier to craft.</description>
+    <description>A pre-Roman armor type worn by the Italian tribe of the Samnites. Basically a torso plate decorated with three discs. Extremely heavy and significantly weaker than plate armor, but far easier to craft and very beautiful.</description>
     <graphicData>
       <texPath>Items/Apparel/TripleDiscOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -58,15 +62,16 @@
       <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <equippedStatOffsets>
-      <MoveSpeed>-0.15</MoveSpeed>
+      <MoveSpeed>-0.25</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
-      <WorkToMake>3000</WorkToMake>
-      <Mass>6</Mass>
-      <StuffEffectMultiplierArmor>0.56</StuffEffectMultiplierArmor>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>7</Mass>
+      <StuffEffectMultiplierArmor>0.58</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>6</EquipDelay>
+      <EquipDelay>10</EquipDelay>
+	  <Beauty>3</Beauty>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -100,7 +105,7 @@
 
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaSegmentata</defName>
-    <description>The standard armor of the earliest standing armies. Made of many metal stripes.</description>
+    <description>The standard armor of the earliest true standing armies. Made of many layers of metal strips.</description>
     <label>Lorica Segmentata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaSegmentataOnMap</texPath>
@@ -161,7 +166,7 @@
  
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaHamata</defName>
-    <description>Early Roman chainmail, kept in the style of Greek armor from which it was derived.</description>
+    <description>Early Roman chainmail, kept in the style of the Greek armor from which it was derived.</description>
     <label>Lorica Hamata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaHamataOnMap</texPath>
@@ -201,7 +206,7 @@
       </layers>
       <tags>
 		<li>Tribal</li>
-		<li>Medieval</li>
+		<!-- <li>Medieval</li> -->
 		<li>MedievalMilitary</li>
 		<li>MedievalArmorBasic</li>
         <li>RomeSoldier</li>
@@ -221,7 +226,7 @@
 
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaMusculataR</defName>
-    <description>Armour of civilized officers. Look very impressive.</description>
+    <description>Armor of civilized officers. Look very impressive.</description>
     <label>Lorica Musculata (Roman)</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaMusculataRomeOnMap</texPath>
@@ -310,7 +315,7 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-       <!-- <StuffEffectMultiplierArmor>0.43</StuffEffectMultiplierArmor> -->
+      <StuffEffectMultiplierArmor>0.43</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
@@ -348,7 +353,7 @@
 
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_LoricaMusculataL</defName>
-    <description>Armour of civilized officers. Look very impressive.</description>
+    <description>Armour of civilized officers. Corners were cut by using durable, tanned leather over the more expensive metal, but it still looks very impressive.</description>
     <label>light Lorica Musculata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaMusculataGreeceOnMap</texPath>
@@ -410,6 +415,7 @@
 		</recipeUsers>
 	</recipeMaker>
   </thingDef>
+
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaMusculataG</defName>
     <description>Armour of civilized officers. Look very impressive.</description>
@@ -478,7 +484,7 @@
   <!-- Civil -->
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Toga</defName>
-    <description>A very big piece of cloth which is looped in some layers around the body. The toga is a symbol of developed Roman culture and only free, male citizens were allowed to wear it.</description>
+    <description>A very big piece of cloth which is looped in layers around the body. The toga is a symbol of developed Roman culture and only free, male citizens were allowed to wear it.</description>
     <label>toga</label>
     <graphicData>
       <texPath>Items/Apparel/TogaOnMap</texPath>
@@ -489,7 +495,7 @@
       <li>Fabric</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <WorkToMake>8000</WorkToMake>
@@ -556,13 +562,13 @@
 		<Silver>3</Silver>
 	</costList>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <WorkToMake>13000</WorkToMake>
       <Mass>1.5</Mass>
       <StuffEffectMultiplierArmor>0.66</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.66</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
     </statBases>
@@ -596,6 +602,8 @@
 		<li>RoyalTier1</li>
 		<li>RoyalTier2</li>
 		<li>RoyalTier3</li>
+		<li>RoyalTier4</li>
+		<li>RoyalTier5</li>
       </tags>
       <defaultOutfitTags>
 		<li>Roman</li>
@@ -622,7 +630,7 @@
 	  <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <WorkToMake>900</WorkToMake>
@@ -660,12 +668,14 @@
     </apparel>
     <generateCommonality>0.95</generateCommonality>
     <recipeMaker>
-      <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+	  <recipeUsers>
+		<li>CraftingSpot</li>
+	  </recipeUsers>
     </recipeMaker>
   </thingDef>
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Chalmys</defName>
-    <description>A short coat typically worn by warriors, especially by hoplites, of the old Greece.</description>
+    <description>A short coat typically worn by warriors, especially by hoplites, of Ancient Greek city states, including Athens and Sparta.</description>
     <label>chlamys</label>
     <graphicData>
       <texPath>Items/Apparel/ChalmysOnMap</texPath>
@@ -678,7 +688,7 @@
 	  <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <WorkToMake>25000</WorkToMake>
@@ -729,7 +739,7 @@
       <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
@@ -764,6 +774,9 @@
 		<li>RoyalTier2</li>
 		<li>ClassicalMilitary</li>
 		<li>ClassicalMilitaryClassy</li>
+		<li>NeolithicHeavy</li>
+		<li>NeolithicChief</li>
+		<li>NeolithicAdvanced</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

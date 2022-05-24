@@ -207,6 +207,7 @@
   <RecipeDef ParentName="CookMealBase">
     <defName>AR_FryMeat</defName>
     <label>fry meat in olive oil</label>
+	<workAmount>300</workAmount>
     <description>Cooks a relatively simple meal by frying raw meat in fatty olive oil.</description>
 	<descriptionHyperlinks>
 		<thingDef>AR_OliveOil</thingDef>
@@ -239,7 +240,7 @@
       </li>
     </ingredients>
     <products>
-      <AR_FryedMeat>2</AR_FryedMeat>
+      <AR_FryedMeat>1</AR_FryedMeat>
     </products>
     <fixedIngredientFilter Inherit="False">
 		<categories>
@@ -272,6 +273,7 @@
 		<thingDef>AR_Salad</thingDef>
 		<thingDef>AR_FryedEgg</thingDef>
 	</descriptionHyperlinks>
+	<workAmount>1000</workAmount>
     <jobString>frying meat in olive oil en masse</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -285,7 +287,7 @@
             <li>MeatRaw</li>
           </categories>
         </filter>
-        <count>5</count>
+        <count>6</count>
       </li>
       <li>
         <filter>
@@ -330,6 +332,7 @@
 		<thingDef>AR_Salad</thingDef>
 		<thingDef>AR_FryedEgg</thingDef>
 	</descriptionHyperlinks>
+	<workAmount>1800</workAmount>
     <jobString>frying meat in olive oil en masse</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -389,6 +392,7 @@
 		<thingDef>AR_FryedMeat</thingDef>
 	</descriptionHyperlinks>
     <jobString>frying animal products in olive oil</jobString>
+	<workAmount>400</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -421,7 +425,7 @@
 		</thingDefs>
     </fixedIngredientFilter>
     <products>
-      <AR_FryedEgg>2</AR_FryedEgg>
+      <AR_FryedEgg>1</AR_FryedEgg>
     </products>
     <skillRequirements>
       <Cooking>3</Cooking>
@@ -447,6 +451,7 @@
 		<thingDef>AR_FryedMeat</thingDef>
 	</descriptionHyperlinks>
     <jobString>frying animal products in olive oil en masse</jobString>
+	<workAmount>1000</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -505,6 +510,7 @@
 		<thingDef>AR_FryedMeat</thingDef>
 	</descriptionHyperlinks>
     <jobString>frying animal products in olive oil en masse</jobString>
+	<workAmount>1500</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -563,6 +569,7 @@
 		<thingDef>AR_FryedMeat</thingDef>
 	</descriptionHyperlinks>
     <jobString>frying animal products in olive oil en masse</jobString>
+	<workAmount>2500</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -575,7 +582,7 @@
             <li>AnimalProductRaw</li>
           </categories>
         </filter>
-        <count>12</count>
+        <count>14</count>
       </li>
       <li>
         <filter>
@@ -613,7 +620,7 @@
   <RecipeDef ParentName="CookMealBase">
     <defName>AR_MakeSalad</defName>
     <label>make olive garden salad</label>
-    <description>Cook a relatively simple meal by mixing various vegetables with some olive oil dressing.</description>
+    <description>Cook a delicious, simple salad by mixing various plant matter with some olive oil dressing.</description>
 	<descriptionHyperlinks>
 		<thingDef>AR_OliveOil</thingDef>
 		<thingDef>AR_RawOlives</thingDef>
@@ -633,7 +640,7 @@
             <li>PlantFoodRaw</li>
           </categories>
         </filter>
-        <count>0.50</count>
+        <count>0.75</count>
       </li>
       <li>
         <filter>
@@ -688,7 +695,7 @@
             <li>PlantFoodRaw</li>
           </categories>
         </filter>
-        <count>4</count>
+        <count>7</count>
       </li>
       <li>
         <filter>
@@ -696,7 +703,7 @@
             <li>AR_OliveOil</li>
           </thingDefs>
         </filter>
-        <count>0.7</count> <!-- Ten units -->
+        <count>0.14</count> <!-- Twenty units -->
       </li>
     </ingredients>
     <fixedIngredientFilter Inherit="False">
@@ -712,6 +719,7 @@
     </products>
     <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     <recipeUsers>
+		<li>CraftingSpot</li>
 		<li>ElectricStove</li>
 		<li>FueledStove</li>
 		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
@@ -724,7 +732,7 @@
   <RecipeDef>
     <defName>AR_MakeAmmoStone</defName>
     <label>make ballistae stones</label>
-    <description>Chistle ammo out of rocks</description>
+    <description>Chistle ammunition out of rocks. As simple as it is deadly!</description>
     <jobString>making ballistae stones</jobString>
     <workAmount>1600</workAmount>
     <requiredGiverWorkType>Crafting</requiredGiverWorkType>
@@ -748,7 +756,7 @@
       </categories>
     </fixedIngredientFilter>
     <products>
-      <AR_AmmoStone>10</AR_AmmoStone>
+      <AR_AmmoStone>15</AR_AmmoStone>
     </products>
     <recipeUsers>
 		<li>TableStonecutter</li>
