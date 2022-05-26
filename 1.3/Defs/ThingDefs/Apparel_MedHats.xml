@@ -42,9 +42,6 @@
     <equippedStatOffsets>
       <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -103,9 +100,6 @@
       <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -156,9 +150,6 @@
       <MoveSpeed>-0.04</MoveSpeed>
       <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -266,9 +257,6 @@
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
     <generateCommonality>2</generateCommonality>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -331,9 +319,6 @@
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
     <generateCommonality>1</generateCommonality>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -395,9 +380,6 @@
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
     <generateCommonality>1.1</generateCommonality>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -463,9 +445,6 @@
       <MoveSpeed>-0.04</MoveSpeed>
       <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -523,9 +502,6 @@
       <PsychicSensitivity>-0.10</PsychicSensitivity>
       <AimingDelayFactor>0.5</AimingDelayFactor>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -590,9 +566,6 @@
     <costList>
       <Silver>10</Silver>
     </costList>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -657,9 +630,7 @@
       <MoveSpeed>-0.02</MoveSpeed>
       <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
+
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -724,9 +695,6 @@
       <SocialImpact>0.2</SocialImpact>
     </equippedStatOffsets>
 	<generateCommonality>0.85</generateCommonality>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -788,9 +756,6 @@
     <equippedStatOffsets>
       <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -851,9 +816,6 @@
       <MentalBreakThreshold>-1</MentalBreakThreshold>
       <PainShockThreshold>0.10</PainShockThreshold>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -910,9 +872,6 @@
     <equippedStatOffsets>
       <PsychicSensitivity>0.05</PsychicSensitivity>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>

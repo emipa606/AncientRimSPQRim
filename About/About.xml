@@ -31,6 +31,11 @@
 		<displayName>Vanilla Expanded Framework</displayName>
 		<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
 	</li>
+	<li>
+		<packageId>syrchalis.processor.framework</packageId>
+		<displayName>Universal Processor</displayName>
+		<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
+	</li>
   </modDependencies>
   <loadAfter>
 	<li>oskarpotocki.vanillafactionsexpanded.core</li>
@@ -39,6 +44,7 @@
     <li>Mlie.AncientRimCore</li>
 	<li>vanillaexpanded.vmemese</li>
 	<li>sarg.alphamemes</li>
+	<li>syrchalis.processor.framework</li>
   </loadAfter>
   <loadBefore>
 	<li>sasha.legionaryequipment</li>

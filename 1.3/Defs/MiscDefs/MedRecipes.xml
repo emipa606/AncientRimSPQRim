@@ -25,7 +25,7 @@
             <li>AR_RawOlives</li>
           </thingDefs>
         </filter>
-        <count>15</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>
@@ -200,6 +200,7 @@
     <recipeUsers>
 		<li>CraftingSpot</li>
 		<li>Brewery</li>
+		<li MayRequire="mlie.takisrandomstuff">ButcherSpot</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -669,6 +670,8 @@
 		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
 		<li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
 		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
     </recipeUsers>
   </RecipeDef>
   
@@ -725,6 +728,8 @@
 		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
 		<li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
 		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -732,7 +737,7 @@
   <RecipeDef>
     <defName>AR_MakeAmmoStone</defName>
     <label>make ballistae stones</label>
-    <description>Chistle ammunition out of rocks. As simple as it is deadly!</description>
+    <description>Chistle ammunition out of rocks. It is as simple as it is deadly!</description>
     <jobString>making ballistae stones</jobString>
     <workAmount>1600</workAmount>
     <requiredGiverWorkType>Crafting</requiredGiverWorkType>
@@ -747,7 +752,7 @@
             <li>StoneChunks</li>
           </categories>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -765,6 +770,10 @@
 		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
 		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
 		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneChippingSpot</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_CiYao_Fire</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Chi_CiYao</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
   </RecipeDef>
@@ -772,7 +781,7 @@
   <RecipeDef>
     <defName>AR_MakeAmmoFire</defName>
     <label>make ballistae incendiary ammo</label>
-    <description>build some fireballs</description>
+    <description>Build some fireballs!</description>
     <jobString>making ballistae incendiary ammo</jobString>
     <workAmount>1600</workAmount>
     <requiredGiverWorkType>Crafting</requiredGiverWorkType>
@@ -818,6 +827,10 @@
 		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
 		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
 		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneChippingSpot</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_CiYao_Fire</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Chi_CiYao</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
   </RecipeDef>

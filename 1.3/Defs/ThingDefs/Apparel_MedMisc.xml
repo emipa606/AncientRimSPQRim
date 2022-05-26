@@ -58,9 +58,6 @@
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
 	</stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
     </equippedStatOffsets>
@@ -122,16 +119,13 @@
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 	</stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
       <WorkToMake>28000</WorkToMake>
       <Mass>15</Mass>
-      <StuffEffectMultiplierArmor>0.87</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor> <!-- For reference, 0.7 is FLAK Armor -->
       <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>15</EquipDelay>
@@ -172,27 +166,29 @@
       <texPath>Items/Apparel/LoricaHamataOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
     </equippedStatOffsets>
 	<generateCommonality>0.4</generateCommonality>
     <statBases>
-      <WorkToMake>6000</WorkToMake>
-      <MaxHitPoints>300</MaxHitPoints>
-      <Mass>15</Mass>
-      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.27</ArmorRating_Heat>
-      <Insulation_Cold>1</Insulation_Cold>
-      <Insulation_Heat>1</Insulation_Heat>
-      <EquipDelay>15</EquipDelay>
+		<WorkToMake>6000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+		<Mass>15</Mass>
+		<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor> <!-- For reference, 0.7 is Flak Armor -->
+		<Insulation_Cold>1</Insulation_Cold>
+		<Insulation_Heat>1</Insulation_Heat>
+		<EquipDelay>15</EquipDelay>
     </statBases>
-    <costList>
-      <AR_Iron>70</AR_Iron>
-    </costList>
+    <costStuffCount>70</costStuffCount>
+	<stuffCategories>
+		<li>Metallic</li>
+	  
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	</stuffCategories>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -243,9 +239,6 @@
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 	</stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
       <WorkToMake>32000</WorkToMake>
@@ -305,9 +298,6 @@
 		<!-- <li>Fabric</li> -->
 		<li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <Mass>5</Mass>
@@ -364,9 +354,6 @@
     <stuffCategories>
       <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
       <WorkToMake>8000</WorkToMake>
@@ -435,9 +422,6 @@
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
       <WorkToMake>31000</WorkToMake>
@@ -494,9 +478,6 @@
     <stuffCategories>
       <li>Fabric</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <Mass>1.8</Mass>
@@ -561,9 +542,6 @@
 	<costList>
 		<Silver>3</Silver>
 	</costList>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>13000</WorkToMake>
       <Mass>1.5</Mass>
@@ -629,9 +607,6 @@
       <li>Fabric</li>
 	  <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>900</WorkToMake>
       <Mass>1.5</Mass>
@@ -687,9 +662,6 @@
       <li>Fabric</li>
 	  <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>25000</WorkToMake>
       <Mass>2.2</Mass>
@@ -738,9 +710,6 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
       <MaxHitPoints>170</MaxHitPoints>
