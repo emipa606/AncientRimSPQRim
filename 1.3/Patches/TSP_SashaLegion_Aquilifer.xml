@@ -13,17 +13,17 @@
 					<defName>TSP_AR_Aquilifer</defName>
 					<label>Aqulifer</label>
 					<labelPlural>Aquiliferis</labelPlural>
+					<defaultFactionType>AR_Faction_Rome</defaultFactionType>
 					<minGenerationAge>30</minGenerationAge>
 					<maxGenerationAge>45</maxGenerationAge>
 					<isFighter>true</isFighter>
 					<!-- <fixedGender>Male</fixedGender> -->
 					<itemQuality>Legendary</itemQuality>
 					<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-					<backstoryCryptosleepChance>0.1</backstoryCryptosleepChance>
-					<backstoryFiltersOverride>
-					  <li>
-						<categoriesAdulthood>
-							<li>ImperialFighter</li>
+					<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+					<backstoryFiltersOverride MayRequire="shavius.classical.flavour" Inherit="False">
+					  <li MayRequire="shavius.classical.flavour">
+						<categoriesAdulthood MayRequire="shavius.classical.flavour">
 							<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
 						</categoriesAdulthood>
 					  </li>
@@ -36,6 +36,10 @@
 						<min>2</min>
 						<max>7</max>
 					</gearHealthRange>
+					<weaponMoney>
+						<min>300</min>
+						<max>1000</max>
+					</weaponMoney>
 					<apparelMoney>
 						<min>1500</min>
 						<max>3000</max>
@@ -44,15 +48,17 @@
 						<li>RomeCivil</li>
 						<li>RomeNoble</li>
 						<li>RomeBannerman</li>
+						<li>RomeOfficer</li>
+						<li>Legate</li>
 						<li>ClassicalMilitaryClassy</li>
 					</apparelTags>
 					<weaponTags Inherit="False">
-						<li>Aquila</li>
+						<!-- <li>Aquila</li> --> <!-- Duplicate of the Shield Tags -->
 						<li>Lance</li>
 						<li>LongSword</li>
 						<li>RomeOfficer</li>
 						<li>Praetorian</li>
-						<li>MeleePiercer</li>
+						<li>Monosword</li>
 						<li>MedievalHeavy</li>
 						<li>MedievalMeleeHeavy</li>
 						<li>MedievalMeleeAdvanced</li>
@@ -68,9 +74,9 @@
 					</techHediffsMoney>
 					<techHediffsTags>
 						<li>Simple</li>
+						<li>ImperialCommon</li>
 					</techHediffsTags>
 					<techHediffsChance>0.04</techHediffsChance>
-					<techHediffsMoney>1000~1500</techHediffsMoney>
 					<techHediffsRequired>
 						<li>DeathAcidifier</li>
 					</techHediffsRequired>
@@ -83,8 +89,11 @@
 							<bodyPartGroup MayRequire="oskarpotocki.vfe.classical">UpperHead</bodyPartGroup>
 							<stuff>Gold</stuff>
 						</li>
+						<li>
+							<bodyPartGroup MayRequire="oskarpotocki.vfe.classical">FullHead</bodyPartGroup>
+							<stuff>Gold</stuff>
+						</li>
 						<li MayRequire="oskarpotocki.vfe.classical">
-							<bodyPartGroup MayRequire="oskarpotocki.vfe.classical">Neck</bodyPartGroup>
 							<requiredTag MayRequire="oskarpotocki.vfe.classical">Cape</requiredTag>
 							<stuff MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</stuff>
 						</li>

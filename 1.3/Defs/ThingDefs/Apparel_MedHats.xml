@@ -270,6 +270,7 @@
       <tags>
         <li>Praetorian</li>
 		<li>RomeOfficer</li>
+		<li>Centurion</li>
 		<li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
@@ -694,7 +695,7 @@
       <PsychicSensitivity>-0.10</PsychicSensitivity>
       <SocialImpact>0.2</SocialImpact>
     </equippedStatOffsets>
-	<generateCommonality>0.85</generateCommonality>
+	<generateCommonality>0.8</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -864,7 +865,7 @@
       <WorkToMake>4500</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor> <!-- By comparison, FLAK Armor is 0.7 -->
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -944,7 +945,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>RomanEmperor</li>
+        <li>RomeEmperor</li>
 		<li>ClassicalWreath</li>
 		<li>JeubKing</li>
 		<li>GnomeKing</li>

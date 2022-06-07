@@ -165,10 +165,10 @@
 				<statBases>
 					<MaxHitPoints>500</MaxHitPoints>
 					<Flammability>1</Flammability>
-					<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+					<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
 					<WorkToMake>38000</WorkToMake>
 					<Mass>2</Mass>
-					<EquipDelay>0.1</EquipDelay>
+					<EquipDelay>0.01</EquipDelay>
 					<MarketValue>1000</MarketValue>
 				</statBases>
 			</value>
@@ -187,6 +187,7 @@
 				<recipeUsers Inherit="False">
 					<li>ElectricSmithy</li>
 					<li>FueledSmithy</li>
+					<li>MachiningTable</li>
 				</recipeUsers>
 				<skillRequirements>
 					<Crafting>10</Crafting>
@@ -334,6 +335,22 @@
 			<xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]</xpath>
 			<value>
 				<generateCommonality>999</generateCommonality> <!-- Always appears on the Aquilifer -->
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>TSP_AR_RomanArmor</li>
+				</thingCategories>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

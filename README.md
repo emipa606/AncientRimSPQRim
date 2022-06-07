@@ -5,13 +5,15 @@
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653
 
-Added integrations with https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene
-- The fountains are considered Basins
-- Aqueduct can carry water as pipes
-- Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
+- Added integrations with https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene
+  * The fountains are considered Basins
+  * Aqueduct can carry water as pipes
+  * Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
+
 - Added grapes and olives from https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826]VGP to recipes
 - Scenario can be found using https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073]The Ancient Rims by Raven
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke
+- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=852103845][K]Extra Stone for mosaik-floors
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -44,6 +46,7 @@ I haven't tested the mod much for compatibility issues with other mods but Ancie
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

@@ -145,6 +145,7 @@
         <li>Soldier</li>
       </defaultOutfitTags>
 	  <tags>
+		<li>HellenicSoldier</li>
 		<li>ClassicalMilitary</li>
 		<li>ClassicalMilitaryClassy</li>
 	  </tags>
@@ -153,7 +154,7 @@
     <recipeMaker>
       <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
       <skillRequirements>
-        <Crafting>10</Crafting>
+        <Crafting>7</Crafting>
       </skillRequirements>
     </recipeMaker>
   </thingDef>
@@ -169,7 +170,7 @@
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
     </equippedStatOffsets>
-	<generateCommonality>0.4</generateCommonality>
+	<generateCommonality>0.6</generateCommonality>
     <statBases>
 		<WorkToMake>6000</WorkToMake>
 		<MaxHitPoints>300</MaxHitPoints>
@@ -207,6 +208,7 @@
 		<li>MedievalArmorBasic</li>
         <li>RomeSoldier</li>
 		<li>ClassicalMilitary</li>
+		<li>HellenicSoldier</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -336,7 +338,7 @@
     <recipeMaker>
       <researchPrerequisite>AR_Project_Light_Armour</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>2</Crafting>
       </skillRequirements>
     </recipeMaker>
   </thingDef>
@@ -458,7 +460,7 @@
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
@@ -474,7 +476,7 @@
       <texPath>Items/Apparel/TogaOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costStuffCount>200</costStuffCount>
+    <costStuffCount>120</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
     </stuffCategories>
@@ -503,7 +505,7 @@
         <li>RomeCivil</li>
         <li>RomePlayer</li>
         <li>RomeNoble</li>
-		<li>RomanEmperor</li>
+		<li>RomeEmperor</li>
 		<li>Classical</li>
 		<li>JeubKing</li>
 		<li>JeubWear</li>
@@ -567,12 +569,13 @@
 		<li>RomeNoble</li>
 		<li>RomeOfficer</li>
 		<li>Praetorian</li>
-		<li>RomanEmperor</li>
-		<li>RomePlayer</li>
+		<li>RomeEmperor</li>
+		<!-- <li>RomePlayer</li> -->
 		<li>HellenicHeavy</li>
 		<li>Cape</li>
 		<li>BeetElite</li>
 		<li>JeubKing</li>
+		<li>Gnoble</li>
 		<li>King</li>
 		<li>FrenchNapoleonsUniformApparel</li>
 		<li>ClassicalMilitaryClassy</li>
@@ -633,6 +636,7 @@
 		<li>Neolithic</li>
 		<li>ST_BeetClothing</li>
 		<li>Classical</li>
+		<li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
 		<li>Worker</li>
@@ -648,6 +652,7 @@
 	  </recipeUsers>
     </recipeMaker>
   </thingDef>
+
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Chalmys</defName>
     <description>A short coat typically worn by warriors, especially by hoplites, of Ancient Greek city states, including Athens and Sparta.</description>
@@ -685,6 +690,7 @@
       <tags>
         <li>Spartan</li>
 		<li>ClassicalMilitary</li>
+		<li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

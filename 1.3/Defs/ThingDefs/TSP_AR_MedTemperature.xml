@@ -228,7 +228,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
-        <li>Rock</li>
+        <li>Wall</li>
       </linkFlags>
       <shaderType>CutoutComplex</shaderType>
       <damageData>
@@ -250,7 +250,7 @@
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
-      <Cleanliness>7</Cleanliness>
+      <Cleanliness>5</Cleanliness>
 	  <MarketValue>10</MarketValue> <!-- Lessen wealth calculations -->
     </statBases>
     <stuffCategories>
@@ -263,11 +263,11 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>8</costStuffCount>
+    <costStuffCount>15</costStuffCount>
     <passability>PassThroughOnly</passability>
     <pathCost>1</pathCost> <!-- Aqueducts were bridges. That makes them easy to walk under. -->
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.99</fillPercent>
+    <fillPercent>0.33</fillPercent> <!-- Bridges over one's head -->
     <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Normal</tickerType>
@@ -285,11 +285,11 @@
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
     </placeWorkers>
-    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>-5</heatPerSecond>
-        <heatPushMinTemperature>20</heatPushMinTemperature>
+        <heatPushMinTemperature>16</heatPushMinTemperature>
       </li>
     </comps>
     <designationCategory>Temperature</designationCategory>
@@ -327,39 +327,38 @@
     <canOverlapZones>false</canOverlapZones>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
-      <WorkToBuild>2000</WorkToBuild>
+      <WorkToBuild>5000</WorkToBuild>
       <Flammability>0</Flammability>
     </statBases>
     <selectable>true</selectable>
-    <costList>
-      <WoodLog>20</WoodLog>
-    </costList>
     <stuffCategories>
-      <li>Metallic</li>
-      <li>Stony</li>
-	  
+		<li>Metallic</li>
+		<li>Stony</li>
+
 		<!-- Mod support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>60</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>1.5</fuelConsumptionRate>
+        <fuelConsumptionRate>1.2</fuelConsumptionRate>
         <fuelCapacity>50</fuelCapacity>
-        <fuelConsumptionPerTickInRain>0.006</fuelConsumptionPerTickInRain>
+        <fuelConsumptionPerTickInRain>0.1</fuelConsumptionPerTickInRain>
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
+			<li>Chemfuel</li>
+			<li MayRequire="sihv.rombones">BoneItem</li>
           </thingDefs>
         </fuelFilter>
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0</initialFuelPercent>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>
@@ -368,7 +367,7 @@
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>21</heatPerSecond>
-        <heatPushMaxTemperature>28</heatPushMaxTemperature>
+        <heatPushMaxTemperature>24</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_FireOverlay">
         <fireSize>1</fireSize>

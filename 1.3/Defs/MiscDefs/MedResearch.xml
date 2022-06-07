@@ -26,6 +26,7 @@
     <baseCost>400</baseCost>
     <prerequisites>
       <li>AR_Project_Mediterranean_Culture</li>
+	  <li>Stonecutting</li>
     </prerequisites>
     <techLevel>Neolithic</techLevel>
     <tags>
@@ -58,7 +59,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_PomegranteTree</defName>
     <label>Pomegranate Tree</label>
-    <description>Sow Pomegranate trees which yield a sweet fruit</description>
+    <description>Sow Pomegranate trees, which yield a sweet fruit.</description>
     <baseCost>500</baseCost>
     <prerequisites>
       <li>TreeSowing</li>
