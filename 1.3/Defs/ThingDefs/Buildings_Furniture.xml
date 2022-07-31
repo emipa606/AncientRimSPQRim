@@ -425,7 +425,7 @@
         <heatPushMinTemperature>21</heatPushMinTemperature>
       </li>
       <li Class="CompProperties_Art">
-        <nameMaker>ArtDescription_Furniture</nameMaker>
+        <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
@@ -493,7 +493,7 @@
         <heatPushMinTemperature>21</heatPushMinTemperature>
       </li>
       <li Class="CompProperties_Art">
-        <nameMaker>ArtDescription_Furniture</nameMaker>
+        <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
@@ -518,7 +518,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
-        <li>Rock</li>
+        <li>Custom6</li>
       </linkFlags>
       <shaderType>CutoutComplex</shaderType>
       <damageData>
