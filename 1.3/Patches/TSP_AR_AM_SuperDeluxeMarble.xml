@@ -43,84 +43,84 @@
 			<xpath>/Defs</xpath>
 			<value>
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanA</defName>
+					<defName>TSP_AR_SuperMosaikRomanA</defName>
 					<label>pristine marble mosaik variant A</label>
 					<texturePath>Floors/romanfloor01</texturePath>
 					<uiIconPath>Floors/romanfloor01icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanB</defName>
+					<defName>TSP_AR_Super_MosaikRomanB</defName>
 					<label>pristine marble mosaik variant B</label>
 					<texturePath>Floors/romanfloor02</texturePath>
 					<uiIconPath>Floors/romanfloor02icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanC</defName>
+					<defName>TSP_AR_SuperMosaikRomanC</defName>
 					<label>pristine marble mosaik variant C</label>
 					<texturePath>Floors/romanfloor03</texturePath>
 					<uiIconPath>Floors/romanfloor03icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanD</defName>
+					<defName>TSP_AR_SuperMosaikRomanD</defName>
 					<label>pristine marble mosaik variant D</label>
 					<texturePath>Floors/romanfloor04</texturePath>
 					<uiIconPath>Floors/romanfloor04icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanE</defName>
+					<defName>TSP_AR_SuperMosaikRomanE</defName>
 					<label>pristine marble mosaik variant E</label>
 					<texturePath>Floors/romanfloor05</texturePath>
 					<uiIconPath>Floors/romanfloor05icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanF</defName>
+					<defName>TSP_AR_SuperMosaikRomanF</defName>
 					<label>pristine marble mosaik variant F</label>
 					<texturePath>Floors/romanfloor06</texturePath>
 					<uiIconPath>Floors/romanfloor06icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanG</defName>
+					<defName>TSP_AR_SuperMosaikRomanG</defName>
 					<label>pristine marble mosaik variant G</label>
 					<texturePath>Floors/romanfloor07</texturePath>
 					<uiIconPath>Floors/romanfloor07icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanH</defName>
+					<defName>TSP_AR_SuperMosaikRomanH</defName>
 					<label>pristine marble mosaik variant H</label>
 					<texturePath>Floors/romanfloor08</texturePath>
 					<uiIconPath>Floors/romanfloor08icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanI</defName>
+					<defName>TSP_AR_SuperMosaikRomanI</defName>
 					<label>pristine marble mosaik variant I</label>
 					<texturePath>Floors/romanfloor09</texturePath>
 					<uiIconPath>Floors/romanfloor09icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanJ</defName>
+					<defName>TSP_AR_SuperMosaikRomanJ</defName>
 					<label>pristine marble mosaik variant J</label>
 					<texturePath>Floors/romanfloor10</texturePath>
 					<uiIconPath>Floors/romanfloor10icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanK</defName>
+					<defName>TSP_AR_SuperMosaikRomanK</defName>
 					<label>pristine marble mosaik variant K</label>
 					<texturePath>Floors/romanfloor11</texturePath>
 					<uiIconPath>Floors/romanfloor11icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_AM_PristineMarbleBase">
-					<defName>AR_MosaikRomanL</defName>
+					<defName>TSP_AR_SuperMosaikRomanL</defName>
 					<label>pristine marble mosaik variant L</label>
 					<texturePath>Floors/romanfloor12</texturePath>
 					<uiIconPath>Floors/romanfloor12icon</uiIconPath>

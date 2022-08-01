@@ -42,84 +42,84 @@
 			<xpath>/Defs</xpath>
 			<value>
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanA</defName>
+					<defName>AR_Fake_MosaikRomanA</defName>
 					<label>imitation mosaik variant A</label>
 					<texturePath>Floors/romanfloor01</texturePath>
 					<uiIconPath>Floors/romanfloor01icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanB</defName>
+					<defName>AR_Fake_MosaikRomanB</defName>
 					<label>intimation mosaik variant B</label>
 					<texturePath>Floors/romanfloor02</texturePath>
 					<uiIconPath>Floors/romanfloor02icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanC</defName>
+					<defName>AR_Fake_MosaikRomanC</defName>
 					<label>imitation mosaik variant C</label>
 					<texturePath>Floors/romanfloor03</texturePath>
 					<uiIconPath>Floors/romanfloor03icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanD</defName>
+					<defName>AR_Fake_MosaikRomanD</defName>
 					<label>imitation mosaik variant D</label>
 					<texturePath>Floors/romanfloor04</texturePath>
 					<uiIconPath>Floors/romanfloor04icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanE</defName>
+					<defName>AR_Fake_MosaikRomanE</defName>
 					<label>imitation mosaik variant E</label>
 					<texturePath>Floors/romanfloor05</texturePath>
 					<uiIconPath>Floors/romanfloor05icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanF</defName>
+					<defName>AR_Fake_MosaikRomanF</defName>
 					<label>imitation mosaik variant F</label>
 					<texturePath>Floors/romanfloor06</texturePath>
 					<uiIconPath>Floors/romanfloor06icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanG</defName>
+					<defName>AR_Fake_MosaikRomanG</defName>
 					<label>imitation mosaik variant G</label>
 					<texturePath>Floors/romanfloor07</texturePath>
 					<uiIconPath>Floors/romanfloor07icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanH</defName>
+					<defName>AR_Fake_MosaikRomanH</defName>
 					<label>imitation mosaik variant H</label>
 					<texturePath>Floors/romanfloor08</texturePath>
 					<uiIconPath>Floors/romanfloor08icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanI</defName>
+					<defName>AR_Fake_MosaikRomanI</defName>
 					<label>imitation mosaik variant I</label>
 					<texturePath>Floors/romanfloor09</texturePath>
 					<uiIconPath>Floors/romanfloor09icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanJ</defName>
+					<defName>AR_Fake_MosaikRomanJ</defName>
 					<label>imitation mosaik variant J</label>
 					<texturePath>Floors/romanfloor10</texturePath>
 					<uiIconPath>Floors/romanfloor10icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanK</defName>
+					<defName>AR_Fake_MosaikRomanK</defName>
 					<label>imitation mosaik variant K</label>
 					<texturePath>Floors/romanfloor11</texturePath>
 					<uiIconPath>Floors/romanfloor11icon</uiIconPath>
 				</terrainDef>
 
 				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_MosaikRomanL</defName>
+					<defName>AR_Fake_MosaikRomanL</defName>
 					<label>imitation mosaik variant L</label>
 					<texturePath>Floors/romanfloor12</texturePath>
 					<uiIconPath>Floors/romanfloor12icon</uiIconPath>

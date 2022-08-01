@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.3.7 - Fixed the smith-graphic and mosaic marble def
+
+
 1.3.6 - Added 12 new marble mosaik floors, graphics by Hydromancer. Increased the beauty for mosaik floors from 4 to 5 to be more in line with other floors.
 
 
