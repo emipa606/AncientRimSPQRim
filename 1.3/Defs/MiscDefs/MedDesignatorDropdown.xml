@@ -12,4 +12,8 @@
 	<DesignatorDropdownGroupDef>
 		<defName>TSP_AR_SpecialMarble_Mosaik</defName>
 	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>TSP_AR_SpecialConcrete_Mosaik</defName>
+	</DesignatorDropdownGroupDef>
 </Defs>

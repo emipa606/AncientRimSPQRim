@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-  <terrainDef Abstract="True" ParentName="FloorBase" Name="MosaikBase">
+  <terrainDef Abstract="True" ParentName="FloorBase" Name="RoundMosaikBase">
     <renderPrecedence>220</renderPrecedence>
     <description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples.</description>
     <texturePath>Floors/roundish</texturePath>
@@ -22,7 +22,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </terrainDef>
 
-  <terrainDef ParentName="MosaikBase">
+  <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikSandstone</defName>
     <label>roundish sandstone mosaic</label>
     <color>(126,104,94)</color>
@@ -30,7 +30,8 @@
       <BlocksSandstone>20</BlocksSandstone>
     </costList>
   </terrainDef>
-  <terrainDef ParentName="MosaikBase">
+  
+  <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikGranite</defName>
     <label>roundish granite mosaic</label>
     <color>(105,95,97)</color>
@@ -38,7 +39,7 @@
       <BlocksGranite>20</BlocksGranite>
     </costList>
   </terrainDef>
-  <terrainDef ParentName="MosaikBase">
+  <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikLimestone</defName>
     <label>roundish limestone mosaic</label>
     <color>(158,153,135)</color>
@@ -46,7 +47,8 @@
       <BlocksLimestone>20</BlocksLimestone>
     </costList>
   </terrainDef>
-  <terrainDef ParentName="MosaikBase">
+  
+  <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikMarble</defName>
     <label>roundish marble mosaic</label>
     <color>(132,135,132)</color>
@@ -54,7 +56,7 @@
       <BlocksMarble>20</BlocksMarble>
     </costList>
   </terrainDef>
-  <terrainDef ParentName="MosaikBase">
+  <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikSlate</defName>
     <label>roundish slate mosaic</label>
     <texturePath>Floors/roundishnegative</texturePath>
@@ -64,7 +66,7 @@
     </costList>
   </terrainDef>
 
-	<terrainDef ParentName="MosaikBase" MayRequire="oskarpotocki.vfe.classical">
+	<terrainDef ParentName="RoundMosaikBase" MayRequire="oskarpotocki.vfe.classical">
 		<defName MayRequire="oskarpotocki.vfe.classical">TSP_AR_VFE_Mosaik_BloatConcrete</defName>
 		<label MayRequire="oskarpotocki.vfe.classical">roundish concrete mosaic</label>
 		<texturePath MayRequire="oskarpotocki.vfe.classical">Floors/roundishnegative</texturePath>
