@@ -896,7 +896,7 @@
 				<li>
 					<compClass>CompQuality</compClass>
 				</li>
-				<li Class="CompProperties_Biocodable"/>
+				<li Class="CompProperties_Biocodable"></li>
 				<li Class="CompProperties_Art">
 					<nameMaker>NamerArtWeaponGun</nameMaker>
 					<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
