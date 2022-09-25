@@ -139,7 +139,7 @@
 		<optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
 		<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 		<ingestEffect>EatVegetarian</ingestEffect>
-		<ingestSound>RawVegetable_Eat</ingestSound>
+		<ingestSound>Ingest_Drink</ingestSound>
     </ingestible>
     <statBases>
 		<MaxHitPoints>200</MaxHitPoints>
