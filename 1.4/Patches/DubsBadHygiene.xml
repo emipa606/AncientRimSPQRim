@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "WaterTowerS"]</xpath>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="BasedWaterTower">
+              <defName>AR_cistern</defName>
+              <label>water cistern</label>
+              <description>Stores water for use by plumbed fixtures. If the contained water becomes contaminated, it must be emptied.</description>
+              <graphicData>
+                <texPath>Buildings/Furniture/cistern</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(1,1)</drawSize>
+              </graphicData>
+              <blockWind>false</blockWind>
+              <size>(1,1)</size>
+              <stuffCategories>
+                <li>Metallic</li>
+                <li>Stony</li>
+              </stuffCategories>
+              <costStuffCount>30</costStuffCount>
+              <comps>
+                <li Class="DubsBadHygiene.CompProperties_WaterStorage">
+                  <WaterStorageCap>2000</WaterStorageCap>
+                  <AutoOnRain>True</AutoOnRain>
+                  <AutoGenRate>10</AutoGenRate>
+                </li>
+              </comps>
+              <statBases>
+                <MaxHitPoints>55</MaxHitPoints>
+                <WorkToBuild>1000</WorkToBuild>
+                <Flammability>0.3</Flammability>
+                <Beauty>-5</Beauty>
+              </statBases>
+            </ThingDef>
+            <ThingDef ParentName="BasedHygieneMom" DBHLite="true">
+              <defName>Cloaca</defName>
+              <label>cloaca</label>
+              <description>Can be placed anywhere. Sewage will pool and spread on land or disperse in water. Sewage cleans up over time; the presence of trees, water, or rain will speed this up.</description>
+              <graphicData>
+                <texPath>Buildings/Furniture/Cloaca/cloaca</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3,3)</drawSize>
+                <damageData>
+                  <rect>(0.05,0.05,0.95,0.95)</rect>
+                </damageData>
+              </graphicData>
+              <size>(1,1)</size>
+              <category>Building</category>
+              <tickerType>Normal</tickerType>
+              <drawerType>RealtimeOnly</drawerType>
+              <altitudeLayer>Building</altitudeLayer>
+              <passability>PassThroughOnly</passability>
+              <blockWind>false</blockWind>
+              <castEdgeShadows>false</castEdgeShadows>
+              <pathCost>60</pathCost>
+              <uiIconPath>Buildings/Furniture/Cloaca/cloaca_ui</uiIconPath>
+              <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+              <stuffCategories>
+                <li>Stony</li>
+              </stuffCategories>
+              <costStuffCount>50</costStuffCount>
+              <building>
+                <watchBuildingStandDistanceRange>
+                  <min>1</min>
+                  <max>5</max>
+                </watchBuildingStandDistanceRange>
+                <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+                <ai_chillDestination>false</ai_chillDestination>
+              </building>
+              <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+              <rotatable>true</rotatable>
+              <statBases>
+                <MaxHitPoints>250</MaxHitPoints>
+                <WorkToBuild>1700</WorkToBuild>
+                <Flammability>0.0</Flammability>
+                <Beauty>-25</Beauty>
+                <Cleanliness>-100</Cleanliness>
+              </statBases>
+              <comps>
+                <li Class="DubsBadHygiene.CompProperties_Pipe">
+                  <mode>Sewage</mode>
+                </li>
+                <li Class="DubsBadHygiene.CompProperties_SewageHandler">
+                  <compClass>DubsBadHygiene.CompSewageOutlet</compClass>
+                  <capacity>3200</capacity>
+                  <priority>0</priority>
+                </li>
+                <li Class="DubsBadHygiene.CompProperties_Blockage" />
+              </comps>
+              <researchPrerequisites>
+                <li MayRequire="dbhlitemode">Plumbing</li>
+              </researchPrerequisites>
+              <placeWorkers>
+                <li>DubsBadHygiene.PlaceWorker_SewageArea</li>
+                <li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
+              </placeWorkers>
+              <modExtensions>
+                <li Class="DubsBadHygiene.BuildWaterExt" />
+              </modExtensions>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "AR_Aqueduct" or defName = "AR_1x2Fountain"  or defName = "AR_2x2Fountain"]/comps</xpath>
+          <value>
+            <li Class="DubsBadHygiene.CompProperties_Pipe">
+              <mode>Sewage</mode>
+            </li>
+            <li Class="CompProperties_Forbiddable" />
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "AR_1x2Fountain" or defName = "AR_2x2Fountain"]</xpath>
+          <value>
+            <thingClass>DubsBadHygiene.Building_basin</thingClass>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
