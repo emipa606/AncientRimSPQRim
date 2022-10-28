@@ -228,7 +228,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
-        <li>Wall</li>
+        <li>Custom6</li>
       </linkFlags>
       <shaderType>CutoutComplex</shaderType>
       <damageData>

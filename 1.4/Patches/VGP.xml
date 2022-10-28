@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "Rawgrape"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName = "AR_MakeGrapeMash"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>Rawgrape</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName = "AR_MakeGrapeMash"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>Rawgrape</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "RawOlive"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName = "AR_MakeOliveOil" or defName="AR_MakeOliveOilBulk"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>RawOlive</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName = "AR_MakeOliveOil" or defName="AR_MakeOliveOilBulk"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>RawOlive</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

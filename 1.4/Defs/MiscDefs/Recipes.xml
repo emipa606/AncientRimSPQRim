@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- foodstuff -->
+  <RecipeDef>
+    <defName>AR_MakeOliveOil</defName>
+    <label>make olive oil (x5)</label>
+    <description>renders oil from olive fruits</description>
+    <jobString>making olive oil</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>100</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawOlives</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_OliveOil>5</AR_OliveOil>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawOlives</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>AR_Press</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AR_MakeOliveOilBulk</defName>
+    <label>make olive oil (x25)</label>
+    <description>renders oil from olive fruits</description>
+    <jobString>making olive oil</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>500</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawOlives</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_OliveOil>25</AR_OliveOil>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawOlives</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>AR_Press</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AR_MakeGrapeMash</defName>
+    <label>make grape mash</label>
+    <description>Mash grapes.</description>
+    <jobString>Mashing grapes.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawGrapes</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawGrapes</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_Mash>5</AR_Mash>
+    </products>
+    <recipeUsers>
+      <li>Brewery</li>
+    </recipeUsers>
+  </RecipeDef>
+  <!-- cooking -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>AR_FryMeat</defName>
+    <label>fry meat</label>
+    <description>Cooks a relative simple meal while frying raw ingredients in a kind of fat.</description>
+    <jobString>Frying meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>0.025</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_FryedMeat>1</AR_FryedMeat>
+    </products>
+    <skillRequirements>
+      <Cooking>3</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="CookMealBase">
+    <defName>AR_FryEggs</defName>
+    <label>fry animal products</label>
+    <description>Cooks a relative simple meal while frying raw ingredients in a kind of fat.</description>
+    <jobString>frying meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>0.025</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_FryedEgg>1</AR_FryedEgg>
+    </products>
+    <skillRequirements>
+      <Cooking>3</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="CookMealBase">
+    <defName>AR_MakeSalad</defName>
+    <label>make salad</label>
+    <description>Cooks a relative simple meal while mixing various vegetables with some dressing</description>
+    <jobString>make salad.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>0.025</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_Salad>1</AR_Salad>
+    </products>
+    <skillRequirements>
+      <Cooking>3</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <!-- ammo -->
+  <RecipeDef>
+    <defName>AR_MakeAmmoStone</defName>
+    <label>make ballistae stones</label>
+    <description>chisles ammo out of rocks</description>
+    <jobString>making ballistae stone</jobString>
+    <workAmount>1600</workAmount>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <AR_AmmoStone>10</AR_AmmoStone>
+    </products>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AR_MakeAmmoFire</defName>
+    <label>make ballistae incendiary ammo</label>
+    <description>build some fireballs</description>
+    <jobString>making ballistae incendiary ammo</jobString>
+    <workAmount>1600</workAmount>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_OliveOil</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_AmmoFire>10</AR_AmmoFire>
+    </products>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
+  </RecipeDef>
+</Defs>

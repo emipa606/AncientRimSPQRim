@@ -1,5 +1,11 @@
 # Changelog for AncientRimSPQRim
 
+1.4.1 - Mod updated for 1.4 and passed autotests
+
+
+1.3.8 - The art-namer for the fountains should now give a working title. Also changed the aqueduct to link to itself and not walls
+
+
 1.3.7 - Fixed the smith-graphic and mosaic marble def
 
 
