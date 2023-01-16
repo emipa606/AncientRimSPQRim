@@ -45,7 +45,7 @@
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawGrapes</defName>
     <label>grapes</label>
-    <description>Assorted wine berries. Nice to eat, even when raw. Also good to ferment.</description>
+    <description>Assorted wine berries. Nice to eat, even when raw. Also good to ferment</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Grapes</texPath>
     </graphicData>
@@ -67,8 +67,8 @@
   </ThingDef>
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawPomegranate</defName>
-    <label>pomegranates</label>
-    <description>Tasty red fruits, full of seeds.</description>
+    <label>Pomegranates</label>
+    <description>Tasty red fruids, full of seeds.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Pomegranate</texPath>
     </graphicData>
@@ -133,7 +133,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Mash</defName>
     <label>mashed grapes</label>
-    <description>Grape mash. Safe to eat, but intended for wine fermenting.</description>
+    <description>Grape mash. Safe to eat but intended for wine fermenting.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Mash</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -175,7 +175,7 @@
   <ThingDef ParentName="MealCooked">
     <defName>AR_FryedEgg</defName>
     <label>fried eggs</label>
-    <description>A simple meal made from eggs, quickly fried in fat or oil.</description>
+    <description>A simple meal quickly fryed in fat or oil from eggs.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/FryedEgg</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -195,7 +195,7 @@
   <ThingDef ParentName="MealCooked">
     <defName>AR_FryedMeat</defName>
     <label>fried meat</label>
-    <description>A simple meal made from meat, quickly fried in fat or oil.</description>
+    <description>A simple meal quickly fryed in fat or oil from meat.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/FryedMeat</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -215,7 +215,7 @@
   <ThingDef ParentName="MealCooked">
     <defName>AR_Salad</defName>
     <label>roman salad</label>
-    <description>Assorted vegetables with lots of dressing like plant oil.</description>
+    <description>Diverse vegetables with a wholw bunch of dressing like plant oil.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Salad</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -235,7 +235,7 @@
   <ThingDef ParentName="DrugBase">
     <defName>AR_Wine</defName>
     <label>wine</label>
-    <description>A more exclusive and more civilized kind of alcoholic drink, made from fermented fruit. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+    <description>A more exclusive and more civilized kind of alcoholic drink made of fermented fruit. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Wine</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -316,7 +316,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AR_AmmoStone</defName>
     <label>ballistae stone</label>
-    <description>Stones to shoot with.</description>
+    <description>Stones to shoot.</description>
     <graphicData>
       <texPath>Items/Stuff/Ammo/Stones</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -339,7 +339,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AR_AmmoFire</defName>
     <label>ballistae incendiary ammo</label>
-    <description>Fire missiles.</description>
+    <description>fireballs</description>
     <graphicData>
       <texPath>Items/Stuff/Ammo/Fire</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

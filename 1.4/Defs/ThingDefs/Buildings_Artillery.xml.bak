@@ -112,8 +112,8 @@
   <!--=============== ballista turret ===============-->
   <ThingDef ParentName="BaseArtilleryBuildingRome">
     <defName>AR_Ballistae_Building</defName>
-    <label>ballista</label>
-    <description>The masterpiece of Roman siege technology. Shoots diverse kinds of munitions, like stone balls wich explode into many small pieces when hitting the ground. Must be manned. Explodes when damaged.</description>
+    <label>Ballista</label>
+    <description>The masterpiece of roman siege technology. Shoots diverse kinds of munition, such like stone balls, wich burst in many small pieces, when hitting the ground. Must be manned. Bursts when damaged.</description>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>2.9</explosiveRadius>
@@ -133,7 +133,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseArtilleryWeaponRome">
     <defName>AR_Ballistae_Gun</defName>
-    <label>ballista weapon</label>
+    <label>Ballista weapon</label>
     <graphicData>
       <texPath>Buildings/Ballistae/Ballista_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -182,7 +182,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>AR_Bullet_BallistaeFire</defName>
-    <label>fire missile</label>
+    <label>fireball</label>
     <graphicData>
       <texPath>Projectiles/Fire</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -274,8 +274,8 @@
   </ThingDef>
   <ThingDef ParentName="BaseArtilleryBuildingRomeScorpio">
     <defName>AR_Scorpio_Building</defName>
-    <label>scorpio</label>
-    <description>The masterpiece of Roman siege technology. Shoots diverse kinds of munitions, like sharp-tipped bolts. Must be manned. Explodes when damaged. This type is smaller than the others.</description>
+    <label>Scorpio</label>
+    <description>The masterpiece of roman siege technology. Shoots diverse kinds of munition, such like a single pointy bolts. Must be manned. Bursts when damaged. This one is smaller than the others.</description>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretBurstCooldownTime>1.1</turretBurstCooldownTime>
@@ -289,7 +289,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseGun">
     <defName>AR_Scorpio_Gun</defName>
-    <label>scorpio weapon</label>
+    <label>Scorpio weapon</label>
     <description>Ballistae weapon.</description>
     <graphicData>
       <texPath>Buildings/Ballistae/Scorpio_Top</texPath>

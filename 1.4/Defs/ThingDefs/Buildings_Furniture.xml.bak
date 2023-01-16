@@ -61,7 +61,7 @@
   <ThingDef ParentName="ArtableBedBase">
     <defName>AR_DoubleKlinai</defName>
     <label>double kline</label>
-    <description>A simple big bed that fits two people.</description>
+    <description>A simple double-wide bed that fits two people.</description>
     <graphicData>
       <texPath>Buildings/Furniture/Beds/DoubleKlinai</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -299,7 +299,7 @@
     <researchPrerequisites>
       <li>AR_Project_OliveTree</li>
     </researchPrerequisites>
-    <description>A simple lamp. Burns olive oil to create light.</description>
+    <description>A simple but Lamp. Burns olive oil to work.</description>
     <category>Building</category>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -375,7 +375,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AR_1x2Fountain</defName>
     <label>fountain (1x2)</label>
-    <description>A decorative water fountain where colonists can drink, wash and chill. It also sprays cool water into the air.</description>
+    <description>A decorative water fountain where colonists can drink, wash hands and chill. It also preads cool water into the air.</description>
     <category>Building</category>
     <graphicData>
       <texPath>Buildings/Furniture/Fountain/1x2</texPath>
@@ -443,7 +443,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AR_2x2Fountain</defName>
     <label>fountain (1x2)</label>
-    <description>A decorative water fountain where colonists can drink, wash and chill. It also sprays cool water into the air.</description>
+    <description>A decorative water fountain where colonists can drink, wash hands and chill. It also preads cool water into the air.</description>
     <category>Building</category>
     <graphicData>
       <texPath>Buildings/Furniture/Fountain/2x2</texPath>
@@ -512,7 +512,7 @@
     <defName>AR_Aqueduct</defName>
     <label>aqueduct</label>
     <category>Building</category>
-    <description>Water flows through it. It cools rooms and increases their cleanlineness.</description>
+    <description>A kind of channel, where water flows through. It cools rooms and highers its cleanlineness</description>
     <graphicData>
       <texPath>Buildings/Furniture/Fountain/Aqeduct_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -584,7 +584,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Heater</defName>
     <label>underground heater</label>
-    <description>A warming fire under the floor. This building is typical for the Roman hypocaustum heating system where the whole floor is warmed by the fire. Refuelable.</description>
+    <description>A warming fire under the floor. This building stands symbolic for the Roman hypocaustum heating system where the whole floor is warmed by a fire. Refuelable.</description>
     <thingClass>Building_WorkTable</thingClass>
     <category>Building</category>
     <graphicData>

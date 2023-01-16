@@ -44,7 +44,7 @@
   </ThingDef>
   <ThingDef ParentName="Mosaic">
     <defName>AR_1x1Mosaic</defName>
-    <label>mosaic (1x1)</label>
+    <label>Mosaic (1x1)</label>
     <graphicData>
       <texPath>Buildings/Art/Mosaic/1x1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -62,7 +62,7 @@
   </ThingDef>
   <ThingDef ParentName="Mosaic">
     <defName>AR_2x1Mosaic</defName>
-    <label>mosaic (2x1)</label>
+    <label>Mosaic (2x1)</label>
     <graphicData>
       <texPath>Buildings/Art/Mosaic/2x1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -79,7 +79,7 @@
   </ThingDef>
   <ThingDef ParentName="Mosaic">
     <defName>AR_2x2Mosaic</defName>
-    <label>mosaic (2x2)</label>
+    <label>Mosaic (2x2)</label>
     <graphicData>
       <texPath>Buildings/Art/Mosaic/2x2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -96,7 +96,7 @@
   </ThingDef>
   <ThingDef ParentName="Mosaic">
     <defName>AR_3x2Mosaic</defName>
-    <label>mosaic (3x2)</label>
+    <label>Mosaic (3x2)</label>
     <graphicData>
       <texPath>Buildings/Art/Mosaic/3x2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -113,7 +113,7 @@
   </ThingDef>
   <ThingDef ParentName="Mosaic">
     <defName>AR_3x3Mosaic</defName>
-    <label>mosaic (3x3)</label>
+    <label>Mosaic (3x3)</label>
     <graphicData>
       <texPath>Buildings/Art/Mosaic/3x3</texPath>
       <graphicClass>Graphic_Single</graphicClass>

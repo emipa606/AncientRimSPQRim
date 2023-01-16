@@ -8,8 +8,8 @@
   <!-- Roman -->
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Montefortino</defName>
-    <label>montefortino</label>
-    <description>An early Roman helmet type, copied from Celtic tribes.</description>
+    <label>Montefortino</label>
+    <description>An early roman helmet type copied from Celtic tribes.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/MontefortinoOnMap</texPath>
@@ -63,7 +63,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Samnite</defName>
     <label>samnitic helmet</label>
-    <description>A pre-Roman helmet type, worn by the Italian tribe of the Samnites.</description>
+    <description>An pre-roman helmet type worn by the Italian tribe of the Samnites.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/SamniteOnMap</texPath>
@@ -109,8 +109,8 @@
   </thingDef>
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Galea</defName>
-    <label>galea</label>
-    <description>A helmet of Celtic origin, but adapted and redesigned by the Roman people, so it became popular among the legions of Rome.</description>
+    <label>Galea</label>
+    <description>An helmet of Celtic origin, but adaptet and new defined by the Roman people, so it became popular in the Legions of RomeAn helmet of Celtic origin, but adaptet and new defined by the Roman people, so it became popular in the Legions of Rome</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/GaleaOnMap</texPath>
@@ -201,7 +201,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_GaleaHero</defName>
     <label>heroic galea</label>
-    <description>A helmet of Celtic origin, but adapted and redesigned by the Roman people, so it became popular among the legions of Rome.</description>
+    <description>An helmet of Celtic origin, but adaptet and new defined by the Roman people, so it became popular in the Legions of Rome</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/GaleaHeroOnMap</texPath>
@@ -257,7 +257,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_GaleaCenturio</defName>
     <label>centurion's galea</label>
-    <description>A helmet of Celtic origin, but adapted and redesigned by the Roman people, so it became popular among the legions of Rome.</description>
+    <description>An helmet of Celtic origin, but adaptet and new defined by the Roman people, so it became popular in the Legions of Rome</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/GaleaCenturioOnMap</texPath>
@@ -312,7 +312,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Attic</defName>
     <label>attic helmet</label>
-    <description>A helmet type originating from the Hellenic world, but named after the city-state of Athens. It was widely used in Italy and quite common under the Emperors of Rome.</description>
+    <description>A helmet type with origins in the Hellenic world but named after the city-state Athens. It was widely used in Italy and quuite common under the Emperors of Rome</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/AtticOnMap</texPath>
@@ -370,7 +370,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Thracian</defName>
     <label>thracian helmet</label>
-    <description>A Greek helmet type originating from the region of Thracia.</description>
+    <description>A Greek helmet type with origins in the region of Thracia</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/ThracianOnMap</texPath>
@@ -418,7 +418,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Corinthian</defName>
     <label>corinthian helmet</label>
-    <description>A Greek helmet type originating from the city-state of Corinth. It offers best possible protection, but it would be a bad idea to wear it for an archer or similar fighter.</description>
+    <description>A Greek helmet type with origins in the city-state of Corinth. It offers maximal protection but it would be a bad idea to wear it as an archer or similar fighter</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/CorinthianOnMap</texPath>
@@ -468,7 +468,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_CorinthianHero</defName>
     <label>heroic corinthian helmet</label>
-    <description>A Greek helmet type originating from the city-state of Corinth. It offers best possible protection, but it would be a bad idea to wear it for an archer or similar fighter.</description>
+    <description>A Greek helmet type with origins in the city-state of Corinth. It offers maximal protection but it would be a bad idea to wear it as an archer or similar fighter</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/CorinthianHeroOnMap</texPath>
@@ -527,7 +527,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Phrygian</defName>
     <label>phrygian helmet</label>
-    <description>A Hellenic helmet designed after the homonymous cap. Commonly worn by the soldiers of Macedonia.</description>
+    <description>A Hellenic helmet that is createt after the homonymous cap. Common worn by the soldiers of Macedonia</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/PhrygianOnMap</texPath>
@@ -577,7 +577,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_PhrygianHero</defName>
     <label>heroic phrygian helmet</label>
-    <description>A Hellenic helmet designed after the homonymous cap. Commonly worn by the soldiers of Macedonia.</description>
+    <description>A Hellenic helmet that is createt after the homonymous cap. Common worn by the soldiers of Macedonia</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/PhrygianHeroOnMap</texPath>
@@ -630,7 +630,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Boeotian</defName>
     <label>Boeotian helmet</label>
-    <description>A Greek helmet type with origins in the region of Boeotia. Thanks to its shape it does not obstruct the sight nor hearing of the wearer, so it is excellent for use by cavalry or archers.</description>
+    <description>A Greek helmet type with origins in the region of Boeotia. Because of its shape t does not block the sight or hearing of the wearer so the helmet is in excellent use for cavalry or archers</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/BoeotianOnMap</texPath>
@@ -683,7 +683,7 @@
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_PileusHelmet</defName>
     <label>Pileus helmet</label>
-    <description>A Hellenic helmet designed after the homonymous cap.</description>
+    <description>A Hellenic helmet that is createt after the homonymous cap</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/PileusHelmOnMap</texPath>
@@ -733,8 +733,8 @@
   </thingDef>
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Konos</defName>
-    <label>konos</label>
-    <description>A conical helmet of Macedonian origin. It is engraved with spirals, typical for the Ionic order.</description>
+    <label>Konos</label>
+    <description>A conical helmet of macedonian origin. it is engraved with spiral characteristics from the Ionic order</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/KonosOnMap</texPath>
@@ -783,7 +783,7 @@
   <thingDef ParentName="AncientHatMakeableBase">
     <defName>AR_LaurelWreath</defName>
     <label>laurel wreath</label>
-    <description>A wearable symbol of power. It's not meant for the common people.</description>
+    <description>An wearable symbol of might. It's nothing for common people</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Items/Apparel/LaurelWreath</texPath>
@@ -827,8 +827,8 @@
   </thingDef>
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Pileus</defName>
-    <label>pileus</label>
-    <description>A common conical cap from ancient Greece, made of felt or leather.</description>
+    <label>Pileus</label>
+    <description>A common conical cap from ancient greece, made of felt or leather</description>
     <graphicData>
       <texPath>Items/Apparel/PileusOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>

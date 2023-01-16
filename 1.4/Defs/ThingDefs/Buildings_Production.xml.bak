@@ -58,9 +58,9 @@
   </thingDef-->
   <thingDef ParentName="BenchBase">
     <defName>AR_Press</defName>
-    <label>oil press</label>
+    <label>Oil Press</label>
     <thingClass>Building_WorkTable</thingClass>
-    <description>Extracts oil from raw materials by squeezing them under high pressure.</description>
+    <description>A tower out of stones, built to create and keep heat in its middle, high enough to let comom metals become liquid.</description>
     <graphicData>
       <texPath>Buildings/Production/Press</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

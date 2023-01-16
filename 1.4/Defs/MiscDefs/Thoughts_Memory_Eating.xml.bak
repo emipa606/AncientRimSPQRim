@@ -6,8 +6,8 @@
     <durationDays>1</durationDays>
     <stages>
       <li>
-        <label>ate fried meal</label>
-        <description>I ate a tasty, flavorful fried meal.</description>
+        <label>ate fryed meal</label>
+        <description>I ate a tasty flavorful fryed meal.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -18,7 +18,7 @@
     <stages>
       <li>
         <label>ate salad</label>
-        <description>I ate a fresh salad. It was tasty and felt wholesome.</description>
+        <description>I ate a fresh salad. It was tasty and felt healthy</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -31,7 +31,7 @@
     <stages>
       <li>
         <label>drank olive oil</label>
-        <description>Uwaah, I had to drink pure olive oil. I feel like a salad now.</description>
+        <description>Uwaah, I had to drink pure olive oil. I feel like I'm a salad now.</description>
         <baseMoodEffect>-12</baseMoodEffect>
       </li>
     </stages>
@@ -44,7 +44,7 @@
     <stages>
       <li>
         <label>ate corpse</label>
-        <description>I had to eat flesh of a dead creature without even butchering or cooking it.</description>
+        <description>I had to eat the flesh of a dead creature without even butchering or cooking it.</description>
         <baseMoodEffect>-12</baseMoodEffect>
       </li>
     </stages>

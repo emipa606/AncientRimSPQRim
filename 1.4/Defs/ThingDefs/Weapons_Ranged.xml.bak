@@ -26,7 +26,7 @@
   <!-- ======================================================== -->
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>AR_Arrow_Gastraphetes</defName>
-    <label>gastraphetes arrow</label>
+    <label>Gastraphetes arrow</label>
     <graphicData>
       <texPath>Things/Projectile/Arrow_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -40,8 +40,8 @@
   </ThingDef>
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Gastraphetes</defName>
-    <label>gastraphetes</label>
-    <description>Greek for belly-releaser. It's a rather simple kind if crossbow, loaded with your belly.</description>
+    <label>Gastraphetes</label>
+    <description>Greek for belly-releaser. It's a quite simple kind if crossbow, loaded with your tummy</description>
     <graphicData>
       <texPath>Items/Weapons/Gastraphetes</texPath>
       <graphicClass>Graphic_Single</graphicClass>

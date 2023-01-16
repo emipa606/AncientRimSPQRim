@@ -25,7 +25,7 @@
   </terrainDef>
   <terrainDef ParentName="MosaikBase">
     <defName>AR_MosaikSandstone</defName>
-    <label>roundish sandstone mosaic</label>
+    <label>roundish sandstone mosaik</label>
     <color>(126,104,94)</color>
     <costList>
       <BlocksSandstone>20</BlocksSandstone>
@@ -33,7 +33,7 @@
   </terrainDef>
   <terrainDef ParentName="MosaikBase">
     <defName>AR_MosaikGranite</defName>
-    <label>roundish granite mosaic</label>
+    <label>roundish granite mosaik</label>
     <color>(105,95,97)</color>
     <costList>
       <BlocksGranite>20</BlocksGranite>
@@ -41,7 +41,7 @@
   </terrainDef>
   <terrainDef ParentName="MosaikBase">
     <defName>AR_MosaikLimestone</defName>
-    <label>roundish limestone mosaic</label>
+    <label>roundish limestone mosaik</label>
     <color>(158,153,135)</color>
     <costList>
       <BlocksLimestone>20</BlocksLimestone>
@@ -49,7 +49,7 @@
   </terrainDef>
   <terrainDef ParentName="MosaikBase">
     <defName>AR_MosaikMarble</defName>
-    <label>roundish marble mosaic</label>
+    <label>roundish marble mosaik</label>
     <color>(132,135,132)</color>
     <costList>
       <BlocksMarble>20</BlocksMarble>
@@ -57,7 +57,7 @@
   </terrainDef>
   <terrainDef ParentName="MosaikBase">
     <defName>AR_MosaikSlate</defName>
-    <label>roundish slate mosaic</label>
+    <label>roundish slate mosaik</label>
     <texturePath>Floors/roundishnegative</texturePath>
     <color>(128,128,128)</color>
     <costList>
@@ -66,73 +66,73 @@
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanA</defName>
-    <label>marble mosaic variant A</label>
+    <label>marble mosaik variant A</label>
     <texturePath>Floors/romanfloor01</texturePath>
     <uiIconPath>Floors/romanfloor01icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanB</defName>
-    <label>marble mosaic variant B</label>
+    <label>marble mosaik variant B</label>
     <texturePath>Floors/romanfloor02</texturePath>
     <uiIconPath>Floors/romanfloor02icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanC</defName>
-    <label>marble mosaic variant C</label>
+    <label>marble mosaik variant C</label>
     <texturePath>Floors/romanfloor03</texturePath>
     <uiIconPath>Floors/romanfloor03icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanD</defName>
-    <label>marble mosaic variant D</label>
+    <label>marble mosaik variant D</label>
     <texturePath>Floors/romanfloor04</texturePath>
     <uiIconPath>Floors/romanfloor04icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanE</defName>
-    <label>marble mosaic variant E</label>
+    <label>marble mosaik variant E</label>
     <texturePath>Floors/romanfloor05</texturePath>
     <uiIconPath>Floors/romanfloor05icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanF</defName>
-    <label>marble mosaic variant F</label>
+    <label>marble mosaik variant F</label>
     <texturePath>Floors/romanfloor06</texturePath>
     <uiIconPath>Floors/romanfloor06icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanG</defName>
-    <label>marble mosaic variant G</label>
+    <label>marble mosaik variant G</label>
     <texturePath>Floors/romanfloor07</texturePath>
     <uiIconPath>Floors/romanfloor07icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanH</defName>
-    <label>marble mosaic variant H</label>
+    <label>marble mosaik variant H</label>
     <texturePath>Floors/romanfloor08</texturePath>
     <uiIconPath>Floors/romanfloor08icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanI</defName>
-    <label>marble mosaic variant I</label>
+    <label>marble mosaik variant I</label>
     <texturePath>Floors/romanfloor09</texturePath>
     <uiIconPath>Floors/romanfloor09icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanJ</defName>
-    <label>marble mosaic variant J</label>
+    <label>marble mosaik variant J</label>
     <texturePath>Floors/romanfloor10</texturePath>
     <uiIconPath>Floors/romanfloor10icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanK</defName>
-    <label>marble mosaic variant K</label>
+    <label>marble mosaik variant K</label>
     <texturePath>Floors/romanfloor11</texturePath>
     <uiIconPath>Floors/romanfloor11icon</uiIconPath>
   </terrainDef>
   <terrainDef ParentName="MarbleMosaikBase">
     <defName>AR_MosaikRomanL</defName>
-    <label>marble mosaic variant L</label>
+    <label>marble mosaik variant L</label>
     <texturePath>Floors/romanfloor12</texturePath>
     <uiIconPath>Floors/romanfloor12icon</uiIconPath>
   </terrainDef>

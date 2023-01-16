@@ -57,7 +57,7 @@
   </ThingDef>
   <ThingDef ParentName="Scutum">
     <defName>AR_ScutumA</defName>
-    <label>scutum (lightning)</label>
+    <label>Scutum (lightning)</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Items/Shields/Scutum1_south</texPath>
@@ -93,7 +93,7 @@
   </ThingDef>
   <ThingDef ParentName="Scutum">
     <defName>AR_ScutumB</defName>
-    <label>scutum (laurel wreath)</label>
+    <label>Scutum (laurel wreath)</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Items/Shields/Scutum2_south</texPath>
@@ -129,7 +129,7 @@
   </ThingDef>
   <ThingDef ParentName="Scutum">
     <defName>AR_ScutumC</defName>
-    <label>scutum (wings)</label>
+    <label>Scutum (wings)</label>
     <equipmentType>None</equipmentType>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -166,13 +166,13 @@
   </ThingDef>
   <ThingDef ParentName="RomeShields">
     <defName>AR_Parma</defName>
-    <label>parma</label>
+    <label>Parma</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Items/Shields/Parma_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
-    <description>A small circular shield, used by centurions and light infantry of the Roman legions.</description>
+    <description>Small circular shield used by the by the Centurios and by light infantry of the Roman Legions</description>
     <equipmentType>None</equipmentType>
     <techLevel>Medieval</techLevel>
     <statBases>
@@ -275,8 +275,8 @@
   </ThingDef>
   <ThingDef ParentName="Hoplon">
     <defName>AR_HoplonBlank</defName>
-    <label>hoplon</label>
-    <description>A circular, convex shield known to have been used by the famous Greek spearmen, hoplites, who got their name from this item. It is made of wood and covered with a layer of bronze.</description>
+    <label>Hoplon</label>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze</description>
     <graphicData>
       <texPath>Items/Shields/HoplonBlank_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -315,8 +315,8 @@
   </ThingDef>
   <ThingDef ParentName="Hoplon">
     <defName>AR_HoplonMacedon</defName>
-    <label>Macedonian hoplon</label>
-    <description>A circular, convex shield known to have been used by the famous Greek spearmen, hoplites, who got their name from this item. It is made of wood and covered with a layer of bronze. The star drawn in its canter is the emblem of the Macedonian King's House.</description>
+    <label>Macedonian Hoplon</label>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The star drawn on its canter is the emblem of the Macedonian King's House</description>
     <graphicData>
       <texPath>Items/Shields/HoplonMacedon_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -355,8 +355,8 @@
   </ThingDef>
   <ThingDef ParentName="Hoplon">
     <defName>AR_HoplonSpartan</defName>
-    <label>spartan hoplon</label>
-    <description>A circular, convex shield known to have been used by the famous Greek spearmen, hoplites, who got their name from this item. It is made of wood and covered with a layer of bronze. The lambda letter in its center is the first letter of the region surrounding Sparta: Laconia.</description>
+    <label>Spartan Hoplon</label>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The letter 'Lambda' on its center is the first letter of the region around Sparta: Laconia.</description>
     <graphicData>
       <texPath>Items/Shields/HoplonSparta_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
