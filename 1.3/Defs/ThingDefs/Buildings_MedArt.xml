@@ -25,10 +25,9 @@
     </stuffCategories>
     <costStuffCount>150</costStuffCount>
     <recipeMaker>
-		<researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+      <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
-
   <ThingDef Name="Mosaic" ParentName="SculptureBase" Abstract="True">
     <building>
       <isEdifice>false</isEdifice>
@@ -37,18 +36,17 @@
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <minifiedDef>MinifiedThing</minifiedDef>
     <rotatable>true</rotatable>
-	<recipeMaker>
-		<researchPrerequisites MayRequire="oskarpotocki.vfe.classical">
-			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
-		</researchPrerequisites>
-	</recipeMaker>
+    <recipeMaker>
+      <researchPrerequisites MayRequire="oskarpotocki.vfe.classical">
+        <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+      </researchPrerequisites>
+    </recipeMaker>
     <stuffCategories>
       <li>Stony</li>
     </stuffCategories>
     <passability>Standable</passability>
     <pathCost>0</pathCost>
   </ThingDef>
- 
   <ThingDef ParentName="Mosaic">
     <defName>AR_1x1Mosaic</defName>
     <label>Mosaic (1x1)</label>

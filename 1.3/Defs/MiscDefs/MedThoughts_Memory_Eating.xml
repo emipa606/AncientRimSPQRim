@@ -12,7 +12,6 @@
       </li>
     </stages>
   </ThoughtDef>
-
   <ThoughtDef>
     <defName>AR_AteSalad</defName>
     <durationDays>1</durationDays>
@@ -24,7 +23,6 @@
       </li>
     </stages>
   </ThoughtDef>
-
   <ThoughtDef>
     <defName>AR_DrankOil</defName>
     <showBubble>true</showBubble>
@@ -38,7 +36,6 @@
       </li>
     </stages>
   </ThoughtDef>
-
   <ThoughtDef>
     <defName>TSP_AR_DrankOilAsIngredient</defName>
     <showBubble>true</showBubble>

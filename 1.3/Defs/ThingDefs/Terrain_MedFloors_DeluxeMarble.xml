@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Defs>  
+<Defs>
   <terrainDef Abstract="True" ParentName="RoundMosaikBase" Name="AdvancedMosaikMarbleBase">
     <designatorDropdown>Marble_Mosaik</designatorDropdown>
-	<statBases>
-		<MarketValue>9</MarketValue> <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
-		<Beauty Inherit="False">5</Beauty>
-		<WorkToBuild>5000</WorkToBuild>
-	</statBases>
-	<researchPrerequisites Inherit="False">
-		<li>Stonecutting</li>
-		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
-	</researchPrerequisites>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
+      <Beauty Inherit="False">5</Beauty>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <researchPrerequisites Inherit="False">
+      <li>Stonecutting</li>
+      <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+    </researchPrerequisites>
     <costList Inherit="False">
       <BlocksMarble Inherit="False">20</BlocksMarble>
     </costList>
     <tags>
-		<li>Floor</li>
-		<li>FineFloor</li>
+      <li>Floor</li>
+      <li>FineFloor</li>
     </tags>
-	<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
   </terrainDef>
-
   <terrainDef ParentName="AdvancedMosaikMarbleBase">
     <defName>AR_MosaikRomanA</defName>
     <label>marble mosaik variant A</label>

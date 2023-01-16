@@ -1,86 +1,78 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes/li[text()="TSP_AR_UniversalProcessor_NotVFEWine"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/ProcessorFramework.ProcessDef[defName="TSP_AR_UniversalProcessor_NotVFEWine"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/ThingDef[defName="AR_Wine"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/ThingDef[defName="AR_Mash"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/ThingDef[defName="AR_PlantGrape"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/ThingDef[defName="AR_RawGrapes"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/RecipeDef[defName="AR_MakeGrapeMash"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="AR_PlantGrapeWild"]/plant/harvestedThingDef</xpath>
-			<value>
-				<harvestedThingDef>VFEM_RawGrapes</harvestedThingDef>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes/li[text()="TSP_AR_UniversalProcessor_NotVFEWine"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ProcessorFramework.ProcessDef[defName="TSP_AR_UniversalProcessor_NotVFEWine"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AR_Wine"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AR_Mash"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AR_PlantGrape"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AR_RawGrapes"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/RecipeDef[defName="AR_MakeGrapeMash"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEM_SmokedMeat"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AR_PlantGrapeWild"]/plant/harvestedThingDef</xpath>
+      <value>
+        <harvestedThingDef>VFEM_RawGrapes</harvestedThingDef>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
 </Patch>

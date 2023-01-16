@@ -286,7 +286,6 @@
     <costStuffCount>45</costStuffCount>
     <rotatable>false</rotatable>
   </ThingDef>
-
   <!-- Light -->
   <ThingDef ParentName="FurnitureBase">
     <defName>AR_OilLamp</defName>
@@ -327,8 +326,7 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
-		<!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>

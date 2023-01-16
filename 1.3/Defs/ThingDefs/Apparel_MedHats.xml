@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <thingDef Name="RomeArmourHelmetMakeableBase" ParentName="RomeArmourMakeableBase" Abstract="True">
-		<thingCategories>
-			<li>TSP_AR_RomanArmorHeadgear</li>
-		</thingCategories>
+    <thingCategories>
+      <li>TSP_AR_RomanArmorHeadgear</li>
+    </thingCategories>
   </thingDef>
- 
   <!-- Roman -->
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Montefortino</defName>
@@ -19,16 +18,15 @@
     </graphicData>
     <costStuffCount>40</costStuffCount>
     <stuffCategories>
-		<li>Metallic</li>
-		<li>Leathery</li>
-		<li>Woody</li>
-
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li>Metallic</li>
+      <li>Leathery</li>
+      <li>Woody</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>3500</WorkToMake>
@@ -55,11 +53,11 @@
       <tags>
         <li>RomeSoldier</li>
         <li>Barbarian</li>
-		<li>ClassicalMilitary</li>
-		<li>HellenicSoldier</li>
-		<li>NeolithicMilitary</li>
-		<li>Neolithic</li>
-		<li>Tribal</li>
+        <li>ClassicalMilitary</li>
+        <li>HellenicSoldier</li>
+        <li>NeolithicMilitary</li>
+        <li>Neolithic</li>
+        <li>Tribal</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -71,7 +69,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Samnite</defName>
     <label>Samnitic helmet</label>
@@ -83,11 +80,10 @@
     </graphicData>
     <costStuffCount>45</costStuffCount>
     <stuffCategories>
-	  <li>Woody</li>
-	  <li>Fabric</li>
-	  <li>Leathery</li>
-	  
-	  <!-- Mod support -->
+      <li>Woody</li>
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
     </stuffCategories>
@@ -109,15 +105,14 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		<li>Tribal</li>
-		<li>Neolithic</li>
+        <li>Tribal</li>
+        <li>Neolithic</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Galea</defName>
     <label>Galea</label>
@@ -130,8 +125,7 @@
     <costStuffCount>65</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -160,8 +154,8 @@
       </layers>
       <tags>
         <li>RomeSoldier</li>
-		<li>RomeLegion</li>
-		<li>ClassicalMilitary</li>
+        <li>RomeLegion</li>
+        <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -174,7 +168,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-  
   <!--
   <thingDef ParentName="RomeHatMakeableBase">
     <defName>AR_LightGalea</defName>
@@ -220,7 +213,6 @@
 	</recipeMaker>
   </thingDef>
   -->
-  
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_GaleaHero</defName>
     <label>heroic galea</label>
@@ -234,8 +226,7 @@
     <costStuffCount>65</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -266,12 +257,12 @@
       <layers>
         <li>Overhead</li>
       </layers>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <tags>
         <li>Praetorian</li>
-		<li>RomeOfficer</li>
-		<li>Centurion</li>
-		<li>ClassicalMilitaryClassy</li>
+        <li>RomeOfficer</li>
+        <li>Centurion</li>
+        <li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -284,7 +275,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_GaleaCenturio</defName>
     <label>centurion's galea</label>
@@ -298,8 +288,7 @@
     <costStuffCount>65</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -330,9 +319,9 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		<li>ClassicalMilitaryClassy</li>
-		<li>Centurion</li>
-		<li>RomeOfficer</li>
+        <li>ClassicalMilitaryClassy</li>
+        <li>Centurion</li>
+        <li>RomeOfficer</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -345,7 +334,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Attic</defName>
     <label>attic helmet</label>
@@ -359,8 +347,7 @@
     <costStuffCount>50</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -392,14 +379,14 @@
       </layers>
       <tags>
         <li>RomeOfficer</li>
-		<li>HellenicSoldier</li>
+        <li>HellenicSoldier</li>
         <li>HellenicHeavy</li>
         <li>RomeNoble</li>
-		<li>RomeLegion</li>
-		<li>JeubWear</li>
-		<li>RomeSoldier</li>
-		<li>ClassicalMilitary</li>
-		<li>ClassicalMilitaryClassy</li>
+        <li>RomeLegion</li>
+        <li>JeubWear</li>
+        <li>RomeSoldier</li>
+        <li>ClassicalMilitary</li>
+        <li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -412,7 +399,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <!-- Greek -->
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Thracian</defName>
@@ -426,8 +412,7 @@
     <costStuffCount>55</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -456,7 +441,7 @@
       </layers>
       <tags>
         <li>HellenicSoldier</li>
-		<li>ClassicalMilitary</li>
+        <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -469,7 +454,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Corinthian</defName>
     <label>Corinthian helmet</label>
@@ -482,8 +466,7 @@
     <costStuffCount>70</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -493,7 +476,8 @@
       <WorkToMake>6000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor> <!-- Same as Vanilla rendition Flak Helmet -->
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <!-- Same as Vanilla rendition Flak Helmet -->
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -514,7 +498,7 @@
       <tags>
         <li>HellenicSoldier</li>
         <li>HellenicHeavy</li>
-		<li>ClassicalMilitary</li>
+        <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -527,7 +511,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_CorinthianHero</defName>
     <label>heroic Corinthian helmet</label>
@@ -541,8 +524,7 @@
     <costStuffCount>100</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -576,14 +558,14 @@
       <layers>
         <li>Overhead</li>
       </layers>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <tags>
         <!-- <li>HellenicSoldier</li> -->
         <li>HellenicHeavy</li>
-		<!-- <li>Macedon</li> -->
+        <!-- <li>Macedon</li> -->
         <li>Spartan</li>
         <li>RomeNoble</li>
-		<li>ClassicalMilitaryClassy</li>
+        <li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -596,7 +578,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Phrygian</defName>
     <label>Phrygian helmet</label>
@@ -609,9 +590,8 @@
     <costStuffCount>55</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  <li>Woody</li>
-	  
-	  <!-- Mod support -->
+      <li>Woody</li>
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -631,7 +611,6 @@
       <MoveSpeed>-0.02</MoveSpeed>
       <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
-
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -643,9 +622,9 @@
       <tags>
         <li>HellenicSoldier</li>
         <li>Macedon</li>
-		<li>JeubWear</li>
-		<li>ST_GnomeClothing</li>
-		<li>ClassicalMilitary</li>
+        <li>JeubWear</li>
+        <li>ST_GnomeClothing</li>
+        <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -658,7 +637,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_PhrygianHero</defName>
     <label>heroic Phrygian helmet</label>
@@ -671,8 +649,7 @@
     <costStuffCount>55</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -695,7 +672,7 @@
       <PsychicSensitivity>-0.10</PsychicSensitivity>
       <SocialImpact>0.2</SocialImpact>
     </equippedStatOffsets>
-	<generateCommonality>0.8</generateCommonality>
+    <generateCommonality>0.8</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -704,13 +681,13 @@
       <layers>
         <li>Overhead</li>
       </layers>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <tags>
         <li>Macedon</li>
         <li>RomeNoble</li>
-		<li>JeubKing</li>
-		<li>JeubWear</li>
-		<li>ClassicalMilitaryClassy</li>
+        <li>JeubKing</li>
+        <li>JeubWear</li>
+        <li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -723,7 +700,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Boeotian</defName>
     <label>Boeotian helmet</label>
@@ -736,9 +712,8 @@
     <costStuffCount>35</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  <li>Leathery</li>
-	  
-	  <!-- Mod support -->
+      <li>Leathery</li>
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -768,8 +743,8 @@
       <tags>
         <li>HellenicSoldier</li>
         <li>Toxotes</li>
-		<li>BowMen</li>
-		<li>ClassicalMilitary</li>
+        <li>BowMen</li>
+        <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -782,7 +757,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_PileusHelmet</defName>
     <label>Pileus helmet</label>
@@ -794,13 +768,12 @@
     </graphicData>
     <costStuffCount>35</costStuffCount>
     <stuffCategories>
-		<li>Metallic</li>
-
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
@@ -828,7 +801,7 @@
       <tags>
         <li>HellenicSoldier</li>
         <li>Spartan</li>
-		<li>ClassicalMilitary</li>
+        <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -841,7 +814,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-  
   <thingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>AR_Konos</defName>
     <label>Konos</label>
@@ -853,19 +825,19 @@
     </graphicData>
     <costStuffCount>50</costStuffCount>
     <stuffCategories>
-		<li>Metallic</li>
-		
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor> <!-- By comparison, FLAK Armor is 0.7 -->
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <!-- By comparison, FLAK Armor is 0.7 -->
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -883,11 +855,11 @@
       </layers>
       <tags>
         <li>HellenicSoldier</li>
-		<li>Macedon</li>
-		<li>ClassicalMilitary</li>
-		<li>Tribal</li>
-		<li>MedievalMilitary</li>
-		<li>JeubWear</li>
+        <li>Macedon</li>
+        <li>ClassicalMilitary</li>
+        <li>Tribal</li>
+        <li>MedievalMilitary</li>
+        <li>JeubWear</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -900,7 +872,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <!-- Civil -->
   <thingDef ParentName="AncientHatMakeableBase">
     <defName>AR_LaurelWreath</defName>
@@ -915,15 +886,15 @@
       <WoodLog>6</WoodLog>
     </costList>
     <statBases>
-		<MaxHitPoints>500</MaxHitPoints>
-		<MarketValue>80</MarketValue>
-		<WorkToMake>10000</WorkToMake>
-		<Mass>0.005</Mass>
-		<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-		<EquipDelay>1</EquipDelay>
-		<DeteriorationRate Inherit="False">0.01</DeteriorationRate>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>80</MarketValue>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>0.005</Mass>
+      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+      <DeteriorationRate Inherit="False">0.01</DeteriorationRate>
     </statBases>
     <equippedStatOffsets>
       <SocialImpact>0.4</SocialImpact>
@@ -931,32 +902,32 @@
     </equippedStatOffsets>
     <thingCategories Inherit="False">
       <li>HeadgearNoble</li>
-	  <li>TSP_AR_RomanClothing</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-	  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+      <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <wornGraphicPath>Items/Apparel/Hats/LaurelWreath</wornGraphicPath>
       <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <layers>
         <li>Overhead</li>
       </layers>
       <tags>
         <li>RomeEmperor</li>
-		<li>ClassicalWreath</li>
-		<li>JeubKing</li>
-		<li>GnomeKing</li>
-		<li>Royal</li>
-		<li>RoyalTier1</li>
-		<li>RoyalTier2</li>
-		<li>RoyalTier3</li>
-		<li>RoyalTier4</li>
-		<li>RoyalTier5</li>
-		<li>RoyalTier6</li>
-		<li>King</li>
+        <li>ClassicalWreath</li>
+        <li>JeubKing</li>
+        <li>GnomeKing</li>
+        <li>Royal</li>
+        <li>RoyalTier1</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier3</li>
+        <li>RoyalTier4</li>
+        <li>RoyalTier5</li>
+        <li>RoyalTier6</li>
+        <li>King</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -966,7 +937,6 @@
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
   </thingDef>
-
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Pileus</defName>
     <label>Pileus</label>
@@ -989,7 +959,7 @@
       <EquipDelay>0.8</EquipDelay>
     </statBases>
     <thingCategories Inherit="False">
-		<li>TSP_AR_RomanClothing</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <apparel>
       <bodyPartGroups>
@@ -1000,23 +970,23 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		<li>Macedon</li>
-		<li>Hellenic</li>
-		<li>ST_GnomeClothing</li>
-		<li>BeetWear</li>
-		<li>JeubWear</li>
-		<li>Neolithic</li>
-		<li>Tribal</li>
-		<li>Medieval</li>
-		<li>MedievalApparel</li>
-		<li>MedievalApparelBasic</li>
-		<li>Barbarian</li>
-		<li>Classical</li>
+        <li>Macedon</li>
+        <li>Hellenic</li>
+        <li>ST_GnomeClothing</li>
+        <li>BeetWear</li>
+        <li>JeubWear</li>
+        <li>Neolithic</li>
+        <li>Tribal</li>
+        <li>Medieval</li>
+        <li>MedievalApparel</li>
+        <li>MedievalApparelBasic</li>
+        <li>Barbarian</li>
+        <li>Classical</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Soldier</li>
-		<li>Slave</li>
+        <li>Soldier</li>
+        <li>Slave</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>

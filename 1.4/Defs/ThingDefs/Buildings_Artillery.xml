@@ -135,7 +135,7 @@
     <defName>AR_Ballistae_Gun</defName>
     <label>Ballista weapon</label>
     <graphicData>
-      <texPath>Buildings/Ballistae/Ballista_Top</texPath>
+      <texPath>Buildings/Ballistae/BallistaNew_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <description>Ballistae weapon.</description>
@@ -292,7 +292,7 @@
     <label>Scorpio weapon</label>
     <description>Ballistae weapon.</description>
     <graphicData>
-      <texPath>Buildings/Ballistae/Scorpio_Top</texPath>
+      <texPath>Buildings/Ballistae/ScorpioNew_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

@@ -57,7 +57,6 @@
     <researchPrerequisites><li>Brewing</li><li>AR_Project_Mediterranean_Agriculture</li></researchPrerequisites>
   </thingDef>
   -->
-
   <thingDef ParentName="BenchBase">
     <defName>AR_Press</defName>
     <label>Oil Press</label>
@@ -101,10 +100,10 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-		<Mass>220</Mass>
-		<WorkToBuild>1000</WorkToBuild>
-		<MaxHitPoints>180</MaxHitPoints>
-		<Flammability>0</Flammability>
+      <Mass>220</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0</Flammability>
     </statBases>
     <size>(2,2)</size>
     <designationCategory>Production</designationCategory>
@@ -117,13 +116,13 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <building>
-		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		<buildingTags>
-			<li>Production</li>
-		</buildingTags>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
     </building>
     <researchPrerequisites>
-		<li>AR_Project_OliveTree</li>
+      <li>AR_Project_OliveTree</li>
     </researchPrerequisites>
   </thingDef>
 </Defs>

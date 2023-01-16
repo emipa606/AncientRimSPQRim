@@ -5,30 +5,30 @@
     <weaponTags>
       <li>Neolithic</li>
     </weaponTags>
-	<thingCategories Inherit="False">
-		<li>TSP_AR_RomanRanged</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanRanged</li>
+    </thingCategories>
     <comps>
       <li>
         <compClass>CompQuality</compClass>
       </li>
-		<li Class="CompProperties_Art">
-			<nameMaker>NamerArtWeaponGun</nameMaker>
-			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-			<minQualityForArtistic>Excellent</minQualityForArtistic>
-		</li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
     </comps>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
-        <li>FueledSmithy</li><li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
       </recipeUsers>
       <effectWorking>Smelt</effectWorking>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
-
   <!-- ======================================================== -->
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>AR_Arrow_Gastraphetes</defName>
@@ -44,7 +44,6 @@
       <speed>51</speed>
     </projectile>
   </ThingDef>
-
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Gastraphetes</defName>
     <label>Gastraphetes</label>
@@ -54,18 +53,17 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Bow_Large</soundInteract>
-	<!-- SHUT YOUR MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF! -->
-	<costStuffCount>135</costStuffCount>
+    <!-- SHUT YOUR MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF! -->
+    <costStuffCount>135</costStuffCount>
     <stuffCategories>
-		<li>Metallic</li>
-		<li>Woody</li>
-	  
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>19000</WorkToMake>
@@ -79,15 +77,15 @@
     <generateCommonality>0.55</generateCommonality>
     <weaponTags Inherit="False">
       <li>BowMen</li>
-	  <li>NeolithicAdvanced</li>
-	  <li>NeolithicHeavy</li>
-	  <li>NeolithicChief</li>
-	  <li>NeolithicRangedAdvanced</li>
-	  <li>NeolithicRangedHeavy</li>
-	  <li>NeolithicRangedChief</li>
-	  <li>Gastraphates</li>
-	  <li>ClassicalArcher</li>
-	  <!-- <li>ClassicalScorpion</li> -->
+      <li>NeolithicAdvanced</li>
+      <li>NeolithicHeavy</li>
+      <li>NeolithicChief</li>
+      <li>NeolithicRangedAdvanced</li>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+      <li>Gastraphates</li>
+      <li>ClassicalArcher</li>
+      <!-- <li>ClassicalScorpion</li> -->
     </weaponTags>
     <verbs>
       <li>
@@ -101,7 +99,7 @@
     </verbs>
     <tools>
       <li>
-		<label>bow grip</label>
+        <label>bow grip</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -109,26 +107,26 @@
         <cooldownTime>1</cooldownTime>
       </li>
       <li>
-		<label>bow limb</label>
+        <label>bow limb</label>
         <capacities>
-			<li>Blunt</li>
-			<li>Poke</li>
+          <li>Blunt</li>
+          <li>Poke</li>
         </capacities>
         <power>6</power>
         <cooldownTime>1.2</cooldownTime>
       </li>
-	  <li>
-		<label>slider mechanism</label>
-		<capacities>
-			<li>Poke</li>
-		</capacities>
-		<power>8</power>
-		<cooldownTime>2</cooldownTime>
-	  </li>
+      <li>
+        <label>slider mechanism</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
     </tools>
-	<comps>
-		<li Class="CompProperties_Biocodable"/>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Biocodable" />
+    </comps>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mechanical_Weapons</researchPrerequisite>
     </recipeMaker>
