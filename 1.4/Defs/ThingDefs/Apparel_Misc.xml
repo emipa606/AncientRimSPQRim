@@ -34,8 +34,8 @@
   <!-- Roman -->
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_TripleDisc</defName>
-    <description>A pre-Roman armor type worn by the Italian tribe of the Samnites. Basically a torso plate decorated with three discs.</description>
-    <label>triple-disc armor</label>
+    <description>An pre-roman Armour type worn by the Italian tribe of the Samnites. Basically a torso plate decorated with three discs</description>
+    <label>Triple-disc-Armour</label>
     <graphicData>
       <texPath>Items/Apparel/TripleDiscOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -82,8 +82,8 @@
   </thingDef>
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaSegmentata</defName>
-    <description>The standard armor of civilized armies. Made of many metal stripes.</description>
-    <label>lorica segmentata</label>
+    <description>The standard Armour of civilized armies. Made of many metal stripes.</description>
+    <label>Lorica Segmentata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaSegmentataOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -134,8 +134,8 @@
   </thingDef>
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaHamata</defName>
-    <description>An early Roman chain mail, kept in the style of Greek armors.</description>
-    <label>lorica hamata</label>
+    <description>The early Roman chain mail, kept in the style of Greek Armours.</description>
+    <label>Lorica Hamata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaHamataOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -188,8 +188,8 @@
   </thingDef>
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaMusculataR</defName>
-    <description>Armor of civilized officers. Looks very impressive.</description>
-    <label>lorica musculata (Roman)</label>
+    <description>Armour of civilized officers. Look very impressive.</description>
+    <label>Lorica Musculata (Roman)</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaMusculataRomeOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -248,8 +248,8 @@
   <!-- Greek -->
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_Linothorax</defName>
-    <description>A Greek type of armor, made of many layers of cloth glued together.</description>
-    <label>linothorax</label>
+    <description>An Greek kind of Armour, which is made of many glued layers of cloth.</description>
+    <label>Linothorax</label>
     <graphicData>
       <texPath>Items/Apparel/LinothoraxOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -300,8 +300,8 @@
   </thingDef>
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_LoricaMusculataL</defName>
-    <description>Armor of civilized officers. Looks very impressive.</description>
-    <label>light lorica musculata</label>
+    <description>Armour of civilized officers. Look very impressive.</description>
+    <label>light Lorica Musculata</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaMusculataGreeceOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -357,8 +357,8 @@
   </thingDef>
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaMusculataG</defName>
-    <description>Armor of civilized officers. Looks very impressive.</description>
-    <label>lorica musculata (Greek)</label>
+    <description>Armour of civilized officers. Look very impressive.</description>
+    <label>Lorica Musculata (Greek)</label>
     <graphicData>
       <texPath>Items/Apparel/LoricaMusculataGreeceOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -418,7 +418,7 @@
   <!-- Civil -->
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Toga</defName>
-    <description>A very large piece of cloth, looped in several layers around the body. The toga is a symbol of the highly developed Roman culture and only male citizens were allowed to wear it.</description>
+    <description>A very big piece of cloth which is looped in some layers around the body. The toga is a symbol of the higher developed roman culture and only male citizens were allowed to wear it.</description>
     <label>toga</label>
     <graphicData>
       <texPath>Items/Apparel/TogaOnMap</texPath>
@@ -468,7 +468,7 @@
   </thingDef>
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Sagum</defName>
-    <description>A large piece of cloth with a silver brooch. Originally worn by rich soldiers.</description>
+    <description>A bigger piece of cloth and a silver brooch. Originally worn by rich soldiers.</description>
     <label>sagum</label>
     <graphicData>
       <texPath>Items/Apparel/SagumOnMap</texPath>
@@ -518,7 +518,7 @@
   </thingDef>
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Himation</defName>
-    <description>A simple piece of cloth, worn around the loin and the shoulders.</description>
+    <description>A simple piece of cloth worn around the loin and the shoulders.</description>
     <label>himation</label>
     <graphicData>
       <texPath>Items/Apparel/HimationOnMap</texPath>

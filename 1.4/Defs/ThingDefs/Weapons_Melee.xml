@@ -38,7 +38,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Rome">
     <defName>AR_Xiphos</defName>
     <label>xiphos</label>
-    <description>Same as a gladius, but Greek.</description>
+    <description>Same as a gladius, but greek.</description>
     <graphicData>
       <texPath>Items/Weapons/Xiphos</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -90,7 +90,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Rome">
     <defName>AR_Falcata</defName>
     <label>falcata</label>
-    <description>A sword a sharp inner edge. Good for cutting, bad for fencing. Also called a kopis.</description>
+    <description>A sword which is at its concave side sharpened. Good for cutting, bad for fencing. It is also called Kopis</description>
     <graphicData>
       <texPath>Items/Weapons/Falcata</texPath>
       <graphicClass>Graphic_Single</graphicClass>

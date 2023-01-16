@@ -2,7 +2,7 @@
 <Defs>
   <FactionDef ParentName="FactionBase">
     <defName>AR_PlayerFaction</defName>
-    <label>hellenic colony</label>
+    <label>Hellenic colony</label>
     <description>Your own colony.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>AR_Colonist</basicMemberKind>

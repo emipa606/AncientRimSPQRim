@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_Pillar</defName>
+    <label>pillar</label>
+    <description>Holds rooves with style.</description>
+    <designationCategory>Structure</designationCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0.9</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+	  
+	  <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <holdsRoof>true</holdsRoof>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Buildings/Structure/Pillar</texPath>
+      <drawSize>(1,2)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.4, 0.5, 0.4)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <researchPrerequisites>
+		<li>ComplexFurniture</li>
+		<li>AR_Project_Mediterranean_Culture</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--========================= Walls =============================-->
+  <ThingDef ParentName="BuildingBase" Name="WallRome">
+    <defName>AR_RedWall</defName>
+    <label>red dyed wall</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <description>An impassable wall, covered in a primitive form of dyed wallpaper. Capable of holding up a roof.</description>
+    <graphicData>
+      <texPath>Buildings/Structure/RedWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Icon/RedWall_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>315</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>7</Beauty>
+    </statBases>
+    <costStuffCount>3</costStuffCount>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <costList>
+		<Dye>1</Dye>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+	  
+	  <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="taoschagic.igloo">Snowy</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <damageMultipliers>
+		<li>
+			<damageDef>Bomb</damageDef>
+			<multiplier>2</multiplier>
+		</li>
+		<li>
+			<damageDef>Flame</damageDef>
+			<multiplier>1.025</multiplier>
+		</li>
+    </damageMultipliers>
+    <researchPrerequisites>
+		<li>ComplexFurniture</li>
+		<li>AR_Project_Mediterranean_Culture</li>
+		<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Wallpapers</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="WallRome">
+    <defName Inherit="False">AR_GreenWall</defName>
+    <label Inherit="False">green dyed wall</label>
+    <graphicData>
+      <texPath>Buildings/Structure/GreenWall_Atlas</texPath>
+    </graphicData>
+    <uiIconPath>Icon/GreenWall_MenuIcon</uiIconPath>
+  </ThingDef>
+
+  <ThingDef ParentName="WallRome">
+    <defName Inherit="False">AR_BlueWall</defName>
+    <label Inherit="False">blue dyed wall</label>
+    <graphicData>
+      <texPath>Buildings/Structure/BlueWall_Atlas</texPath>
+    </graphicData>
+    <uiIconPath>Icon/BlueWall_MenuIcon</uiIconPath>
+  </ThingDef>
+</Defs>

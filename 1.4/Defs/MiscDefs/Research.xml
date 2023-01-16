@@ -3,7 +3,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Mediterranean_Culture</defName>
     <label>Mediterranean culture</label>
-    <description>Discover the Roman and Greek ways of life, like furniture and clothing.</description>
+    <description>Discover the Roman and Greek way of life, like furniture and clothing.</description>
     <baseCost>5000</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
@@ -16,7 +16,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Hypocaustum</defName>
     <label>hypocaustum</label>
-    <description>Digging a hole under the entire floor makes a fireplace much more efficient. No Roman will ever miss this luxury.</description>
+    <description>Digging a hole under the whole floor makes a fireplace much more efficient. No Roman will ever miss this luxury.</description>
     <baseCost>400</baseCost>
     <prerequisites>
       <li>AR_Project_Mediterranean_Culture</li>
@@ -31,8 +31,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_OliveTree</defName>
-    <label>olive tree</label>
-    <description>Sow olive trees, necessary to make olive oil.</description>
+    <label>Olive Tree</label>
+    <description>Sow olive trees necessary to make olive oil.</description>
     <baseCost>1000</baseCost>
     <prerequisites>
       <li>TreeSowing</li>
@@ -44,8 +44,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_PomegranteTree</defName>
-    <label>pomegranate tree</label>
-    <description>Sow pomegranate trees which yield a sweet fruit.</description>
+    <label>Pomegrante Tree</label>
+    <description>Sow Pomegrante trees which yield a sweet fruit</description>
     <baseCost>1000</baseCost>
     <prerequisites>
       <li>TreeSowing</li>

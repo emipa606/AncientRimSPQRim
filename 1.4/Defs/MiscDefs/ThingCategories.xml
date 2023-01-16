@@ -8,7 +8,7 @@
   </ThingCategoryDef>
   <ThingCategoryDef>
     <defName>AR_CategoryFood</defName>
-    <label>processed food</label>
+    <label>Processed Food</label>
     <parent>Foods</parent>
     <iconPath>Items/Stuff/Foods/OliveOil/OliveOil_C</iconPath>
   </ThingCategoryDef>

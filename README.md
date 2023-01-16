@@ -50,4 +50,3 @@ I haven't tested the mod much for compatibility issues with other mods but Ancie
 
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2458182631]Last updated 2023-01-16

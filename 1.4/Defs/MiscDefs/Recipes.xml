@@ -4,7 +4,7 @@
   <RecipeDef>
     <defName>AR_MakeOliveOil</defName>
     <label>make olive oil (x5)</label>
-    <description>Render oil from olive fruits.</description>
+    <description>renders oil from olive fruits</description>
     <jobString>making olive oil</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workAmount>100</workAmount>
@@ -37,7 +37,7 @@
   <RecipeDef>
     <defName>AR_MakeOliveOilBulk</defName>
     <label>make olive oil (x25)</label>
-    <description>Render oil from olive fruits.</description>
+    <description>renders oil from olive fruits</description>
     <jobString>making olive oil</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workAmount>500</workAmount>
@@ -105,7 +105,7 @@
   <RecipeDef ParentName="CookMealBase">
     <defName>AR_FryMeat</defName>
     <label>fry meat</label>
-    <description>Cook a relatively simple meal by frying raw ingredients in some kind of fat.</description>
+    <description>Cooks a relative simple meal while frying raw ingredients in a kind of fat.</description>
     <jobString>Frying meal.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -145,7 +145,7 @@
   <RecipeDef ParentName="CookMealBase">
     <defName>AR_FryEggs</defName>
     <label>fry animal products</label>
-    <description>Cook a relatively simple meal by frying raw ingredients in some kind of fat.</description>
+    <description>Cooks a relative simple meal while frying raw ingredients in a kind of fat.</description>
     <jobString>frying meal.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -185,7 +185,7 @@
   <RecipeDef ParentName="CookMealBase">
     <defName>AR_MakeSalad</defName>
     <label>make salad</label>
-    <description>Cook a relatively simple meal by mixing various vegetables with some kind of dressing.</description>
+    <description>Cooks a relative simple meal while mixing various vegetables with some dressing</description>
     <jobString>make salad.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -226,7 +226,7 @@
   <RecipeDef>
     <defName>AR_MakeAmmoStone</defName>
     <label>make ballistae stones</label>
-    <description>Create ammo from rocks.</description>
+    <description>chisles ammo out of rocks</description>
     <jobString>making ballistae stone</jobString>
     <workAmount>1600</workAmount>
     <requiredGiverWorkType>Crafting</requiredGiverWorkType>
@@ -260,8 +260,8 @@
   <RecipeDef>
     <defName>AR_MakeAmmoFire</defName>
     <label>make ballistae incendiary ammo</label>
-    <description>make fire missiles</description>
-    <jobString>Make incendiary ammo for ballistae.</jobString>
+    <description>build some fireballs</description>
+    <jobString>making ballistae incendiary ammo</jobString>
     <workAmount>1600</workAmount>
     <requiredGiverWorkType>Crafting</requiredGiverWorkType>
     <workSkill>Crafting</workSkill>

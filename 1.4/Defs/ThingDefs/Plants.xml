@@ -4,7 +4,7 @@
   <ThingDef ParentName="PlantBase">
     <defName>AR_PlantArtichoke</defName>
     <label>artichoke plant</label>
-    <description>A variety of thistle, cultivated for food.</description>
+    <description>A variety of a species of thistle cultivated as a food.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
@@ -39,7 +39,7 @@
   <ThingDef ParentName="PlantBase">
     <defName>AR_PlantGrape</defName>
     <label>grape plant</label>
-    <description>A tasty fruit, that can easily be fermented into wine. Delicious even when raw.</description>
+    <description>A tasty fruit, that could easy fermented into wine. Delicious even when raw.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
@@ -76,7 +76,7 @@
   <ThingDef ParentName="PlantBase">
     <defName>AR_PlantGrapeWild</defName>
     <label>wild grape plant</label>
-    <description>A tasty fruit, that can easily be fermented into wine. Delicious even when raw.</description>
+    <description>A tasty fruit, that could easy fermented into wine. Delicious even when raw.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
@@ -113,7 +113,7 @@
   <ThingDef ParentName="TreeBase">
     <defName>AR_TreeOlive</defName>
     <label>olive tree</label>
-    <description>A strong tree with hard wood. Slow growing, but bears more fruits than cultivated small plants.</description>
+    <description>A strong hardwood tree. Slow-growing, but its amount of fruits is higher than that of the cultivated small plants.</description>
     <graphicData>
       <texPath>Items/Plants/OliveTree</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -149,7 +149,7 @@
     <defName>AR_TreePomegranate</defName>
     <label>pomegranate tree</label>
     <altitudeLayer>Building</altitudeLayer>
-    <description>A strong tree with hard wood. Slow growing, but bears more fruits than cultivated small plants.</description>
+    <description>A strong hardwood tree. Slow-growing, but its amount of fruits is higher than that of the cultivated small plants.</description>
     <graphicData>
       <texPath>Items/Plants/PomegranateTree</texPath>
       <graphicClass>Graphic_Single</graphicClass>

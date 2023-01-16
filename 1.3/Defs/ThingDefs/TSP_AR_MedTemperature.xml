@@ -1,0 +1,402 @@
+﻿<Defs>
+  <!-- Tempertature -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_1x2Fountain</defName>
+    <label>fountain (1x2)</label>
+    <description>A decorative water fountain where colonists can drink, wash their hands, and chill. It also preads cool water into the air.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Furniture/Fountain/1x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>true</rotatable>
+    <passability>Impassable</passability>
+    <size>(1,2)</size>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.7</fillPercent>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+	<coversFloor>true</coversFloor>
+	<!--
+		<effectWorking>Sculpt</effectWorking>
+		<soundWorking>Recipe_Sculpt</soundWorking>
+	-->
+	<building>
+		<ai_chillDestination>true</ai_chillDestination>
+	</building>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+      <Cleanliness>5</Cleanliness>
+      <JoyGainFactor>1</JoyGainFactor>
+    </statBases>
+    <selectable>true</selectable>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  
+		<!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-10</heatPerSecond>
+        <heatPushMinTemperature>15</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+	  <li>
+		<compClass>CompGatherSpot</compClass>
+	  </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+			<li>Artistic</li>
+			<li>Dignified</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Quality">
+            <curve>
+              <points>
+                <li>(0,0.15)</li> <!-- awful -->
+                <li>(1,0.17)</li> <!-- poor -->
+                <li>(2,0.21)</li> <!-- normal -->
+                <li>(3,0.23)</li> <!-- good -->
+                <li>(4,0.25)</li> <!-- excellent -->
+                <li>(5,0.27)</li> <!-- masterwork -->
+                <li>(6,0.28)</li> <!-- legendary -->
+              </points>
+            </curve>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Temperature</designationCategory>
+	<hasInteractionCell>False</hasInteractionCell>
+    <researchPrerequisites>
+      <li>AR_Project_Water_Cooling</li>
+    </researchPrerequisites>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_2x2Fountain</defName>
+    <label>fountain (2x2)</label>
+    <description>A decorative water fountain where colonists can drink, wash their hands, and chill. Through evaporation, it also spreads cool water into the air.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Furniture/Fountain/2x2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <size>(2,2)</size>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.7</fillPercent>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+	<coversFloor>true</coversFloor>
+    <statBases>
+      <WorkToBuild>5500</WorkToBuild>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>30</Beauty>
+      <Cleanliness>20</Cleanliness>
+      <JoyGainFactor>1</JoyGainFactor>
+    </statBases>
+    <selectable>true</selectable>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  
+	  <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+	<building>
+		<ai_chillDestination>true</ai_chillDestination>
+	</building>
+    <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-20</heatPerSecond>
+        <heatPushMinTemperature>-14</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+	  <li>
+		<compClass>CompGatherSpot</compClass>
+	  </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+			<li>Artistic</li>
+			<li>Dignified</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Quality">
+            <curve>
+              <points>
+                <li>(0,0.15)</li> <!-- awful -->
+                <li>(1,0.17)</li> <!-- poor -->
+                <li>(2,0.21)</li> <!-- normal -->
+                <li>(3,0.23)</li> <!-- good -->
+                <li>(4,0.25)</li> <!-- excellent -->
+                <li>(5,0.27)</li> <!-- masterwork -->
+                <li>(6,0.28)</li> <!-- legendary -->
+              </points>
+            </curve>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Temperature</designationCategory>
+	<hasInteractionCell>False</hasInteractionCell>
+    <researchPrerequisites>
+      <li>AR_Project_Water_Cooling</li>
+    </researchPrerequisites>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_Aqueduct</defName>
+    <label>aqueduct</label>
+    <category>Building</category>
+    <description>A channel where water flows through. It cools rooms and heightens its cleanlinenes.</description>
+    <graphicData>
+      <texPath>Buildings/Furniture/Fountain/Aqeduct_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom6</li>
+      </linkFlags>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<altitudeLayer Inherit="False">MoteOverhead</altitudeLayer> <!-- One of the highest Layers, just below Weather, it makes it so that Pawns always walk UNDER it -->
+	<blockWind>false</blockWind>
+    <uiIconPath>Icon/Aqueduct</uiIconPath>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>7</Beauty>
+      <Cleanliness>5</Cleanliness>
+	  <MarketValue>10</MarketValue> <!-- Lessen wealth calculations -->
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  
+		<!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <passability>PassThroughOnly</passability>
+    <pathCost>1</pathCost> <!-- Aqueducts were bridges. That makes them easy to walk under. -->
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.33</fillPercent> <!-- Bridges over one's head -->
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <isInert>true</isInert>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-5</heatPerSecond>
+        <heatPushMinTemperature>16</heatPushMinTemperature>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>AR_Project_Mediterranean_Culture</li>
+      <li>AR_Project_Water_Cooling</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_Heater</defName>
+    <label>hypocaust</label>
+    <description>A warming fire under the floor. This building stands symbolic for the Roman hypocaustum heating system where the whole floor is warmed by a fire. Refuelable.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Furniture/Heater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+      <drawSize>1</drawSize>
+    </graphicData>
+	<blockWind>false</blockWind>
+    <uiIconPath>Buildings/Furniture/Heater</uiIconPath>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0</fillPercent>
+    <coversFloor>true</coversFloor>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <stuffCategories>
+		<li>Metallic</li>
+		<li>Stony</li>
+
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>1.2</fuelConsumptionRate>
+        <fuelCapacity>50</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.1</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+			<li>Chemfuel</li>
+			<li MayRequire="sihv.rombones">BoneItem</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>0</initialFuelPercent>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>21</heatPerSecond>
+        <heatPushMaxTemperature>24</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_FireOverlay">
+        <fireSize>1</fireSize>
+        <offset>(0,0,-0.1)</offset>
+      </li>
+      <li Class="CompOverlays.CompProperties_Overlays">
+        <overlays>
+          <li>
+            <usesStuff>true</usesStuff>
+            <graphicData>
+              <texPath>Buildings/Furniture/Heater_overlay</texPath>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawRotated>false</drawRotated>
+              <allowFlip>false</allowFlip>
+              <damageData>
+                <rect>(0.2,0,0.6,0.1)</rect>
+              </damageData>
+              <drawSize>1</drawSize>
+            </graphicData>
+            <offset>(0,1.0,0)</offset>
+          </li>
+        </overlays>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>AR_Project_Hypocaustum</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
