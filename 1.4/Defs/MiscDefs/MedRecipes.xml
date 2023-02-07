@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- foodstuff -->
+  <RecipeDef>
+    <defName>AR_MakeOliveOil</defName>
+    <label>make olive oil (x5)</label>
+    <description>Renders olive oil from olive fruits.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+    <jobString>making olive oil</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>100</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawOlives</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_OliveOil>5</AR_OliveOil>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawOlives</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>AR_Press</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>AR_MakeOliveOilBulk</defName>
+    <label>make olive oil (x25)</label>
+    <description>Renders olive oil from olive fruits.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+    <jobString>making olive oil</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>700</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawOlives</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_OliveOil>25</AR_OliveOil>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawOlives</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>AR_Press</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>AR_MakeOliveOilSuperBulk</defName>
+    <label>make olive oil (x50)</label>
+    <description>Renders olive oil from olive fruits.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+    <jobString>making olive oil</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>1000</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawOlives</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_OliveOil>50</AR_OliveOil>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawOlives</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>AR_Press</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>AR_MakeOliveOilSuperDuperBulk</defName>
+    <label>make olive oil (x100)</label>
+    <description>Renders olive oil from olive fruits.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+    <jobString>making olive oil</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>1200</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawOlives</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_OliveOil>100</AR_OliveOil>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawOlives</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>AR_Press</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>AR_MakeGrapeMash</defName>
+    <label>make grape mash</label>
+    <description>Mash grapes.</description>
+    <jobString>Mashing grapes.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_RawGrapes</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Plant_Grape</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_RawGrapes</li>
+		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Plant_Grape</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_Mash>5</AR_Mash>
+    </products>
+    <recipeUsers>
+		<li>CraftingSpot</li>
+		<li>Brewery</li>
+		<li MayRequire="mlie.takisrandomstuff">ButcherSpot</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!-- cooking -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>AR_FryMeat</defName>
+    <label>fry meat in olive oil</label>
+	<workAmount>300</workAmount>
+    <description>Cooks a relatively simple meal by frying raw meat in fatty olive oil.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+    <jobString>frying meat in olive oil</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>0.21</count> <!-- Three units -->
+      </li>
+    </ingredients>
+    <products>
+      <AR_FryedMeat>1</AR_FryedMeat>
+    </products>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Cooking>1</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+    <defName>TSP_AR_FryMeatBulk</defName>
+    <label>fry meat in olive oil (x10)</label>
+    <description>Cook a large amount of meals by frying raw meat in fatty olive oil.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+	<workAmount>1000</workAmount>
+    <jobString>frying meat in olive oil en masse</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>1.26</count> <!-- Should be eighteen units -->
+      </li>
+    </ingredients>
+    <products>
+      <AR_FryedMeat>10</AR_FryedMeat>
+    </products>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Cooking>3</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+    <defName>TSP_AR_FryMeatSuperBulk</defName>
+    <label>fry meat in olive oil (x20)</label>
+    <description>Cook a large amount of meals by frying raw meat in fatty olive oil.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+	<workAmount>1800</workAmount>
+    <jobString>frying meat in olive oil en masse</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>2.8</count> <!-- Should be forty units -->
+      </li>
+    </ingredients>
+    <products>
+      <AR_FryedMeat>20</AR_FryedMeat>
+    </products>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>AR_FryEggs</defName>
+    <label>fry animal products in olive oil</label>
+    <description>Cook a relatively simple meal by frying raw ingredients in fatty olive oil.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+	</descriptionHyperlinks>
+    <jobString>frying animal products in olive oil</jobString>
+	<workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>0.21</count> <!-- Three units -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>AnimalProductRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_FryedEgg>1</AR_FryedEgg>
+    </products>
+    <skillRequirements>
+      <Cooking>3</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+    <defName>TSP_AR_FryAnimalProductsBulk</defName>
+    <label>fry animal products in bulk using olive oil (x10)</label>
+    <description>Cook a relatively simple meal by frying raw ingredients in fatty olive oil.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+	</descriptionHyperlinks>
+    <jobString>frying animal products in olive oil en masse</jobString>
+	<workAmount>1000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>1.26</count> <!-- Should be eighteen units -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>AnimalProductRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_FryedEgg>10</AR_FryedEgg>
+    </products>
+    <skillRequirements>
+      <Cooking>4</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>TSP_AR_FryAnimalProductsSuperBulk</defName>
+    <label>fry animal products in bulk using olive oil (x20)</label>
+    <description>Cook a relatively simple meal by frying raw ingredients in fatty olive oil.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+	</descriptionHyperlinks>
+    <jobString>frying animal products in olive oil en masse</jobString>
+	<workAmount>1500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>2.4</count> <!-- Thirty units -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>AnimalProductRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_FryedEgg>20</AR_FryedEgg>
+    </products>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+    <defName>TSP_AR_FryAnimalProductsSuperDuperBulk</defName>
+    <label>fry animal products in bulk using olive oil (x50)</label>
+    <description>Cook a relatively simple meal by frying raw ingredients in fatty olive oil.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_Salad</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+	</descriptionHyperlinks>
+    <jobString>frying animal products in olive oil en masse</jobString>
+	<workAmount>2500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>14</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>3.5</count> <!-- Fifty units -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>AnimalProductRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_FryedEgg>50</AR_FryedEgg>
+    </products>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+	  <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+	  <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>AR_MakeSalad</defName>
+    <label>make olive garden salad</label>
+    <description>Cook a delicious, simple salad by mixing various plant matter with some olive oil dressing.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+    <jobString>when you're here you're family</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>0.14</count> <!-- Two units -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_Salad>2</AR_Salad>
+    </products>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+		<li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+    <defName>TSP_AR_MakeSaladBulk</defName>
+    <label>make bulk olive garden salad for the table (x15)</label>
+    <description>Create large amounts of salad using olive oil and vegetables. Breadsticks not included.</description>
+	<descriptionHyperlinks>
+		<thingDef>AR_OliveOil</thingDef>
+		<thingDef>AR_RawOlives</thingDef>
+		<thingDef>AR_FryedMeat</thingDef>
+		<thingDef>AR_FryedEgg</thingDef>
+	</descriptionHyperlinks>
+    <jobString>when you're here you're family</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>2.1</count> <!-- Thirty units -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<thingDefs>
+			<li>AR_OliveOil</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_Salad>15</AR_Salad>
+    </products>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+		<li>CraftingSpot</li>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+		<li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!-- ammo -->
+  <RecipeDef>
+    <defName>AR_MakeAmmoStone</defName>
+    <label>make ballistae stones</label>
+    <description>Chistle ammunition out of rocks. It is as simple as it is deadly!</description>
+    <jobString>making ballistae stones</jobString>
+    <workAmount>1600</workAmount>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <AR_AmmoStone>15</AR_AmmoStone>
+    </products>
+    <recipeUsers>
+		<li>TableStonecutter</li>
+		<li>TableMachining</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneChippingSpot</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_CiYao_Fire</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Chi_CiYao</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>AR_MakeAmmoFire</defName>
+    <label>make ballistae incendiary ammo</label>
+    <description>Build some fireballs!</description>
+    <jobString>making ballistae incendiary ammo</jobString>
+    <workAmount>1600</workAmount>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>1</workSkillLearnFactor>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+			<li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+			<li MayRequire="sihv.rombones">BoneItem</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>AR_OliveOil</li>
+		<li>Chemfuel</li>
+		<li>WoodLog</li>
+		<li MayRequire="sihv.rombones">BoneItem</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AR_AmmoFire>10</AR_AmmoFire>
+    </products>
+    <recipeUsers>
+		<li>TableStonecutter</li>
+		<li>TableMachining</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+		<li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
+		<li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneChippingSpot</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_CiYao_Fire</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Chi_CiYao</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Ballistae</researchPrerequisite>
+  </RecipeDef>
+</Defs>

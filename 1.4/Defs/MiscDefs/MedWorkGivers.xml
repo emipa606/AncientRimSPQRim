@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <workGiverDef>
+    <defName>DoBillsMakeWeapons_AR</defName>
+    <label>make weapons</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>115</priorityInType>
+    <fixedBillGiverDefs>
+		<li>FueledSmithy</li>
+		<li>ElectricSmithy</li>
+    </fixedBillGiverDefs>
+    <verb>smith</verb>
+    <gerund>smithing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </workGiverDef>
+
+  <workGiverDef>
+    <defName>DoBillsPress_AR</defName>
+    <label>press oil</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>80</priorityInType>
+    <fixedBillGiverDefs>
+      <li>AR_Press</li>
+    </fixedBillGiverDefs>
+    <verb>press</verb>
+    <gerund>press at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </workGiverDef>
+
+  <!--
+	<workGiverDef>
+		<defName>UF_WorkGiver_TakeProductOutOfUniversalFermenter</defName>
+		<label>take product out of fermenter</label>
+		<giverClass>UniversalFermenter.WorkGiver_TakeProductOutOfUniversalFermenter</giverClass>
+		<workType>Hauling</workType>
+		<verb>take product</verb>
+		<gerund>taking product from</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</workGiverDef>
+	
+	<workGiverDef>
+		<defName>UF_WorkGiver_FillUniversalFermenter</defName>
+		<label>fill fermenter</label>
+		<giverClass>UniversalFermenter.WorkGiver_FillUniversalFermenter</giverClass>
+		<workType>Hauling</workType>
+		<verb>fill</verb>
+		<gerund>filling</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</workGiverDef>
+	-->
+</Defs>
