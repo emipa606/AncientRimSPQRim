@@ -1,5 +1,11 @@
 # Changelog for AncientRimSPQRim
 
+1.4.3 - Added bug-fixes and compatibility with multiple other mods, added in 1.3 for now. Thanks TurtleShroom. Also fixed the turret-graphics (republish)
+
+
+1.4.2 - Various languagefixes, thanks SolariusScorch
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests
 
 

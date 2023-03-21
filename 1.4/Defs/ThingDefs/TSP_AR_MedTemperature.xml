@@ -33,6 +33,9 @@
 	-->
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
+		<watchBuildingStandDistanceRange>-1~-2</watchBuildingStandDistanceRange>
+		<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
@@ -144,7 +147,7 @@
       <Flammability>0</Flammability>
       <Beauty>30</Beauty>
       <Cleanliness>20</Cleanliness>
-      <JoyGainFactor>1</JoyGainFactor>
+      <JoyGainFactor>1.1</JoyGainFactor>
     </statBases>
     <selectable>true</selectable>
     <stuffCategories>
@@ -157,13 +160,16 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>80</costStuffCount>
+    <costStuffCount>120</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
 	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
     </placeWorkers>
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
+		<watchBuildingStandDistanceRange>-1~-2</watchBuildingStandDistanceRange>
+		<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
     <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
     <comps>
@@ -193,13 +199,13 @@
           <li Class="FocusStrengthOffset_Quality">
             <curve>
               <points>
-                <li>(0,0.15)</li> <!-- awful -->
-                <li>(1,0.17)</li> <!-- poor -->
+                <li>(0,0.1)</li> <!-- awful -->
+                <li>(1,0.15)</li> <!-- poor -->
                 <li>(2,0.21)</li> <!-- normal -->
-                <li>(3,0.23)</li> <!-- good -->
-                <li>(4,0.25)</li> <!-- excellent -->
-                <li>(5,0.27)</li> <!-- masterwork -->
-                <li>(6,0.28)</li> <!-- legendary -->
+                <li>(3,0.25)</li> <!-- good -->
+                <li>(4,0.28)</li> <!-- excellent -->
+                <li>(5,0.3)</li> <!-- masterwork -->
+                <li>(6,0.38)</li> <!-- legendary -->
               </points>
             </curve>
           </li>
@@ -231,16 +237,6 @@
         <li>Custom6</li>
       </linkFlags>
       <shaderType>CutoutComplex</shaderType>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-        <edgeTop>Damage/Edge</edgeTop>
-        <edgeBot>Damage/Edge</edgeBot>
-        <edgeLeft>Damage/Edge</edgeLeft>
-        <edgeRight>Damage/Edge</edgeRight>
-      </damageData>
     </graphicData>
 	<altitudeLayer Inherit="False">MoteOverhead</altitudeLayer> <!-- One of the highest Layers, just below Weather, it makes it so that Pawns always walk UNDER it -->
 	<blockWind>false</blockWind>
@@ -251,7 +247,7 @@
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
       <Cleanliness>5</Cleanliness>
-	  <MarketValue>10</MarketValue> <!-- Lessen wealth calculations -->
+	  <MarketValue Inherit="False">10</MarketValue> <!-- Lessen wealth calculations -->
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
@@ -325,8 +321,10 @@
     <fillPercent>0</fillPercent>
     <coversFloor>true</coversFloor>
     <canOverlapZones>false</canOverlapZones>
+	<blockLight>false</blockLight>
+	<neverMultiSelect>true</neverMultiSelect>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>5000</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
       <Flammability>0</Flammability>
     </statBases>
@@ -348,29 +346,26 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>1.2</fuelConsumptionRate>
+        <fuelConsumptionRate>3.2</fuelConsumptionRate>
         <fuelCapacity>50</fuelCapacity>
-        <fuelConsumptionPerTickInRain>0.1</fuelConsumptionPerTickInRain>
+        <fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain> <!-- RL Hypocausts were literally built under the floor and sealed to avoid water damage -->
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
 			<li>Chemfuel</li>
 			<li MayRequire="sihv.rombones">BoneItem</li>
+			<li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
           </thingDefs>
         </fuelFilter>
         <initialFuelPercent>0</initialFuelPercent>
       </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
-        <glowColor>(252,187,113,0)</glowColor>
-      </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>21</heatPerSecond>
+        <heatPerSecond>24</heatPerSecond>
         <heatPushMaxTemperature>24</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_FireOverlay">
-        <fireSize>1</fireSize>
+        <fireSize>0.9</fireSize>
         <offset>(0,0,-0.1)</offset>
       </li>
       <li Class="CompOverlays.CompProperties_Overlays">
