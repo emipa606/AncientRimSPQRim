@@ -33,8 +33,9 @@
 	-->
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
-		<watchBuildingStandDistanceRange>-1~-2</watchBuildingStandDistanceRange>
-		<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+		<joyKind>TSP_AR_PlayInFountain</joyKind>
+		<watchBuildingStandDistanceRange>-1~-1</watchBuildingStandDistanceRange>
+		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
 		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
     <statBases>
@@ -167,7 +168,8 @@
     </placeWorkers>
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
-		<watchBuildingStandDistanceRange>-1~-2</watchBuildingStandDistanceRange>
+		<joyKind>TSP_AR_PlayInFountain</joyKind>
+		<watchBuildingStandDistanceRange>-1~-1</watchBuildingStandDistanceRange>
 		<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
 		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
@@ -246,7 +248,7 @@
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
-      <Cleanliness>5</Cleanliness>
+      <Cleanliness>6.5</Cleanliness>
 	  <MarketValue Inherit="False">10</MarketValue> <!-- Lessen wealth calculations -->
     </statBases>
     <stuffCategories>

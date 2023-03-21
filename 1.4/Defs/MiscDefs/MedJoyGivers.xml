@@ -4,7 +4,7 @@
   <joyGiverDef>
     <defName>AR_DrinkWaterJoy</defName>
     <giverClass>JoyGiver_WatchBuilding</giverClass>
-    <baseChance>2.5</baseChance>
+    <baseChance>2.66</baseChance>
     <thingDefs>
       <li>AR_1x2Fountain</li>
     </thingDefs>
@@ -19,7 +19,7 @@
   <joyGiverDef>
     <defName>AR_DrinkWaterJoyB</defName>
     <giverClass>JoyGiver_WatchBuilding</giverClass>
-    <baseChance>2.9</baseChance>
+    <baseChance>3</baseChance>
     <thingDefs>
       <li>AR_2x2Fountain</li>
     </thingDefs>
