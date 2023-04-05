@@ -792,7 +792,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-	<!-- Does this eist? -->
+	<!-- Does this exist? -->
 		<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
@@ -800,6 +800,34 @@
 			<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/minifiedDef</xpath>
 			<value>
 				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases</xpath>
+			<value>
+				<MarketValue>350</MarketValue>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
+			<value>
+				<Tradeability>Any</Tradeability>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -1148,7 +1176,7 @@
 			<value>
 				<baseTraderKinds>
 					<li>VFEC_Base_Republic_Standard</li>
-					<li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
+					<li MayRequire="zal.legionaryequipment">Base_Roman_Standard</li>
 				</baseTraderKinds>
 			</value>
 		</match>
@@ -1808,7 +1836,7 @@
 			<value>
 				<AR_Hoplite>1</AR_Hoplite>
 				<AR_HopliteHeavy>1</AR_HopliteHeavy>
-				<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">0.5</TSP_AR_Aquilifer>
+				<TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">0.5</TSP_AR_Aquilifer>
 			</value>
 		</match>
 	</Operation>
@@ -1872,7 +1900,7 @@
 					<AR_Hoplite>50</AR_Hoplite>
 					<AR_HopliteHeavy>40</AR_HopliteHeavy>
 					<TSP_AR_CitizenGirl>45</TSP_AR_CitizenGirl>
-					<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">5</TSP_AR_Aquilifer>
+					<TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">5</TSP_AR_Aquilifer>
 				</options>
 			</value>
 		</match>
@@ -1893,7 +1921,7 @@
 					<AR_Sagittarius>60</AR_Sagittarius>
 					<AR_Toxotes>45</AR_Toxotes>
 					<AR_General>50</AR_General>
-					<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">1</TSP_AR_Aquilifer>
+					<TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">1</TSP_AR_Aquilifer>
 				</options>
 			</value>
 		</match>

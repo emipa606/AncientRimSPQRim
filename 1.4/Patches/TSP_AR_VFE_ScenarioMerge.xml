@@ -141,12 +141,12 @@
 						<stuff>BlocksMarble</stuff>
 					</li>
 					
-					<li Class="ScenPart_StartingThing_Defined" MayRequire="sasha.legionaryequipment">
-						<def MayRequire="sasha.legionaryequipment">StartingThing_Defined</def>
-						<thingDef MayRequire="sasha.legionaryequipment">Roman_Standard</thingDef>
-						<stuff MayRequire="sasha.legionaryequipment">AR_Bronze</stuff>
-						<count MayRequire="sasha.legionaryequipment">1</count>
-						<allowRoofed MayRequire="sasha.legionaryequipment">True</allowRoofed>
+					<li Class="ScenPart_StartingThing_Defined" MayRequire="zal.legionaryequipment">
+						<def MayRequire="zal.legionaryequipment">StartingThing_Defined</def>
+						<thingDef MayRequire="zal.legionaryequipment">Roman_Standard</thingDef>
+						<stuff MayRequire="zal.legionaryequipment">AR_Bronze</stuff>
+						<count MayRequire="zal.legionaryequipment">1</count>
+						<allowRoofed MayRequire="zal.legionaryequipment">True</allowRoofed>
 					</li>
 
 					<!-- Scatter some things near player start -->
