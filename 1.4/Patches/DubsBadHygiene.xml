@@ -123,7 +123,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName = "AR_Aqueduct" or defName = "AR_1x2Fountain"  or defName = "AR_2x2Fountain"]/comps</xpath>
+          <xpath>Defs/ThingDef[defName="AR_Aqueduct"]/comps</xpath>
           <value>
             <li Class="DubsBadHygiene.CompProperties_Pipe">
               <mode>Sewage</mode>
@@ -140,32 +140,6 @@
       </operations>
     </match>
   </Operation>
-  
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="AR_1x2Fountain"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Hygiene</designationCategory>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="AR_2x2Fountain"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Hygiene</designationCategory>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
@@ -209,56 +183,7 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
-	
-	<!-- When Pawns seek to gain Joy from the Fountain, it fulfills their Thirst Need -->
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/JobDef[defName="AR_DrinkWaterJob"]/driverClass</xpath>
-			<value>
-				<driverClass>DubsBadHygiene.JobDriver_DrinkFromBasin</driverClass>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
-			<value>
-				<tags>
-					<li>ClassicStart</li>
-					<li>RomanStart</li>
-					<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-					<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-					<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
-				</tags>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]/prerequisites</xpath>
-			<value>
-				<prerequisites>
-					<li>Plumbing</li>
-					<li>PassiveCooler</li>
-				</prerequisites>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
 		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>

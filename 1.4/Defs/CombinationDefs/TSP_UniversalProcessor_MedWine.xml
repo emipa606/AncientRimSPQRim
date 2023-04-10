@@ -35,8 +35,8 @@
 		<color>(64, 0, 128)</color> <!-- 0-255 or 0.0-1.0 -->
 		<customLabel></customLabel>
 		<destroyChance>0.0</destroyChance>
-		<bonusOutputs><!-- 
-			<thingDef>(1.0, 1.0)</thingDef> -->
+		<bonusOutputs>
+			<!-- <thingDef>(1.0, 1.0)</thingDef> -->
 		</bonusOutputs>
 	</ProcessorFramework.ProcessDef>
 </Defs>
