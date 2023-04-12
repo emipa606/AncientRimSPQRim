@@ -453,7 +453,7 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this. -->
-		<match Class="PatchOperationAdd" MayRequire="oskarpotocki.vfe.classical">
+		<nomatch Class="PatchOperationAdd" MayRequire="oskarpotocki.vfe.classical">
 			<success MayRequire="oskarpotocki.vfe.classical">Always</success>
 			<xpath MayRequire="oskarpotocki.vfe.classical">/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
 			<value MayRequire="oskarpotocki.vfe.classical">
@@ -462,7 +462,7 @@
 					<li MayRequire="oskarpotocki.vfe.classical">AR_Project_Mediterranean_Culture</li>
 				</prerequisites>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
@@ -562,13 +562,15 @@
 	<!-- Does this exist? -->
 		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
 		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
 			<value>
 				<prerequisites>
 					<li>AR_Project_Hypocaustum</li>
 					<li>AR_Project_Water_Cooling</li>
+					<li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
+					<li MayRequire="dubwise.dubsbadhygiene">LogBoilers</li>
 				</prerequisites>
 			</value>
 		</match>

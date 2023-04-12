@@ -3,14 +3,23 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
-		<!-- If it does, add this as an Abstract Parent Name to call a Base elsewhere. -->
-		<match Class="PatchOperationAttributeSet">
-			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
-
-			<attribute>ParentName</attribute>
-			<value>RomeShields</value>
+	<xpath>Defs/ThingDef[defName="Roman_Standard"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+				<li Class="PatchOperationAttributeRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+					<attribute>ParentName</attribute>
+				</li>
+				<li Class="PatchOperationAttributeSet">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>BaseAncientShield</value>
+				</li>
+			</operations>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
@@ -63,7 +72,7 @@
 					<WorkSpeedGlobal>0.02</WorkSpeedGlobal>
 					<PainShockThreshold>0.2</PainShockThreshold>
 					<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1</SlaveSuppressionOffset>
-					<MoveSpeed>0.5</MoveSpeed> <!-- Caesar's Aquilifer famously stormed the beaches of ancient England/Briton/Anglia at a rapid speed, inspiring the legionnaires to charge with him. It backfired. -->
+					<MoveSpeed>1</MoveSpeed> <!-- Caesar's Aquilifer famously stormed the beaches of ancient England/Briton/Anglia at a rapid speed, inspiring the legionnaires to charge with him. It backfired. -->
 				</equippedStatOffsets>
 			</value>
 		</match>
@@ -234,33 +243,36 @@
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="Roman_Standard"]/comps/li[@Class="VFECore.CompProperties_Shield"]</xpath>
+			<!-- <xpath>/Defs/ThingDef[defName="Roman_Standard"]/comps/li[@Class="VFECore.CompProperties_Shield"]</xpath> -->
+			<xpath>/Defs/ThingDef[defName="Roman_Standard"]/comps</xpath>
 			<value>
-				<li Class="PawnShields.CompProperties_Shield" Inherit="False">
-					<wieldedGraphic>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
-						<drawSize>(1.2, 1.8)</drawSize>
-					</wieldedGraphic>
-					<renderProperties>
-						<northOffset>(-0.1, -0.017, -0.2)</northOffset>
-						<southOffset>(0.1, 0.033, -0.2)</southOffset>
-						<westOffset>(-0.135, 0.053, -0.17)</westOffset>
-						<eastOffset>(0.135, -0.017, -0.2)</eastOffset>
-						<flipRotation>false</flipRotation>
-						<renderWhenPeaceful>true</renderWhenPeaceful>
-					</renderProperties>
-					<canBlockRanged>true</canBlockRanged>
-					<canBlockMelee>true</canBlockMelee>
-					<meleeBlockChanceFactor>0.85</meleeBlockChanceFactor>
-					<rangedBlockChanceFactor>0.6</rangedBlockChanceFactor>
-					<shieldTakeDamage>true</shieldTakeDamage>
-					<shieldTakeDamageFactor>0.45</shieldTakeDamageFactor>
-					<canBeAutoDiscarded>false</canBeAutoDiscarded>
-					<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-					<useFatigue>false</useFatigue>
-					<damageToFatigueFactor>0</damageToFatigueFactor>
-				</li>
+				<comps>
+					<li Class="PawnShields.CompProperties_Shield" Inherit="False">
+						<wieldedGraphic>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
+							<drawSize>(1.2, 1.8)</drawSize>
+						</wieldedGraphic>
+						<renderProperties>
+							<northOffset>(-0.1, -0.017, -0.2)</northOffset>
+							<southOffset>(0.1, 0.033, -0.2)</southOffset>
+							<westOffset>(-0.135, 0.053, -0.17)</westOffset>
+							<eastOffset>(0.135, -0.017, -0.2)</eastOffset>
+							<flipRotation>false</flipRotation>
+							<renderWhenPeaceful>true</renderWhenPeaceful>
+						</renderProperties>
+						<canBlockRanged>true</canBlockRanged>
+						<canBlockMelee>true</canBlockMelee>
+						<meleeBlockChanceFactor>0.85</meleeBlockChanceFactor>
+						<rangedBlockChanceFactor>0.6</rangedBlockChanceFactor>
+						<shieldTakeDamage>true</shieldTakeDamage>
+						<shieldTakeDamageFactor>0.45</shieldTakeDamageFactor>
+						<canBeAutoDiscarded>false</canBeAutoDiscarded>
+						<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
+						<useFatigue>false</useFatigue>
+						<damageToFatigueFactor>0</damageToFatigueFactor>
+					</li>
+				</comps>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
