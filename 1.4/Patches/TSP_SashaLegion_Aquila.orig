@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>Defs/ThingDef[defName="Roman_Standard"]</xpath>
+	<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
 		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
 		<match Class="PatchOperationSequence">
 			<!-- <success>Always</success> -->
@@ -13,13 +13,26 @@
 					<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
 					<attribute>ParentName</attribute>
 				</li>
-				<li Class="PatchOperationAttributeSet">
+				<li Class="PatchOperationAttributeAdd">
 					<success>Always</success>
 					<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
 					<attribute>ParentName</attribute>
 					<value>BaseAncientShield</value>
 				</li>
 			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAttributeSet">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>BaseAncientShield</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
@@ -205,20 +218,6 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="Roman_Standard"]/recipeMaker/researchPrerequisite</xpath>
-			<value>
-				<researchPrerequisite Inherit="False">AR_Project_Segmental_Armour</researchPrerequisite>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
@@ -272,6 +271,23 @@
 						<useFatigue>false</useFatigue>
 						<damageToFatigueFactor>0</damageToFatigueFactor>
 					</li>
+					<li>
+						<compClass>CompQuality</compClass>
+					</li>
+					<li Class="CompProperties_Art">
+						<nameMaker>NamerArtWeaponMelee</nameMaker>
+						<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+						<minQualityForArtistic>Awful</minQualityForArtistic>
+					</li>
+					<li Class="CompProperties_Forbiddable" />
+					<li>
+						<compClass>CompEquippable</compClass>
+					</li>
+					<!--
+					<li>
+						<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+					</li>
+					-->
 				</comps>
 			</value>
 		</match>
