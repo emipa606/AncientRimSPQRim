@@ -181,7 +181,7 @@
 						</capacities>
 						<power>9</power>
 						<cooldownTime>1.5</cooldownTime>
-						<chanceFactor>0.3</chanceFactor>
+						<chanceFactor>0.1</chanceFactor>
 					</li>
 					<li>
 						<label>point</label>
@@ -279,7 +279,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/statBases</xpath>
 			<value>
-				<MarketValue>27</MarketValue>
+				<MarketValue>21</MarketValue>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -293,7 +293,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="Apparel_Tunic"]</xpath>
 			<value>
-				<generateCommonality>0.4</generateCommonality>
+				<generateCommonality>0.3</generateCommonality>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -327,6 +327,7 @@
 					<li>OniWear</li>
 					<li>BeetWear</li>
 					<li>JeubWear</li>
+					<li>GoblinWear</li>
 					<li>Tribal</li>
 				</tags>
 			</value>
