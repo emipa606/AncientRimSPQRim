@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <joyGiverDef>
     <defName>AR_DrinkWaterJoy</defName>
@@ -15,7 +14,6 @@
       <li>Eating</li>
     </requiredCapacities>
   </joyGiverDef>
-
   <joyGiverDef>
     <defName>AR_DrinkWaterJoyB</defName>
     <giverClass>JoyGiver_WatchBuilding</giverClass>

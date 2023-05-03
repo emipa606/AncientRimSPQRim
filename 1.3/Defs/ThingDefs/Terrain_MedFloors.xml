@@ -19,7 +19,6 @@
       <li>Smithing</li>
     </researchPrerequisites>
   </terrainDef>
-
   <terrainDef ParentName="FloorBase">
     <defName>AR_CopperTile</defName>
     <label>copper tile</label>

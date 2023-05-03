@@ -5,10 +5,10 @@
     <hairGender>Female</hairGender>
     <texPath>Hair/ImperialA</texPath>
     <defName>AR_HairImpA</defName>
-	<category>Tribal</category>
+    <category>Tribal</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
+      <li>Tribal</li>
     </hairTags>
   </HairDef>
   <HairDef>
@@ -16,10 +16,10 @@
     <hairGender>Female</hairGender>
     <texPath>Hair/ImperialB</texPath>
     <defName>AR_HairImpB</defName>
-	<category>Tribal</category>
+    <category>Tribal</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
+      <li>Tribal</li>
     </hairTags>
   </HairDef>
   <HairDef>
@@ -27,10 +27,10 @@
     <hairGender>Female</hairGender>
     <texPath>Hair/ImperialC</texPath>
     <defName>AR_HairImpC</defName>
-	<category>Tribal</category>
+    <category>Tribal</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
+      <li>Tribal</li>
     </hairTags>
   </HairDef>
   <HairDef>
@@ -38,11 +38,11 @@
     <hairGender>Male</hairGender>
     <texPath>Things/Pawn/Humanlike/Hairs/Shaved</texPath>
     <defName>AR_HairShaved</defName>
-	<category>Soldier</category>
+    <category>Soldier</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
-	  <li>Soldier</li>
+      <li>Tribal</li>
+      <li>Soldier</li>
     </hairTags>
   </HairDef>
   <HairDef>
@@ -50,11 +50,11 @@
     <hairGender>Male</hairGender>
     <texPath>Things/Pawn/Humanlike/Hairs/GreasySwoop</texPath>
     <defName>AR_HairGreasy</defName>
-	<category>Tribal</category>
+    <category>Tribal</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
-	  <li>Royal</li>
+      <li>Tribal</li>
+      <li>Royal</li>
     </hairTags>
   </HairDef>
   <HairDef>
@@ -62,10 +62,10 @@
     <hairGender>Female</hairGender>
     <texPath>Hair/GreekA</texPath>
     <defName>AR_HairGreA</defName>
-	<category>Tribal</category>
+    <category>Tribal</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
+      <li>Tribal</li>
     </hairTags>
   </HairDef>
   <HairDef>
@@ -73,10 +73,10 @@
     <hairGender>Female</hairGender>
     <texPath>Hair/GreekB</texPath>
     <defName>AR_HairGreB</defName>
-	<category>Tribal</category>
+    <category>Tribal</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
+      <li>Tribal</li>
     </hairTags>
   </HairDef>
   <HairDef>
@@ -84,10 +84,10 @@
     <hairGender>Female</hairGender>
     <texPath>Hair/GreekC</texPath>
     <defName>AR_HairGreC</defName>
-	<category>Tribal</category>
+    <category>Tribal</category>
     <hairTags>
       <li>Roman</li>
-	  <li>Tribal</li>
+      <li>Tribal</li>
     </hairTags>
   </HairDef>
 </Defs>

@@ -14,12 +14,11 @@
     <ingestible>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
-	<thingCategories Inherit="False">
-		<li>PlantFoodRaw</li>
-
-		<!-- If you have the Mod -->
-		<li MayRequire="VanillaExpanded.VPlantsE">VCE_Fruit</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>PlantFoodRaw</li>
+      <!-- If you have the Mod -->
+      <li MayRequire="VanillaExpanded.VPlantsE">VCE_Fruit</li>
+    </thingCategories>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>30</daysToRotStart>
@@ -27,7 +26,6 @@
       </li>
     </comps>
   </ThingDef>
-
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawArtichoke</defName>
     <label>artichokes</label>
@@ -49,7 +47,6 @@
       </li>
     </comps>
   </ThingDef>
-
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawGrapes</defName>
     <label>grapes</label>
@@ -66,12 +63,11 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
-	<thingCategories Inherit="False">
-		<li>PlantFoodRaw</li>
-
-		<!-- If you have the Mod -->
-		<li MayRequire="VanillaExpanded.VPlantsE" Inherit="False">VCE_Fruit</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>PlantFoodRaw</li>
+      <!-- If you have the Mod -->
+      <li MayRequire="VanillaExpanded.VPlantsE" Inherit="False">VCE_Fruit</li>
+    </thingCategories>
     <ingestible>
       <preferability>RawTasty</preferability>
       <tasteThought>
@@ -79,7 +75,6 @@
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
-
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawPomegranate</defName>
     <label>Pomegranates</label>
@@ -89,7 +84,7 @@
     </graphicData>
     <statBases>
       <MarketValue>3.0</MarketValue>
-	  <Nutrition>0.035</Nutrition>
+      <Nutrition>0.035</Nutrition>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -97,12 +92,11 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
-	<thingCategories Inherit="False">
-		<li Inherit="False">PlantFoodRaw</li>
-
-		<!-- If you have the Mod -->
-		<li MayRequire="VanillaExpanded.VPlantsE" Inherit="False">VCE_Fruit</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li Inherit="False">PlantFoodRaw</li>
+      <!-- If you have the Mod -->
+      <li MayRequire="VanillaExpanded.VPlantsE" Inherit="False">VCE_Fruit</li>
+    </thingCategories>
     <ingestible>
       <preferability>RawTasty</preferability>
       <tasteThought>
@@ -110,7 +104,6 @@
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
-
   <!-- Foods -->
   <ThingDef ParentName="OrganicProductBase">
     <defName>AR_OliveOil</defName>
@@ -120,51 +113,49 @@
       <texPath>Items/Stuff/Foods/OliveOil</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-	<healthAffectsPrice>true</healthAffectsPrice>
+    <healthAffectsPrice>true</healthAffectsPrice>
     <thingCategories>
-		<li MayRequire="VanillaExpanded.VCookE">VCE_Condiments</li>
-		<li MayRequire="tikubonn.RimSeasoning">RimSeasoning_Seasoning</li>
-		<li>PlantMatter</li>
+      <li MayRequire="VanillaExpanded.VCookE">VCE_Condiments</li>
+      <li MayRequire="tikubonn.RimSeasoning">RimSeasoning_Seasoning</li>
+      <li>PlantMatter</li>
     </thingCategories>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
     <socialPropernessMatters>true</socialPropernessMatters>
     <ingestible>
-		<foodType>Processed, Fluid, Plant, VegetableOrFruit, VegetarianRoughAnimal</foodType>
-		<preferability>DesperateOnly</preferability>
-		<!-- <tasteThought>AR_DrankOil</tasteThought> -->
-		<specialThoughtDirect>AR_DrankOil</specialThoughtDirect>
-		<specialThoughtAsIngredient>TSP_AR_DrankOilAsIngredient</specialThoughtAsIngredient>
-		<optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
-		<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<ingestSound>Ingest_Drink</ingestSound>
+      <foodType>Processed, Fluid, Plant, VegetableOrFruit, VegetarianRoughAnimal</foodType>
+      <preferability>DesperateOnly</preferability>
+      <!-- <tasteThought>AR_DrankOil</tasteThought> -->
+      <specialThoughtDirect>AR_DrankOil</specialThoughtDirect>
+      <specialThoughtAsIngredient>TSP_AR_DrankOilAsIngredient</specialThoughtAsIngredient>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Ingest_Drink</ingestSound>
     </ingestible>
     <statBases>
-		<MaxHitPoints>200</MaxHitPoints>
-		<MarketValue>18</MarketValue>
-		<Mass>0.005</Mass>
-		<Flammability>2</Flammability>
-		<DeteriorationRate>2</DeteriorationRate>
-		<FoodPoisonChance>0</FoodPoisonChance>
-		<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
-		<Nutrition>0.07</Nutrition>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>18</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>2</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <FoodPoisonChance>0</FoodPoisonChance>
+      <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+      <Nutrition>0.07</Nutrition>
     </statBases>
     <comps>
-		<li Class="CompProperties_Rottable">
-			<daysToRotStart>180</daysToRotStart>
-			<rotDestroys>true</rotDestroys>
-		</li>
-		
-		<!-- If you have the Mod, you can season non-Mediterranean food with olive oil too! -->
-		<li Class="RimSeasoning.CompProperties_Seasoning" MayRequire="tikubonn.RimSeasoning">
-			<compClass MayRequire="tikubonn.RimSeasoning">RimSeasoning.CompSeasoning</compClass>
-			<consumedThought MayRequire="tikubonn.RimSeasoning">TSP_AR_DrankOilAsIngredient</consumedThought>
-		</li>
-	</comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>180</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <!-- If you have the Mod, you can season non-Mediterranean food with olive oil too! -->
+      <li Class="RimSeasoning.CompProperties_Seasoning" MayRequire="tikubonn.RimSeasoning">
+        <compClass MayRequire="tikubonn.RimSeasoning">RimSeasoning.CompSeasoning</compClass>
+        <consumedThought MayRequire="tikubonn.RimSeasoning">TSP_AR_DrankOilAsIngredient</consumedThought>
+      </li>
+    </comps>
   </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Mash</defName>
     <label>mashed grapes</label>
@@ -177,7 +168,7 @@
     <rotatable>false</rotatable>
     <stackLimit>25</stackLimit>
     <thingCategories>
-		<li>Manufactured</li>
+      <li>Manufactured</li>
     </thingCategories>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
@@ -201,16 +192,15 @@
     </statBases>
     <tickerType>Rare</tickerType>
     <comps>
-		<li Class="CompProperties_Rottable">
-			<daysToRotStart>3</daysToRotStart>
-			<rotDestroys>true</rotDestroys>
-		</li>
-		<li Class="CompProperties_Ingredients">
-			<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
-		</li>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
     </comps>
   </ThingDef>
-
   <ThingDef ParentName="MealCooked">
     <defName>AR_FryedEgg</defName>
     <label>fried animal products in olive oil</label>
@@ -225,19 +215,18 @@
       <Nutrition>0.8</Nutrition>
     </statBases>
     <ingestible>
-		<foodType>Meal, Processed, AnimalProduct, OvivoreAnimal, OmnivoreHuman</foodType>
-		<preferability>MealSimple</preferability>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<tasteThought>AR_AteFryedMeal</tasteThought>
-		<ingestSound>Meal_Eat</ingestSound>
+      <foodType>Meal, Processed, AnimalProduct, OvivoreAnimal, OmnivoreHuman</foodType>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <tasteThought>AR_AteFryedMeal</tasteThought>
+      <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-	<comps>
-		<li Class="CompProperties_Ingredients">
-			<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
-		</li>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+    </comps>
   </ThingDef>
-
   <ThingDef ParentName="MealCooked">
     <defName>AR_FryedMeat</defName>
     <label>fried meat in olive oil</label>
@@ -252,19 +241,18 @@
       <Nutrition>0.9</Nutrition>
     </statBases>
     <ingestible>
-		<foodType>Meal, Processed, Meat, CarnivoreAnimal, CarnivoreAnimalStrict, OmnivoreHuman</foodType>
-		<preferability>MealFine</preferability>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<tasteThought>AR_AteFryedMeal</tasteThought>
-		<ingestSound>Meal_Eat</ingestSound>
+      <foodType>Meal, Processed, Meat, CarnivoreAnimal, CarnivoreAnimalStrict, OmnivoreHuman</foodType>
+      <preferability>MealFine</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <tasteThought>AR_AteFryedMeal</tasteThought>
+      <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-	<comps>
-		<li Class="CompProperties_Ingredients">
-			<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
-		</li>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
   </ThingDef>
-
   <ThingDef ParentName="MealBase">
     <defName>AR_Salad</defName>
     <label>Roman salad</label>
@@ -279,20 +267,19 @@
       <Nutrition>0.8</Nutrition>
     </statBases>
     <ingestible>
-		<!-- This should fix the issue where Pawns cannot eat it -->
-		<foodType Inherit="False">Meal, Processed, Plant, VegetableOrFruit, VegetarianRoughAnimal, OmnivoreHuman, Kibble</foodType>
-		<preferability>MealFine</preferability>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<tasteThought>AR_AteSalad</tasteThought>
-		<ingestSound>Meal_Eat</ingestSound>
+      <!-- This should fix the issue where Pawns cannot eat it -->
+      <foodType Inherit="False">Meal, Processed, Plant, VegetableOrFruit, VegetarianRoughAnimal, OmnivoreHuman, Kibble</foodType>
+      <preferability>MealFine</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <tasteThought>AR_AteSalad</tasteThought>
+      <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-	<comps>
-		<li Class="CompProperties_Ingredients">
-			<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
-		</li>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+    </comps>
   </ThingDef>
-
   <ThingDef ParentName="DrugBase">
     <defName>AR_Wine</defName>
     <label>wine</label>
@@ -373,7 +360,6 @@
       </li>
     </tools>
   </ThingDef>
-
   <!-- Ammo -->
   <ThingDef ParentName="ResourceBase">
     <defName>AR_AmmoStone</defName>
@@ -397,11 +383,11 @@
     </thingCategories>
     <projectileWhenLoaded>AR_Bullet_BallistaeRocky</projectileWhenLoaded>
     <tickerType>Normal</tickerType>
-	<comps>
-		<li Class="CompProperties_Ingredients"></li>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+      </li>
+    </comps>
   </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>AR_AmmoFire</defName>
     <label>ballistae incendiary ammo</label>
@@ -433,7 +419,8 @@
           <max>30</max>
         </wickTicks>
       </li>
-		<li Class="CompProperties_Ingredients"></li>
+      <li Class="CompProperties_Ingredients">
+      </li>
     </comps>
     <projectileWhenLoaded>AR_Bullet_BallistaeFire</projectileWhenLoaded>
     <tickerType>Normal</tickerType>

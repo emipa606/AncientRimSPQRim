@@ -150,7 +150,7 @@
     <defName>AR_Ballistae_Gun</defName>
     <label>Ballista torsion mount</label>
     <graphicData>
-      <texPath>Buildings/Ballistae/Ballista_Top</texPath>
+      <texPath>Buildings/Ballistae/BallistaNew_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <description>Using the same methods as a crossbow, except bigger, a Ballista builds up an enormous power suitable to release diverse projectiles over long distances. Its shooting involved "storing" kinetic energy by applying torque (force applied to a rotating object) to ropes, and releasing it.</description>
@@ -323,7 +323,7 @@
     <label>Scorpio weapon</label>
     <description>Using the same methods as a crossbow, except bigger, a Scorpio built up power suitable to release diverse projectiles at its enemies. A Scorpio was a scaled-down version of a Ballista, sacrificing power and range for ease of use and faster firing. Its shooting involved "storing" kinetic energy by applying torque (force applied to a rotating object) to ropes, and releasing it.</description>
     <graphicData>
-      <texPath>Buildings/Ballistae/Scorpio_Top</texPath>
+      <texPath>Buildings/Ballistae/ScorpioNew_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

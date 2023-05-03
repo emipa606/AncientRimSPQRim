@@ -20,8 +20,7 @@
       <li>Metallic</li>
       <li>Woody</li>
       <li>Stony</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -46,8 +45,8 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <researchPrerequisites>
-		<li>ComplexFurniture</li>
-		<li>AR_Project_Mediterranean_Culture</li>
+      <li>ComplexFurniture</li>
+      <li>AR_Project_Mediterranean_Culture</li>
     </researchPrerequisites>
   </ThingDef>
   <!--========================= Walls =============================-->
@@ -87,7 +86,7 @@
     <costStuffCount>3</costStuffCount>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <costList>
-		<Dye>1</Dye>
+      <Dye>1</Dye>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
@@ -110,14 +109,13 @@
       <li>Metallic</li>
       <li>Woody</li>
       <li>Stony</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-	  <li MayRequire="taoschagic.igloo">Snowy</li>
+      <li MayRequire="taoschagic.igloo">Snowy</li>
     </stuffCategories>
     <building>
       <isInert>true</isInert>
@@ -127,22 +125,21 @@
       </blueprintGraphicData>
     </building>
     <damageMultipliers>
-		<li>
-			<damageDef>Bomb</damageDef>
-			<multiplier>2</multiplier>
-		</li>
-		<li>
-			<damageDef>Flame</damageDef>
-			<multiplier>1.025</multiplier>
-		</li>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>1.025</multiplier>
+      </li>
     </damageMultipliers>
     <researchPrerequisites>
-		<li>ComplexFurniture</li>
-		<li>AR_Project_Mediterranean_Culture</li>
-		<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Wallpapers</li>
+      <li>ComplexFurniture</li>
+      <li>AR_Project_Mediterranean_Culture</li>
+      <li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Wallpapers</li>
     </researchPrerequisites>
   </ThingDef>
-  
   <ThingDef ParentName="WallRome">
     <defName Inherit="False">AR_GreenWall</defName>
     <label Inherit="False">green dyed wall</label>
@@ -151,7 +148,6 @@
     </graphicData>
     <uiIconPath>Icon/GreenWall_MenuIcon</uiIconPath>
   </ThingDef>
-
   <ThingDef ParentName="WallRome">
     <defName Inherit="False">AR_BlueWall</defName>
     <label Inherit="False">blue dyed wall</label>

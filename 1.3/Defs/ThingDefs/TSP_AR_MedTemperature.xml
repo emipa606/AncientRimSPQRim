@@ -1,4 +1,5 @@
-﻿<Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
   <!-- Tempertature -->
   <ThingDef ParentName="BuildingBase">
     <defName>AR_1x2Fountain</defName>
@@ -26,14 +27,14 @@
     <fillPercent>0.7</fillPercent>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
-	<coversFloor>true</coversFloor>
-	<!--
+    <coversFloor>true</coversFloor>
+    <!--
 		<effectWorking>Sculpt</effectWorking>
 		<soundWorking>Recipe_Sculpt</soundWorking>
 	-->
-	<building>
-		<ai_chillDestination>true</ai_chillDestination>
-	</building>
+    <building>
+      <ai_chillDestination>true</ai_chillDestination>
+    </building>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>750</MaxHitPoints>
@@ -46,8 +47,7 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
-		<!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -56,7 +56,7 @@
     <costStuffCount>40</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
-	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
     <comps>
@@ -71,28 +71,35 @@
         <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
         <minQualityForArtistic>Awful</minQualityForArtistic>
-		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
       </li>
-	  <li>
-		<compClass>CompGatherSpot</compClass>
-	  </li>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>
         <focusTypes>
-			<li>Artistic</li>
-			<li>Dignified</li>
+          <li>Artistic</li>
+          <li>Dignified</li>
         </focusTypes>
         <offsets>
           <li Class="FocusStrengthOffset_Quality">
             <curve>
               <points>
-                <li>(0,0.15)</li> <!-- awful -->
-                <li>(1,0.17)</li> <!-- poor -->
-                <li>(2,0.21)</li> <!-- normal -->
-                <li>(3,0.23)</li> <!-- good -->
-                <li>(4,0.25)</li> <!-- excellent -->
-                <li>(5,0.27)</li> <!-- masterwork -->
-                <li>(6,0.28)</li> <!-- legendary -->
+                <li>(0,0.15)</li>
+                <!-- awful -->
+                <li>(1,0.17)</li>
+                <!-- poor -->
+                <li>(2,0.21)</li>
+                <!-- normal -->
+                <li>(3,0.23)</li>
+                <!-- good -->
+                <li>(4,0.25)</li>
+                <!-- excellent -->
+                <li>(5,0.27)</li>
+                <!-- masterwork -->
+                <li>(6,0.28)</li>
+                <!-- legendary -->
               </points>
             </curve>
           </li>
@@ -101,7 +108,7 @@
     </comps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Temperature</designationCategory>
-	<hasInteractionCell>False</hasInteractionCell>
+    <hasInteractionCell>False</hasInteractionCell>
     <researchPrerequisites>
       <li>AR_Project_Water_Cooling</li>
     </researchPrerequisites>
@@ -110,7 +117,6 @@
     </inspectorTabs>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
-
   <ThingDef ParentName="BuildingBase">
     <defName>AR_2x2Fountain</defName>
     <label>fountain (2x2)</label>
@@ -137,7 +143,7 @@
     <fillPercent>0.7</fillPercent>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
-	<coversFloor>true</coversFloor>
+    <coversFloor>true</coversFloor>
     <statBases>
       <WorkToBuild>5500</WorkToBuild>
       <MaxHitPoints>3000</MaxHitPoints>
@@ -150,8 +156,7 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -160,11 +165,11 @@
     <costStuffCount>80</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
-	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
     </placeWorkers>
-	<building>
-		<ai_chillDestination>true</ai_chillDestination>
-	</building>
+    <building>
+      <ai_chillDestination>true</ai_chillDestination>
+    </building>
     <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
     <comps>
       <li>
@@ -178,28 +183,35 @@
         <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
         <minQualityForArtistic>Awful</minQualityForArtistic>
-		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
       </li>
-	  <li>
-		<compClass>CompGatherSpot</compClass>
-	  </li>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>
         <focusTypes>
-			<li>Artistic</li>
-			<li>Dignified</li>
+          <li>Artistic</li>
+          <li>Dignified</li>
         </focusTypes>
         <offsets>
           <li Class="FocusStrengthOffset_Quality">
             <curve>
               <points>
-                <li>(0,0.15)</li> <!-- awful -->
-                <li>(1,0.17)</li> <!-- poor -->
-                <li>(2,0.21)</li> <!-- normal -->
-                <li>(3,0.23)</li> <!-- good -->
-                <li>(4,0.25)</li> <!-- excellent -->
-                <li>(5,0.27)</li> <!-- masterwork -->
-                <li>(6,0.28)</li> <!-- legendary -->
+                <li>(0,0.15)</li>
+                <!-- awful -->
+                <li>(1,0.17)</li>
+                <!-- poor -->
+                <li>(2,0.21)</li>
+                <!-- normal -->
+                <li>(3,0.23)</li>
+                <!-- good -->
+                <li>(4,0.25)</li>
+                <!-- excellent -->
+                <li>(5,0.27)</li>
+                <!-- masterwork -->
+                <li>(6,0.28)</li>
+                <!-- legendary -->
               </points>
             </curve>
           </li>
@@ -208,7 +220,7 @@
     </comps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Temperature</designationCategory>
-	<hasInteractionCell>False</hasInteractionCell>
+    <hasInteractionCell>False</hasInteractionCell>
     <researchPrerequisites>
       <li>AR_Project_Water_Cooling</li>
     </researchPrerequisites>
@@ -217,7 +229,6 @@
     </inspectorTabs>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
-
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Aqueduct</defName>
     <label>aqueduct</label>
@@ -242,8 +253,9 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-	<altitudeLayer Inherit="False">MoteOverhead</altitudeLayer> <!-- One of the highest Layers, just below Weather, it makes it so that Pawns always walk UNDER it -->
-	<blockWind>false</blockWind>
+    <altitudeLayer Inherit="False">MoteOverhead</altitudeLayer>
+    <!-- One of the highest Layers, just below Weather, it makes it so that Pawns always walk UNDER it -->
+    <blockWind>false</blockWind>
     <uiIconPath>Icon/Aqueduct</uiIconPath>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
@@ -251,13 +263,13 @@
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
       <Cleanliness>5</Cleanliness>
-	  <MarketValue>10</MarketValue> <!-- Lessen wealth calculations -->
+      <MarketValue>10</MarketValue>
+      <!-- Lessen wealth calculations -->
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
-		<!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -265,9 +277,11 @@
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
     <passability>PassThroughOnly</passability>
-    <pathCost>1</pathCost> <!-- Aqueducts were bridges. That makes them easy to walk under. -->
+    <pathCost>1</pathCost>
+    <!-- Aqueducts were bridges. That makes them easy to walk under. -->
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.33</fillPercent> <!-- Bridges over one's head -->
+    <fillPercent>0.33</fillPercent>
+    <!-- Bridges over one's head -->
     <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Normal</tickerType>
@@ -299,7 +313,6 @@
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
-
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Heater</defName>
     <label>hypocaust</label>
@@ -316,7 +329,7 @@
       </damageData>
       <drawSize>1</drawSize>
     </graphicData>
-	<blockWind>false</blockWind>
+    <blockWind>false</blockWind>
     <uiIconPath>Buildings/Furniture/Heater</uiIconPath>
     <passability>Standable</passability>
     <pathCost>0</pathCost>
@@ -332,14 +345,13 @@
     </statBases>
     <selectable>true</selectable>
     <stuffCategories>
-		<li>Metallic</li>
-		<li>Stony</li>
-
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costStuffCount>60</costStuffCount>
     <placeWorkers>
@@ -354,8 +366,8 @@
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
-			<li>Chemfuel</li>
-			<li MayRequire="sihv.rombones">BoneItem</li>
+            <li>Chemfuel</li>
+            <li MayRequire="sihv.rombones">BoneItem</li>
           </thingDefs>
         </fuelFilter>
         <initialFuelPercent>0</initialFuelPercent>
