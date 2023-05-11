@@ -26,16 +26,17 @@
       <packageId>Mlie.AncientRimCore</packageId>
       <displayName>Ancient Rim - Core</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2458180650</steamWorkshopUrl>
+      <downloadUrl>https://github.com/emipa606/AncientRimCore/releases/latest</downloadUrl>
     </li>
   </modDependencies>
   <loadAfter>
     <li>jecrell.jecstools</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>Mlie.AncientRimCore</li>
-	<li>wvc.sergkart.itt.techtreepatch</li>
-	<li>oskarpotocki.vfe.classical</li>
-	<li>shavius.classical.flavour</li>
-	<li>zal.legionaryequipment</li>
+    <li>wvc.sergkart.itt.techtreepatch</li>
+    <li>oskarpotocki.vfe.classical</li>
+    <li>shavius.classical.flavour</li>
+    <li>zal.legionaryequipment</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod
@@ -55,7 +56,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653
 
 [table]
     [tr]
-        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://dsc.gg/mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
         [td][url=https://github.com/emipa606/AncientRimSPQRim][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
     [/tr]
     [tr]
@@ -90,9 +91,5 @@ I haven't tested the mod much for compatibility issues with other mods but Ancie
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
-
-
-
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2458182631]Last updated 2023-01-16[/url]</description>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2458182631]Last updated 2023-05-11[/url]</description>
 </ModMetaData>

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Aqueduct</defName>
@@ -15,8 +14,9 @@
       </linkFlags>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-	<altitudeLayer Inherit="False">MoteOverhead</altitudeLayer> <!-- One of the highest Layers, just below Weather, it makes it so that Pawns always walk UNDER it -->
-	<blockWind>false</blockWind>
+    <altitudeLayer Inherit="False">MoteOverhead</altitudeLayer>
+    <!-- One of the highest Layers, just below Weather, it makes it so that Pawns always walk UNDER it -->
+    <blockWind>false</blockWind>
     <uiIconPath>Icon/Aqueduct</uiIconPath>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
@@ -24,13 +24,13 @@
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
       <Cleanliness>6.5</Cleanliness>
-	  <MarketValue Inherit="False">10</MarketValue> <!-- Lessen wealth calculations -->
+      <MarketValue Inherit="False">10</MarketValue>
+      <!-- Lessen wealth calculations -->
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
-		<!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -38,9 +38,11 @@
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
     <passability>PassThroughOnly</passability>
-    <pathCost>1</pathCost> <!-- Aqueducts were bridges. That makes them easy to walk under. -->
+    <pathCost>1</pathCost>
+    <!-- Aqueducts were bridges. That makes them easy to walk under. -->
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.33</fillPercent> <!-- Bridges over one's head -->
+    <fillPercent>0.33</fillPercent>
+    <!-- Bridges over one's head -->
     <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Normal</tickerType>
@@ -72,7 +74,6 @@
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
-
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Heater</defName>
     <label>hypocaust</label>
@@ -89,7 +90,7 @@
       </damageData>
       <drawSize>1</drawSize>
     </graphicData>
-	<blockWind>false</blockWind>
+    <blockWind>false</blockWind>
     <uiIconPath>Buildings/Furniture/Heater</uiIconPath>
     <passability>Standable</passability>
     <pathCost>0</pathCost>
@@ -98,8 +99,8 @@
     <fillPercent>0</fillPercent>
     <coversFloor>true</coversFloor>
     <canOverlapZones>false</canOverlapZones>
-	<blockLight>false</blockLight>
-	<neverMultiSelect>true</neverMultiSelect>
+    <blockLight>false</blockLight>
+    <neverMultiSelect>true</neverMultiSelect>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
@@ -107,14 +108,13 @@
     </statBases>
     <selectable>true</selectable>
     <stuffCategories>
-		<li>Metallic</li>
-		<li>Stony</li>
-
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costStuffCount>60</costStuffCount>
     <placeWorkers>
@@ -125,13 +125,14 @@
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>3.2</fuelConsumptionRate>
         <fuelCapacity>50</fuelCapacity>
-        <fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain> <!-- RL Hypocausts were literally built under the floor and sealed to avoid water damage -->
+        <fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
+        <!-- RL Hypocausts were literally built under the floor and sealed to avoid water damage -->
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
-			<li>Chemfuel</li>
-			<li MayRequire="sihv.rombones">BoneItem</li>
-			<li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
+            <li>Chemfuel</li>
+            <li MayRequire="sihv.rombones">BoneItem</li>
+            <li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
           </thingDefs>
         </fuelFilter>
         <initialFuelPercent>0</initialFuelPercent>

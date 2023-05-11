@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]</xpath>
@@ -34,7 +33,7 @@
           <value>
             <li>AR_RawGrapes</li>
             <li>AR_RawPomegranate</li>
-			<li>AR_RawOlives</li>
+            <li>AR_RawOlives</li>
           </value>
         </li>
         <!-- Knight -->
@@ -66,7 +65,7 @@
           <value>
             <li>AR_RawGrapes</li>
             <li>AR_RawPomegranate</li>
-			<li>AR_RawOlives</li>
+            <li>AR_RawOlives</li>
           </value>
         </li>
         <!-- Praetor -->
@@ -98,7 +97,7 @@
           <value>
             <li>AR_RawGrapes</li>
             <li>AR_RawPomegranate</li>
-			<li>AR_RawOlives</li>
+            <li>AR_RawOlives</li>
           </value>
         </li>
         <!-- Baron -->
@@ -122,7 +121,7 @@
           <value>
             <li>AR_RawGrapes</li>
             <li>AR_RawPomegranate</li>
-			<li>AR_RawOlives</li>
+            <li>AR_RawOlives</li>
           </value>
         </li>
         <!-- Count -->
@@ -146,7 +145,7 @@
           <value>
             <li>AR_RawGrapes</li>
             <li>AR_RawPomegranate</li>
-			<li>AR_RawOlives</li>
+            <li>AR_RawOlives</li>
           </value>
         </li>
         <!-- Duke and above -->
@@ -170,7 +169,7 @@
           <value>
             <li>AR_RawGrapes</li>
             <li>AR_RawPomegranate</li>
-			<li>AR_RawOlives</li>
+            <li>AR_RawOlives</li>
           </value>
         </li>
       </operations>

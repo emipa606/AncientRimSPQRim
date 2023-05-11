@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <ThingDef Name="RomeArmourMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
     <statBases>
@@ -9,9 +8,9 @@
       <Beauty>-4</Beauty>
       <SellPriceFactor>0.70</SellPriceFactor>
     </statBases>
-	<thingCategories Inherit="False">
-		<li>TSP_AR_RomanArmor</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanArmor</li>
+    </thingCategories>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -19,8 +18,8 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
       <recipeUsers>
-		<li>FueledSmithy</li>
-		<li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
       </recipeUsers>
       <defaultIngredientFilter>
         <categories>
@@ -35,29 +34,27 @@
       </defaultIngredientFilter>
     </recipeMaker>
   </ThingDef>
-
   <!-- Roman -->
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_TripleDisc</defName>
-	<label>triple-disc armor</label>
+    <label>triple-disc armor</label>
     <description>A pre-Roman armor type worn by the Italian tribe of the Samnites. Basically a torso plate decorated with three discs. Extremely heavy and significantly weaker than plate armor, but far easier to craft and very beautiful.</description>
     <graphicData>
       <texPath>Items/Apparel/TripleDiscOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>60</costStuffCount>
-	<stuffCategories>
-		<li>Woody</li>
-		<li>Metallic</li>
-		<li>Stony</li>
-	  
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
-	</stuffCategories>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+    </stuffCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
     </equippedStatOffsets>
@@ -68,7 +65,7 @@
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>10</EquipDelay>
-	  <Beauty>3</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -79,11 +76,11 @@
         <li>Middle</li>
       </layers>
       <tags>
-		<li>HellenicSoldier</li>
-		<li>RomeSoldier</li>
-		<li>MedievalMilitary</li>
-		<li>ClassicalMilitary</li>
-		<li>NeolithicAdvanced</li>
+        <li>HellenicSoldier</li>
+        <li>RomeSoldier</li>
+        <li>MedievalMilitary</li>
+        <li>ClassicalMilitary</li>
+        <li>NeolithicAdvanced</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -91,15 +88,14 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
     <recipeMaker>
-		<researchPrerequisites>
-			<li>AR_Project_Light_Armour</li>
-		</researchPrerequisites>
-		<skillRequirements>
-			<Crafting>2</Crafting>
-		</skillRequirements>
+      <researchPrerequisites>
+        <li>AR_Project_Light_Armour</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaSegmentata</defName>
     <description>The standard armor of the earliest true standing armies. Made of many layers of metal strips.</description>
@@ -110,22 +106,22 @@
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>150</costStuffCount>
-	<stuffCategories>
-		<li>Metallic</li>
-	  
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-	</stuffCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
       <WorkToMake>28000</WorkToMake>
       <Mass>15</Mass>
-      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor> <!-- For reference, 0.7 is FLAK Armor -->
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <!-- For reference, 0.7 is FLAK Armor -->
       <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>15</EquipDelay>
@@ -144,11 +140,11 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-	  <tags>
-		<li>HellenicSoldier</li>
-		<li>ClassicalMilitary</li>
-		<li>ClassicalMilitaryClassy</li>
-	  </tags>
+      <tags>
+        <li>HellenicSoldier</li>
+        <li>ClassicalMilitary</li>
+        <li>ClassicalMilitaryClassy</li>
+      </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
     <recipeMaker>
@@ -158,7 +154,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
- 
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaHamata</defName>
     <description>Early Roman chainmail, kept in the style of the Greek armor from which it was derived.</description>
@@ -170,26 +165,26 @@
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
     </equippedStatOffsets>
-	<generateCommonality>0.6</generateCommonality>
+    <generateCommonality>0.6</generateCommonality>
     <statBases>
-		<WorkToMake>6000</WorkToMake>
-		<MaxHitPoints>300</MaxHitPoints>
-		<Mass>15</Mass>
-		<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor> <!-- For reference, 0.7 is Flak Armor -->
-		<Insulation_Cold>1</Insulation_Cold>
-		<Insulation_Heat>1</Insulation_Heat>
-		<EquipDelay>15</EquipDelay>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>15</Mass>
+      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+      <!-- For reference, 0.7 is Flak Armor -->
+      <Insulation_Cold>1</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>15</EquipDelay>
     </statBases>
     <costStuffCount>70</costStuffCount>
-	<stuffCategories>
-		<li>Metallic</li>
-	  
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-	</stuffCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -202,13 +197,13 @@
         <li>Middle</li>
       </layers>
       <tags>
-		<li>Tribal</li>
-		<!-- <li>Medieval</li> -->
-		<li>MedievalMilitary</li>
-		<li>MedievalArmorBasic</li>
+        <li>Tribal</li>
+        <!-- <li>Medieval</li> -->
+        <li>MedievalMilitary</li>
+        <li>MedievalArmorBasic</li>
         <li>RomeSoldier</li>
-		<li>ClassicalMilitary</li>
-		<li>HellenicSoldier</li>
+        <li>ClassicalMilitary</li>
+        <li>HellenicSoldier</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -221,7 +216,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaMusculataR</defName>
     <description>Armor of civilized officers. Look very impressive.</description>
@@ -232,15 +226,14 @@
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>170</costStuffCount>
-	<stuffCategories>
-		<li>Metallic</li>
-	  
-		<!-- Mod support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-	</stuffCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
       <WorkToMake>32000</WorkToMake>
@@ -267,12 +260,12 @@
         <li>Middle</li>
       </layers>
       <tags>
-		<li>Centurion</li>
+        <li>Centurion</li>
         <li>Praetorian</li>
-		<li>RomeOfficer</li>
+        <li>RomeOfficer</li>
         <li>RomeNoble</li>
-		<li>RomeBannerman</li>
-		<li>ClassicalMilitaryClassy</li>
+        <li>RomeBannerman</li>
+        <li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -285,7 +278,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <!-- Greek -->
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_Linothorax</defName>
@@ -295,10 +287,10 @@
       <texPath>Items/Apparel/LinothoraxOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<costStuffCount>100</costStuffCount>
+    <costStuffCount>100</costStuffCount>
     <stuffCategories>
-		<!-- <li>Fabric</li> -->
-		<li>Leathery</li>
+      <!-- <li>Fabric</li> -->
+      <li>Leathery</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>3000</WorkToMake>
@@ -326,10 +318,10 @@
       <tags>
         <li>HellenicSoldier</li>
         <li>Macedon</li>
-		<li>ClassicalMilitary</li>
-		<li>Tribal</li>
-		<li>MedievalMilitary</li>
-		<li>NeolithicMilitary</li>
+        <li>ClassicalMilitary</li>
+        <li>Tribal</li>
+        <li>MedievalMilitary</li>
+        <li>NeolithicMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -342,7 +334,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_LoricaMusculataL</defName>
     <description>Armour of civilized officers. Corners were cut by using durable, tanned leather over the more expensive metal, but it still looks very impressive.</description>
@@ -382,29 +373,30 @@
       </layers>
       <tags>
         <li>HellenicSoldier</li>
-		<li>RomeSoldier</li>
-		<li>ClassicalMilitary</li>
-		<li>MedievalArmor</li>
-		<li>MedievalArmorBasic</li>
-		<li>NeolithicMilitary</li>
-		<li>Tribal</li>
-		<li>MedievalMilitary</li>
+        <li>RomeSoldier</li>
+        <li>ClassicalMilitary</li>
+        <li>MedievalArmor</li>
+        <li>MedievalArmorBasic</li>
+        <li>NeolithicMilitary</li>
+        <li>Tribal</li>
+        <li>MedievalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-	<recipeMaker>
-		<researchPrerequisite>AR_Project_Light_Armour</researchPrerequisite>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
-		<recipeUsers Inherit="False">
-			<li>FueledSmithy</li><li>ElectricSmithy</li><li>CraftingSpot</li>
-		</recipeUsers>
-	</recipeMaker>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Light_Armour</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="RomeArmourMakeableBase">
     <defName>AR_LoricaMusculataG</defName>
     <description>Armour of civilized officers. Look very impressive.</description>
@@ -416,13 +408,12 @@
     </graphicData>
     <costStuffCount>170</costStuffCount>
     <stuffCategories>
-		<li>Metallic</li>
-
-		<!-- Mod Support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li>Metallic</li>
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
@@ -452,8 +443,8 @@
       <tags>
         <li>ClassicalMilitary</li>
         <li>HellenicHeavy</li>
-		<li>RomeBannerman</li>
-		<li>ClassicalMilitaryClassy</li>
+        <li>RomeBannerman</li>
+        <li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -466,7 +457,6 @@
       </skillRequirements>
     </recipeMaker>
   </thingDef>
-
   <!-- Civil -->
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Toga</defName>
@@ -505,28 +495,27 @@
         <li>RomeCivil</li>
         <li>RomePlayer</li>
         <li>RomeNoble</li>
-		<li>RomeEmperor</li>
-		<li>Classical</li>
-		<li>JeubKing</li>
-		<li>JeubWear</li>
-		<li>ST_GnomeClothing</li>
-		<li>Royal</li>
-		<li>RoyalTier1</li>
-		<li>RoyalTier2</li>
+        <li>RomeEmperor</li>
+        <li>Classical</li>
+        <li>JeubKing</li>
+        <li>JeubWear</li>
+        <li>ST_GnomeClothing</li>
+        <li>Royal</li>
+        <li>RoyalTier1</li>
+        <li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
-		<li>Roman</li>
+        <li>Roman</li>
         <li>Worker</li>
-		<li>Soldier</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
-	  <gender>Male</gender>
+      <gender>Male</gender>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Sagum</defName>
     <description>A bigger cape of fabric or leather and a silver broach. Originally worn by rich soldiers, it has become a symbol of both the Roman officer corps and even, during triumphs, the Roman Emperor himself.</description>
@@ -539,11 +528,11 @@
     <costStuffCount>80</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
-	  <li>Leathery</li>
+      <li>Leathery</li>
     </stuffCategories>
-	<costList>
-		<Silver>3</Silver>
-	</costList>
+    <costList>
+      <Silver>3</Silver>
+    </costList>
     <statBases>
       <WorkToMake>13000</WorkToMake>
       <Mass>1.5</Mass>
@@ -563,40 +552,39 @@
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Sagum/Sagum</wornGraphicPath>
       <layers>
-		<li>VFEC_OuterShell</li>
+        <li>Shell</li>
       </layers>
       <tags>
-		<li>RomeNoble</li>
-		<li>RomeOfficer</li>
-		<li>Praetorian</li>
-		<li>RomeEmperor</li>
-		<!-- <li>RomePlayer</li> -->
-		<li>HellenicHeavy</li>
-		<li>Cape</li>
-		<li>BeetElite</li>
-		<li>JeubKing</li>
-		<li>Gnoble</li>
-		<li>King</li>
-		<li>FrenchNapoleonsUniformApparel</li>
-		<li>ClassicalMilitaryClassy</li>
-		<li>Royal</li>
-		<li>RoyalTier1</li>
-		<li>RoyalTier2</li>
-		<li>RoyalTier3</li>
-		<li>RoyalTier4</li>
-		<li>RoyalTier5</li>
+        <li>RomeNoble</li>
+        <li>RomeOfficer</li>
+        <li>Praetorian</li>
+        <li>RomeEmperor</li>
+        <!-- <li>RomePlayer</li> -->
+        <li>HellenicHeavy</li>
+        <li>Cape</li>
+        <li>BeetElite</li>
+        <li>JeubKing</li>
+        <li>Gnoble</li>
+        <li>King</li>
+        <li>FrenchNapoleonsUniformApparel</li>
+        <li>ClassicalMilitaryClassy</li>
+        <li>Royal</li>
+        <li>RoyalTier1</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier3</li>
+        <li>RoyalTier4</li>
+        <li>RoyalTier5</li>
       </tags>
       <defaultOutfitTags>
-		<li>Roman</li>
+        <li>Roman</li>
         <li>Worker</li>
-		<li>Soldier</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Himation</defName>
     <description>A primitive piece of cloth worn around a man's loins and over his shoulders. Women did not wear this garment because it only covered their groins and hips.</description>
@@ -608,7 +596,7 @@
     <costStuffCount>30</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
-	  <li>Leathery</li>
+      <li>Leathery</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>900</WorkToMake>
@@ -628,31 +616,30 @@
       </layers>
       <tags>
         <li>Barbarian</li>
-		<li>BarbarianNoble</li>
+        <li>BarbarianNoble</li>
         <li>RomePlayer</li>
         <li>Macedon</li>
-		<li>Spartan</li>
-		<li>Tribal</li>
-		<li>Neolithic</li>
-		<li>ST_BeetClothing</li>
-		<li>Classical</li>
-		<li>ClassicalSimple</li>
+        <li>Spartan</li>
+        <li>Tribal</li>
+        <li>Neolithic</li>
+        <li>ST_BeetClothing</li>
+        <li>Classical</li>
+        <li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
-		<li>Worker</li>
-		<li>Soldier</li>
-		<li>Slave</li>
+        <li>Worker</li>
+        <li>Soldier</li>
+        <li>Slave</li>
       </defaultOutfitTags>
-	  <gender>Male</gender>
+      <gender>Male</gender>
     </apparel>
     <generateCommonality>0.95</generateCommonality>
     <recipeMaker>
-	  <recipeUsers>
-		<li>CraftingSpot</li>
-	  </recipeUsers>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Chalmys</defName>
     <description>A short coat typically worn by warriors, especially by hoplites, of Ancient Greek city states, including Athens and Sparta.</description>
@@ -665,7 +652,7 @@
     <costStuffCount>100</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
-	  <li>Leathery</li>
+      <li>Leathery</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>25000</WorkToMake>
@@ -685,23 +672,22 @@
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Chalmys/Chalmys</wornGraphicPath>
       <layers>
-        <li>VFEC_OuterShell</li>
+        <li>Shell</li>
       </layers>
       <tags>
         <li>Spartan</li>
-		<li>ClassicalMilitary</li>
-		<li>ClassicalMilitaryClassy</li>
+        <li>ClassicalMilitary</li>
+        <li>ClassicalMilitaryClassy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Soldier</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
   </thingDef>
-
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_LightCape</defName>
     <description>It's a small cape. It is just as stylish as the larger shoulder cape commonly worn by noblemen.</description>
@@ -726,7 +712,7 @@
       <EquipDelay>2</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-		<SocialImpact>0.1</SocialImpact>
+      <SocialImpact>0.1</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -737,25 +723,25 @@
       <wornGraphicPath>Items/Apparel/Cape/Cape2</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
-        <li>VFEC_OuterShell</li>
+        <li>Shell</li>
       </layers>
       <tags>
-		<li>Officer</li>
+        <li>Officer</li>
         <li>RomeOfficer</li>
         <li>BarbarianNoble</li>
         <li>Cape</li>
-		<li>Royal</li>
-		<li>RoyalTier1</li>
-		<li>RoyalTier2</li>
-		<li>ClassicalMilitary</li>
-		<li>ClassicalMilitaryClassy</li>
-		<li>NeolithicHeavy</li>
-		<li>NeolithicChief</li>
-		<li>NeolithicAdvanced</li>
+        <li>Royal</li>
+        <li>RoyalTier1</li>
+        <li>RoyalTier2</li>
+        <li>ClassicalMilitary</li>
+        <li>ClassicalMilitaryClassy</li>
+        <li>NeolithicHeavy</li>
+        <li>NeolithicChief</li>
+        <li>NeolithicAdvanced</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Soldier</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </thingDef>

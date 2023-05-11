@@ -3,7 +3,8 @@
   <ThingDef Name="RomeShields" Abstract="True" ParentName="BaseAncientShield">
     <recipeMaker>
       <recipeUsers>
-        <li>FueledSmithy</li><li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -55,7 +56,6 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-
   <ThingDef ParentName="Scutum">
     <defName>AR_ScutumA</defName>
     <label>Scutum (lightning)</label>
@@ -322,7 +322,7 @@
     </graphicData>
     <weaponTags>
       <li>ShieldsGreek</li>
-	  <li>ShieldHoplite</li>
+      <li>ShieldHoplite</li>
     </weaponTags>
     <comps>
       <li Class="PawnShields.CompProperties_Shield">

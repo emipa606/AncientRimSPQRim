@@ -1,27 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <terrainDef Abstract="True" ParentName="FloorBase" Name="RoundMosaikBase">
     <renderPrecedence>220</renderPrecedence>
     <description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples.</description>
     <texturePath>Floors/roundish</texturePath>
     <statBases>
-		<MarketValue Inherit="False">8</MarketValue> <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
-		<WorkToBuild>4500</WorkToBuild>
-		<Beauty>4.2</Beauty>
+      <MarketValue Inherit="False">8</MarketValue>
+      <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
+      <WorkToBuild>4500</WorkToBuild>
+      <Beauty>4.2</Beauty>
     </statBases>
     <designatorDropdown>Floor_Mosaik</designatorDropdown>
     <researchPrerequisites>
-		<li>Stonecutting</li>
-		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+      <li>Stonecutting</li>
+      <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
     </researchPrerequisites>
     <tags>
-		<li>Floor</li>
-		<li>FineFloor</li>
+      <li>Floor</li>
+      <li>FineFloor</li>
     </tags>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </terrainDef>
-
   <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikSandstone</defName>
     <label>roundish sandstone mosaic</label>
@@ -30,7 +29,6 @@
       <BlocksSandstone>20</BlocksSandstone>
     </costList>
   </terrainDef>
-  
   <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikGranite</defName>
     <label>roundish granite mosaic</label>
@@ -47,7 +45,6 @@
       <BlocksLimestone>20</BlocksLimestone>
     </costList>
   </terrainDef>
-  
   <terrainDef ParentName="RoundMosaikBase">
     <defName>AR_MosaikMarble</defName>
     <label>roundish marble mosaic</label>
@@ -65,24 +62,22 @@
       <BlocksSlate>20</BlocksSlate>
     </costList>
   </terrainDef>
-
-	<terrainDef ParentName="RoundMosaikBase" MayRequire="oskarpotocki.vfe.classical">
-		<defName MayRequire="oskarpotocki.vfe.classical">TSP_AR_VFE_Mosaik_BloatConcrete</defName>
-		<label MayRequire="oskarpotocki.vfe.classical">roundish concrete mosaic</label>
-		<texturePath MayRequire="oskarpotocki.vfe.classical">Floors/roundishnegative</texturePath>
-		<color MayRequire="oskarpotocki.vfe.classical">(84,84,76)</color>
-		<costList MayRequire="oskarpotocki.vfe.classical">
-			<VFEC_BlocksConcrete MayRequire="oskarpotocki.vfe.classical">15</VFEC_BlocksConcrete>
-		</costList>
-	</terrainDef>
-	
-	<terrainDef ParentName="RoundMosaikBase" MayRequire="hrg.asbestos.mod">
-		<defName MayRequire="hrg.asbestos.mod">TSP_AR_Mesothelioma_Mosaik</defName>
-		<label MayRequire="hrg.asbestos.mod">roundish asbestos mosaic</label>
-		<texturePath MayRequire="hrg.asbestos.mod">Floors/roundishnegative</texturePath>
-		<color MayRequire="hrg.asbestos.mod" Inherit="False">(145,157,118)</color>
-		<costList MayRequire="hrg.asbestos.mod">
-			<Asbestos_Tile MayRequire="hrg.asbestos.mod">5</Asbestos_Tile>
-		</costList>
-	</terrainDef>
+  <terrainDef ParentName="RoundMosaikBase" MayRequire="oskarpotocki.vfe.classical">
+    <defName MayRequire="oskarpotocki.vfe.classical">TSP_AR_VFE_Mosaik_BloatConcrete</defName>
+    <label MayRequire="oskarpotocki.vfe.classical">roundish concrete mosaic</label>
+    <texturePath MayRequire="oskarpotocki.vfe.classical">Floors/roundishnegative</texturePath>
+    <color MayRequire="oskarpotocki.vfe.classical">(84,84,76)</color>
+    <costList MayRequire="oskarpotocki.vfe.classical">
+      <VFEC_BlocksConcrete MayRequire="oskarpotocki.vfe.classical">15</VFEC_BlocksConcrete>
+    </costList>
+  </terrainDef>
+  <terrainDef ParentName="RoundMosaikBase" MayRequire="hrg.asbestos.mod">
+    <defName MayRequire="hrg.asbestos.mod">TSP_AR_Mesothelioma_Mosaik</defName>
+    <label MayRequire="hrg.asbestos.mod">roundish asbestos mosaic</label>
+    <texturePath MayRequire="hrg.asbestos.mod">Floors/roundishnegative</texturePath>
+    <color MayRequire="hrg.asbestos.mod" Inherit="False">(145,157,118)</color>
+    <costList MayRequire="hrg.asbestos.mod">
+      <Asbestos_Tile MayRequire="hrg.asbestos.mod">5</Asbestos_Tile>
+    </costList>
+  </terrainDef>
 </Defs>

@@ -3,12 +3,13 @@
   <ThingDef Name="BaseMeleeWeapon_Rome" Abstract="True" ParentName="BaseWeapon">
     <techLevel>Neolithic</techLevel>
     <smeltable>true</smeltable>
-	<thingCategories Inherit="False">
-		<li>TSP_AR_RomanMelee</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanMelee</li>
+    </thingCategories>
     <recipeMaker>
       <recipeUsers>
-        <li>FueledSmithy</li><li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
       </recipeUsers>
       <defaultIngredientFilter>
         <categories>
@@ -34,7 +35,6 @@
       </li>
     </comps>
   </ThingDef>
-
   <ThingDef ParentName="BaseMeleeWeapon_Rome">
     <defName>AR_Xiphos</defName>
     <label>xiphos</label>
@@ -43,19 +43,17 @@
       <texPath>Items/Weapons/Xiphos</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-
-	<uiIconScale>1.2</uiIconScale>
-	<techLevel>Neolithic</techLevel>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>10000</WorkToMake>
       <Mass>0.9</Mass>
     </statBases>
     <equippedAngleOffset>-50</equippedAngleOffset>
-	<costStuffCount>90</costStuffCount>
+    <costStuffCount>90</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod Support -->
+      <!-- Mod Support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -63,13 +61,13 @@
     </stuffCategories>
     <weaponTags>
       <li>Hellenic</li>
-	  <li>MeleePiercer</li>
-	  <li>NeolithicMeleeDecent</li>
-	  <li>NeolithicMeleeAdvanced</li>
-	  <li>MedievalMeleeDecent</li>
-	  <li>MedievalMeleeAdvanced</li>
-	  <li>ClassicalTrader</li>
-	  <li>ClassicalAdvanced</li>
+      <li>MeleePiercer</li>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>ClassicalTrader</li>
+      <li>ClassicalAdvanced</li>
     </weaponTags>
     <tools>
       <li>
@@ -103,7 +101,6 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  
   <ThingDef ParentName="BaseMeleeWeapon_Rome">
     <defName>AR_Falcata</defName>
     <label>falcata</label>
@@ -115,8 +112,7 @@
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod Support -->
+      <!-- Mod Support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -130,22 +126,22 @@
     <weaponTags>
       <li>Hellenic</li>
       <li>Barbarian</li>
-	  <li>SimpleSword</li>
-	  <li>Sword</li>
-	  <li>Classical</li>
-	  <li>ClassicalSimple</li>
-	  <li>Hastatus</li>
+      <li>SimpleSword</li>
+      <li>Sword</li>
+      <li>Classical</li>
+      <li>ClassicalSimple</li>
+      <li>Hastatus</li>
     </weaponTags>
     <tools>
       <li>
         <label>handle</label>
         <capacities>
           <li>Blunt</li>
-		  <li>Poke</li>
+          <li>Poke</li>
         </capacities>
         <power>9</power>
         <cooldownTime>2</cooldownTime>
-		<chanceFactor>0.1</chanceFactor>
+        <chanceFactor>0.1</chanceFactor>
       </li>
       <li>
         <label>point</label>

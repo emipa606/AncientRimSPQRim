@@ -1,268 +1,244 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs</xpath>
-			<value>
-				<terrainDef ParentName="FloorBase" Name="TSP_VFE_FakeAndGayTiles" Abstract="True">
-					<renderPrecedence Inherit="False">100</renderPrecedence>
-					<description>The dull coloring of this otherwise beautifully paved tile betrays the material that made it. This tile is fake! Rather than being made of marble, it is instead made of cheap concrete. It is still fairly attractive, however, and even noblemen will accept it in their throne rooms. \n Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples.</description>
-					<designatorDropdown>TSP_AR_SpecialConcrete_Mosaik</designatorDropdown>
-					<color Inherit="False">(84,84,76)</color>
-					<statBases>
-						<MarketValue Inherit="False">4</MarketValue> <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
-						<Beauty Inherit="False">2</Beauty>
-						<WorkToBuild Inherit="False">3000</WorkToBuild>
-					</statBases>
-					<researchPrerequisites>
-						<li>Stonecutting</li>
-						<li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
-					</researchPrerequisites>
-					<costList Inherit="False">
-						<VFEC_BlocksConcrete Inherit="False">10</VFEC_BlocksConcrete>
-					</costList>
-					<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-					<tags>
-						<li>Floor</li>
-						<li>FineFloor</li>
-					</tags>
-				</terrainDef>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs</xpath>
-			<value>
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanA</defName>
-					<label>imitation mosaik variant A</label>
-					<texturePath>Floors/romanfloor01</texturePath>
-					<uiIconPath>Floors/romanfloor01icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanB</defName>
-					<label>intimation mosaik variant B</label>
-					<texturePath>Floors/romanfloor02</texturePath>
-					<uiIconPath>Floors/romanfloor02icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanC</defName>
-					<label>imitation mosaik variant C</label>
-					<texturePath>Floors/romanfloor03</texturePath>
-					<uiIconPath>Floors/romanfloor03icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanD</defName>
-					<label>imitation mosaik variant D</label>
-					<texturePath>Floors/romanfloor04</texturePath>
-					<uiIconPath>Floors/romanfloor04icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanE</defName>
-					<label>imitation mosaik variant E</label>
-					<texturePath>Floors/romanfloor05</texturePath>
-					<uiIconPath>Floors/romanfloor05icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanF</defName>
-					<label>imitation mosaik variant F</label>
-					<texturePath>Floors/romanfloor06</texturePath>
-					<uiIconPath>Floors/romanfloor06icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanG</defName>
-					<label>imitation mosaik variant G</label>
-					<texturePath>Floors/romanfloor07</texturePath>
-					<uiIconPath>Floors/romanfloor07icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanH</defName>
-					<label>imitation mosaik variant H</label>
-					<texturePath>Floors/romanfloor08</texturePath>
-					<uiIconPath>Floors/romanfloor08icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanI</defName>
-					<label>imitation mosaik variant I</label>
-					<texturePath>Floors/romanfloor09</texturePath>
-					<uiIconPath>Floors/romanfloor09icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanJ</defName>
-					<label>imitation mosaik variant J</label>
-					<texturePath>Floors/romanfloor10</texturePath>
-					<uiIconPath>Floors/romanfloor10icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanK</defName>
-					<label>imitation mosaik variant K</label>
-					<texturePath>Floors/romanfloor11</texturePath>
-					<uiIconPath>Floors/romanfloor11icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
-					<defName>AR_Fake_MosaikRomanL</defName>
-					<label>imitation mosaik variant L</label>
-					<texturePath>Floors/romanfloor12</texturePath>
-					<uiIconPath>Floors/romanfloor12icon</uiIconPath>
-				</terrainDef>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Asbestos_Tile"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs</xpath>
-			<value>
-				<terrainDef ParentName="FloorBase" Name="TSP_VFE_MesothiliomaTiles" Abstract="True">
-					<renderPrecedence Inherit="False">100</renderPrecedence>
-					<description>The coloring of this otherwise beautifully paved tile betrays the material that made it. This tile is fake! Rather than being made of marble, it is instead made of... asbestos. Huh. \n \n It is still fairly attractive, however, and even noblemen will accept it in their throne rooms. \n Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples.</description>
-					<designatorDropdown>TSP_AR_Mesothelioma_Mosaik</designatorDropdown>
-					<color Inherit="False">(145,157,118)</color>
-					<statBases>
-						<MarketValue Inherit="False">2</MarketValue> <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
-						<Beauty Inherit="False">2</Beauty>
-						<WorkToBuild Inherit="False">2000</WorkToBuild>
-						<Flammability>0</Flammability>
-					</statBases>
-					<researchPrerequisites>
-						<li>Stonecutting</li>
-						<li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
-					</researchPrerequisites>
-					<costList Inherit="False">
-						<Asbestos_Tile Inherit="False">10</Asbestos_Tile>
-					</costList>
-					<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-					<tags>
-						<li>Floor</li>
-						<li>FineFloor</li>
-					</tags>
-				</terrainDef>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Asbestos_Tile"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs</xpath>
-			<value>
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanA</defName>
-					<label>asbestos mosaik variant A</label>
-					<texturePath>Floors/romanfloor01</texturePath>
-					<uiIconPath>Floors/romanfloor01icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanB</defName>
-					<label>asbestos mosaik variant B</label>
-					<texturePath>Floors/romanfloor02</texturePath>
-					<uiIconPath>Floors/romanfloor02icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanC</defName>
-					<label>asbestos mosaik variant C</label>
-					<texturePath>Floors/romanfloor03</texturePath>
-					<uiIconPath>Floors/romanfloor03icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanD</defName>
-					<label>asbestos mosaik variant D</label>
-					<texturePath>Floors/romanfloor04</texturePath>
-					<uiIconPath>Floors/romanfloor04icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanE</defName>
-					<label>asbestos mosaik variant E</label>
-					<texturePath>Floors/romanfloor05</texturePath>
-					<uiIconPath>Floors/romanfloor05icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanF</defName>
-					<label>asbestos mosaik variant F</label>
-					<texturePath>Floors/romanfloor06</texturePath>
-					<uiIconPath>Floors/romanfloor06icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanG</defName>
-					<label>asbestos mosaik variant G</label>
-					<texturePath>Floors/romanfloor07</texturePath>
-					<uiIconPath>Floors/romanfloor07icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanH</defName>
-					<label>asbestos mosaik variant H</label>
-					<texturePath>Floors/romanfloor08</texturePath>
-					<uiIconPath>Floors/romanfloor08icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanI</defName>
-					<label>asbestos mosaik variant I</label>
-					<texturePath>Floors/romanfloor09</texturePath>
-					<uiIconPath>Floors/romanfloor09icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanJ</defName>
-					<label>asbestos mosaik variant J</label>
-					<texturePath>Floors/romanfloor10</texturePath>
-					<uiIconPath>Floors/romanfloor10icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanK</defName>
-					<label>asbestos mosaik variant K</label>
-					<texturePath>Floors/romanfloor11</texturePath>
-					<uiIconPath>Floors/romanfloor11icon</uiIconPath>
-				</terrainDef>
-
-				<terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
-					<defName>AR_Mesothelioma_MosaikRomanL</defName>
-					<label>asbestos mosaik variant L</label>
-					<texturePath>Floors/romanfloor12</texturePath>
-					<uiIconPath>Floors/romanfloor12icon</uiIconPath>
-				</terrainDef>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs</xpath>
+      <value>
+        <terrainDef ParentName="FloorBase" Name="TSP_VFE_FakeAndGayTiles" Abstract="True">
+          <renderPrecedence Inherit="False">100</renderPrecedence>
+          <description>The dull coloring of this otherwise beautifully paved tile betrays the material that made it. This tile is fake! Rather than being made of marble, it is instead made of cheap concrete. It is still fairly attractive, however, and even noblemen will accept it in their throne rooms. \n Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples.</description>
+          <designatorDropdown>TSP_AR_SpecialConcrete_Mosaik</designatorDropdown>
+          <color Inherit="False">(84,84,76)</color>
+          <statBases>
+            <MarketValue Inherit="False">4</MarketValue>
+            <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
+            <Beauty Inherit="False">2</Beauty>
+            <WorkToBuild Inherit="False">3000</WorkToBuild>
+          </statBases>
+          <researchPrerequisites>
+            <li>Stonecutting</li>
+            <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+          </researchPrerequisites>
+          <costList Inherit="False">
+            <VFEC_BlocksConcrete Inherit="False">10</VFEC_BlocksConcrete>
+          </costList>
+          <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+          <tags>
+            <li>Floor</li>
+            <li>FineFloor</li>
+          </tags>
+        </terrainDef>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs</xpath>
+      <value>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanA</defName>
+          <label>imitation mosaik variant A</label>
+          <texturePath>Floors/romanfloor01</texturePath>
+          <uiIconPath>Floors/romanfloor01icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanB</defName>
+          <label>intimation mosaik variant B</label>
+          <texturePath>Floors/romanfloor02</texturePath>
+          <uiIconPath>Floors/romanfloor02icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanC</defName>
+          <label>imitation mosaik variant C</label>
+          <texturePath>Floors/romanfloor03</texturePath>
+          <uiIconPath>Floors/romanfloor03icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanD</defName>
+          <label>imitation mosaik variant D</label>
+          <texturePath>Floors/romanfloor04</texturePath>
+          <uiIconPath>Floors/romanfloor04icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanE</defName>
+          <label>imitation mosaik variant E</label>
+          <texturePath>Floors/romanfloor05</texturePath>
+          <uiIconPath>Floors/romanfloor05icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanF</defName>
+          <label>imitation mosaik variant F</label>
+          <texturePath>Floors/romanfloor06</texturePath>
+          <uiIconPath>Floors/romanfloor06icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanG</defName>
+          <label>imitation mosaik variant G</label>
+          <texturePath>Floors/romanfloor07</texturePath>
+          <uiIconPath>Floors/romanfloor07icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanH</defName>
+          <label>imitation mosaik variant H</label>
+          <texturePath>Floors/romanfloor08</texturePath>
+          <uiIconPath>Floors/romanfloor08icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanI</defName>
+          <label>imitation mosaik variant I</label>
+          <texturePath>Floors/romanfloor09</texturePath>
+          <uiIconPath>Floors/romanfloor09icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanJ</defName>
+          <label>imitation mosaik variant J</label>
+          <texturePath>Floors/romanfloor10</texturePath>
+          <uiIconPath>Floors/romanfloor10icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanK</defName>
+          <label>imitation mosaik variant K</label>
+          <texturePath>Floors/romanfloor11</texturePath>
+          <uiIconPath>Floors/romanfloor11icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_FakeAndGayTiles">
+          <defName>AR_Fake_MosaikRomanL</defName>
+          <label>imitation mosaik variant L</label>
+          <texturePath>Floors/romanfloor12</texturePath>
+          <uiIconPath>Floors/romanfloor12icon</uiIconPath>
+        </terrainDef>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Asbestos_Tile"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs</xpath>
+      <value>
+        <terrainDef ParentName="FloorBase" Name="TSP_VFE_MesothiliomaTiles" Abstract="True">
+          <renderPrecedence Inherit="False">100</renderPrecedence>
+          <description>The coloring of this otherwise beautifully paved tile betrays the material that made it. This tile is fake! Rather than being made of marble, it is instead made of... asbestos. Huh. \n \n It is still fairly attractive, however, and even noblemen will accept it in their throne rooms. \n Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples.</description>
+          <designatorDropdown>TSP_AR_Mesothelioma_Mosaik</designatorDropdown>
+          <color Inherit="False">(145,157,118)</color>
+          <statBases>
+            <MarketValue Inherit="False">2</MarketValue>
+            <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
+            <Beauty Inherit="False">2</Beauty>
+            <WorkToBuild Inherit="False">2000</WorkToBuild>
+            <Flammability>0</Flammability>
+          </statBases>
+          <researchPrerequisites>
+            <li>Stonecutting</li>
+            <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+          </researchPrerequisites>
+          <costList Inherit="False">
+            <Asbestos_Tile Inherit="False">10</Asbestos_Tile>
+          </costList>
+          <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+          <tags>
+            <li>Floor</li>
+            <li>FineFloor</li>
+          </tags>
+        </terrainDef>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Asbestos_Tile"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs</xpath>
+      <value>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanA</defName>
+          <label>asbestos mosaik variant A</label>
+          <texturePath>Floors/romanfloor01</texturePath>
+          <uiIconPath>Floors/romanfloor01icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanB</defName>
+          <label>asbestos mosaik variant B</label>
+          <texturePath>Floors/romanfloor02</texturePath>
+          <uiIconPath>Floors/romanfloor02icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanC</defName>
+          <label>asbestos mosaik variant C</label>
+          <texturePath>Floors/romanfloor03</texturePath>
+          <uiIconPath>Floors/romanfloor03icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanD</defName>
+          <label>asbestos mosaik variant D</label>
+          <texturePath>Floors/romanfloor04</texturePath>
+          <uiIconPath>Floors/romanfloor04icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanE</defName>
+          <label>asbestos mosaik variant E</label>
+          <texturePath>Floors/romanfloor05</texturePath>
+          <uiIconPath>Floors/romanfloor05icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanF</defName>
+          <label>asbestos mosaik variant F</label>
+          <texturePath>Floors/romanfloor06</texturePath>
+          <uiIconPath>Floors/romanfloor06icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanG</defName>
+          <label>asbestos mosaik variant G</label>
+          <texturePath>Floors/romanfloor07</texturePath>
+          <uiIconPath>Floors/romanfloor07icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanH</defName>
+          <label>asbestos mosaik variant H</label>
+          <texturePath>Floors/romanfloor08</texturePath>
+          <uiIconPath>Floors/romanfloor08icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanI</defName>
+          <label>asbestos mosaik variant I</label>
+          <texturePath>Floors/romanfloor09</texturePath>
+          <uiIconPath>Floors/romanfloor09icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanJ</defName>
+          <label>asbestos mosaik variant J</label>
+          <texturePath>Floors/romanfloor10</texturePath>
+          <uiIconPath>Floors/romanfloor10icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanK</defName>
+          <label>asbestos mosaik variant K</label>
+          <texturePath>Floors/romanfloor11</texturePath>
+          <uiIconPath>Floors/romanfloor11icon</uiIconPath>
+        </terrainDef>
+        <terrainDef ParentName="TSP_VFE_MesothiliomaTiles">
+          <defName>AR_Mesothelioma_MosaikRomanL</defName>
+          <label>asbestos mosaik variant L</label>
+          <texturePath>Floors/romanfloor12</texturePath>
+          <uiIconPath>Floors/romanfloor12icon</uiIconPath>
+        </terrainDef>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 </Patch>

@@ -4,7 +4,7 @@
   <ThingDef Name="BaseArtilleryBuildingRome" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
-	<techLevel>Neolithic</techLevel>
+    <techLevel>Neolithic</techLevel>
     <graphicData>
       <texPath>Things/Building/Security/TurretMortar_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -30,21 +30,20 @@
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
-	<!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
-	<costStuffCount>200</costStuffCount>
-	<stuffCategories>
+    <!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
+    <costStuffCount>200</costStuffCount>
+    <stuffCategories>
       <li>Metallic</li>
-	  <li>Woody</li>
-	  
-	  <!-- Mod support -->
+      <li>Woody</li>
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-	  <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costList>
-		<ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -79,10 +78,9 @@
     <researchPrerequisites>
       <li>AR_Project_Ballistae</li>
     </researchPrerequisites>
-	<uiIconPath>Buildings/Ballistae/Ballista_Top</uiIconPath>
+    <uiIconPath>Buildings/Ballistae/Ballista_Top</uiIconPath>
     <uiIconScale>1.1</uiIconScale>
   </ThingDef>
-
   <ThingDef Name="BaseArtilleryWeaponRome" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
@@ -119,14 +117,13 @@
       </defaultStorageSettings>
     </building>
   </ThingDef>
-
   <!--=============== ballista turret ===============-->
   <ThingDef ParentName="BaseArtilleryBuildingRome">
     <defName>AR_Ballistae_Building</defName>
     <label>Ballista</label>
     <description>The masterpiece of Roman siege engineering. Using the same methods as a crossbow, except bigger, a Ballista builds up an enormous power suitable to release diverse projectiles over long distances. Its shooting involved "storing" kinetic energy by applying torque (force applied to a rotating object) to ropes. Releasing this launched the missile to spectacular results. Ballistae shoot diverse kinds of munition, like stone balls, which burst into many small pieces when hitting the ground. Must be manned.</description>
-	<!-- Crossbows do not explode, even when scaled in size -->
-	<!--
+    <!-- Crossbows do not explode, even when scaled in size -->
+    <!--
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>2.9</explosiveRadius>
@@ -134,7 +131,8 @@
       </li>
     </comps>
 	-->
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- They could be fired on sandy beaches, Julius Caesar used them to invade ancient England -->
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <!-- They could be fired on sandy beaches, Julius Caesar used them to invade ancient England -->
     <building>
       <turretGunDef>AR_Ballistae_Gun</turretGunDef>
       <combatPower>65</combatPower>
@@ -145,7 +143,6 @@
     <uiIconPath>Buildings/Ballistae/Ballista_Top</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
   </ThingDef>
-
   <ThingDef ParentName="BaseArtilleryWeaponRome">
     <defName>AR_Ballistae_Gun</defName>
     <label>Ballista torsion mount</label>
@@ -155,7 +152,7 @@
     </graphicData>
     <description>Using the same methods as a crossbow, except bigger, a Ballista builds up an enormous power suitable to release diverse projectiles over long distances. Its shooting involved "storing" kinetic energy by applying torque (force applied to a rotating object) to ropes, and releasing it.</description>
     <weaponTags>
-		<li>Artillery_MannedMortar</li>
+      <li>Artillery_MannedMortar</li>
     </weaponTags>
     <verbs>
       <li>
@@ -163,19 +160,19 @@
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>5.8</warmupTime>
-        <forcedMissRadius>1</forcedMissRadius> <!-- Roman ballista artillerymen could pick off single soldiers -->
+        <forcedMissRadius>1</forcedMissRadius>
+        <!-- Roman ballista artillerymen could pick off single soldiers -->
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>20</minRange>
         <range>500</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Bow_Large</soundCast>
         <targetParams>
-			<canTargetLocations>true</canTargetLocations>
+          <canTargetLocations>true</canTargetLocations>
         </targetParams>
       </li>
     </verbs>
   </ThingDef>
-
   <!--=============== ballista bullet ===============-->
   <ThingDef ParentName="BaseBullet">
     <defName>AR_Bullet_BallistaeRocky</defName>
@@ -187,7 +184,8 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>Poke</damageDef> <!-- Shrapnel is not a bomb -->
+      <damageDef>Poke</damageDef>
+      <!-- Shrapnel is not a bomb -->
       <damageAmountBase>45</damageAmountBase>
       <speed>31</speed>
       <explosionRadius>2</explosionRadius>
@@ -196,7 +194,6 @@
       <soundExplode>Explosion_Bomb</soundExplode>
     </projectile>
   </ThingDef>
-
   <ThingDef ParentName="BaseBullet">
     <defName>AR_Bullet_BallistaeFire</defName>
     <label>ballistic fireball missile</label>
@@ -218,7 +215,6 @@
       <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
     </projectile>
   </ThingDef>
-
   <!--=============== Scorpio base ===============-->
   <ThingDef Name="BaseArtilleryBuildingRomeScorpio" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
@@ -246,13 +242,12 @@
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-	<techLevel>Neolithic</techLevel>
-	<!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
-	<costStuffCount>100</costStuffCount>
-	<stuffCategories>
+    <techLevel>Neolithic</techLevel>
+    <!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
       <li>Metallic</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -265,10 +260,10 @@
     <comps>
       <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Mannable">
-		<manWorkType>Violent</manWorkType>
+        <manWorkType>Violent</manWorkType>
       </li>
-	  <!-- Crossbows do not explode, even when scaled in size -->
-	  <!--
+      <!-- Crossbows do not explode, even when scaled in size -->
+      <!--
       <li Class="CompProperties_Explosive">
         <explosiveRadius>2.0</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
@@ -300,7 +295,6 @@
     <specialDisplayRadius>40</specialDisplayRadius>
     <drawGUIOverlay>True</drawGUIOverlay>
   </ThingDef>
-
   <ThingDef ParentName="BaseArtilleryBuildingRomeScorpio">
     <defName>AR_Scorpio_Building</defName>
     <label>Scorpio turret</label>
@@ -315,9 +309,8 @@
     <researchPrerequisites>
       <li>AR_Project_Mechanical_Weapons</li>
     </researchPrerequisites>
-	<uiIconPath>Buildings/Ballistae/Scorpio_Top</uiIconPath>
+    <uiIconPath>Buildings/Ballistae/Scorpio_Top</uiIconPath>
   </ThingDef>
-
   <ThingDef ParentName="BaseGun">
     <defName>AR_Scorpio_Gun</defName>
     <label>Scorpio weapon</label>
@@ -354,7 +347,6 @@
       </li>
     </verbs>
   </ThingDef>
-
   <ThingDef ParentName="BaseBullet">
     <defName>AR_Bullet_Scorpio</defName>
     <label>Scorpio bolt</label>
@@ -367,7 +359,7 @@
       <damageDef>Stab</damageDef>
       <damageAmountBase>22</damageAmountBase>
       <speed>40</speed>
-	  <stoppingPower>3</stoppingPower>
+      <stoppingPower>3</stoppingPower>
     </projectile>
   </ThingDef>
 </Defs>
