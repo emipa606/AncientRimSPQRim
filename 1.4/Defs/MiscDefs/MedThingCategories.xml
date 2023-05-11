@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>AR_CategoryAmmo</defName>
+		<label>ballista ammo</label>
+		<parent>MortarShells</parent>
+		<iconPath>Items/Stuff/Ammo/Stones/Stones_C</iconPath>
+	</ThingCategoryDef>
+</Defs>

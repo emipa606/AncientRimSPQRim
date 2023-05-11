@@ -19,23 +19,4 @@
       </operations>
     </match>
   </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName = "RawOlive"]</xpath>
-    <match Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/RecipeDef[defName = "AR_MakeOliveOil" or defName="AR_MakeOliveOilBulk"]/ingredients/li/filter/thingDefs</xpath>
-          <value>
-            <li>RawOlive</li>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/RecipeDef[defName = "AR_MakeOliveOil" or defName="AR_MakeOliveOilBulk"]/fixedIngredientFilter/thingDefs</xpath>
-          <value>
-            <li>RawOlive</li>
-          </value>
-        </li>
-      </operations>
-    </match>
-  </Operation>
 </Patch>

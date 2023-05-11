@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<DesignatorDropdownGroupDef>
+		<defName>Floor_Mosaik</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Marble_Mosaik</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>TSP_AR_SpecialMarble_Mosaik</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>TSP_AR_SpecialConcrete_Mosaik</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>TSP_AR_Mesothelioma_Mosaik</defName>
+	</DesignatorDropdownGroupDef>
+</Defs>

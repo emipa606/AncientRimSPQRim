@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]/scenario/parts</xpath>
+			<value>
+				<parts>
+					<!-- Configuration pages -->
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+						<def>ConfigPage_ConfigureStartingPawns</def>
+						<pawnCount>4</pawnCount>
+						<pawnChoiceCount>12</pawnChoiceCount>
+					</li>
+
+					<!-- Player starting stuff spawn method-->
+					<li Class="ScenPart_PlayerPawnsArriveMethod">
+						<def>PlayerPawnsArriveMethod</def>
+						<method>Standing</method>
+					</li>
+
+					<!-- Player pawns modifiers -->
+					<li Class="ScenPart_SetNeedLevel">
+						<def>SetNeedLevel</def>
+						<visible>false</visible>
+						<context>PlayerStarter</context>
+						<chance>0.2</chance>
+						<need>Food</need>
+						<levelRange>0~0.1</levelRange>
+					</li>
+					
+					<li Class="ScenPart_StartingAnimal">
+						<def>StartingAnimal</def>
+						<animalKind>Pig</animalKind>
+						<count>1</count>
+					</li>
+
+					<!-- Player starting things -->
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Silver</thingDef>
+						<count>200</count>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Gold</thingDef>
+						<count>100</count>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>VFEC_Jerky</thingDef>
+						<count>400</count>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>MedicineHerbal</thingDef>
+						<count>20</count>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_Toga</thingDef>
+						<stuff>Leather_Pig</stuff>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_Toga</thingDef>
+						<stuff>Leather_Pig</stuff>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_Toga</thingDef>
+						<stuff>Leather_Pig</stuff>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>VFEC_Toga</thingDef>
+						<stuff>VFEC_Tyrian</stuff>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_LaurelWreath</thingDef>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_Sagum</thingDef>
+						<stuff>VFEC_Tyrian</stuff>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>SculptureSmall</thingDef>
+						<stuff>BlocksMarble</stuff>
+					</li>
+
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>SculptureSmall</thingDef>
+						<stuff>Jade</stuff>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_1x1Mosaic</thingDef>
+						<stuff>BlocksMarble</stuff>
+					</li>
+
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_3x2Mosaic</thingDef>
+						<stuff>BlocksMarble</stuff>
+					</li>
+
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_ClassicalSculpture</thingDef>
+						<stuff>BlocksMarble</stuff>
+					</li>
+
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_ClassicalSculpture</thingDef>
+						<stuff>BlocksMarble</stuff>
+					</li>
+
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>AR_ClassicalSculpture</thingDef>
+						<stuff>BlocksMarble</stuff>
+					</li>
+					
+					<li Class="ScenPart_StartingThing_Defined" MayRequire="zal.legionaryequipment">
+						<def MayRequire="zal.legionaryequipment">StartingThing_Defined</def>
+						<thingDef MayRequire="zal.legionaryequipment">Roman_Standard</thingDef>
+						<stuff MayRequire="zal.legionaryequipment">AR_Bronze</stuff>
+						<count MayRequire="zal.legionaryequipment">1</count>
+						<allowRoofed MayRequire="zal.legionaryequipment">True</allowRoofed>
+					</li>
+
+					<!-- Scatter some things near player start -->
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>WoodLog</thingDef>
+						<count>300</count>
+					</li>
+
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>AR_Bronze</thingDef>
+						<count>1000</count>
+					</li>
+
+					<!-- Game start dialog -->
+					<li Class="ScenPart_GameStartDialog">
+						<def>GameStartDialog</def>
+						<text>Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republic. It is time you formed your own empire, on your terms, and under your rule.</text>
+						<closeSound>GameStartSting</closeSound>
+					</li>
+
+					<li Class="KCSG.ScenPart_AddStartingStructure">
+						<def>VFEC_AddStartingStructure</def>
+						<structureLabel>A small camp</structureLabel>
+						<nearMapCenter>True</nearMapCenter>
+						<chooseFrom>
+							<li>VFEC_Camp1</li>
+							<li>VFEC_Camp2</li>
+							<li>VFEC_Camp3</li>
+							<li>VFEC_Camp4</li>
+							<li>VFEC_Camp5</li>
+						</chooseFrom>
+					</li>
+
+					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+						<factionDef>VFEC_CentralRepublic</factionDef>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-75~-100</startingGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+
+					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+						<factionDef>VFEC_WesternRepublic</factionDef>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-75~-100</startingGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+
+					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+						<factionDef>VFEC_EasternRepublic</factionDef>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-75~-100</startingGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					
+					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+						<factionDef>AR_Faction_Rome</factionDef>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-99~-100</startingGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					
+					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+						<factionDef>AR_Faction_Hellas</factionDef>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-75~-100</startingGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					
+					<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+						<factionDef>AR_Faction_Sparta</factionDef>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-99~-100</startingGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+
+					<li Class="VFEC.ScenPart_Senators">
+						<def>VFEC_Senators</def>
+						<numSenators>3</numSenators>
+					</li>
+				</parts>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+</Patch>
