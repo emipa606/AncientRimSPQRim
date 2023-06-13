@@ -331,7 +331,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Alcohol</chemical>
-        <addictiveness>0.010</addictiveness>
+        <addictiveness>0.02</addictiveness>
         <minToleranceToAddict>0.25</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
