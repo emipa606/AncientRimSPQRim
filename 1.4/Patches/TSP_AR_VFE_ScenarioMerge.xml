@@ -211,11 +211,9 @@
   <ScenarioDef MayRequire="oskarpotocki.vfe.classical">
     <defName>TSP_VFEC_AR_NewEmpire_Substitute</defName>
     <label>Ave You! (New Empire)</label>
-    <description>
-Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republic. It is time you unite them on your terms, under your rule. Glory to the empire. Glory to the Emperor!
+    <description>Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republic. It is time you unite them on your terms, under your rule. Glory to the empire. Glory to the Emperor!
 
-NOTE: All classical antiquity Factions are permanently hostile to your "pretender" attempts! This will make peaceful unification impossible. Defy their calls for your arrest! Cross your own Rubicon, cast your die, and show them who truly rules the Rim!
-		</description>
+NOTE: All classical antiquity Factions are permanently hostile to your "pretender" attempts! This will make peaceful unification impossible. Defy their calls for your arrest! Cross your own Rubicon, cast your die, and show them who truly rules the Rim!</description>
     <scenario MayRequire="oskarpotocki.vfe.classical">
       <summary>A gathering of nobility with a grand purpose. It's your own Classical experience!</summary>
       <playerFaction MayRequire="oskarpotocki.vfe.classical">
@@ -420,9 +418,9 @@ AVE CAESAR!
         <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
           <factionDef>AR_Faction_Egypt</factionDef>
           <affectStartingGoodwill>True</affectStartingGoodwill>
-          <startingGoodwillRange>-65~0</startingGoodwillRange>
+          <startingGoodwillRange>-65~-50</startingGoodwillRange>
           <affectNaturalGoodwill>True</affectNaturalGoodwill>
-          <naturalGoodwillRange>-75~-5</naturalGoodwillRange>
+          <naturalGoodwillRange>-75~-25</naturalGoodwillRange>
           <def>VFEC_ForcedFactionGoodwill</def>
         </li>
         <li Class="VFEC.ScenPart_Senators" MayRequire="oskarpotocki.vfe.classical">
