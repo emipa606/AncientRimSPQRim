@@ -349,6 +349,7 @@
         <fuelFilter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </fuelFilter>
         <initialFuelPercent>1</initialFuelPercent>

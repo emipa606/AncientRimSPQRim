@@ -30,6 +30,7 @@
                 <li MayRequire="Dubwise.Rimefeller">Composite</li>
                 <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
                 <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+				<li MayRequire="sarg.rimbees">RB_Waxy</li>
               </stuffCategories>
               <costStuffCount>30</costStuffCount>
               <comps>
@@ -77,6 +78,7 @@
                 <li MayRequire="Dubwise.Rimefeller">Composite</li>
                 <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
                 <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+				<li MayRequire="sarg.rimbees">RB_Waxy</li>
               </stuffCategories>
               <costStuffCount>50</costStuffCount>
               <building>
