@@ -51,7 +51,7 @@
                 <WorkToBuild>1000</WorkToBuild>
                 <Flammability>0.3</Flammability>
                 <Beauty>-5</Beauty>
-				<MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.25</MeditationFocusGain>
+				<MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.25</MeditationFocusStrength>
               </statBases>
             </ThingDef>
             <ThingDef ParentName="BasedHygieneMom" DBHLite="true">
@@ -104,7 +104,7 @@
                 <Flammability>0</Flammability>
                 <Beauty>-40</Beauty>
                 <Cleanliness>-100</Cleanliness>
-				<MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.25</MeditationFocusGain>
+				<MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.1</MeditationFocusStrength>
               </statBases>
               <comps>
                 <li Class="DubsBadHygiene.CompProperties_Pipe">
