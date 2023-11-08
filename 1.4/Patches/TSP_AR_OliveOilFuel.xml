@@ -6,6 +6,7 @@
     <value>
       <li>Chemfuel</li>
       <li>AR_OliveOil</li>
+	  <li MayRequire="sumika.nanohana">PlantOil</li>
       <li MayRequire="sihv.rombones">BoneItem</li>
     </value>
   </Operation>
@@ -19,6 +20,7 @@
       <value>
         <li>Chemfuel</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
       </value>
     </match>
@@ -33,6 +35,7 @@
       <xpath>Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/comps/li/fuelFilter/thingDefs</xpath>
       <value>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -49,6 +52,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -65,6 +69,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -81,6 +86,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -97,6 +103,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -112,6 +119,7 @@
       <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/comps/li/fuelFilter/thingDefs</xpath>
       <value>
         <li>WoodLog</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -128,6 +136,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -144,6 +153,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -160,6 +170,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -176,6 +187,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -192,6 +204,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -208,6 +221,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -224,6 +238,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -240,6 +255,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -256,6 +272,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -272,6 +289,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -288,6 +306,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
       </value>
     </match>
@@ -303,6 +322,7 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
       </value>
@@ -319,8 +339,35 @@
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="PlantOil"]</xpath>
+    <!-- If it does, add this as a sibling (in the same list) item to this. -->
+    <match Class="PatchOperationInsert">
+      <success>Always</success>
+	  <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="PlantOil"]</xpath>
+      <value>
+        <li>AR_OliveOil</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="PlantOil"]</xpath>
+    <!-- If it does, add this as a sibling (in the same list) item to this. -->
+    <match Class="PatchOperationInsert">
+      <success>Always</success>
+	  <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+      <value>
+        <li>PlantOil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->

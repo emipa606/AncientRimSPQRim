@@ -112,6 +112,17 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
+	<recipes>
+		<!-- The olive oil is already added to this Building's Recipe Tables in its own file, here are some more. -->
+		<li MayRequire="sumika.nanohana">Make_ChemfuelPlantOilx10</li>
+		<li MayRequire="sumika.nanohana">Make_ChemfuelPlantOilx100</li>
+		<li MayRequire="sumika.nanohana">Sm_put_meat_in_oilx10</li>
+		<li MayRequire="sumika.nanohana">Sm_marinated_humanmeat_in_oilx10</li>
+		<li MayRequire="sumika.nanohana">Sm_marinated_insect_in_oilx10</li>
+		<li MayRequire="sumika.nanohana">Sm_put_vegetable_in_oilx10</li>
+		<li MayRequire="sumika.nanohana">Make_Sm_oil_barrel</li>
+		<li MayRequire="sumika.nanohana">Sm_oil_barreltoPlantOil</li>
+	</recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>

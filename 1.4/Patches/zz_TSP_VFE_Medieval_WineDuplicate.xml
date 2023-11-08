@@ -163,4 +163,50 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
+  
+  	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>Defs/ThingDef[defName="VFEM_Wine"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="AR_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+						<!-- Now we add it back -->
+						<ThingDef ParentName="BaseFilth">
+							<defName>AR_Wine</defName>
+							<label>Ancient Rim Wine (ERROR)</label>
+							<description>The Vanilla Factions Expanded Medieval Mod removes the Ancient Rim SPRQ Mod's Wine. If you are seeing this, you are witnessing an error. Please report it to Mlie or TurtleShroom.</description>
+							<selectable>true</selectable>
+							<statBases>
+								<MarketValue>0</MarketValue>
+								<Beauty>1</Beauty>
+								<Cleanliness>0</Cleanliness>
+							</statBases>
+							<graphicData Inherit="False">
+								<texPath>Items/Stuff/Foods/Wine/Wine_B</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<filth>
+								<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+								<disappearsInDays>0.001~0.05</disappearsInDays>
+								<rainWashes>true</rainWashes>
+								<cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+								<canFilthAttach>false</canFilthAttach>
+								<cleaningSound>Vomit</cleaningSound>
+							</filth>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

@@ -30,6 +30,7 @@
                 <li MayRequire="Dubwise.Rimefeller">Composite</li>
                 <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
                 <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+				<li MayRequire="sarg.rimbees">RB_Waxy</li>
               </stuffCategories>
               <costStuffCount>30</costStuffCount>
               <comps>
@@ -38,12 +39,19 @@
                   <AutoOnRain>True</AutoOnRain>
                   <AutoGenRate>10</AutoGenRate>
                 </li>
+				  <li Class="CompProperties_MeditationFocus" MayRequire="arquebus.stagzmerfolk">
+					<statDef MayRequire="arquebus.stagzmerfolk">MeditationFocusStrength</statDef>
+					<focusTypes MayRequire="arquebus.stagzmerfolk">
+					  <li MayRequire="arquebus.stagzmerfolk">Stagz_Water</li>
+					</focusTypes>
+				  </li>
               </comps>
               <statBases>
                 <MaxHitPoints>55</MaxHitPoints>
                 <WorkToBuild>1000</WorkToBuild>
                 <Flammability>0.3</Flammability>
                 <Beauty>-5</Beauty>
+				<MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.25</MeditationFocusStrength>
               </statBases>
             </ThingDef>
             <ThingDef ParentName="BasedHygieneMom" DBHLite="true">
@@ -77,6 +85,7 @@
                 <li MayRequire="Dubwise.Rimefeller">Composite</li>
                 <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
                 <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+				<li MayRequire="sarg.rimbees">RB_Waxy</li>
               </stuffCategories>
               <costStuffCount>50</costStuffCount>
               <building>
@@ -92,9 +101,10 @@
               <statBases>
                 <MaxHitPoints>250</MaxHitPoints>
                 <WorkToBuild>1700</WorkToBuild>
-                <Flammability>0.0</Flammability>
-                <Beauty>-25</Beauty>
+                <Flammability>0</Flammability>
+                <Beauty>-40</Beauty>
                 <Cleanliness>-100</Cleanliness>
+				<MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.1</MeditationFocusStrength>
               </statBases>
               <comps>
                 <li Class="DubsBadHygiene.CompProperties_Pipe">
@@ -105,7 +115,13 @@
                   <capacity>3200</capacity>
                   <priority>0</priority>
                 </li>
-                <li Class="DubsBadHygiene.CompProperties_Blockage" />
+                <li Class="DubsBadHygiene.CompProperties_Blockage"></li>
+				  <li Class="CompProperties_MeditationFocus" MayRequire="arquebus.stagzmerfolk">
+					<statDef MayRequire="arquebus.stagzmerfolk">MeditationFocusStrength</statDef>
+					<focusTypes MayRequire="arquebus.stagzmerfolk">
+					  <li MayRequire="arquebus.stagzmerfolk">Stagz_Water</li>
+					</focusTypes>
+				  </li>
               </comps>
               <researchPrerequisites>
                 <li MayRequire="dbhlitemode">Plumbing</li>
