@@ -788,7 +788,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
-			<li MayRequire="sumika.nanohana">PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
             <li>Chemfuel</li>
           </thingDefs>
         </filter>
@@ -809,7 +809,7 @@
         <li>AR_OliveOil</li>
         <li>Chemfuel</li>
         <li>WoodLog</li>
-		<li MayRequire="sumika.nanohana">PlantOil</li>
+        <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
       </thingDefs>
     </fixedIngredientFilter>

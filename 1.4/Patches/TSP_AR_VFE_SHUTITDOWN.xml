@@ -11,16 +11,16 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VFEC_Toga"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VFEC_Toga"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
@@ -31,16 +31,16 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VFEC_Wreath"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VFEC_Wreath"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
@@ -556,11 +556,11 @@
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/prerequisites</xpath>
       <value>
-          <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
-          <li MayRequire="dubwise.dubsbadhygiene">LogBoilers</li>
-          <li>AR_Project_Hypocaustum</li>
-          <!-- <li>AR_Project_Water_Cooling</li> -->
-          <li>VFEC_TemperatureControl</li>
+        <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
+        <li MayRequire="dubwise.dubsbadhygiene">LogBoilers</li>
+        <li>AR_Project_Hypocaustum</li>
+        <!-- <li>AR_Project_Water_Cooling</li> -->
+        <li>VFEC_TemperatureControl</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -1024,7 +1024,7 @@
         <li>Knife</li>
         <li>Dagger</li>
         <li>GnomeMelee</li>
-		<li>GnomeChef</li>
+        <li>GnomeChef</li>
         <li>BeetMelee</li>
         <li>JeubMelee</li>
         <li>GoblinMelee</li>
@@ -1083,7 +1083,7 @@
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
       <value>
-          <li>AR_Project_Ballistae</li>
+        <li>AR_Project_Ballistae</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -1837,7 +1837,7 @@
       <success>Always</success>
       <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/requiredMemes</xpath>
       <value>
-          <li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+        <li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->

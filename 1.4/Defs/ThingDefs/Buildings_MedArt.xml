@@ -25,10 +25,10 @@
     </stuffCategories>
     <costStuffCount>150</costStuffCount>
     <recipeMaker>
-		<researchPrerequisites>
-			<li>AR_Project_Mediterranean_Culture</li>
-			<li MayRequire="vanillaexpanded.vfeart">VFE_Res_Statues</li>
-		</researchPrerequisites>
+      <researchPrerequisites>
+        <li>AR_Project_Mediterranean_Culture</li>
+        <li MayRequire="vanillaexpanded.vfeart">VFE_Res_Statues</li>
+      </researchPrerequisites>
     </recipeMaker>
   </ThingDef>
   <ThingDef Name="Mosaic" ParentName="SculptureBase" Abstract="True">
@@ -41,7 +41,7 @@
     <rotatable>true</rotatable>
     <recipeMaker>
       <researchPrerequisites>
-		<li>AR_Project_Mediterranean_Culture</li>
+        <li>AR_Project_Mediterranean_Culture</li>
         <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
       </researchPrerequisites>
     </recipeMaker>

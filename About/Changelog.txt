@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.4.5 - Various fixes and improvements implemented by TurtleShroom
+
+
 1.4.4 - Added bug-fixes and compatibility with a lot of other mods, now in 1.4. Thanks TurtleShroom
 
 

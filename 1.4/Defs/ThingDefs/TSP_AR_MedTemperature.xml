@@ -24,8 +24,9 @@
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
       <Cleanliness>6.5</Cleanliness>
-      <MarketValue Inherit="False">10</MarketValue> <!-- Lessen wealth calculations -->
-	  <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.08</MeditationFocusGain>
+      <MarketValue Inherit="False">10</MarketValue>
+      <!-- Lessen wealth calculations -->
+      <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.08</MeditationFocusGain>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
@@ -66,13 +67,14 @@
         <heatPerSecond>-5</heatPerSecond>
         <heatPushMinTemperature>16</heatPushMinTemperature>
       </li>
-		<li Class="DubsBadHygiene.CompProperties_Blockage"></li>
-		  <li Class="CompProperties_MeditationFocus" MayRequire="arquebus.stagzmerfolk">
-			<statDef MayRequire="arquebus.stagzmerfolk">MeditationFocusStrength</statDef>
-			<focusTypes MayRequire="arquebus.stagzmerfolk">
-			  <li MayRequire="arquebus.stagzmerfolk">Stagz_Water</li>
-			</focusTypes>
-		  </li>
+      <li Class="DubsBadHygiene.CompProperties_Blockage" MayRequire="Dubwise.DubsBadHygiene">
+      </li>
+      <li Class="CompProperties_MeditationFocus" MayRequire="arquebus.stagzmerfolk">
+        <statDef MayRequire="arquebus.stagzmerfolk">MeditationFocusStrength</statDef>
+        <focusTypes MayRequire="arquebus.stagzmerfolk">
+          <li MayRequire="arquebus.stagzmerfolk">Stagz_Water</li>
+        </focusTypes>
+      </li>
     </comps>
     <designationCategory>Temperature</designationCategory>
     <researchPrerequisites>

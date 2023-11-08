@@ -4,12 +4,12 @@
     <thingCategories>
       <li>TSP_AR_RomanArmorHeadgear</li>
     </thingCategories>
-	<recipeMaker>
+    <recipeMaker>
       <recipeUsers>
         <li>FueledSmithy</li>
         <li>ElectricSmithy</li>
       </recipeUsers>
-	</recipeMaker>
+    </recipeMaker>
   </thingDef>
   <!-- Roman -->
   <thingDef ParentName="RomeArmourHelmetMakeableBase">

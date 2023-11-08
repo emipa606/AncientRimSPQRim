@@ -172,25 +172,24 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/RecipeDef[defName="MakeBoringPizza"]/researchPrerequisite</xpath>
     <!-- If it does, add this replacement. -->
     <match Class="PatchOperationReplace">
-		  <success>Always</success>
-		  <xpath>/Defs/ThingDef[defName = "MakeBoringPizza" or defName = "MakeCheesePizza" or defName = "MakePepperoniPizza" or defName = "MakeCombinationPizza" or defName = "MakeBaconPizza" or defName = "MakeBulgogiPizza" or defName = "MakeVeggiePizza" or defName = "MakeSteakPizza" or defName = "MakeMeatBallPizza" or defName = "MakeBoomratPizza" or defName = "MakeAmbrosiaPizza" or defName = "MakeBoringPizzaBulk" or defName = "MakeCheesePizzaBulk" or defName = "MakePepperoniPizzaBulk" or defName = "MakeCombinationPizzaBulk" or defName = "MakeBaconPizzaBulk" or defName = "MakeBulgogiPizzaBulk" or defName = "MakeVeggiePizzaBulk" or defName = "MakeSteakPizzaBulk" or defName = "MakeMeatBallPizzaBulk" or defName = "MakeBoomratPizzaBulk" or defName = "MakeAmbrosiaPizzaBulk"]/researchPrerequisite</xpath>
-		  <value>
-				<researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
-		  </value>
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName = "MakeBoringPizza" or defName = "MakeCheesePizza" or defName = "MakePepperoniPizza" or defName = "MakeCombinationPizza" or defName = "MakeBaconPizza" or defName = "MakeBulgogiPizza" or defName = "MakeVeggiePizza" or defName = "MakeSteakPizza" or defName = "MakeMeatBallPizza" or defName = "MakeBoomratPizza" or defName = "MakeAmbrosiaPizza" or defName = "MakeBoringPizzaBulk" or defName = "MakeCheesePizzaBulk" or defName = "MakePepperoniPizzaBulk" or defName = "MakeCombinationPizzaBulk" or defName = "MakeBaconPizzaBulk" or defName = "MakeBulgogiPizzaBulk" or defName = "MakeVeggiePizzaBulk" or defName = "MakeSteakPizzaBulk" or defName = "MakeMeatBallPizzaBulk" or defName = "MakeBoomratPizzaBulk" or defName = "MakeAmbrosiaPizzaBulk"]/researchPrerequisite</xpath>
+      <value>
+        <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+      </value>
     </match>
     <!-- If it DOES NOT, add this instead. -->
     <nomatch Class="PatchOperationAdd" MayRequire="onekimchiman.pizzatime">
-		  <success>Always</success>
-		  <xpath MayRequire="onekimchiman.pizzatime">/Defs/ThingDef[defName = "MakeBoringPizza" or defName = "MakeCheesePizza" or defName = "MakePepperoniPizza" or defName = "MakeCombinationPizza" or defName = "MakeBaconPizza" or defName = "MakeBulgogiPizza" or defName = "MakeVeggiePizza" or defName = "MakeSteakPizza" or defName = "MakeMeatBallPizza" or defName = "MakeBoomratPizza" or defName = "MakeAmbrosiaPizza" or defName = "MakeBoringPizzaBulk" or defName = "MakeCheesePizzaBulk" or defName = "MakePepperoniPizzaBulk" or defName = "MakeCombinationPizzaBulk" or defName = "MakeBaconPizzaBulk" or defName = "MakeBulgogiPizzaBulk" or defName = "MakeVeggiePizzaBulk" or defName = "MakeSteakPizzaBulk" or defName = "MakeMeatBallPizzaBulk" or defName = "MakeBoomratPizzaBulk" or defName = "MakeAmbrosiaPizzaBulk"]</xpath>
-		  <value MayRequire="onekimchiman.pizzatime">
-				<researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
-		  </value>
+      <success>Always</success>
+      <xpath MayRequire="onekimchiman.pizzatime">/Defs/ThingDef[defName = "MakeBoringPizza" or defName = "MakeCheesePizza" or defName = "MakePepperoniPizza" or defName = "MakeCombinationPizza" or defName = "MakeBaconPizza" or defName = "MakeBulgogiPizza" or defName = "MakeVeggiePizza" or defName = "MakeSteakPizza" or defName = "MakeMeatBallPizza" or defName = "MakeBoomratPizza" or defName = "MakeAmbrosiaPizza" or defName = "MakeBoringPizzaBulk" or defName = "MakeCheesePizzaBulk" or defName = "MakePepperoniPizzaBulk" or defName = "MakeCombinationPizzaBulk" or defName = "MakeBaconPizzaBulk" or defName = "MakeBulgogiPizzaBulk" or defName = "MakeVeggiePizzaBulk" or defName = "MakeSteakPizzaBulk" or defName = "MakeMeatBallPizzaBulk" or defName = "MakeBoomratPizzaBulk" or defName = "MakeAmbrosiaPizzaBulk"]</xpath>
+      <value MayRequire="onekimchiman.pizzatime">
+        <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+      </value>
     </nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>

@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Patch>
-	<Operation Class="PatchOperationConditional">
-		<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Sm_oil_barrel"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="Sm_oil_barrel"]/thingCategories</xpath>
-			<value>
-				<li>AR_CategoryAmmo</li>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Sm_oil_barrel"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Sm_oil_barrel"]/thingCategories</xpath>
+      <value>
+        <li>AR_CategoryAmmo</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 </Patch>
