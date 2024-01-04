@@ -9,8 +9,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -20,8 +19,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -32,8 +30,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -44,8 +41,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -56,8 +52,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -68,8 +63,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -80,8 +74,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -92,8 +85,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -104,8 +96,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -116,8 +107,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -128,8 +118,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -140,8 +129,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -152,8 +140,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -164,8 +151,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -176,8 +162,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites>
-        </prerequisites>
+        <prerequisites></prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -188,8 +173,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -200,8 +184,7 @@
       <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]</xpath>
       <success>Always</success>
       <value>
-        <thingCategories>
-        </thingCategories>
+        <thingCategories></thingCategories>
       </value>
     </nomatch>
   </Operation>
@@ -212,8 +195,18 @@
       <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
       <success>Always</success>
       <value>
-        <requiredMemes>
-        </requiredMemes>
+        <requiredMemes></requiredMemes>
+      </value>
+    </nomatch>
+  </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/thingCategories</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/FactionDef[defName="Apparel_FurStandard"]</xpath>
+      <success>Always</success>
+      <value>
+        <thingCategories></thingCategories>
       </value>
     </nomatch>
   </Operation>

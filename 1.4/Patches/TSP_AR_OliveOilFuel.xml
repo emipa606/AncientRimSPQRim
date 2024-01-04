@@ -346,10 +346,11 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  <!--
   <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
+    Does this exist?
     <xpath>/Defs/ThingDef[defName="PlantOil"]</xpath>
-    <!-- If it does, add this as a sibling (in the same list) item to this. -->
+    If it does, add this as a sibling (in the same list) item to this.
     <match Class="PatchOperationInsert">
       <success>Always</success>
       <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="PlantOil"]</xpath>
@@ -357,8 +358,9 @@
         <li>AR_OliveOil</li>
       </value>
     </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
+    If the first XPATH does not exist, the original code stands.
   </Operation>
+  -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="PlantOil"]</xpath>
@@ -382,6 +384,53 @@
       <value>
         <li>PlantOil</li>
 		<li>AR_OliveOil</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="nataneFireStand"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>Defs/ThingDef[defName="nataneFireStand"]/comps/li/fuelFilter/thingDefs</xpath>
+      <value>
+        <li>AR_OliveOil</li>
+        <li MayRequire="sumika.nanohana">PlantOil</li>
+        <li>Chemfuel</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="An_don"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>Defs/ThingDef[defName="An_don"]/comps/li/fuelFilter/thingDefs</xpath>
+      <value>
+        <li>AR_OliveOil</li>
+        <li MayRequire="sumika.nanohana">PlantOil</li>
+        <li>Chemfuel</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="nataneLamp"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>Defs/ThingDef[defName="nataneLamp"]/comps/li/fuelFilter/thingDefs</xpath>
+      <value>
+        <li>AR_OliveOil</li>
+        <li MayRequire="sumika.nanohana">PlantOil</li>
+        <li>Chemfuel</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
