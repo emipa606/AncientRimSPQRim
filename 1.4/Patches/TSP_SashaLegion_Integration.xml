@@ -463,13 +463,13 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
-		<match Class="PatchOperationAdd">
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/statBases</xpath>
 			<value>
 				<MarketValue>13</MarketValue>
 			</value>
-		</match>
+		</nomatch>
 	<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
   <Operation Class="PatchOperationConditional">
