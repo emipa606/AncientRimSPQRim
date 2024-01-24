@@ -17,8 +17,39 @@
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-          <li>EndTable</li>
-          <li>Dresser</li>
+			<li>EndTable</li>
+			<li>Dresser</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Red</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Yellow</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_White</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Blue</li>
+			<li MayRequire="dajian.chiteaditional.expanded">SZ_YiGui</li>
+			<li MayRequire="dajian.chiteaditional.expanded">SZ_ShuZhuangTai</li>
+			<li MayRequire="dajian.chiteaditional.expanded">EndTableSZ_ChuangTouGui_New</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_EndTable_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
+			<li MayRequire="oskarpotocki.vfe.empire">VFEE_RoyalMirror</li>
+			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTable</li>
+			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTableIlluminated</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -76,6 +107,36 @@
         <linkableFacilities>
           <li>EndTable</li>
           <li>Dresser</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Red</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Yellow</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_White</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Blue</li>
+			<li MayRequire="dajian.chiteaditional.expanded">SZ_YiGui</li>
+			<li MayRequire="dajian.chiteaditional.expanded">SZ_ShuZhuangTai</li>
+			<li MayRequire="dajian.chiteaditional.expanded">EndTableSZ_ChuangTouGui_New</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_EndTable_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
+			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTable</li>
+			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTableIlluminated</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -161,11 +222,48 @@
     <costList>
       <AR_Copper>5</AR_Copper>
     </costList>
-    <pathCost>30</pathCost>
+    <pathCost>13</pathCost>
     <fillPercent>0.30</fillPercent>
     <building>
       <isSittable>true</isSittable>
     </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+			<li>EndTable</li>
+			<li>Dresser</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Red</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Yellow</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_White</li>
+			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Blue</li>
+			<li MayRequire="dajian.chiteaditional.expanded">SZ_YiGui</li>
+			<li MayRequire="dajian.chiteaditional.expanded">SZ_ShuZhuangTai</li>
+			<li MayRequire="dajian.chiteaditional.expanded">EndTableSZ_ChuangTouGui_New</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_EndTable_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
+			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
+			<li MayRequire="oskarpotocki.vfe.empire">VFEE_RoyalMirror</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
   </ThingDef>
   <!-- Tables -->
   <ThingDef ParentName="TableGatherSpotBase">
