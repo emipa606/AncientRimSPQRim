@@ -378,6 +378,65 @@
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
+    <defName>TSP_AR_FryMeatSuperDuperBulk</defName>
+    <label>fry meat in olive oil (x40)</label>
+    <description>Cook a large amount of meals by frying raw meat in fatty olive oil.</description>
+    <descriptionHyperlinks>
+      <thingDef>AR_OliveOil</thingDef>
+      <thingDef>AR_RawOlives</thingDef>
+      <thingDef>AR_Salad</thingDef>
+      <thingDef>AR_FryedEgg</thingDef>
+    </descriptionHyperlinks>
+    <workAmount>2100</workAmount>
+    <jobString>frying meat in olive oil en masse</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>19</count> <!-- Slightly more efficient -->
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_OliveOil</li>
+          </thingDefs>
+        </filter>
+        <count>5.2</count>
+        <!-- Should be just under eighty units -->
+      </li>
+    </ingredients>
+    <products>
+      <AR_FryedMeat>40</AR_FryedMeat>
+    </products>
+    <fixedIngredientFilter Inherit="False">
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>AR_OliveOil</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Cooking>7</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
+      <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
+      <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="CookMealBase">
     <defName>AR_FryEggs</defName>
     <label>fry animal products in olive oil</label>
     <description>Cook a relatively simple meal by frying raw ingredients in fatty olive oil.</description>
@@ -400,6 +459,9 @@
           <categories>
             <li>AnimalProductRaw</li>
           </categories>
+		  <thingDefs>
+			<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
+		  </thingDefs>
         </filter>
         <count>0.75</count>
       </li>
@@ -419,6 +481,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -459,6 +522,9 @@
           <categories>
             <li>AnimalProductRaw</li>
           </categories>
+		  <thingDefs>
+			<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
+		  </thingDefs>
         </filter>
         <count>6</count>
       </li>
@@ -478,6 +544,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -518,6 +585,9 @@
           <categories>
             <li>AnimalProductRaw</li>
           </categories>
+		  <thingDefs>
+			<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
+		  </thingDefs>
         </filter>
         <count>10</count>
       </li>
@@ -537,6 +607,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -577,6 +648,9 @@
           <categories>
             <li>AnimalProductRaw</li>
           </categories>
+		  <thingDefs>
+			<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
+		  </thingDefs>
         </filter>
         <count>14</count>
       </li>
@@ -596,6 +670,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
