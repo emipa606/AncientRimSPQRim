@@ -59,16 +59,6 @@
 					</value>
 				</li>
 				-->
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="PlantOil"]</xpath>
-    <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
-    <match Class="PatchOperationSequence">
-      <!-- <success>Always</success> -->
-      <operations>
         <li Class="PatchOperationInsert">
           <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>

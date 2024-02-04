@@ -230,6 +230,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>0.21</count>
@@ -245,6 +246,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
       </thingDefs>
     </fixedIngredientFilter>
     <skillRequirements>
@@ -257,6 +259,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -289,6 +293,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>1.26</count>
@@ -304,6 +309,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
       </thingDefs>
     </fixedIngredientFilter>
     <skillRequirements>
@@ -316,6 +322,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -348,6 +356,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>2.8</count>
@@ -363,6 +372,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
       </thingDefs>
     </fixedIngredientFilter>
     <skillRequirements>
@@ -375,6 +385,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -407,6 +419,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>5.2</count>
@@ -422,6 +435,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
       </thingDefs>
     </fixedIngredientFilter>
     <skillRequirements>
@@ -434,6 +448,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -469,6 +485,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>0.21</count>
@@ -481,6 +498,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
 		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -497,6 +515,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -532,6 +552,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>1.26</count>
@@ -545,6 +566,7 @@
       <thingDefs>
         <li>AR_OliveOil</li>
 		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -560,6 +582,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -595,6 +619,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>2.4</count>
@@ -607,6 +632,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
 		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -623,6 +649,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -658,6 +686,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>3.5</count>
@@ -670,6 +699,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
 		<li MayRequire="deemainiac.securecontainrimworld">SCR_SCP3199Egg</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -686,6 +716,8 @@
       <li MayRequire="VanillaExpanded.VCookE">VCE_DeepFrier</li>
       <li MayRequire="TSP.Isengriff.Storytime">GnomeTable</li>
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -717,6 +749,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>0.14</count>
@@ -729,6 +762,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -743,6 +777,8 @@
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
       <li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
       <li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="CookMealBase">
@@ -774,6 +810,7 @@
         <filter>
           <thingDefs>
             <li>AR_OliveOil</li>
+			<li MayRequire="sumika.nanohana">PlantOil</li>
           </thingDefs>
         </filter>
         <count>2.1</count>
@@ -786,6 +823,7 @@
       </categories>
       <thingDefs>
         <li>AR_OliveOil</li>
+		<li MayRequire="sumika.nanohana">PlantOil</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -801,6 +839,8 @@
       <li MayRequire="morishep.tarojun.onioftherim">Oni_GroundOven</li>
       <li MayRequire="TSP.Isengriff.Storytime">ManualGrinder</li>
       <li MayRequire="TSP.Isengriff.Storytime">ElectricGrinder</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRDapur</li>
+	  <li MayRequire="nstr.malay.themed.expansion">NSTRElectricDapur</li>
     </recipeUsers>
   </RecipeDef>
   <!-- ammo -->
