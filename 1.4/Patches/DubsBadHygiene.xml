@@ -11,7 +11,7 @@
             <ThingDef ParentName="BasedWaterTower">
               <defName>AR_cistern</defName>
               <label>water cistern</label>
-              <description>An ancient basin that stores water for use by plumbed fixtures. If the contained water becomes contaminated, it must be emptied.</description>
+              <description>An ancient basin that stores water for use by plumbed fixtures by collecting falling rain. If the contained water becomes contaminated, it must be emptied.</description>
               <thingClass>DubsBadHygiene.Building_Butt</thingClass>
               <!-- In RL, people drew water directly from cisterns -->
               <graphicData>
@@ -57,7 +57,7 @@
             <ThingDef ParentName="BasedHygieneMom" DBHLite="true">
               <defName>Cloaca</defName>
               <label>cloaca</label>
-              <description>Can be placed anywhere. Sewage will pool and spread on land or disperse in water. Sewage cleans up over time; the presence of trees, water, or rain will speed this up.</description>
+              <description>An ancient exhaust pipe where sewage is directed away from civilization. Can be placed anywhere. Sewage will pool and spread on land or disperse in water. Sewage cleans up over time; the presence of trees, water, or rain will speed this up.</description>
               <graphicData>
                 <texPath>Buildings/Furniture/Cloaca/cloaca</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
@@ -88,6 +88,7 @@
                 <li MayRequire="sarg.rimbees">RB_Waxy</li>
               </stuffCategories>
               <costStuffCount>50</costStuffCount>
+			  <!--
               <building>
                 <watchBuildingStandDistanceRange>
                   <min>1</min>
@@ -96,6 +97,7 @@
                 <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
                 <ai_chillDestination>false</ai_chillDestination>
               </building>
+			  -->
               <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
               <rotatable>true</rotatable>
               <statBases>
@@ -104,7 +106,7 @@
                 <Flammability>0</Flammability>
                 <Beauty>-40</Beauty>
                 <Cleanliness>-100</Cleanliness>
-                <MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.1</MeditationFocusStrength>
+                <MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.01</MeditationFocusStrength>
               </statBases>
               <comps>
                 <li Class="DubsBadHygiene.CompProperties_Pipe">
@@ -169,7 +171,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/designationCategory</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/designationCategory</xpath>
@@ -182,7 +184,7 @@
   <!-- Aqueducts not only count as pipes, they also link with pipes instead of walls! -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/graphicData/linkFlags</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/graphicData/linkFlags</xpath>
@@ -266,10 +268,10 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
-    <!-- If it does, add this. -->
+    <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
+    <!-- If it does, do this replacement. -->
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
+      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
       <value>
         <prerequisites>
           <li>AR_Project_Hypocaustum</li>

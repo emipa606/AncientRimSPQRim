@@ -210,4 +210,15 @@
       </value>
     </nomatch>
   </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
+      <success>Always</success>
+      <value>
+        <prerequisites></prerequisites>
+      </value>
+    </nomatch>
+  </Operation>
 </Patch>

@@ -80,4 +80,13 @@
       <Asbestos_Tile MayRequire="hrg.asbestos.mod">5</Asbestos_Tile>
     </costList>
   </terrainDef>
+  <terrainDef ParentName="RoundMosaikBase" MayRequire="sirmashedpotato.ashlands">
+    <defName MayRequire="sirmashedpotato.ashlands">TSP_AR_MashedForBrains_Mosaik_AshenBasalt</defName>
+    <label MayRequire="sirmashedpotato.ashlands">roundish ashen basalt mosaic</label>
+    <texturePath MayRequire="sirmashedpotato.ashlands">Floors/roundishnegative</texturePath>
+    <color MayRequire="sirmashedpotato.ashlands">(106,104,105)</color>
+    <costList MayRequire="sirmashedpotato.ashlands">
+      <Mashed_Ashlands_BlocksBasalt MayRequire="sirmashedpotato.ashlands">15</Mashed_Ashlands_BlocksBasalt>
+    </costList>
+  </terrainDef>
 </Defs>
