@@ -109,7 +109,7 @@
     <coversFloor>true</coversFloor>
     <canOverlapZones>false</canOverlapZones>
     <blockLight>false</blockLight>
-	<blockHeat>false</blockHeat>
+	<!-- <blockHeat>false</blockHeat> -->
     <neverMultiSelect>true</neverMultiSelect>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>

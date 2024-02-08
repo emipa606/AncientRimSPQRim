@@ -169,18 +169,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/designationCategory</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/designationCategory</xpath>
-      <value>
-        <designationCategory>Hygiene</designationCategory>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
   <!-- Aqueducts not only count as pipes, they also link with pipes instead of walls! -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->

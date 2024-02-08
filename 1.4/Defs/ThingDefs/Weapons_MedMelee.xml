@@ -1,16 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="BaseMeleeWeapon_Rome" Abstract="True" ParentName="BaseWeapon">
+  <ThingDef Name="BaseMeleeWeapon_Rome" Abstract="True" ParentName="BaseMeleeWeapon_Ancient">
     <techLevel>Neolithic</techLevel>
     <smeltable>true</smeltable>
     <thingCategories Inherit="False">
       <li>TSP_AR_RomanMelee</li>
     </thingCategories>
     <recipeMaker>
+		<!-- Inherits from the Base -->
+		<!--
       <recipeUsers>
         <li>FueledSmithy</li>
         <li>ElectricSmithy</li>
       </recipeUsers>
+	  -->
       <defaultIngredientFilter>
         <categories>
           <li>Root</li>
