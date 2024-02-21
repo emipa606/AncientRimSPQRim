@@ -89,4 +89,13 @@
       <Mashed_Ashlands_BlocksBasalt MayRequire="sirmashedpotato.ashlands">15</Mashed_Ashlands_BlocksBasalt>
     </costList>
   </terrainDef>
+	<terrainDef ParentName="RoundMosaikBase" MayRequire="pphhyy.gulden">
+		<defName MayRequire="pphhyy.gulden">TSP_AR_PPHHYY_Mosaik_ForestOfGold</defName>
+		<label MayRequire="pphhyy.gulden">roundish Aurelian mosaic</label>
+		<texturePath MayRequire="pphhyy.gulden">Floors/roundishnegative</texturePath>
+		<color MayRequire="pphhyy.gulden">(174,154,118)</color>
+		<costList MayRequire="pphhyy.gulden">
+			<BlocksAurelianStone MayRequire="pphhyy.gulden">20</BlocksAurelianStone>
+		</costList>
+	</terrainDef>
 </Defs>

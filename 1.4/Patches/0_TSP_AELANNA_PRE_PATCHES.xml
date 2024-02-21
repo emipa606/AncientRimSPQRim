@@ -221,4 +221,48 @@
       </value>
     </nomatch>
   </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="GreekSculpture"]</xpath>
+      <success>Always</success>
+      <value>
+		<recipeMaker></recipeMaker>
+      </value>
+    </nomatch>
+  </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker/researchPrerequisites</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
+      <success>Always</success>
+      <value>
+        <researchPrerequisites></researchPrerequisites>
+      </value>
+    </nomatch>
+  </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]</xpath>
+      <success>Always</success>
+      <value>
+		<recipeMaker></recipeMaker>
+      </value>
+    </nomatch>
+  </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker/researchPrerequisites</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
+      <success>Always</success>
+      <value>
+        <researchPrerequisites></researchPrerequisites>
+      </value>
+    </nomatch>
+  </Operation>
 </Patch>

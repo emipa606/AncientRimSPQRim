@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- THERE CAN ONLY BE ONE -->
 <Patch>
+	<!--
   <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
+    DO THE GENTILES KNOW?
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
+    If they do, SHUT IT DOWN.
     <match Class="PatchOperationRemove">
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="VFEC_Toga"]</xpath>
     </match>
-    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+    If the first XPATH does not exist, the original code stands. All according to plan.
   </Operation>
+	-->
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
@@ -60,6 +62,50 @@
       <xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_Togas"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+    <match Class="PatchOperationSequence">
+      <!-- <success>Always</success> -->
+      <operations>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="AR_Wine"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs</xpath>
+          <value>
+            <!-- Now we add it back -->
+            <ThingDef ParentName="BaseFilth">
+              <defName>VFEC_Toga</defName>
+              <label>VFEC Toga (ERROR)</label>
+              <description>The Ancient Rim Mod series removes the Vanilla Factions Expanded Classical Mod's togas. If you are seeing this, you are witnessing an error. Please report it to Mlie or TurtleShroom.</description>
+              <selectable>true</selectable>
+              <statBases>
+                <MarketValue>0</MarketValue>
+                <Beauty>1</Beauty>
+                <Cleanliness>0</Cleanliness>
+              </statBases>
+              <graphicData Inherit="False">
+                <texPath>Things/Pawn/Humanlike/Apparel/Toga/Toga</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <filth>
+                <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+                <disappearsInDays>0.001~0.05</disappearsInDays>
+                <rainWashes>true</rainWashes>
+                <cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+                <canFilthAttach>false</canFilthAttach>
+                <cleaningSound>Vomit</cleaningSound>
+              </filth>
+            </ThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
@@ -494,7 +540,7 @@
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
+    <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
@@ -1121,11 +1167,11 @@
       <xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
       <value>
         <senatorResearch>
-          <li>AR_Project_Mediterranean_Culture</li>
-          <li>VFEC_CementMaking</li>
-          <li>VFEC_Mosaics</li>
-          <li>VFEC_TemperatureControl</li>
-          <li>VFEC_Thermaebath</li>
+			<li>AR_Project_Mediterranean_Culture</li>
+			<li>Devilstrand</li>
+			<li>VFEC_Mosaics</li>
+			<li>VFEC_TemperatureControl</li>
+			<li>VFEC_Thermaebath</li>
         </senatorResearch>
       </value>
     </match>
@@ -1137,6 +1183,20 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
+      <xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/finalResearch</xpath>
+      <value>
+        <finalResearch>Cocoa</finalResearch>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <!--
+  <Operation Class="PatchOperationConditional">
+    Does this exist?
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    If it does, do this replacement.
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
       <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
       <value>
         <senatorResearch>
@@ -1145,6 +1205,26 @@
           <li>AR_Project_Chainmail</li>
           <li>AR_Project_Polearms</li>
           <li>AR_Project_Segmental_Armour</li>
+        </senatorResearch>
+      </value>
+    </match>
+    If the first XPATH does not exist, the original code stands.
+  </Operation>
+  -->
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
+      <value>
+        <senatorResearch>
+          <li>VFEC_Beacons</li>
+          <li>AR_Project_Chainmail</li>
+          <li>AR_Project_Polearms</li>
+          <li>AR_Project_Segmental_Armour</li>
+		  <li>AR_Project_Mechanical_Weapons</li>
         </senatorResearch>
       </value>
     </match>
@@ -1172,11 +1252,11 @@
       <xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
       <value>
         <senatorResearch>
-          <li>AR_Project_Metal_II</li>
-          <li>CarpetMaking</li>
-          <li>VFEC_TyrianProduction</li>
-          <li>PsychoidBrewing</li>
-          <li>DrugProduction</li>
+			<li>VFEC_TyrianProduction</li>
+			<li>AR_Project_Metal_II</li>
+			<li>VFEC_WoodfiredCrematorium</li>
+			<li>VFEC_RoadBuilding</li>
+			<li>DrugProduction</li>
         </senatorResearch>
       </value>
     </match>
@@ -1203,7 +1283,9 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[@Name="Scutum"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite>VFEC_HeavyShieldMaking</researchPrerequisite>
+        <researchPrerequisites>
+			<li>VFEC_HeavyShieldMaking</li>
+		</researchPrerequisites>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
