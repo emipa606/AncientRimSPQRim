@@ -107,6 +107,7 @@
           <li>Hellenic</li>
           <li>Macedon</li>
           <li>NeolithicRangedBasic</li>
+		  <li>NeolithicRanged</li>
           <li>ClassicalRangedJavelin</li>
           <li>Hastatus</li>
         </weaponTags>
@@ -149,8 +150,9 @@
       <xpath>/Defs/ThingDef[defName="Roman_Gladius"]/weaponTags</xpath>
       <value>
         <weaponTags>
-          <li>NeolithicMeleeDecent</li>
-          <li>Hastatus</li>
+			<li>NeolithicMelee</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Hastatus</li>
         </weaponTags>
       </value>
     </match>
@@ -381,14 +383,14 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional">
+  <Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath MayRequire="oskarpotocki.vanillafactionsexpanded.core">/Defs/ThingDef[defName="Apparel_Cloth"]</xpath>
     <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Apparel_Cloth"]/apparel/layers</xpath>
-      <value>
+    <match Class="PatchOperationReplace" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+      <success MayRequire="oskarpotocki.vanillafactionsexpanded.core">Always</success>
+      <xpath MayRequire="oskarpotocki.vanillafactionsexpanded.core">/Defs/ThingDef[defName="Apparel_Cloth"]/apparel/layers</xpath>
+      <value MayRequire="oskarpotocki.vanillafactionsexpanded.core">
         <layers>
           <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">VFEC_OuterShell</li>
         </layers>
