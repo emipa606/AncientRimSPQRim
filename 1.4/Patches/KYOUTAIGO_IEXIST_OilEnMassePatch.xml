@@ -13,6 +13,7 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -20,6 +21,7 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -27,6 +29,7 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -34,6 +37,7 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -41,6 +45,7 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -48,6 +53,7 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <!--
@@ -64,6 +70,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -71,6 +78,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -78,6 +86,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -85,6 +94,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -92,6 +102,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -99,6 +110,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -106,6 +118,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -113,6 +126,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -120,6 +134,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -127,6 +142,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -134,6 +150,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -141,6 +158,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -148,6 +166,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -155,6 +174,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
       </operations>
