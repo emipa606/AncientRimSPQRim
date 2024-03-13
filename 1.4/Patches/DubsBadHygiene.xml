@@ -258,7 +258,7 @@
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
     <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationAdd">
+    <match Class="PatchOperationReplace">
       <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
       <value>
         <prerequisites>
