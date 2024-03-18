@@ -29,7 +29,6 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -53,7 +52,6 @@
           <success>Always</success>
           <value>
             <li>AR_OliveOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
         <!--
@@ -70,7 +68,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -78,7 +76,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -86,7 +84,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -94,7 +92,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -102,7 +100,7 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -110,35 +108,11 @@
           <success>Always</success>
           <value>
             <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
         </li>
         <li Class="PatchOperationInsert">
           <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
-          <success>Always</success>
-          <value>
-            <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
-          </value>
-        </li>
-        <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
-          <success>Always</success>
-          <value>
-            <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
-          </value>
-        </li>
-        <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
-          <success>Always</success>
-          <value>
-            <li>PlantOil</li>
-			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
-          </value>
-        </li>
-        <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
             <li>PlantOil</li>
