@@ -28,8 +28,11 @@
     </prerequisites>
     <techLevel>Neolithic</techLevel>
     <tags>
-      <li>RomanStart</li>
-      <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+		<li>ClassicStart</li>
+		<li>RomanStart</li>
+		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>1</researchViewX>
