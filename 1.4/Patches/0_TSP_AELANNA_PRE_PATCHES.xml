@@ -265,4 +265,48 @@
       </value>
     </nomatch>
   </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]</xpath>
+      <success>Always</success>
+      <value>
+        <apparel></apparel>
+      </value>
+    </nomatch>
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel/layers</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
+      <success>Always</success>
+      <value>
+        <layers></layers>
+      </value>
+    </nomatch>
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AR_Sagum"]</xpath>
+      <success>Always</success>
+      <value>
+        <apparel></apparel>
+      </value>
+    </nomatch>
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel/layers</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
+      <success>Always</success>
+      <value>
+        <layers></layers>
+      </value>
+    </nomatch>
+  </Operation>
 </Patch>

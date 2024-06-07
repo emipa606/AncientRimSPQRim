@@ -493,6 +493,21 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
+    <xpath>/Defs/ApparelLayerDef[defName="VFEC_OuterShell"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel/layers</xpath>
+      <value>
+        <layers Inherit="False">
+          <li>VFEC_OuterShell</li>
+        </layers>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
     <xpath>/Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelRequired</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationReplace">
@@ -1244,13 +1259,13 @@
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/tradeability</xpath>
     <!-- If it does, do this replacement. -->
-    <nomatch Class="PatchOperationReplace">
+    <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
+      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/tradeability</xpath>
       <value>
         <tradeability>All</tradeability>
       </value>
-    </nomatch>
+    </match>
     <!-- If it DOES NOT, add this. -->
     <nomatch Class="PatchOperationAdd">
       <success>Always</success>
