@@ -47,14 +47,7 @@
 			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
           </value>
         </li>
-        <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="PlantOil"]</xpath>
-          <success>Always</success>
-          <value>
-            <li>AR_OliveOil</li>
-          </value>
-        </li>
-        <!--
+			<!--
 				<li Class="PatchOperationInsert">
 					<xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="PlantOil"]</xpath>
 					<success>Always</success>
