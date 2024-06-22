@@ -98,6 +98,14 @@
 			  <downloadUrl>https://github.com/emipa606/AncientRimCore/releases/latest</downloadUrl>
 			</li>
 		</v1.4>
+		<v1.5>
+			<li>
+			  <packageId>Mlie.AncientRimCore</packageId>
+			  <displayName>Ancient Rim - Core</displayName>
+			  <steamWorkshopUrl>steam://url/CommunityFilePage/2458180650</steamWorkshopUrl>
+			  <downloadUrl>https://github.com/emipa606/AncientRimCore/releases/latest</downloadUrl>
+			</li>
+		</v1.5>
 	</modDependenciesByVersion>
   <loadAfter>
     <li>jecrell.jecstools</li>
