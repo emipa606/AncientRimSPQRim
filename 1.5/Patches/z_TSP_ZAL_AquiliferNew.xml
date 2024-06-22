@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs</xpath>
+      <value>
+        <ApparelLayerDef>
+          <defName>TSP_Aquila</defName>
+          <label>Aquila</label>
+          <drawOrder>450</drawOrder>
+        </ApparelLayerDef>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+    <match Class="PatchOperationSequence">
+      <!-- <success>Always</success> -->
+      <operations>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="RomeShields">
+              <defName>Roman_Standard</defName>
+              <label>Aquilia</label>
+              <description>The Aquilla or eagle standard, the prized possession of the legion in serves with.</description>
+              <thingClass>ThingWithComps</thingClass>
+              <graphicData>
+                <texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
+                <graphicClass>Graphic_single</graphicClass>
+                <drawSize>0.83</drawSize>
+              </graphicData>
+              <statBases>
+                <MarketValue>1000</MarketValue>
+                <Mass>2.5</Mass>
+                <MaxHitPoints>500</MaxHitPoints>
+                <Flammability>1</Flammability>
+                <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+                <WorkToMake>38000</WorkToMake>
+                <EquipDelay>0.01</EquipDelay>
+                <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+                <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+                <ArmorRating_Heat>0.65</ArmorRating_Heat>
+              </statBases>
+              <costStuffCount Inherit="False">70</costStuffCount>
+              <stuffCategories Inherit="False">
+                <li>Metallic</li>
+                <li>Woody</li>
+                <li>Stony</li>
+                <!-- Mod support -->
+                <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+                <li MayRequire="Dubwise.Rimefeller">Composite</li>
+                <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+                <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+                <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+                <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+                <li MayRequire="sarg.rimbees">RB_Waxy</li>
+              </stuffCategories>
+              <costList>
+                <Gold>30</Gold>
+              </costList>
+              <recipeMaker>
+                <recipeUsers Inherit="False">
+                  <li>ElectricSmithy</li>
+                  <li>FueledSmithy</li>
+                  <li>MachiningTable</li>
+                </recipeUsers>
+                <skillRequirements>
+                  <Crafting>10</Crafting>
+                </skillRequirements>
+                <researchPrerequisites>
+                  <li>AR_Project_Segmental_Armour</li>
+                  <li>NobleApparel</li>
+                </researchPrerequisites>
+              </recipeMaker>
+              <equipmentType Inherit="False">None</equipmentType>
+              <thingCategories Inherit="False">
+                <li>AR_CategoryShields</li>
+                <li>ApparelNoble</li>
+              </thingCategories>
+              <weaponTags Inherit="False">
+                <li>Aquila</li>
+              </weaponTags>
+              <comps>
+                <li Class="AR_PawnShields.CompProperties_Shield" Inherit="False">
+                  <wieldedGraphic>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
+                    <drawSize>(1.2, 1.8)</drawSize>
+                  </wieldedGraphic>
+                  <renderProperties>
+                    <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+                    <southOffset>(0.1, 0.033, -0.2)</southOffset>
+                    <westOffset>(-0.135, 0.053, -0.17)</westOffset>
+                    <eastOffset>(0.135, -0.017, -0.2)</eastOffset>
+                    <flipRotation>false</flipRotation>
+                    <renderWhenPeaceful>true</renderWhenPeaceful>
+                  </renderProperties>
+                  <canBlockRanged>true</canBlockRanged>
+                  <canBlockMelee>true</canBlockMelee>
+                  <meleeBlockChanceFactor>0.85</meleeBlockChanceFactor>
+                  <rangedBlockChanceFactor>0.5</rangedBlockChanceFactor>
+                  <shieldTakeDamage>true</shieldTakeDamage>
+                  <shieldTakeDamageFactor>0.45</shieldTakeDamageFactor>
+                  <canBeAutoDiscarded>false</canBeAutoDiscarded>
+                  <healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
+                  <useFatigue>false</useFatigue>
+                  <damageToFatigueFactor>0</damageToFatigueFactor>
+                </li>
+                <li>
+                  <compClass>CompQuality</compClass>
+                </li>
+                <li Class="CompProperties_Art">
+                  <nameMaker>NamerArtWeaponMelee</nameMaker>
+                  <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                  <minQualityForArtistic>Awful</minQualityForArtistic>
+                </li>
+                <li Class="CompProperties_Forbiddable" />
+                <li>
+                  <compClass>CompEquippable</compClass>
+                </li>
+              </comps>
+            </ThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/apparel/tags</xpath>
+      <value>
+        <tags Inherit="False">
+          <li>RomeBannerman</li>
+        </tags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]</xpath>
+      <value>
+        <generateCommonality>999</generateCommonality>
+        <!-- Always appears on the Aquilifer -->
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/thingCategories</xpath>
+      <value>
+        <thingCategories>
+          <li>TSP_AR_RomanArmor</li>
+        </thingCategories>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+</Patch>

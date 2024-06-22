@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--thingDef ParentName="BuildingBase">
+    <defName>AR_FermentingBarrelWine</defName>
+    <label>fermenting barrel (wine)</label>
+	<category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Production/FermentingBarrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+	<thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A barrel for fermenting raw grapes into wine.</description>
+    <costList>
+      <Steel>10</Steel>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <comps>
+        <li Class="CompProperties_Forbiddable"/>
+		<li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>-1</minSafeTemperature>
+        <maxSafeTemperature>32</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+      </li>
+	  <li Class="UniversalFermenter.CompProperties_UniversalFermenter">
+		<products>
+			<li>
+				<thingDef>AR_Wine</thingDef>
+				<ingredientFilter>
+					<thingDefs>
+						<li>AR_RawGrapes</li>
+					</thingDefs>
+				</ingredientFilter>
+			</li>
+		</products>
+	  </li>
+    </comps>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites><li>Brewing</li><li>AR_Project_Mediterranean_Agriculture</li></researchPrerequisites>
+  </thingDef>
+  -->
+  <thingDef ParentName="BenchBase">
+    <defName>AR_Press</defName>
+    <label>Oil Press</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A tower out of stones, built to create and keep heat in its middle, high enough to let metals become liquid.</description>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <thingCategories Inherit="False">
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <interactionCellIcon>DiningChair</interactionCellIcon>
+    <comps>
+      <li>
+        <compClass>CompReportWorkSpeed</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+    </placeWorkers>
+    <graphicData>
+      <texPath>Buildings/Production/Press</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Mass>220</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>Impassable</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <!-- The olive oil is already added to this Building's Recipe Tables in its own file, here are some more. -->
+      <li MayRequire="sumika.nanohana">Make_ChemfuelPlantOilx10</li>
+      <li MayRequire="sumika.nanohana">Make_ChemfuelPlantOilx100</li>
+      <li MayRequire="sumika.nanohana">Sm_put_meat_in_oilx10</li>
+      <li MayRequire="sumika.nanohana">Sm_marinated_humanmeat_in_oilx10</li>
+      <li MayRequire="sumika.nanohana">Sm_marinated_insect_in_oilx10</li>
+      <li MayRequire="sumika.nanohana">Sm_put_vegetable_in_oilx10</li>
+      <li MayRequire="sumika.nanohana">Make_Sm_oil_barrel</li>
+      <li MayRequire="sumika.nanohana">Sm_oil_barreltoPlantOil</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <researchPrerequisites>
+      <li>AR_Project_OliveTree</li>
+    </researchPrerequisites>
+  </thingDef>
+</Defs>

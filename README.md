@@ -1,22 +1,21 @@
-# AncientRimSPQRim
+# [Ancient Rim - SPQRim (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2458182631)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653
 
-- Added integrations with https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene
+- Added integrations with [Dubs Bad Hygiene](https://steamcommunity.com/sharedfiles/filedetails/?id=836308268)
   * The fountains are considered Basins
   * Aqueduct can carry water as pipes
   * Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
 
-- Added grapes and olives from https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826]VGP to recipes
-- Scenario can be found using https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073]The Ancient Rims by Raven
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=852103845][K]Extra Stone for mosaik-floors
+- Added grapes and olives from [VGP](https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826) to recipes
+- Scenario can be found using [The Ancient Rims](https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073) by Raven
+- Added support for [Simple FX: Smoke](https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704)
+- Added support for [[K]Extra Stone](https://steamcommunity.com/sharedfiles/filedetails/?id=852103845) for mosaik-floors
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -42,13 +41,12 @@ I haven't tested the mod much for compatibility issues with other mods but Ancie
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2458182631]![Image](https://img.shields.io/github/v/release/emipa606/AncientRimSPQRim?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/AncientRimSPQRim?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2458182631)
