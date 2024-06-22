@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "WaterTowerS"]</xpath>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="BasedWaterTower">
+              <defName>AR_cistern</defName>
+              <label>water cistern</label>
+              <description>An ancient basin that stores water for use by plumbed fixtures. If the contained water becomes contaminated, it must be emptied.</description>
+              <thingClass>DubsBadHygiene.Building_Butt</thingClass>
+              <!-- In RL, people drew water directly from cisterns -->
+              <graphicData>
+                <texPath>Buildings/Furniture/cistern</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(1,1)</drawSize>
+              </graphicData>
+              <blockWind>false</blockWind>
+              <size>(1,1)</size>
+              <stuffCategories>
+                <li>Metallic</li>
+                <li>Stony</li>
+                <!-- Mod support -->
+                <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+                <li MayRequire="Dubwise.Rimefeller">Composite</li>
+                <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+                <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+                <li MayRequire="sarg.rimbees">RB_Waxy</li>
+              </stuffCategories>
+              <costStuffCount>30</costStuffCount>
+              <comps>
+                <li Class="DubsBadHygiene.CompProperties_WaterStorage">
+                  <WaterStorageCap>2000</WaterStorageCap>
+                  <AutoOnRain>True</AutoOnRain>
+                  <AutoGenRate>10</AutoGenRate>
+                </li>
+                <li Class="CompProperties_MeditationFocus" MayRequire="arquebus.stagzmerfolk">
+                  <statDef MayRequire="arquebus.stagzmerfolk">MeditationFocusStrength</statDef>
+                  <focusTypes MayRequire="arquebus.stagzmerfolk">
+                    <li MayRequire="arquebus.stagzmerfolk">Stagz_Water</li>
+                  </focusTypes>
+                </li>
+              </comps>
+              <statBases>
+                <MaxHitPoints>55</MaxHitPoints>
+                <WorkToBuild>1000</WorkToBuild>
+                <Flammability>0.3</Flammability>
+                <Beauty>-5</Beauty>
+                <MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.25</MeditationFocusStrength>
+              </statBases>
+            </ThingDef>
+            <ThingDef ParentName="BasedHygieneMom" DBHLite="true">
+              <defName>Cloaca</defName>
+              <label>cloaca</label>
+              <description>Can be placed anywhere. Sewage will pool and spread on land or disperse in water. Sewage cleans up over time; the presence of trees, water, or rain will speed this up.</description>
+              <graphicData>
+                <texPath>Buildings/Furniture/Cloaca/cloaca</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3,3)</drawSize>
+                <damageData>
+                  <rect>(0.05,0.05,0.95,0.95)</rect>
+                </damageData>
+              </graphicData>
+              <size>(1,1)</size>
+              <category>Building</category>
+              <tickerType>Normal</tickerType>
+              <drawerType>RealtimeOnly</drawerType>
+              <altitudeLayer>Building</altitudeLayer>
+              <passability>PassThroughOnly</passability>
+              <blockWind>false</blockWind>
+              <castEdgeShadows>false</castEdgeShadows>
+              <pathCost>60</pathCost>
+              <uiIconPath>Buildings/Furniture/Cloaca/cloaca_ui</uiIconPath>
+              <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+              <stuffCategories>
+                <li>Metallic</li>
+                <li>Stony</li>
+                <!-- Mod support -->
+                <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+                <li MayRequire="Dubwise.Rimefeller">Composite</li>
+                <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+                <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+                <li MayRequire="sarg.rimbees">RB_Waxy</li>
+              </stuffCategories>
+              <costStuffCount>50</costStuffCount>
+              <building>
+                <watchBuildingStandDistanceRange>
+                  <min>1</min>
+                  <max>5</max>
+                </watchBuildingStandDistanceRange>
+                <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+                <ai_chillDestination>false</ai_chillDestination>
+              </building>
+              <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+              <rotatable>true</rotatable>
+              <statBases>
+                <MaxHitPoints>250</MaxHitPoints>
+                <WorkToBuild>1700</WorkToBuild>
+                <Flammability>0</Flammability>
+                <Beauty>-40</Beauty>
+                <Cleanliness>-100</Cleanliness>
+                <MeditationFocusStrength MayRequire="arquebus.stagzmerfolk">0.1</MeditationFocusStrength>
+              </statBases>
+              <comps>
+                <li Class="DubsBadHygiene.CompProperties_Pipe">
+                  <mode>Sewage</mode>
+                </li>
+                <li Class="DubsBadHygiene.CompProperties_SewageHandler">
+                  <compClass>DubsBadHygiene.CompSewageOutlet</compClass>
+                  <capacity>3200</capacity>
+                  <priority>0</priority>
+                </li>
+                <li Class="DubsBadHygiene.CompProperties_Blockage">
+                </li>
+                <li Class="CompProperties_MeditationFocus" MayRequire="arquebus.stagzmerfolk">
+                  <statDef MayRequire="arquebus.stagzmerfolk">MeditationFocusStrength</statDef>
+                  <focusTypes MayRequire="arquebus.stagzmerfolk">
+                    <li MayRequire="arquebus.stagzmerfolk">Stagz_Water</li>
+                  </focusTypes>
+                </li>
+              </comps>
+              <researchPrerequisites>
+                <li MayRequire="dbhlitemode">Plumbing</li>
+              </researchPrerequisites>
+              <placeWorkers>
+                <li>DubsBadHygiene.PlaceWorker_SewageArea</li>
+                <li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
+              </placeWorkers>
+              <modExtensions>
+                <li Class="DubsBadHygiene.BuildWaterExt" />
+              </modExtensions>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AR_Aqueduct"]/comps</xpath>
+          <value>
+            <li Class="DubsBadHygiene.CompProperties_Pipe">
+              <mode>Sewage</mode>
+            </li>
+            <li Class="CompProperties_Forbiddable" />
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "AR_1x2Fountain" or defName = "AR_2x2Fountain"]</xpath>
+          <value>
+            <thingClass>DubsBadHygiene.Building_basin</thingClass>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/designationCategory</xpath>
+      <value>
+        <designationCategory>Hygiene</designationCategory>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/designationCategory</xpath>
+      <value>
+        <designationCategory>Hygiene</designationCategory>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <!-- Aqueducts not only count as pipes, they also link with pipes instead of walls! -->
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AR_Aqueduct"]/graphicData/linkFlags</xpath>
+      <!-- Same as Pipes -->
+      <value>
+        <linkFlags>
+          <li>Custom5</li>
+        </linkFlags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Hypocaustum"]/tab</xpath>
+      <value>
+        <tab>DubsBadHygiene</tab>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Hypocaustum"]/prerequisites</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Hypocaustum"]/researchViewX</xpath>
+      <value>
+        <researchViewX>0</researchViewX>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Hypocaustum"]/researchViewY</xpath>
+      <value>
+        <researchViewY>0</researchViewY>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/researchViewX</xpath>
+      <value>
+        <researchViewX>1</researchViewX>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/researchViewY</xpath>
+      <value>
+        <researchViewY>0</researchViewY>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
+      <value>
+        <prerequisites>
+          <li>AR_Project_Hypocaustum</li>
+        </prerequisites>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/researchViewY</xpath>
+      <value>
+        <researchViewY>0</researchViewY>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="CentralHeating"]/researchViewX</xpath>
+      <value>
+        <researchViewX>2</researchViewX>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="CentralHeating"]/researchViewY</xpath>
+      <value>
+        <researchViewY>0</researchViewY>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="GeothermalHeating"]/researchViewX</xpath>
+      <value>
+        <researchViewX>3</researchViewX>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="GeothermalHeating"]/researchViewY</xpath>
+      <value>
+        <researchViewY>0</researchViewY>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="Saunas"]/researchViewX</xpath>
+      <value>
+        <researchViewX>3</researchViewX>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ResearchProjectDef[defName="Saunas"]/researchViewY</xpath>
+      <value>
+        <researchViewY>0.7</researchViewY>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+</Patch>

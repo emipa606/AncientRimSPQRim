@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- What we call "Italian food", such as pizza and pasta, was only invented AFTER the Roman Empire finally fell, post-1453 AD. However, classical antiquity on the Rim is different than Old Earth, so it is reasonably acceptable to connect these dishes to Mediterranean Culture. -->
 <Patch>
   <Operation Class="PatchOperationConditional">

@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
     <defName>NamerPersonGreece</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[NamesGreek] of [PlacesGreek]</li>
-        <li>name-&gt;[NamesGreek] [NamesGreek]</li>
-        <li>name-&gt;[NamesGreek] [NamesGreek] the [Numbers].</li>
-        <li>name-&gt;[NamesGreek] [NamesGreek] of [PlacesGreek]</li>
-        <li>name-&gt;[NamesGreek] [NamesGreek] [NamesGreek]</li>
-        <li>name-&gt;[NamesGreek] [NamesGreek] the [Numbers].</li>
+        <li>name->[NamesGreek] of [PlacesGreek]</li>
+        <li>name->[NamesGreek] [NamesGreek]</li>
+        <li>name->[NamesGreek] [NamesGreek] the [Numbers].</li>
+        <li>name->[NamesGreek] [NamesGreek] of [PlacesGreek]</li>
+        <li>name->[NamesGreek] [NamesGreek] [NamesGreek]</li>
+        <li>name->[NamesGreek] [NamesGreek] the [Numbers].</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -31,7 +31,7 @@
     <defName>NamerSettlementGreek</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[PlacesGreek]</li>
+        <li>name->[PlacesGreek]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">

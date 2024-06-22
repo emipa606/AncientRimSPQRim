@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <thingDef Name="RomeArmourHelmetMakeableBase" ParentName="RomeArmourMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>TSP_AR_RomanArmorHeadgear</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+  </thingDef>
+  <!-- Roman -->
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Montefortino</defName>
+    <label>Montefortino</label>
+    <description>An early Roman helmet type copied from Celtic tribes.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/MontefortinoOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Leathery</li>
+      <li>Woody</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+        <li>Teeth</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Montefortino</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>RomeSoldier</li>
+        <li>Barbarian</li>
+        <li>ClassicalMilitary</li>
+        <li>HellenicSoldier</li>
+        <li>NeolithicMilitary</li>
+        <li>Neolithic</li>
+        <li>Tribal</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Samnite</defName>
+    <label>Samnitic helmet</label>
+    <description>A pre-Roman helmet type worn by the Italian tribe of the Samnites. Though long abandoned by the armies of classical antiquity, it has seen widespread use by lower-level, neolithic tribesmen across the galaxy.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/SamniteOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Samnite</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Tribal</li>
+        <li>Neolithic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Galea</defName>
+    <label>Galea</label>
+    <description>A helmet of Celtic origin, but adapted and newly defined by the Roman people. It became popular in the Legions of Rome.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/GaleaOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.87</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Galea</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>RomeSoldier</li>
+        <li>RomeLegion</li>
+        <li>ClassicalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <!--
+  <thingDef ParentName="RomeHatMakeableBase">
+    <defName>AR_LightGalea</defName>
+    <label>Galea (light)</label>
+    <description>The standard helmet of civilized armies.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/GaleaOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Galea</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+		<li>RomeSoldier</li>
+		<li>Auxiliary</li>
+	  </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+	<recipeMaker>
+	<researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+	<recipeUsers><li>AR_TailoringBench</li></recipeUsers>
+	</recipeMaker>
+  </thingDef>
+  -->
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_GaleaHero</defName>
+    <label>heroic galea</label>
+    <description>An helmet of Celtic origin, but adapted and new defined by the Roman people, so it became popular in the Legions of Rome. This particular form of galea is indicative of an officer.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/GaleaHeroOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.87</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <generateCommonality>2</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/GaleaHero</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <tags>
+        <li>Praetorian</li>
+        <li>RomeOfficer</li>
+        <li>Centurion</li>
+        <li>ClassicalMilitaryClassy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_GaleaCenturio</defName>
+    <label>centurion's galea</label>
+    <description>A helmet of Celtic origin, but adapted and newly defined by the Roman people. It became popular in the Legions of Rome. This helmet was only worn by officers ranked centurion and above.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/GaleaCenturioOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <generateCommonality>1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/GaleaCenturio</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>ClassicalMilitaryClassy</li>
+        <li>Centurion</li>
+        <li>RomeOfficer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Attic</defName>
+    <label>attic helmet</label>
+    <description>A helmet type with origins in the Hellenic world but named after the city-state Athens. It was widely used in Italy and quite common under the Emperors of Rome.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/AtticOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+      <PsychicSensitivity>-0.08</PsychicSensitivity>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <generateCommonality>1.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Attic</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>RomeOfficer</li>
+        <li>HellenicSoldier</li>
+        <li>HellenicHeavy</li>
+        <li>RomeNoble</li>
+        <li>RomeLegion</li>
+        <li>JeubWear</li>
+        <li>RomeSoldier</li>
+        <li>ClassicalMilitary</li>
+        <li>ClassicalMilitaryClassy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <!-- Greek -->
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Thracian</defName>
+    <label>Thracian helmet</label>
+    <description>A Greek helmet with origins in the region of Thracia.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/ThracianOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>55</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Thracian</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>HellenicSoldier</li>
+        <li>ClassicalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Corinthian</defName>
+    <label>Corinthian helmet</label>
+    <description>A Greek helmet type with origins in the city-state of Corinth. It offers maximal protection but it would be a bad idea to wear it as an archer or similar fighter.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/CorinthianOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>70</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <!-- Same as Vanilla rendition Flak Helmet -->
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.06</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Corinthian</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>HellenicSoldier</li>
+        <li>HellenicHeavy</li>
+        <li>ClassicalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_CorinthianHero</defName>
+    <label>heroic Corinthian helmet</label>
+    <description>A Greek helmet type with origins in the city-state of Corinth. It offers maximal protection but it would be a bad idea to wear it as an archer or similar fighter.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/CorinthianHeroOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+      <PsychicSensitivity>-0.15</PsychicSensitivity>
+      <SocialImpact>0.1</SocialImpact>
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+    </equippedStatOffsets>
+    <generateCommonality>0.85</generateCommonality>
+    <costList>
+      <Silver>10</Silver>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/CorinthianHero</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <tags>
+        <!-- <li>HellenicSoldier</li> -->
+        <li>HellenicHeavy</li>
+        <!-- <li>Macedon</li> -->
+        <li>Spartan</li>
+        <li>RomeNoble</li>
+        <li>ClassicalMilitaryClassy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Phrygian</defName>
+    <label>Phrygian helmet</label>
+    <description>A Hellenic helmet that is named after its civilian equivalent and original inventors. Commonly worn by low-ranking soldiers of Macedonia.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/PhrygianOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>55</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.02</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Phrygian</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>HellenicSoldier</li>
+        <li>Macedon</li>
+        <li>JeubWear</li>
+        <li>ST_GnomeClothing</li>
+        <li>ClassicalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_PhrygianHero</defName>
+    <label>heroic Phrygian helmet</label>
+    <description>A Hellenic helmet that is based on the civil Phrygian cap. Common worn by the soldiers of Macedonia.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/PhrygianHeroOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>55</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costList>
+      <Silver>20</Silver>
+    </costList>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.59</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.045</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+      <SocialImpact>0.2</SocialImpact>
+    </equippedStatOffsets>
+    <generateCommonality>0.8</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/PhrygianHero</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <tags>
+        <li>Macedon</li>
+        <li>RomeNoble</li>
+        <li>JeubKing</li>
+        <li>JeubWear</li>
+        <li>ClassicalMilitaryClassy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Boeotian</defName>
+    <label>Boeotian helmet</label>
+    <description>A Greek helmet type with origins in the region of Boeotia. Because of its shape, it does not block the sight or hearing of the wearer so the helmet is in excellent use for cavalry or archers</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/BoeotianOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>35</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Leathery</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Boeotian</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>HellenicSoldier</li>
+        <li>Toxotes</li>
+        <li>BowMen</li>
+        <li>ClassicalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_PileusHelmet</defName>
+    <label>Pileus helmet</label>
+    <description>A Hellenic helmet that is based off of its civilian equivalent.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/PileusHelmOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>35</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.54</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.02</MoveSpeed>
+      <PsychicSensitivity>-0.10</PsychicSensitivity>
+      <MentalBreakThreshold>-1</MentalBreakThreshold>
+      <PainShockThreshold>0.10</PainShockThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/PileusHelm</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>HellenicSoldier</li>
+        <li>Spartan</li>
+        <li>ClassicalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="RomeArmourHelmetMakeableBase">
+    <defName>AR_Konos</defName>
+    <label>Konos</label>
+    <description>A conical helmet of Macedonian origin. It is engraved with spiral characteristics from the Ionic order of pattern design.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/KonosOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <!-- By comparison, FLAK Armor is 0.7 -->
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Konos</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>HellenicSoldier</li>
+        <li>Macedon</li>
+        <li>ClassicalMilitary</li>
+        <li>Tribal</li>
+        <li>MedievalMilitary</li>
+        <li>JeubWear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <!-- Civil -->
+  <thingDef ParentName="AncientHatMakeableBase">
+    <defName>AR_LaurelWreath</defName>
+    <label>laurel wreath</label>
+    <description>A wearable symbol of might, the laural wreath dates back to the earliest days of the Roman Republic and was initially used as a military decoration. Rome's two highest military orders, the lower Civic Crown and the higher Grass Crown were both laural wreaths. Civic Crowns were awarded to a soldier who directly saved the life of another Roman citizen or soldier who was being attacked by the enemy in hostile territory. The Grass Crown, which was Rome's greatest award, was awarded only to officers whose actions successfully relieved an entire army from certain defeat and, notably, could only be awarded by vote of the saved army's rank and file soldiers to the officer. \n \n In the era of the Roman Empire, in addition to continuing its military use, Romean emperors would wear it in religious festivals, triumphs (parades celebrating a returning king that won a war), and sometimes when judging Appeals to Caesar. In this setting, it represented authority and particularly victory.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/Apparel/LaurelWreath</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <WoodLog>6</WoodLog>
+    </costList>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>80</MarketValue>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>0.005</Mass>
+      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+      <DeteriorationRate Inherit="False">0.01</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.4</SocialImpact>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>HeadgearNoble</li>
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+      <wornGraphicPath>Items/Apparel/Hats/LaurelWreath</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>RomeEmperor</li>
+        <li>ClassicalWreath</li>
+        <li>JeubKing</li>
+        <li>GnomeKing</li>
+        <li>Royal</li>
+        <li>RoyalTier1</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier3</li>
+        <li>RoyalTier4</li>
+        <li>RoyalTier5</li>
+        <li>RoyalTier6</li>
+        <li>King</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    </recipeMaker>
+  </thingDef>
+  <ThingDef ParentName="AncientHatMakeableBase">
+    <defName>AR_Pileus</defName>
+    <label>Pileus</label>
+    <description>A common, conical cap from Ancient Greece, made of felt or leather.</description>
+    <graphicData>
+      <texPath>Items/Apparel/PileusOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.60</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.80</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Pileus</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Macedon</li>
+        <li>Hellenic</li>
+        <li>ST_GnomeClothing</li>
+        <li>BeetWear</li>
+        <li>JeubWear</li>
+        <li>Neolithic</li>
+        <li>Tribal</li>
+        <li>Medieval</li>
+        <li>MedievalApparel</li>
+        <li>MedievalApparelBasic</li>
+        <li>Barbarian</li>
+        <li>Classical</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+        <li>Slave</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>
