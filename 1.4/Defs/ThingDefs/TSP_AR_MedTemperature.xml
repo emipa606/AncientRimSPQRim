@@ -26,7 +26,7 @@
       <Cleanliness>6.5</Cleanliness>
       <MarketValue Inherit="False">10</MarketValue>
       <!-- Lessen wealth calculations -->
-      <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.065</MeditationFocusGain>
+      <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.08</MeditationFocusGain>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
@@ -39,12 +39,12 @@
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
     <passability>PassThroughOnly</passability>
-    <pathCost>0</pathCost>
+    <pathCost>1</pathCost>
     <!-- Aqueducts were bridges. That makes them easy to walk under. -->
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.33</fillPercent>
     <!-- Bridges over one's head -->
-    <coversFloor>false</coversFloor>
+    <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Normal</tickerType>
     <rotatable>false</rotatable>
@@ -109,7 +109,6 @@
     <coversFloor>true</coversFloor>
     <canOverlapZones>false</canOverlapZones>
     <blockLight>false</blockLight>
-	<!-- <blockHeat>false</blockHeat> -->
     <neverMultiSelect>true</neverMultiSelect>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -133,7 +132,7 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>7.2</fuelConsumptionRate>
+        <fuelConsumptionRate>3.2</fuelConsumptionRate>
         <fuelCapacity>50</fuelCapacity>
         <fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
         <!-- RL Hypocausts were literally built under the floor and sealed to avoid water damage -->

@@ -78,7 +78,7 @@
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawPomegranate</defName>
     <label>Pomegranates</label>
-    <description>Tasty red fruits that are full of seeds.</description>
+    <description>Tasty red fruids, full of seeds.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Pomegranate</texPath>
     </graphicData>
@@ -221,13 +221,9 @@
       <tasteThought>AR_AteFryedMeal</tasteThought>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-    <comps Inherit="False">
+    <comps>
       <li Class="CompProperties_Ingredients">
         <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
-      </li>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>9</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
       </li>
     </comps>
   </ThingDef>
@@ -251,13 +247,9 @@
       <tasteThought>AR_AteFryedMeal</tasteThought>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-    <comps Inherit="False">
+    <comps>
       <li Class="CompProperties_Ingredients">
         <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
-      </li>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>9</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
       </li>
     </comps>
   </ThingDef>
@@ -282,13 +274,9 @@
       <tasteThought>AR_AteSalad</tasteThought>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-    <comps Inherit="False">
+    <comps>
       <li Class="CompProperties_Ingredients">
         <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
-      </li>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>5</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
       </li>
     </comps>
   </ThingDef>
@@ -338,6 +326,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
+    <equipmentType>Primary</equipmentType>
     <techLevel>Neolithic</techLevel>
     <comps>
       <li Class="CompProperties_Drug">
@@ -348,7 +337,28 @@
         <needLevelOffset>1</needLevelOffset>
         <listOrder>10</listOrder>
       </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
     </comps>
+    <tools>
+      <li>
+        <label>bottle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>neck</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
   <!-- Ammo -->
   <ThingDef ParentName="ResourceBase">

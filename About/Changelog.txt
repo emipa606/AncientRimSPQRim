@@ -1,5 +1,8 @@
 # Changelog for AncientRimSPQRim
 
+1.5.1 - Updated patches and content by Turtleshroom
+
+
 1.5.0 - Updated for 1.5
 
 

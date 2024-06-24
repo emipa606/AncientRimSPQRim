@@ -9,7 +9,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -19,7 +20,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -30,7 +32,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -41,7 +44,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -52,7 +56,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -63,7 +68,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -74,7 +80,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -85,7 +92,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -96,7 +104,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -107,7 +116,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -118,7 +128,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -129,7 +140,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -140,7 +152,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -151,7 +164,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -162,7 +176,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
       <success>Always</success>
       <value>
-        <prerequisites></prerequisites>
+        <prerequisites>
+        </prerequisites>
       </value>
     </nomatch>
   </Operation>
@@ -173,7 +188,8 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -184,7 +200,8 @@
       <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]</xpath>
       <success>Always</success>
       <value>
-        <thingCategories></thingCategories>
+        <thingCategories>
+        </thingCategories>
       </value>
     </nomatch>
   </Operation>
@@ -195,117 +212,8 @@
       <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
       <success>Always</success>
       <value>
-        <requiredMemes></requiredMemes>
-      </value>
-    </nomatch>
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/thingCategories</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/FactionDef[defName="Apparel_FurStandard"]</xpath>
-      <success>Always</success>
-      <value>
-        <thingCategories></thingCategories>
-      </value>
-    </nomatch>
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
-      <success>Always</success>
-      <value>
-        <prerequisites></prerequisites>
-      </value>
-    </nomatch>
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculpture"]</xpath>
-      <success>Always</success>
-      <value>
-		<recipeMaker></recipeMaker>
-      </value>
-    </nomatch>
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker/researchPrerequisites</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
-      <success>Always</success>
-      <value>
-        <researchPrerequisites></researchPrerequisites>
-      </value>
-    </nomatch>
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]</xpath>
-      <success>Always</success>
-      <value>
-		<recipeMaker></recipeMaker>
-      </value>
-    </nomatch>
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker/researchPrerequisites</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
-      <success>Always</success>
-      <value>
-        <researchPrerequisites></researchPrerequisites>
-      </value>
-    </nomatch>
-  </Operation>
-  
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]</xpath>
-      <success>Always</success>
-      <value>
-        <apparel></apparel>
-      </value>
-    </nomatch>
-  </Operation>
-  
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel/layers</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
-      <success>Always</success>
-      <value>
-        <layers></layers>
-      </value>
-    </nomatch>
-  </Operation>
-  
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="AR_Sagum"]</xpath>
-      <success>Always</success>
-      <value>
-        <apparel></apparel>
-      </value>
-    </nomatch>
-  </Operation>
-  
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel/layers</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
-      <success>Always</success>
-      <value>
-        <layers></layers>
+        <requiredMemes>
+        </requiredMemes>
       </value>
     </nomatch>
   </Operation>

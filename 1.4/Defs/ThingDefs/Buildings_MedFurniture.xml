@@ -17,40 +17,8 @@
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-			<li>EndTable</li>
-			<li>Dresser</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Red</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Yellow</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_White</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Blue</li>
-			<li MayRequire="dajian.chiteaditional.expanded">SZ_YiGui</li>
-			<li MayRequire="dajian.chiteaditional.expanded">SZ_ShuZhuangTai</li>
-			<li MayRequire="dajian.chiteaditional.expanded">EndTableSZ_ChuangTouGui_New</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_EndTable_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
-			<li MayRequire="oskarpotocki.vfe.empire">VFEE_RoyalMirror</li>
-			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTable</li>
-			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTableIlluminated</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-			<li MayRequire="vanillaexpanded.vnutriente">VNPE_NutrientPasteDripper</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -108,37 +76,6 @@
         <linkableFacilities>
           <li>EndTable</li>
           <li>Dresser</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Red</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Yellow</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_White</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Blue</li>
-			<li MayRequire="dajian.chiteaditional.expanded">SZ_YiGui</li>
-			<li MayRequire="dajian.chiteaditional.expanded">SZ_ShuZhuangTai</li>
-			<li MayRequire="dajian.chiteaditional.expanded">EndTableSZ_ChuangTouGui_New</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_EndTable_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
-			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTable</li>
-			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTableIlluminated</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-			<li MayRequire="vanillaexpanded.vnutriente">VNPE_NutrientPasteDripper</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -224,49 +161,11 @@
     <costList>
       <AR_Copper>5</AR_Copper>
     </costList>
-    <pathCost>13</pathCost>
+    <pathCost>30</pathCost>
     <fillPercent>0.30</fillPercent>
     <building>
       <isSittable>true</isSittable>
     </building>
-    <comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-			<li>EndTable</li>
-			<li>Dresser</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Red</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Yellow</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_White</li>
-			<li MayRequire="dajian.chiteaditional.expanded">DengLong_Blue</li>
-			<li MayRequire="dajian.chiteaditional.expanded">SZ_YiGui</li>
-			<li MayRequire="dajian.chiteaditional.expanded">SZ_ShuZhuangTai</li>
-			<li MayRequire="dajian.chiteaditional.expanded">EndTableSZ_ChuangTouGui_New</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_EndTable_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
-			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
-			<li MayRequire="oskarpotocki.vfe.empire">VFEE_RoyalMirror</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-			<li MayRequire="vanillaexpanded.vnutriente">VNPE_NutrientPasteDripper</li>
-        </linkableFacilities>
-      </li>
-    </comps>
   </ThingDef>
   <!-- Tables -->
   <ThingDef ParentName="TableGatherSpotBase">
@@ -400,7 +299,7 @@
     <researchPrerequisites>
       <li>AR_Project_OliveTree</li>
     </researchPrerequisites>
-    <description>A simple Lamp. Burns oil to work.</description>
+    <description>A simple Lamp. Burns olive oil to work.</description>
     <category>Building</category>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -451,7 +350,6 @@
           <thingDefs>
             <li>AR_OliveOil</li>
             <li MayRequire="sumika.nanohana">PlantOil</li>
-			<li>Chemfuel</li>
           </thingDefs>
         </fuelFilter>
         <initialFuelPercent>1</initialFuelPercent>
@@ -469,12 +367,12 @@
         <fireSize>0.2</fireSize>
         <offset>(-0.3,0,0.4)</offset>
       </li>
-      <li Class="CompProperties_Forbiddable"></li>
+      <li Class="CompProperties_Forbiddable" />
     </comps>
     <modExtensions>
-      <li Class="JecsTools.BuildingExtension" MayRequire="jecrell.jecstools" Inherit="False">
-        <wipeCategories MayRequire="jecrell.jecstools" Inherit="False">
-          <li MayRequire="jecrell.jecstools">OnFurniture</li>
+      <li Class="JecsTools.BuildingExtension">
+        <wipeCategories Inherit="False">
+          <li>OnFurniture</li>
         </wipeCategories>
       </li>
     </modExtensions>
