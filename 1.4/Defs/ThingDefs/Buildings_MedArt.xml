@@ -4,6 +4,7 @@
     <defName>AR_ClassicalSculpture</defName>
     <label>classical sculpture</label>
     <description>A person-sized piece of material sculpted into an artistic form.</description>
+	<thingClass>Building_Art</thingClass>
     <graphicData>
       <graphicClass>Graphic_Random</graphicClass>
       <texPath>Buildings/Art/SculptureClassic</texPath>
@@ -32,6 +33,7 @@
     </recipeMaker>
   </ThingDef>
   <ThingDef Name="Mosaic" ParentName="SculptureBase" Abstract="True">
+	<thingClass>Building_Art</thingClass>
     <building>
       <isEdifice>false</isEdifice>
     </building>
