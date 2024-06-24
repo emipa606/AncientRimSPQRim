@@ -50,6 +50,7 @@
 			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTable</li>
 			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTableIlluminated</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+			<li MayRequire="vanillaexpanded.vnutriente">VNPE_NutrientPasteDripper</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -137,6 +138,7 @@
 			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTable</li>
 			<li MayRequire="aelanna.eccentrictech.furniture">EccentricFurniture_EndTableIlluminated</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+			<li MayRequire="vanillaexpanded.vnutriente">VNPE_NutrientPasteDripper</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -261,6 +263,7 @@
 			<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
 			<li MayRequire="oskarpotocki.vfe.empire">VFEE_RoyalMirror</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+			<li MayRequire="vanillaexpanded.vnutriente">VNPE_NutrientPasteDripper</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -397,7 +400,7 @@
     <researchPrerequisites>
       <li>AR_Project_OliveTree</li>
     </researchPrerequisites>
-    <description>A simple Lamp. Burns olive oil to work.</description>
+    <description>A simple Lamp. Burns oil to work.</description>
     <category>Building</category>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -448,6 +451,7 @@
           <thingDefs>
             <li>AR_OliveOil</li>
             <li MayRequire="sumika.nanohana">PlantOil</li>
+			<li>Chemfuel</li>
           </thingDefs>
         </fuelFilter>
         <initialFuelPercent>1</initialFuelPercent>
@@ -465,12 +469,12 @@
         <fireSize>0.2</fireSize>
         <offset>(-0.3,0,0.4)</offset>
       </li>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
     </comps>
     <modExtensions>
-      <li Class="JecsTools.BuildingExtension">
-        <wipeCategories Inherit="False">
-          <li>OnFurniture</li>
+      <li Class="JecsTools.BuildingExtension" MayRequire="jecrell.jecstools" Inherit="False">
+        <wipeCategories MayRequire="jecrell.jecstools" Inherit="False">
+          <li MayRequire="jecrell.jecstools">OnFurniture</li>
         </wipeCategories>
       </li>
     </modExtensions>
