@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="owl_refrigerator"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[@Name="OwlFridgeBase"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+			<value>
+				<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+				<li MayRequire="sumika.nanohana">PlantOil</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

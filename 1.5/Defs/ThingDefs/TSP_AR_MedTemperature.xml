@@ -26,7 +26,7 @@
       <Cleanliness>6.5</Cleanliness>
       <MarketValue Inherit="False">10</MarketValue>
       <!-- Lessen wealth calculations -->
-      <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.08</MeditationFocusGain>
+      <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.065</MeditationFocusGain>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
@@ -39,12 +39,12 @@
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
     <passability>PassThroughOnly</passability>
-    <pathCost>1</pathCost>
+    <pathCost>0</pathCost>
     <!-- Aqueducts were bridges. That makes them easy to walk under. -->
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.33</fillPercent>
     <!-- Bridges over one's head -->
-    <coversFloor>true</coversFloor>
+    <coversFloor>false</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Normal</tickerType>
     <rotatable>false</rotatable>
@@ -109,6 +109,7 @@
     <coversFloor>true</coversFloor>
     <canOverlapZones>false</canOverlapZones>
     <blockLight>false</blockLight>
+	<!-- <blockHeat>false</blockHeat> -->
     <neverMultiSelect>true</neverMultiSelect>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -144,11 +145,11 @@
             <li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
           </thingDefs>
         </fuelFilter>
-        <initialFuelPercent>0</initialFuelPercent>
+        <initialFuelPercent>0.4</initialFuelPercent>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>20</heatPerSecond>
+        <heatPerSecond>24</heatPerSecond>
         <heatPushMaxTemperature>24</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_FireOverlay">
@@ -157,7 +158,7 @@
       </li>
       <li Class="CompOverlays.CompProperties_Overlays" MayRequire="jecrell.jecstools">
         <overlays MayRequire="jecrell.jecstools">
-          <li MayRequire="jecrell.jecstools">
+           <li MayRequire="jecrell.jecstools">
             <usesStuff>true</usesStuff>
             <graphicData MayRequire="jecrell.jecstools">
               <texPath>Buildings/Furniture/Heater_overlay</texPath>
