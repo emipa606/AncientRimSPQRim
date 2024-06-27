@@ -126,14 +126,14 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>60</costStuffCount>
+    <costStuffCount>200</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>7.2</fuelConsumptionRate>
+        <fuelConsumptionRate>10</fuelConsumptionRate>
         <fuelCapacity>50</fuelCapacity>
         <fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
         <!-- RL Hypocausts were literally built under the floor and sealed to avoid water damage -->
@@ -145,7 +145,7 @@
             <li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
           </thingDefs>
         </fuelFilter>
-        <initialFuelPercent>0</initialFuelPercent>
+        <initialFuelPercent>0.4</initialFuelPercent>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
@@ -156,16 +156,16 @@
         <fireSize>0.9</fireSize>
         <offset>(0,0,-0.1)</offset>
       </li>
-      <li Class="CompOverlays.CompProperties_Overlays">
-        <overlays>
-          <li>
+      <li Class="CompOverlays.CompProperties_Overlays" MayRequire="jecrell.jecstools">
+        <overlays MayRequire="jecrell.jecstools">
+           <li MayRequire="jecrell.jecstools">
             <usesStuff>true</usesStuff>
-            <graphicData>
+            <graphicData MayRequire="jecrell.jecstools">
               <texPath>Buildings/Furniture/Heater_overlay</texPath>
               <graphicClass>Graphic_Single</graphicClass>
               <drawRotated>false</drawRotated>
               <allowFlip>false</allowFlip>
-              <damageData>
+              <damageData MayRequire="jecrell.jecstools">
                 <rect>(0.2,0,0.6,0.1)</rect>
               </damageData>
               <drawSize>1</drawSize>
@@ -174,7 +174,7 @@
           </li>
         </overlays>
       </li>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Temperature</designationCategory>
