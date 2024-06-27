@@ -355,7 +355,7 @@
   <ThingDef ParentName="Hoplon">
     <defName>AR_HoplonMacedon</defName>
     <label>Macedonian Hoplon</label>
-    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The star drawn on its canter is the emblem of the Macedonian King's house sigil.</description>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The star drawn on its canter is the emblem of the Macedonian Diadochus' house sigil.</description>
     <graphicData>
       <texPath>Items/Shields/HoplonMacedon_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
