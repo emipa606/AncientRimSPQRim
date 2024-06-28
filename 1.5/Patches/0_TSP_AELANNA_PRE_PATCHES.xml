@@ -305,7 +305,7 @@
       <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
       <success>Always</success>
       <value>
-        <layers></layers>
+        <layers Inherit="False"></layers>
       </value>
     </nomatch>
   </Operation>
