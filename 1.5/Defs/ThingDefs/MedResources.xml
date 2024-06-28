@@ -9,7 +9,8 @@
       <texPath>Items/Stuff/Foods/Olives</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>2</MarketValue>
+      <MarketValue>2.3</MarketValue>
+	  <Nutrition>0.06</Nutrition>
     </statBases>
     <ingestible>
       <foodType>VegetableOrFruit</foodType>
@@ -38,7 +39,7 @@
       <Nutrition>0.1</Nutrition>
     </statBases>
     <ingestible>
-      <foodType>VegetableOrFruit</foodType>
+      <foodType>VegetableOrFruit, VegetarianRoughAnimal</foodType>
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -70,8 +71,7 @@
     </thingCategories>
     <ingestible>
       <preferability>RawTasty</preferability>
-      <tasteThought>
-      </tasteThought>
+      <tasteThought></tasteThought>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
@@ -99,8 +99,7 @@
     </thingCategories>
     <ingestible>
       <preferability>RawTasty</preferability>
-      <tasteThought>
-      </tasteThought>
+      <tasteThought></tasteThought>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
@@ -281,6 +280,7 @@
       <ingestEffect>EatVegetarian</ingestEffect>
       <tasteThought>AR_AteSalad</tasteThought>
       <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetFeedingAnimals>2</optimalityOffsetFeedingAnimals>
     </ingestible>
     <comps Inherit="False">
       <li Class="CompProperties_Ingredients">
@@ -325,6 +325,7 @@
       <ingestCommandString>Drink {0}</ingestCommandString>
       <ingestReportString>Drinking {0}.</ingestReportString>
       <chairSearchRadius>25</chairSearchRadius>
+	  <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>AlcoholHigh</hediffDef>
