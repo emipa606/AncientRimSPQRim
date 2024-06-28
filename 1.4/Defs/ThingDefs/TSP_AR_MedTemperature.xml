@@ -29,16 +29,21 @@
       <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.065</MeditationFocusGain>
     </statBases>
     <stuffCategories>
-      <li>Metallic</li>
-      <li>Stony</li>
-      <!-- Mod support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li>Metallic</li>
+		<li>Stony</li>
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="sarg.rimbees">RB_Waxy</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
-    <passability>PassThroughOnly</passability>
+    <passability>Standable</passability>
     <pathCost>0</pathCost>
     <!-- Aqueducts were bridges. That makes them easy to walk under. -->
     <castEdgeShadows>true</castEdgeShadows>
@@ -54,9 +59,15 @@
     <holdsRoof>true</holdsRoof>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>false</blockLight>
-    <canOverlapZones>false</canOverlapZones>
+	<blockPlants>false</blockPlants>
+	<blockWind>false</blockWind>
+    <canOverlapZones>true</canOverlapZones>
+	<clearBuildingArea>false</clearBuildingArea>
     <building>
+		<ai_chillDestination>false</ai_chillDestination>
       <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
     </building>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
