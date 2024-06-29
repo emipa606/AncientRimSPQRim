@@ -197,15 +197,22 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Hypocaustum"]/prerequisites</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-  </Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Hypocaustum"]/prerequisites</xpath>
+			<value>
+				<prerequisites Inherit="False">
+					<li>Stonecutting</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
