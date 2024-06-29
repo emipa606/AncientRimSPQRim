@@ -8,8 +8,9 @@
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>Stonecutting</li>
+	  <!-- <li MayRequire="vanillaexpanded.vfeart">VFEC_Mosaics</li> -->
     </prerequisites>
-    <tags>
+    <tags Inherit="False">
       <li>RomanStart</li>
 	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
@@ -56,7 +57,7 @@
     <techLevel>Neolithic</techLevel>
     <tab>AR_ResearchTab</tab>
     <researchViewX>2</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_PomegranteTree</defName>
