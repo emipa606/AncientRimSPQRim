@@ -111,7 +111,7 @@
 		</costList>
 	</terrainDef>
 	<terrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
-		<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinA</defName>
+		<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinB</defName>
 		<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic B</label>
 		<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
 		Empire Report: \n
