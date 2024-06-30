@@ -1536,12 +1536,12 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
+      <xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li/senatorResearch</xpath>
       <value>
         <senatorResearch>
 			<li>AR_Project_Mediterranean_Culture</li>
+			<li>CarpetMaking</li>
 			<li>Devilstrand</li>
-			<li>VFEC_Mosaics</li>
 			<li>VFEC_TemperatureControl</li>
 			<li>VFEC_Thermaebath</li>
         </senatorResearch>
@@ -1589,7 +1589,7 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
+      <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/modExtensions/li/senatorResearch</xpath>
       <value>
         <senatorResearch>
           <li>VFEC_Beacons</li>
@@ -1621,7 +1621,7 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
+      <xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]/modExtensions/li/senatorResearch</xpath>
       <value>
         <senatorResearch>
 			<li>VFEC_TyrianProduction</li>
