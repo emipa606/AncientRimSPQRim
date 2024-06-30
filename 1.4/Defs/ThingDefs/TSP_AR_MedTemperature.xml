@@ -60,7 +60,7 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>false</blockLight>
 	<blockPlants>false</blockPlants>
-	<blockWind>false</blockWind>
+	<!-- <blockWind>false</blockWind> -->
     <canOverlapZones>true</canOverlapZones>
 	<clearBuildingArea>false</clearBuildingArea>
     <building>
