@@ -13,7 +13,7 @@
     <designatorDropdown>Floor_Mosaik</designatorDropdown>
     <researchPrerequisites>
       <li>Stonecutting</li>
-      <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+      <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li> -->
     </researchPrerequisites>
     <tags>
       <li>Floor</li>

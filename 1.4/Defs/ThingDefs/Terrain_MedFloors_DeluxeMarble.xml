@@ -2,15 +2,18 @@
 <Defs>
   <terrainDef Abstract="True" ParentName="RoundMosaikBase" Name="AdvancedMosaikMarbleBase">
     <designatorDropdown>Marble_Mosaik</designatorDropdown>
+	<description>Even greater and more beautiful than the Roundish Mosaic Tiles that are sought after throughout the galaxy, the deluxe Marble Mosaik tile, made of the finest igneous rock, turns heads and commands the room. \n Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples.</description>
     <statBases>
       <MarketValue>9</MarketValue>
       <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
-      <Beauty Inherit="False">5</Beauty>
+      <Beauty Inherit="False">10</Beauty>
+	  <Cleanliness>0.1</Cleanliness>
       <WorkToBuild>5000</WorkToBuild>
     </statBases>
     <researchPrerequisites Inherit="False">
-      <li>Stonecutting</li>
-      <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+		<li>AR_Project_Mediterranean_Culture</li>
+      <!-- <li>Stonecutting</li> -->
+      <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li> -->
     </researchPrerequisites>
     <costList Inherit="False">
       <BlocksMarble Inherit="False">20</BlocksMarble>
