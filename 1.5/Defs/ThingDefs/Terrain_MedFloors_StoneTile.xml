@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <terrainDef Abstract="True" ParentName="FloorBase" Name="RoundMosaikBase">
     <renderPrecedence>220</renderPrecedence>
@@ -80,4 +80,22 @@
       <Asbestos_Tile MayRequire="hrg.asbestos.mod">5</Asbestos_Tile>
     </costList>
   </terrainDef>
+  <terrainDef ParentName="RoundMosaikBase" MayRequire="sirmashedpotato.ashlands">
+    <defName MayRequire="sirmashedpotato.ashlands">TSP_AR_MashedForBrains_Mosaik_AshenBasalt</defName>
+    <label MayRequire="sirmashedpotato.ashlands">roundish ashen basalt mosaic</label>
+    <texturePath MayRequire="sirmashedpotato.ashlands">Floors/roundishnegative</texturePath>
+    <color MayRequire="sirmashedpotato.ashlands">(106,104,105)</color>
+    <costList MayRequire="sirmashedpotato.ashlands">
+      <Mashed_Ashlands_BlocksBasalt MayRequire="sirmashedpotato.ashlands">15</Mashed_Ashlands_BlocksBasalt>
+    </costList>
+  </terrainDef>
+	<terrainDef ParentName="RoundMosaikBase" MayRequire="pphhyy.gulden">
+		<defName MayRequire="pphhyy.gulden">TSP_AR_PPHHYY_Mosaik_ForestOfGold</defName>
+		<label MayRequire="pphhyy.gulden">roundish Aurelian mosaic</label>
+		<texturePath MayRequire="pphhyy.gulden">Floors/roundishnegative</texturePath>
+		<color MayRequire="pphhyy.gulden">(174,154,118)</color>
+		<costList MayRequire="pphhyy.gulden">
+			<BlocksAurelianStone MayRequire="pphhyy.gulden">20</BlocksAurelianStone>
+		</costList>
+	</terrainDef>
 </Defs>

@@ -4,6 +4,7 @@
     <defName>AR_ClassicalSculpture</defName>
     <label>classical sculpture</label>
     <description>A person-sized piece of material sculpted into an artistic form.</description>
+	<thingClass>Building_Art</thingClass>
     <graphicData>
       <graphicClass>Graphic_Random</graphicClass>
       <texPath>Buildings/Art/SculptureClassic</texPath>
@@ -25,24 +26,27 @@
     </stuffCategories>
     <costStuffCount>150</costStuffCount>
     <recipeMaker>
-      <researchPrerequisites>
+      <researchPrerequisites Inherit="False">
         <li>AR_Project_Mediterranean_Culture</li>
-        <li MayRequire="vanillaexpanded.vfeart">VFE_Res_Statues</li>
+        <!-- <li MayRequire="vanillaexpanded.vfeart">VFE_Res_Statues</li> -->
       </researchPrerequisites>
     </recipeMaker>
   </ThingDef>
   <ThingDef Name="Mosaic" ParentName="SculptureBase" Abstract="True">
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+	<thingClass>Building_Art</thingClass>
     <description>Many pieces of stone, like tiny tiles put together, into an artwork.</description>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <minifiedDef>MinifiedThing</minifiedDef>
     <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <building>
+      <isEdifice>false</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
     <recipeMaker>
-      <researchPrerequisites>
+      <researchPrerequisites Inherit="False">
         <li>AR_Project_Mediterranean_Culture</li>
-        <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+        <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li> -->
       </researchPrerequisites>
     </recipeMaker>
     <stuffCategories>

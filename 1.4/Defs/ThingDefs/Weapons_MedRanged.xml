@@ -125,7 +125,7 @@
       </li>
     </tools>
     <comps>
-      <li Class="CompProperties_Biocodable" />
+      <li Class="CompProperties_Biocodable"></li>
     </comps>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mechanical_Weapons</researchPrerequisite>

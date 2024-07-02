@@ -15,4 +15,7 @@
   <DesignatorDropdownGroupDef>
     <defName>TSP_AR_Mesothelioma_Mosaik</defName>
   </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>TSP_AR_ForestOfGold_Mosaik</defName>
+  </DesignatorDropdownGroupDef>
 </Defs>
