@@ -112,7 +112,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="MLH_Bonfire"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -128,7 +128,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="MLH_Lantern"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="MLH_Lantern"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -162,7 +162,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="MLH_LargeFireplace"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="MLH_LargeFireplace"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -179,7 +179,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="MLH_SmallFireplace"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="MLH_SmallFireplace"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -196,11 +196,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="MLH_SmallFireplace"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="Fireplace"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>Defs/ThingDef[defName="MLH_SmallFireplace"]/comps/li/fuelFilter/thingDefs</xpath>
+      <xpath>Defs/ThingDef[defName="Fireplace"]/comps/li/fuelFilter/thingDefs</xpath>
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
@@ -213,7 +213,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[@Name="DR_SticklanternBase"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[@Name="DR_SticklanternBase"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -264,11 +264,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="TorchLamp"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="Torchlamp"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>Defs/ThingDef[defName="TorchLamp"]/comps/li/fuelFilter/thingDefs</xpath>
+      <xpath>Defs/ThingDef[@Name="TorchLamp"]/comps/li/fuelFilter/thingDefs</xpath>
       <value>
         <li>WoodLog</li>
         <li>AR_OliveOil</li>
@@ -281,7 +281,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="Darktorch"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="Darktorch"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -298,7 +298,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="VFEM_Candle"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEM_Candle"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -314,7 +314,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="VFEM_WallTorchLamp"]/comps/li/fuelFilter/thingDefs</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEM_WallTorchLamp"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -382,6 +382,7 @@
       <success>Always</success>
       <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="Plasteel"]</xpath>
       <value>
+        <li MayRequire="sumika.nanohana">PlantOil</li>
 		<li>AR_OliveOil</li>
       </value>
     </match>

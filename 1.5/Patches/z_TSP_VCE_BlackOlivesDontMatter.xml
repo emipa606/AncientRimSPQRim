@@ -86,7 +86,7 @@
             <!-- Now we add it back -->
             <ThingDef ParentName="BaseFilth">
               <defName>VCE_RawOlives</defName>
-              <label>VCE olive bloat (ERROR)</label>
+              <label>Black Olives Matter (ERROR)</label>
               <description>The Ancient Rim SPQ-Rim Mod removes the Vanilla Plants Expanded Olives. If you are seeing this, you are witnessing an error. Please report it to Mlie or TurtleShroom.</description>
               <selectable>true</selectable>
               <statBases>

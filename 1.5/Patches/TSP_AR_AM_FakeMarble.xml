@@ -17,11 +17,11 @@
             <MarketValue Inherit="False">4</MarketValue>
             <!-- To prevent it from giving insane amounts of Wealth based on the Work to Build -->
             <Beauty Inherit="False">2</Beauty>
-            <WorkToBuild Inherit="False">3000</WorkToBuild>
+            <WorkToBuild Inherit="False">2000</WorkToBuild>
           </statBases>
-          <researchPrerequisites>
-            <li>Stonecutting</li>
-            <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+          <researchPrerequisites Inherit="False">
+            <li>VFEC_CementMaking</li>
+            <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li> -->
           </researchPrerequisites>
           <costList Inherit="False">
             <VFEC_BlocksConcrete Inherit="False">10</VFEC_BlocksConcrete>
@@ -139,16 +139,17 @@
             <Beauty Inherit="False">2</Beauty>
             <WorkToBuild Inherit="False">2000</WorkToBuild>
             <Flammability>0</Flammability>
+			<Cleanliness>0</Cleanliness>
           </statBases>
           <researchPrerequisites>
-            <li>Stonecutting</li>
-            <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+            <li>AR_Project_Mediterranean_Culture</li>
+            <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li> -->
           </researchPrerequisites>
           <costList Inherit="False">
             <Asbestos_Tile Inherit="False">10</Asbestos_Tile>
           </costList>
           <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-          <tags>
+          <tags Inherit="False">
             <li>Floor</li>
             <li>FineFloor</li>
           </tags>

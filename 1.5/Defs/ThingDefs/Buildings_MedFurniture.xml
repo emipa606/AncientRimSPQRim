@@ -184,7 +184,7 @@
   <ThingDef ParentName="ArtableFurnitureBase">
     <defName>AR_FoldingStool</defName>
     <label>folding stool</label>
-    <researchPrerequisites>
+    <researchPrerequisites Inherit="False">
       <li>AR_Project_Mediterranean_Culture</li>
     </researchPrerequisites>
     <graphicData>

@@ -13,7 +13,7 @@
     <designatorDropdown>Floor_Mosaik</designatorDropdown>
     <researchPrerequisites>
       <li>Stonecutting</li>
-      <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li>
+      <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Mosaics</li> -->
     </researchPrerequisites>
     <tags>
       <li>Floor</li>
@@ -68,7 +68,7 @@
     <texturePath MayRequire="oskarpotocki.vfe.classical">Floors/roundishnegative</texturePath>
     <color MayRequire="oskarpotocki.vfe.classical">(84,84,76)</color>
     <costList MayRequire="oskarpotocki.vfe.classical">
-      <VFEC_BlocksConcrete MayRequire="oskarpotocki.vfe.classical">15</VFEC_BlocksConcrete>
+      <VFEC_BlocksConcrete MayRequire="oskarpotocki.vfe.classical">5</VFEC_BlocksConcrete>
     </costList>
   </terrainDef>
   <terrainDef ParentName="RoundMosaikBase" MayRequire="hrg.asbestos.mod">
@@ -77,7 +77,7 @@
     <texturePath MayRequire="hrg.asbestos.mod">Floors/roundishnegative</texturePath>
     <color MayRequire="hrg.asbestos.mod" Inherit="False">(145,157,118)</color>
     <costList MayRequire="hrg.asbestos.mod">
-      <Asbestos_Tile MayRequire="hrg.asbestos.mod">5</Asbestos_Tile>
+      <Asbestos_Tile MayRequire="hrg.asbestos.mod">10</Asbestos_Tile>
     </costList>
   </terrainDef>
   <terrainDef ParentName="RoundMosaikBase" MayRequire="sirmashedpotato.ashlands">
@@ -96,6 +96,30 @@
 		<color MayRequire="pphhyy.gulden">(174,154,118)</color>
 		<costList MayRequire="pphhyy.gulden">
 			<BlocksAurelianStone MayRequire="pphhyy.gulden">20</BlocksAurelianStone>
+		</costList>
+	</terrainDef>
+	<terrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
+		<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinA</defName>
+		<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic A</label>
+		<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
+		Empire Report: \n
+		Nothing says "home sweet home" like walking into one's noble manor and stomping on the floors made out of the ground up bodies of your enemies. By the Emperor, I hate those bugs.</description>
+		<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
+		<color MayRequire="eltwofour.mantodeanrace">(84,98,62)</color>
+		<costList MayRequire="eltwofour.mantodeanrace">
+			<ElTwoFour_MantodeanChitin MayRequire="eltwofour.mantodeanrace">10</ElTwoFour_MantodeanChitin>
+		</costList>
+	</terrainDef>
+	<terrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
+		<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinB</defName>
+		<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic B</label>
+		<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
+		Empire Report: \n
+		Nothing says "home sweet home" like walking into one's noble manor and stomping on the floors made out of the ground up bodies of your enemies. By the Emperor, I hate those bugs.</description>
+		<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
+		<color MayRequire="eltwofour.mantodeanrace">(195,210,150)</color>
+		<costList MayRequire="eltwofour.mantodeanrace">
+			<ElTwoFour_Leather_MantoHide MayRequire="eltwofour.mantodeanrace">25</ElTwoFour_Leather_MantoHide>
 		</costList>
 	</terrainDef>
 </Defs>

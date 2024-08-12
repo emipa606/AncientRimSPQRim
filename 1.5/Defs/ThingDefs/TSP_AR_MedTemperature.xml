@@ -24,7 +24,7 @@
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
       <Cleanliness>6.5</Cleanliness>
-      <MarketValue Inherit="False">5</MarketValue>
+      <MarketValue Inherit="False">10</MarketValue>
       <!-- Lessen wealth calculations -->
       <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.065</MeditationFocusGain>
     </statBases>
@@ -60,8 +60,8 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>false</blockLight>
 	<blockPlants>false</blockPlants>
-	<blockWind>false</blockWind>
-    <canOverlapZones>false</canOverlapZones>
+	<!-- <blockWind>false</blockWind> -->
+    <canOverlapZones>true</canOverlapZones>
 	<clearBuildingArea>false</clearBuildingArea>
     <building>
 		<ai_chillDestination>false</ai_chillDestination>
