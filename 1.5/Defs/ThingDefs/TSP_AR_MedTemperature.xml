@@ -170,18 +170,18 @@
       <li Class="CompOverlays.CompProperties_Overlays" MayRequire="jecrell.jecstools">
         <overlays MayRequire="jecrell.jecstools">
            <li MayRequire="jecrell.jecstools">
-            <usesStuff>true</usesStuff>
+            <usesStuff MayRequire="jecrell.jecstools">true</usesStuff>
             <graphicData MayRequire="jecrell.jecstools">
-              <texPath>Buildings/Furniture/Heater_overlay</texPath>
-              <graphicClass>Graphic_Single</graphicClass>
-              <drawRotated>false</drawRotated>
-              <allowFlip>false</allowFlip>
+              <texPath MayRequire="jecrell.jecstools">Buildings/Furniture/Heater_overlay</texPath>
+              <graphicClass MayRequire="jecrell.jecstools">Graphic_Single</graphicClass>
+              <drawRotated MayRequire="jecrell.jecstools">false</drawRotated>
+              <allowFlip MayRequire="jecrell.jecstools">false</allowFlip>
               <damageData MayRequire="jecrell.jecstools">
-                <rect>(0.2,0,0.6,0.1)</rect>
+                <rect MayRequire="jecrell.jecstools">(0.2,0,0.6,0.1)</rect>
               </damageData>
-              <drawSize>1</drawSize>
+              <drawSize MayRequire="jecrell.jecstools">1</drawSize>
             </graphicData>
-            <offset>(0,1.0,0)</offset>
+            <offset MayRequire="jecrell.jecstools">(0,1.0,0)</offset>
           </li>
         </overlays>
       </li>
