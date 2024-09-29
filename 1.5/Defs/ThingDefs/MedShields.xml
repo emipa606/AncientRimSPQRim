@@ -10,7 +10,7 @@
   </ThingDef>
   <!--0==============================0 Roman 0==============================0 -->
   <ThingDef ParentName="RomeShields" Name="Scutum" Abstract="true">
-    <description>The "scales" that make up a turtle's shell are called "scutes", and this is the reason why. A scutum is a rectangular shield known to be used by the by the Legions of Rome. Its shape is ideal to perform the 'testudo' formation (from where "testudines", meaning "turtle", originates), where the Legionaries create a cube of shields, nearly immune to arrow fire. It is made of three glued layers of wood with a bronze overlay.</description>
+    <description>The "scales" that make up a turtle's shell are called "scutes", and this is the reason why. A scutum is a rectangular shield known to be used by the Legions of Rome. Its shape is ideal to perform the 'testudo' formation (from where "testudines," meaning "turtle," originates), where the Legionaries create a cube of shields, nearly immune to arrow fire. It is made of three glued layers of wood with a bronze overlay.</description>
     <equipmentType>None</equipmentType>
     <techLevel>Neolithic</techLevel>
     <statBases>
