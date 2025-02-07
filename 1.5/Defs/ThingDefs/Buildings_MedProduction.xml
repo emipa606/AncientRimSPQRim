@@ -61,7 +61,7 @@
     <defName>AR_Press</defName>
     <label>Oil Press</label>
     <thingClass>Building_WorkTable</thingClass>
-    <description>A tower out of stones, built to create and keep heat in its middle, high enough to let metals become liquid.</description>
+    <description>A tower out of stones, built to create and keep heat in its middle, high enough to let metals become liquid. It is used to crush and refine raw ingredients into luxurious oils, used for cooking and heating.</description>
     <canOverlapZones>false</canOverlapZones>
     <minifiedDef>MinifiedThing</minifiedDef>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -123,6 +123,7 @@
       <li MayRequire="sumika.nanohana">Sm_put_vegetable_in_oilx10</li>
       <li MayRequire="sumika.nanohana">Make_Sm_oil_barrel</li>
       <li MayRequire="sumika.nanohana">Sm_oil_barreltoPlantOil</li>
+	  <li MayRequire="sarg.alphacrafts">AC_PressOil</li>
     </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
@@ -136,5 +137,12 @@
     <researchPrerequisites>
       <li>AR_Project_OliveTree</li>
     </researchPrerequisites>
+	<modExtensions>
+		<li Class="RecipeInheritance.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<inheritRecipesFrom MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<li MayRequire="oskarpotocki.vanillafactionsexpanded.core,sarg.alphacrafts">AC_OilPressWorkshop</li>
+			</inheritRecipesFrom>
+		</li>
+	</modExtensions>
   </thingDef>
 </Defs>

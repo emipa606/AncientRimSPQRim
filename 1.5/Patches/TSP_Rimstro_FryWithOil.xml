@@ -16,6 +16,7 @@
 								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 							</thingDefs>
 						</filter>
 						<count>7</count>
@@ -30,6 +31,7 @@
 								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 							</disallowedThingDefs>
 						</filter>
 						<count>20</count>
@@ -57,6 +59,7 @@
 						<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
 						<li MayRequire="sumika.nanohana">PlantOil</li>
 						<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+						<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 					</thingDefs>
 				</fixedIngredientFilter>
 			</value>
@@ -79,6 +82,7 @@
 								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 							</thingDefs>
 						</filter>
 						<count>21</count>
@@ -93,6 +97,7 @@
 								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 							</disallowedThingDefs>
 						</filter>
 						<count>60</count>
@@ -120,6 +125,7 @@
 						<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
 						<li MayRequire="sumika.nanohana">PlantOil</li>
 						<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+						<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 					</thingDefs>
 				</fixedIngredientFilter>
 			</value>

@@ -8,6 +8,7 @@
       <li>AR_OliveOil</li>
       <li MayRequire="sumika.nanohana">PlantOil</li>
       <li MayRequire="sihv.rombones">BoneItem</li>
+	  <li MayRequire="sarg.alphacrafts">AC_Oil</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -22,6 +23,7 @@
         <li>AR_OliveOil</li>
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -38,6 +40,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -55,6 +58,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -72,6 +76,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -89,6 +94,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -106,6 +112,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -122,6 +129,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -139,6 +147,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -156,6 +165,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -173,6 +183,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -190,6 +201,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -207,6 +219,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -224,6 +237,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -241,6 +255,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -258,6 +273,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -275,6 +291,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -292,6 +309,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -308,6 +326,7 @@
         <li>AR_OliveOil</li>
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -325,6 +344,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -342,6 +362,7 @@
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -356,6 +377,7 @@
       <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="PlantOil"]</xpath>
       <value>
         <li>AR_OliveOil</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     If the first XPATH does not exist, the original code stands.
@@ -383,6 +405,7 @@
       <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="Plasteel"]</xpath>
       <value>
         <li MayRequire="sumika.nanohana">PlantOil</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 		<li>AR_OliveOil</li>
       </value>
     </match>
@@ -399,6 +422,7 @@
         <li>AR_OliveOil</li>
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -415,6 +439,7 @@
         <li>AR_OliveOil</li>
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -431,6 +456,7 @@
         <li>AR_OliveOil</li>
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li>Chemfuel</li>
+		<li MayRequire="sarg.alphacrafts">AC_Oil</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->

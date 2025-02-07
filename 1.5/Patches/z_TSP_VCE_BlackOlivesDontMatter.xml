@@ -4,48 +4,48 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="VCE_RawOlives"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VCE_RawOlives"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <!-- <success>Always</success> -->
       <operations>
         <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
@@ -107,9 +107,35 @@
                 <cleaningSound>Vomit</cleaningSound>
               </filth>
             </ThingDef>
+			
+            <ThingDef ParentName="BaseFilth">
+              <defName>VCE_TreeOlive</defName>
+              <label>Black Olives Matter (ERROR)</label>
+              <description>The Ancient Rim SPQ-Rim Mod removes the Vanilla Plants Expanded Olives. If you are seeing this, you are witnessing an error. Please report it to Mlie or TurtleShroom.</description>
+              <selectable>true</selectable>
+              <statBases>
+                <MarketValue>0</MarketValue>
+                <Beauty>0</Beauty>
+                <Cleanliness>1</Cleanliness>
+              </statBases>
+              <graphicData Inherit="False">
+                <texPath>Things/Plant/Trees/VCE_TreeOlive/VCE_TreeOliveA</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <filth>
+                <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+                <disappearsInDays>0.001~0.05</disappearsInDays>
+                <rainWashes>true</rainWashes>
+                <cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+                <canFilthAttach>false</canFilthAttach>
+                <cleaningSound>Vomit</cleaningSound>
+              </filth>
+            </ThingDef>
           </value>
         </li>
       </operations>
     </match>
   </Operation>
+  
+  
 </Patch>

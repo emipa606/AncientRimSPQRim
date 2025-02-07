@@ -50,7 +50,7 @@
   </ThingDef>
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>AR_RawGrapes</defName>
-    <label>grapes</label>
+    <label>white grapes</label>
     <description>Assorted wine berries. Nice to eat, even when raw, and it easily ferments into rich, smooth wine.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Grapes</texPath>
@@ -294,7 +294,7 @@
   </ThingDef>
   <ThingDef ParentName="DrugBase">
     <defName>AR_Wine</defName>
-    <label>wine</label>
+    <label>white wine</label>
     <description>A more exclusive and more civilized kind of alcoholic drink made of fermented fruit. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
     <graphicData>
       <texPath>Items/Stuff/Foods/Wine</texPath>

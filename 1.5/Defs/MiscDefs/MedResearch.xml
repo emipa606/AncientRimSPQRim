@@ -34,7 +34,7 @@
 		<li>RomanStart</li>
 		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <!-- <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li> -->
-        <!-- <li MayRequire="morishep.tarojun.onioftherim">OniStart</li> -->
+        <!-- <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li> -->
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>1</researchViewX>
@@ -42,7 +42,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_OliveTree</defName>
-    <label>Olive Tree</label>
+    <label>Olives and oils</label>
     <description>Sow the olive trees necessary to make olive oil.</description>
     <baseCost>500</baseCost>
     <prerequisites>
