@@ -58,7 +58,7 @@
 	  <li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
 	  <li MayRequire="wyr3d.chitin">WYD_Chitin</li>
 	  <li MayRequire="sarg.rimbees">RB_Waxy</li>
-	  <li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+	  <li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
     </stuffCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
@@ -246,7 +246,7 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
-	  <li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+	  <li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
     </stuffCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
