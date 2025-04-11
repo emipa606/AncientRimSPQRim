@@ -214,7 +214,9 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/apparel/tags</xpath>
       <value>
-        <tags Inherit="False"></tags>
+        <tags Inherit="False">
+			<li>ShirtlessManiac</li>
+		</tags>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->

@@ -176,7 +176,7 @@
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VFEC_Togas"]</xpath>
+          <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VFEC_Toga"]</xpath>
         </li>
       </operations>
     </match>
@@ -980,7 +980,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -1450,6 +1450,7 @@
 		<li>FrogmanMelee</li>
 		<li>PeeledMelee</li>
 		<li>PeeledMeleeSimple</li>
+		<li>K4GShatteredBottle</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
