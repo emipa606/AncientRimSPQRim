@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- ARTISINAL OIL PRESSING -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<value>
+						<li>AR_Project_OliveTree</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<value>
+						<li>AR_Project_OliveTree</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<value>
+						<li>AR_Project_OliveTree</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<value>
+						<li>AR_Project_OliveTree</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="AC_OilExtraction"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_OliveTree</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_OliveTree</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_OliveTree</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="AC_OilExtraction"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
+					<value>
+						<thingCategories Inherit="False"></thingCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/researchPrerequisites</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/designationCategory</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/costList</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

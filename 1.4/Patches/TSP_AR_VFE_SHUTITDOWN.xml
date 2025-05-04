@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- THERE CAN ONLY BE ONE -->
 <Patch>
+	<!--
   <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
+    DO THE GENTILES KNOW?
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
+    If they do, SHUT IT DOWN.
     <match Class="PatchOperationRemove">
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="VFEC_Toga"]</xpath>
     </match>
-    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+    If the first XPATH does not exist, the original code stands. All according to plan.
   </Operation>
+	-->
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
@@ -67,6 +69,124 @@
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
+      <xpath>/Defs/ThingDef[researchPrerequisite="VFEC_Togas"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_Togas"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_Togas"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_Togas"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Togas"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+    <match Class="PatchOperationSequence">
+      <!-- <success>Always</success> -->
+      <operations>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="VFEC_Toga"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs</xpath>
+          <value>
+            <!-- Now we add it back -->
+            <ThingDef ParentName="BaseFilth">
+              <defName>VFEC_Toga</defName>
+              <label>VFEC Toga (ERROR)</label>
+              <description>The Ancient Rim Mod series removes the Vanilla Factions Expanded Classical Mod's togas. If you are seeing this, you are witnessing an error. Please report it to Mlie or TurtleShroom.</description>
+              <selectable>true</selectable>
+              <statBases>
+                <MarketValue>0</MarketValue>
+                <Beauty>1</Beauty>
+                <Cleanliness>0</Cleanliness>
+              </statBases>
+              <graphicData Inherit="False">
+                <texPath>Things/Pawn/Humanlike/Apparel/Toga/Toga</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <filth>
+                <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+                <disappearsInDays>0.001~0.05</disappearsInDays>
+                <rainWashes>true</rainWashes>
+                <cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+                <canFilthAttach>false</canFilthAttach>
+                <cleaningSound>Vomit</cleaningSound>
+              </filth>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VFEC_Togas"]</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -78,6 +198,46 @@
     <match Class="PatchOperationRemove">
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_LegionnaireArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_LegionnaireArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_LegionnaireArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[researchPrerequisite="VFEC_LegionnaireArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_LegionnaireArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_LegionnaireArmor"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
@@ -98,6 +258,76 @@
     <match Class="PatchOperationRemove">
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_CenturionArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_CenturionArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_CenturionArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_CenturionArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_CenturionArmor"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_CenturionArmor"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_CenturionArmor"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
@@ -202,7 +432,7 @@
       <success>Always</success>
       <xpath>Defs/PawnKindDef[defName="VFEC_Centurion"]/apparelRequired</xpath>
       <value>
-        <apparelRequired>
+        <apparelRequired Inherit="False">
           <li>VFEC_Apparel_CenturionArmor</li>
           <li>AR_GaleaCenturio</li>
         </apparelRequired>
@@ -254,7 +484,7 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="AR_Sagum" or defName="AR_Chalmys" or defName="AR_LightCape" or defName="AR_FurCape"]/apparel/layers</xpath>
       <value>
-        <layers>
+        <layers Inherit="False">
           <li>VFEC_OuterShell</li>
         </layers>
       </value>
@@ -263,13 +493,31 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
+    <xpath>/Defs/ApparelLayerDef[defName="VFEC_OuterShell"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelRequired</xpath>
+      <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel/layers</xpath>
       <value>
-        <li>AR_Sagum</li>
+        <layers Inherit="False">
+          <li>VFEC_OuterShell</li>
+        </layers>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelRequired</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelRequired</xpath>
+      <value>
+		<apparelRequired Inherit="False">
+			<li>AR_Sagum</li>
+			<li>VFEC_Apparel_CenturionArmor</li>
+		</apparelRequired>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -322,7 +570,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>Defs/PawnKindDef[defName="VFEC_RepublicSenator"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -485,7 +733,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Apparel_CenturionHelmet"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -495,13 +743,83 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_DramaAndComedy"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_DramaAndComedy"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_DramaAndComedy"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_DramaAndComedy"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_DramaAndComedy"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_DramaAndComedy"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[researchPrerequisite="VFEC_DramaAndComedy"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[researchPrerequisite="VFEC_DramaAndComedy"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_DramaAndComedy"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_DramaAndComedy"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]/researchPrerequisites</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]/researchPrerequisites</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]/researchPrerequisite</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]/researchPrerequisite</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]</xpath>
       <value>
-        <researchPrerequisites>
+        <researchPrerequisites Inherit="False">
           <li>ComplexFurniture</li>
           <li>AR_Project_Mediterranean_Culture</li>
         </researchPrerequisites>
@@ -668,7 +986,9 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite>LongBlades</researchPrerequisite>
+        <researchPrerequisites>
+			<li>LongBlades</li>
+		</researchPrerequisites>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -758,6 +1078,59 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_LegionaryArmaments"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_LegionaryArmaments"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_LegionaryArmaments"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_LegionaryArmaments"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_LegionaryArmaments"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_LegionaryArmaments"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+    <Operation Class="PatchOperationConditional">
+		<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_LegionaryArmaments"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/RecipeDef[researchPrerequisite="VFEC_LegionaryArmaments"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+    <Operation Class="PatchOperationConditional">
+		<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[researchPrerequisite="VFEC_LegionaryArmaments"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[researchPrerequisite="VFEC_LegionaryArmaments"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
@@ -850,7 +1223,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/minifiedDef</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -863,28 +1236,44 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases/MarketValue</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases/MarketValue</xpath>
+      <value>
+        <MarketValue>350</MarketValue>
+      </value>
+    </match>
+    <!-- If it DOES NOT, add this. -->
+    <nomatch Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases</xpath>
       <value>
         <MarketValue>350</MarketValue>
       </value>
-    </match>
+    </nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/tradeability</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/tradeability</xpath>
+      <value>
+        <tradeability>All</tradeability>
+      </value>
+    </match>
+    <!-- If it DOES NOT, add this. -->
+    <nomatch Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
       <value>
-        <Tradeability>Any</Tradeability>
+        <tradeability>All</tradeability>
       </value>
-    </match>
+    </nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -917,9 +1306,22 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -936,13 +1338,24 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+			<success>Always</success>
+			<value>
+				<recipeMaker></recipeMaker>
+			</value>
+		</nomatch>
+	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
       <value>
         <recipeMaker>
           <skillRequirements>
@@ -1032,6 +1445,11 @@
         <li>MeleePiercer</li>
         <li>NeolithicMeleeDecent</li>
         <li>Hastatus</li>
+		<li>SurvivalistMelee</li>
+		<li>GoblinMelee</li>
+		<li>FrogmanMelee</li>
+		<li>PeeledMelee</li>
+		<li>PeeledMeleeSimple</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -1118,14 +1536,14 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
+      <xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li/senatorResearch</xpath>
       <value>
         <senatorResearch>
-          <li>AR_Project_Mediterranean_Culture</li>
-          <li>VFEC_CementMaking</li>
-          <li>VFEC_Mosaics</li>
-          <li>VFEC_TemperatureControl</li>
-          <li>VFEC_Thermaebath</li>
+			<li>AR_Project_Mediterranean_Culture</li>
+			<li>CarpetMaking</li>
+			<li>Devilstrand</li>
+			<li>VFEC_TemperatureControl</li>
+			<li>VFEC_Thermaebath</li>
         </senatorResearch>
       </value>
     </match>
@@ -1137,6 +1555,20 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
+      <xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/finalResearch</xpath>
+      <value>
+        <finalResearch>Cocoa</finalResearch>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <!--
+  <Operation Class="PatchOperationConditional">
+    Does this exist?
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    If it does, do this replacement.
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
       <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
       <value>
         <senatorResearch>
@@ -1145,6 +1577,26 @@
           <li>AR_Project_Chainmail</li>
           <li>AR_Project_Polearms</li>
           <li>AR_Project_Segmental_Armour</li>
+        </senatorResearch>
+      </value>
+    </match>
+    If the first XPATH does not exist, the original code stands.
+  </Operation>
+  -->
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/modExtensions/li/senatorResearch</xpath>
+      <value>
+        <senatorResearch>
+          <li>VFEC_Beacons</li>
+          <li>AR_Project_Chainmail</li>
+          <li>AR_Project_Polearms</li>
+          <li>AR_Project_Segmental_Armour</li>
+		  <li>AR_Project_Mechanical_Weapons</li>
         </senatorResearch>
       </value>
     </match>
@@ -1169,14 +1621,14 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch</xpath>
+      <xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]/modExtensions/li/senatorResearch</xpath>
       <value>
         <senatorResearch>
-          <li>AR_Project_Metal_II</li>
-          <li>CarpetMaking</li>
-          <li>VFEC_TyrianProduction</li>
-          <li>PsychoidBrewing</li>
-          <li>DrugProduction</li>
+			<li>VFEC_TyrianProduction</li>
+			<li>AR_Project_Metal_II</li>
+			<li>VFEC_WoodfiredCrematorium</li>
+			<li>VFEC_RoadBuilding</li>
+			<li>DrugProduction</li>
         </senatorResearch>
       </value>
     </match>
@@ -1203,41 +1655,9 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[@Name="Scutum"]/recipeMaker/researchPrerequisite</xpath>
       <value>
-        <researchPrerequisite>VFEC_HeavyShieldMaking</researchPrerequisite>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[defName="AR_Faction_Hellas"]/caravanTraderKinds</xpath>
-      <value>
-        <caravanTraderKinds>
-          <li>VFEC_Caravan_Republic_BulkGoods</li>
-          <li>VFEC_Caravan_Republic_WarMerchant</li>
-          <li>VFEC_Caravan_Republic_Slaver</li>
-          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
-        </caravanTraderKinds>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[defName="AR_Faction_Hellas"]/baseTraderKinds</xpath>
-      <value>
-        <baseTraderKinds>
-          <li>VFEC_Base_Republic_Standard</li>
-          <li MayRequire="zal.legionaryequipment">Base_Roman_Standard</li>
-        </baseTraderKinds>
+        <researchPrerequisites>
+			<li>VFEC_HeavyShieldMaking</li>
+		</researchPrerequisites>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -1298,19 +1718,6 @@
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/allowedCultures</xpath>
-      <value>
-        <li>Romulus</li>
-        <li>Hellian</li>
-      </value>
-    </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -1419,419 +1826,6 @@
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicSenator"]/apparelTags</xpath>
-      <value>
-        <apparelTags Inherit="False">
-          <li>Hellenic</li>
-          <li>RomeNoble</li>
-          <li>Cape</li>
-        </apparelTags>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[@Name="VFEC_RepublicPawnBase"]</xpath>
-      <value>
-        <PawnKindDef Name="VFEC_RepublicPawnBase" Abstract="True">
-          <race>Human</race>
-          <defaultFactionType>AR_Faction_Hellas</defaultFactionType>
-          <maxGenerationAge>55</maxGenerationAge>
-          <chemicalAddictionChance>0.09</chemicalAddictionChance>
-          <invNutrition>3</invNutrition>
-          <invFoodDef>VFEC_Jerky</invFoodDef>
-          <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-          </techHediffsTags>
-          <techHediffsChance>0.15</techHediffsChance>
-          <techHediffsMoney>50~100</techHediffsMoney>
-          <apparelTags>
-            <li>RomeCivil</li>
-            <li>Hellenic</li>
-            <li>Classical</li>
-          </apparelTags>
-          <inventoryOptions>
-            <skipChance>0.38</skipChance>
-            <subOptionsChooseOne>
-              <li>
-                <choiceChance>33</choiceChance>
-                <thingDef>AR_RawOlives</thingDef>
-                <countRange>
-                  <min>15</min>
-                  <max>55</max>
-                </countRange>
-              </li>
-              <li>
-                <choiceChance>33</choiceChance>
-                <thingDef>AR_OliveOil</thingDef>
-                <countRange>
-                  <min>15</min>
-                  <max>40</max>
-                </countRange>
-              </li>
-              <li>
-                <choiceChance>15</choiceChance>
-                <thingDef>AR_RawArtichoke</thingDef>
-                <countRange>
-                  <min>15</min>
-                  <max>40</max>
-                </countRange>
-              </li>
-              <li>
-                <choiceChance>33</choiceChance>
-                <thingDef>AR_RawPomegranate</thingDef>
-                <countRange>
-                  <min>15</min>
-                  <max>40</max>
-                </countRange>
-              </li>
-              <li>
-                <choiceChance>45</choiceChance>
-                <thingDef>VFEC_Jerky</thingDef>
-                <countRange>
-                  <min>20</min>
-                  <max>25</max>
-                </countRange>
-              </li>
-            </subOptionsChooseOne>
-          </inventoryOptions>
-        </PawnKindDef>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/label</xpath>
-      <value>
-        <label>colonus</label>
-        <labelPlural>coloni</labelPlural>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/combatPower</xpath>
-      <value>
-        <combatPower>10</combatPower>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/initialResistanceRange</xpath>
-      <value>
-        <initialResistanceRange>1~2</initialResistanceRange>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/itemQuality</xpath>
-      <value>
-        <itemQuality>Poor</itemQuality>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/weaponTags</xpath>
-      <value>
-        <li>Toolagri</li>
-        <!-- <li>NeolithicMelee</li> -->
-        <li>NeolithicMeleeBasic</li>
-        <li>Knife</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicVillager"]/apparelTags</xpath>
-      <value>
-        <li>Tribal</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/weaponTags</xpath>
-      <value>
-        <li>Lance</li>
-        <li>SpearMen</li>
-        <li>Javiliner</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/weaponTags</xpath>
-      <value>
-        <li>Lance</li>
-        <li>SpearMen</li>
-        <li>Spear</li>
-        <li>SimpleSpear</li>
-        <li>HellenicSoldier</li>
-        <li>Slinger</li>
-        <li>Knife</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/apparelTags</xpath>
-      <value>
-        <li>ClassicalMilitary</li>
-        <li>HellenicSoldier</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add compatibility for this Mod Comp. -->
-    <match Class="PatchOperationAddModExtension">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]</xpath>
-      <value>
-        <li Class="PawnShields.ShieldPawnGeneratorProperties">
-          <shieldMoney>
-            <min>200</min>
-            <max>600</max>
-          </shieldMoney>
-          <shieldTags>
-            <li>ShieldsGreekLight</li>
-            <li>ShieldsGreek</li>
-          </shieldTags>
-        </li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/weaponMoney</xpath>
-      <value>
-        <weaponMoney>
-          <min>100</min>
-          <max>320</max>
-        </weaponMoney>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/apparelMoney</xpath>
-      <value>
-        <apparelMoney>
-          <min>350</min>
-          <max>480</max>
-        </apparelMoney>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/apparelRequired</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicArcher"]/weaponTags</xpath>
-      <value>
-        <li>BowMen</li>
-        <li>Gastraphetes</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicAuxilia"]/weaponTags</xpath>
-      <value>
-        <li>Javiliner</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_Legionnaire"]/weaponTags</xpath>
-      <value>
-        <weaponTags>
-          <li>RomeSoldier</li>
-          <li>Sword</li>
-          <li>LongSword</li>
-          <li>Lance</li>
-        </weaponTags>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_Legionnaire"]/apparelTags</xpath>
-      <value>
-        <li>RomeLegion</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_Centurion"]/weaponTags</xpath>
-      <value>
-        <weaponTags>
-          <li>RomeSoldier</li>
-          <li>LongSword</li>
-          <li>Lance</li>
-        </weaponTags>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_Centurion"]/apparelTags</xpath>
-      <value>
-        <apparelTags>
-          <li>RomeCivil</li>
-          <li>RomeOfficer</li>
-          <li>Centurion</li>
-          <li>RomeLegion</li>
-        </apparelTags>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_Praetorian"]/weaponTags</xpath>
-      <value>
-        <li>RomeSoldier</li>
-        <li>LongSword</li>
-        <li>NeolithicHeavy</li>
-        <li>NeolithicMeleeHeavy</li>
-        <li>NeolithicMeleeAdvanced</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_Praetorian"]/apparelTags</xpath>
-      <value>
-        <apparelTags>
-          <li>RomeOfficer</li>
-          <li>Praetorian</li>
-        </apparelTags>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -1841,102 +1835,6 @@
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
-      <value>
-        <AR_Hoplite>1</AR_Hoplite>
-        <AR_HopliteHeavy>1</AR_HopliteHeavy>
-        <TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">0.5</TSP_AR_Aquilifer>
-      </value>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Trader"]/traders</xpath>
-      <value>
-        <AR_Trader>1</AR_Trader>
-      </value>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
-      <value>
-        <AR_Citizen>35</AR_Citizen>
-        <TSP_AR_CitizenGirl>20</TSP_AR_CitizenGirl>
-        <AR_Hoplite>20</AR_Hoplite>
-        <AR_HopliteHeavy>10</AR_HopliteHeavy>
-      </value>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
-      <value>
-        <options>
-          <VFEC_RepublicVillager>200</VFEC_RepublicVillager>
-          <VFEC_TownGuard>80</VFEC_TownGuard>
-          <VFEC_RepublicArcher>50</VFEC_RepublicArcher>
-          <VFEC_RepublicAuxilia>40</VFEC_RepublicAuxilia>
-          <VFEC_Legionnaire>50</VFEC_Legionnaire>
-          <VFEC_Centurion>20</VFEC_Centurion>
-          <VFEC_Praetorian>18</VFEC_Praetorian>
-          <VFEC_ScorpionOperator>15</VFEC_ScorpionOperator>
-          <VFEC_RepublicSenator>80</VFEC_RepublicSenator>
-          <AR_Citizen>100</AR_Citizen>
-          <AR_Councilman>15</AR_Councilman>
-          <AR_Preatorian>15</AR_Preatorian>
-          <AR_Hastatus>35</AR_Hastatus>
-          <AR_Sagittarius>55</AR_Sagittarius>
-          <AR_Triarius>50</AR_Triarius>
-          <AR_Centurion>15</AR_Centurion>
-          <AR_Legionary>30</AR_Legionary>
-          <AR_General>30</AR_General>
-          <AR_Hoplite>50</AR_Hoplite>
-          <AR_HopliteHeavy>40</AR_HopliteHeavy>
-          <TSP_AR_CitizenGirl>45</TSP_AR_CitizenGirl>
-          <TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">5</TSP_AR_Aquilifer>
-        </options>
-      </value>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Settlement_RangedOnly"]/options</xpath>
-      <value>
-        <options>
-          <VFEC_RepublicArcher>40</VFEC_RepublicArcher>
-          <VFEC_RepublicAuxilia>50</VFEC_RepublicAuxilia>
-          <VFEC_ScorpionOperator>10</VFEC_ScorpionOperator>
-          <AR_Sagittarius>60</AR_Sagittarius>
-          <AR_Toxotes>45</AR_Toxotes>
-          <AR_General>50</AR_General>
-          <TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">1</TSP_AR_Aquilifer>
-        </options>
-      </value>
-    </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
@@ -1971,7 +1869,7 @@
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
+      <xpath>/Defs/PreceptDef/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -1980,7 +1878,7 @@
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
+      <xpath>/Defs/PreceptDef/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Toga"]</xpath>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -1989,7 +1887,7 @@
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
+      <xpath>/Defs/PreceptDef/roleApparelRequirements/li/requirement/requiredDefs/li[text()="VFEC_Wreath"]</xpath>
     </match>
   </Operation>
 </Patch>

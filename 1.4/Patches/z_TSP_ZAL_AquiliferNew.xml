@@ -94,13 +94,13 @@
                 <li>Aquila</li>
               </weaponTags>
               <comps>
-                <li Class="PawnShields.CompProperties_Shield" Inherit="False">
-                  <wieldedGraphic>
+                <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools" Inherit="False">
+                  <wieldedGraphic MayRequire="jecrell.jecstools">
                     <graphicClass>Graphic_Multi</graphicClass>
                     <texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
                     <drawSize>(1.2, 1.8)</drawSize>
                   </wieldedGraphic>
-                  <renderProperties>
+                  <renderProperties MayRequire="jecrell.jecstools">
                     <northOffset>(-0.1, -0.017, -0.2)</northOffset>
                     <southOffset>(0.1, 0.033, -0.2)</southOffset>
                     <westOffset>(-0.135, 0.053, -0.17)</westOffset>
@@ -127,7 +127,7 @@
                   <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
                   <minQualityForArtistic>Awful</minQualityForArtistic>
                 </li>
-                <li Class="CompProperties_Forbiddable" />
+                <li Class="CompProperties_Forbiddable"></li>
                 <li>
                   <compClass>CompEquippable</compClass>
                 </li>

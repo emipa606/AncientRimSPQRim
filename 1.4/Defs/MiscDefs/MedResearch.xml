@@ -8,9 +8,11 @@
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>Stonecutting</li>
+	  <!-- <li MayRequire="vanillaexpanded.vfeart">VFEC_Mosaics</li> -->
     </prerequisites>
-    <tags>
+    <tags Inherit="False">
       <li>RomanStart</li>
+	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
@@ -20,7 +22,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Hypocaustum</defName>
     <label>hypocaustum</label>
-    <description>Digging a hole under the whole floor makes a fireplace much more efficient. No Roman will ever miss this luxury.</description>
+    <description>Digging a hole under the whole floor and running pipes from it makes a fireplace much more efficient. No Roman will ever miss this luxury.</description>
     <baseCost>400</baseCost>
     <prerequisites>
       <li>AR_Project_Mediterranean_Culture</li>
@@ -28,8 +30,11 @@
     </prerequisites>
     <techLevel>Neolithic</techLevel>
     <tags>
-      <li>RomanStart</li>
-      <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+		<!-- <li>ClassicStart</li> -->
+		<li>RomanStart</li>
+		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+        <!-- <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li> -->
+        <!-- <li MayRequire="morishep.tarojun.onioftherim">OniStart</li> -->
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>1</researchViewX>
@@ -46,12 +51,13 @@
     <tags>
       <li>RomanStart</li>
       <li>EgyptStart</li>
+	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
     <techLevel>Neolithic</techLevel>
     <tab>AR_ResearchTab</tab>
     <researchViewX>2</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_PomegranteTree</defName>
@@ -63,6 +69,7 @@
     </prerequisites>
     <tags>
       <li>TribalStart</li>
+	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
     <techLevel>Neolithic</techLevel>

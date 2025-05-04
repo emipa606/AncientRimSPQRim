@@ -54,6 +54,11 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
+	  <li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+	  <li MayRequire="sarg.rimbees">RB_Waxy</li>
+	  <li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
     </stuffCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
@@ -81,6 +86,9 @@
         <li>MedievalMilitary</li>
         <li>ClassicalMilitary</li>
         <li>NeolithicAdvanced</li>
+		<li>NeolithicDecent</li>
+		<li>NeolithicArmor</li>
+		<li>Neolithic</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -113,6 +121,8 @@
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="wyr3d.chitin">WYD_Chitin</li>
     </stuffCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
@@ -184,6 +194,8 @@
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="wyr3d.chitin">WYD_Chitin</li>
     </stuffCategories>
     <apparel>
       <bodyPartGroups>
@@ -233,6 +245,8 @@
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
     </stuffCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
@@ -291,6 +305,11 @@
     <stuffCategories>
       <!-- <li>Fabric</li> -->
       <li>Leathery</li>
+		<!-- Mod Stuff -->
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="sarg.rimbees">RB_Waxy</li>
+	  <li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
+	  <li MayRequire="wyr3d.chitin">WYD_Chitin</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>3000</WorkToMake>
@@ -346,6 +365,11 @@
     <costStuffCount>170</costStuffCount>
     <stuffCategories>
       <li>Leathery</li>
+		<!-- Mod Stuff -->
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="sarg.rimbees">RB_Waxy</li>
+	  <li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
+	  <li MayRequire="wyr3d.chitin">WYD_Chitin</li>
     </stuffCategories>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
@@ -469,6 +493,8 @@
     <costStuffCount>120</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
+		<!-- Mod Stuff -->
+	  <li MayRequire="wyr3d.chitin">WYD_Padding</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>8000</WorkToMake>
@@ -511,7 +537,7 @@
       </defaultOutfitTags>
       <gender>Male</gender>
     </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <colorGenerator Class="ColorGenerator_StandardApparel"></colorGenerator>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
     </recipeMaker>
@@ -529,6 +555,8 @@
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
+		<!-- Mod Stuff -->
+	  <li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <costList>
       <Silver>3</Silver>
@@ -542,7 +570,7 @@
       <EquipDelay>2.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>0.20</SocialImpact>
+      <SocialImpact>0.3</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -551,7 +579,7 @@
         <!-- <li>Legs</li> -->
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Sagum/Sagum</wornGraphicPath>
-      <layers>
+      <layers Inherit="False">
         <li>Shell</li>
       </layers>
       <tags>
@@ -625,6 +653,8 @@
         <li>ST_BeetClothing</li>
         <li>Classical</li>
         <li>ClassicalSimple</li>
+		<li>GoblinWear</li>
+		<li>SurvivalistWear</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -671,7 +701,7 @@
         <li>Shoulders</li>
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Chalmys/Chalmys</wornGraphicPath>
-      <layers>
+      <layers Inherit="False">
         <li>Shell</li>
       </layers>
       <tags>
@@ -722,7 +752,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Cape/Cape2</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
+      <layers Inherit="False">
         <li>Shell</li>
       </layers>
       <tags>

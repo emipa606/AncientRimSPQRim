@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_RawOlives</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_RawOlives</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+</Patch>

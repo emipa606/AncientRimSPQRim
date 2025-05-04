@@ -26,25 +26,30 @@
       <Cleanliness>6.5</Cleanliness>
       <MarketValue Inherit="False">10</MarketValue>
       <!-- Lessen wealth calculations -->
-      <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.08</MeditationFocusGain>
+      <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.065</MeditationFocusGain>
     </statBases>
     <stuffCategories>
-      <li>Metallic</li>
-      <li>Stony</li>
-      <!-- Mod support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li>Metallic</li>
+		<li>Stony</li>
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="sarg.rimbees">RB_Waxy</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
-    <passability>PassThroughOnly</passability>
-    <pathCost>1</pathCost>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
     <!-- Aqueducts were bridges. That makes them easy to walk under. -->
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.33</fillPercent>
     <!-- Bridges over one's head -->
-    <coversFloor>true</coversFloor>
+    <coversFloor>false</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Normal</tickerType>
     <rotatable>false</rotatable>
@@ -54,9 +59,15 @@
     <holdsRoof>true</holdsRoof>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>false</blockLight>
-    <canOverlapZones>false</canOverlapZones>
+	<blockPlants>false</blockPlants>
+	<!-- <blockWind>false</blockWind> -->
+    <canOverlapZones>true</canOverlapZones>
+	<clearBuildingArea>false</clearBuildingArea>
     <building>
+		<ai_chillDestination>false</ai_chillDestination>
       <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
     </building>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
@@ -109,6 +120,7 @@
     <coversFloor>true</coversFloor>
     <canOverlapZones>false</canOverlapZones>
     <blockLight>false</blockLight>
+	<!-- <blockHeat>false</blockHeat> -->
     <neverMultiSelect>true</neverMultiSelect>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -125,14 +137,14 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>60</costStuffCount>
+    <costStuffCount>200</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>3.2</fuelConsumptionRate>
+        <fuelConsumptionRate>10</fuelConsumptionRate>
         <fuelCapacity>50</fuelCapacity>
         <fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
         <!-- RL Hypocausts were literally built under the floor and sealed to avoid water damage -->
@@ -144,7 +156,7 @@
             <li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
           </thingDefs>
         </fuelFilter>
-        <initialFuelPercent>0</initialFuelPercent>
+        <initialFuelPercent>0.4</initialFuelPercent>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
@@ -155,25 +167,25 @@
         <fireSize>0.9</fireSize>
         <offset>(0,0,-0.1)</offset>
       </li>
-      <li Class="CompOverlays.CompProperties_Overlays">
-        <overlays>
-          <li>
-            <usesStuff>true</usesStuff>
-            <graphicData>
-              <texPath>Buildings/Furniture/Heater_overlay</texPath>
-              <graphicClass>Graphic_Single</graphicClass>
-              <drawRotated>false</drawRotated>
-              <allowFlip>false</allowFlip>
-              <damageData>
-                <rect>(0.2,0,0.6,0.1)</rect>
+      <li Class="CompOverlays.CompProperties_Overlays" MayRequire="jecrell.jecstools">
+        <overlays MayRequire="jecrell.jecstools">
+           <li MayRequire="jecrell.jecstools">
+            <usesStuff MayRequire="jecrell.jecstools">true</usesStuff>
+            <graphicData MayRequire="jecrell.jecstools">
+              <texPath MayRequire="jecrell.jecstools">Buildings/Furniture/Heater_overlay</texPath>
+              <graphicClass MayRequire="jecrell.jecstools">Graphic_Single</graphicClass>
+              <drawRotated MayRequire="jecrell.jecstools">false</drawRotated>
+              <allowFlip MayRequire="jecrell.jecstools">false</allowFlip>
+              <damageData MayRequire="jecrell.jecstools">
+                <rect MayRequire="jecrell.jecstools">(0.2,0,0.6,0.1)</rect>
               </damageData>
-              <drawSize>1</drawSize>
+              <drawSize MayRequire="jecrell.jecstools">1</drawSize>
             </graphicData>
-            <offset>(0,1.0,0)</offset>
+            <offset MayRequire="jecrell.jecstools">(0,1.0,0)</offset>
           </li>
         </overlays>
       </li>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Temperature</designationCategory>

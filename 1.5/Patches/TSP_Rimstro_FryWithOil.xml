@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/ingredients</xpath>
+		<!-- If it does, add this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/ingredients</xpath>
+			<success>Always</success>
+			<value>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="sumika.nanohana">PlantOil</li>
+								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+							</thingDefs>
+						</filter>
+						<count>7</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>Foods</li>
+							</categories>
+							<disallowedThingDefs>
+								<li>Chemfuel</li>
+								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="sumika.nanohana">PlantOil</li>
+								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+							</disallowedThingDefs>
+						</filter>
+						<count>20</count>
+					</li>
+				</ingredients>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/fixedIngredientFilter</xpath>
+		<!-- If it does, add this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/fixedIngredientFilter</xpath>
+			<success>Always</success>
+			<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>Foods</li>
+					</categories>
+					<thingDefs>
+						<li>Chemfuel</li>
+						<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+						<li MayRequire="sumika.nanohana">PlantOil</li>
+						<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+						<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/ingredients</xpath>
+		<!-- If it does, add this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/ingredients</xpath>
+			<success>Always</success>
+			<value>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="sumika.nanohana">PlantOil</li>
+								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+							</thingDefs>
+						</filter>
+						<count>21</count>
+					</li>
+					<li>
+						<filter>
+							<categories>
+								<li>Foods</li>
+							</categories>
+							<disallowedThingDefs>
+								<li>Chemfuel</li>
+								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="sumika.nanohana">PlantOil</li>
+								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+							</disallowedThingDefs>
+						</filter>
+						<count>60</count>
+					</li>
+				</ingredients>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/fixedIngredientFilter</xpath>
+		<!-- If it does, add this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/fixedIngredientFilter</xpath>
+			<success>Always</success>
+			<value>
+				<fixedIngredientFilter>
+					<categories>
+						<li>Foods</li>
+					</categories>
+					<thingDefs>
+						<li>Chemfuel</li>
+						<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+						<li MayRequire="sumika.nanohana">PlantOil</li>
+						<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+						<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+</Patch>

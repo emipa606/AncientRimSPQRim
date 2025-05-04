@@ -65,13 +65,13 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Scutum1</texPath>
           <drawSize>(1.2, 1.2)</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -101,13 +101,13 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Scutum2</texPath>
           <drawSize>(1.2, 1.2)</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -138,13 +138,13 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Scutum3</texPath>
           <drawSize>(1.2, 1.2)</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -175,13 +175,13 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Scutum4</texPath>
           <drawSize>(1.2, 1.2)</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -249,13 +249,13 @@
       </li>
     </tools>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Parma</texPath>
           <drawSize>(1.2, 1.2)</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -269,7 +269,7 @@
         <rangedBlockChanceFactor>0.5</rangedBlockChanceFactor>
         <shieldTakeDamage>true</shieldTakeDamage>
         <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
-        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
         <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
         <useFatigue>true</useFatigue>
         <damageToFatigueFactor>0.005</damageToFatigueFactor>
@@ -314,7 +314,7 @@
   <ThingDef ParentName="Hoplon">
     <defName>AR_HoplonBlank</defName>
     <label>Hoplon</label>
-    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze</description>
+    <description>Circular, convex shield known to be used by the famous Greek spearmen, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze</description>
     <graphicData>
       <texPath>Items/Shields/HoplonBlank_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -323,15 +323,16 @@
     <weaponTags>
       <li>ShieldsGreek</li>
       <li>ShieldHoplite</li>
+	  <li>SpearMen</li>
     </weaponTags>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/HoplonBlank</texPath>
           <drawSize>(0.7, 0.7 )</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -345,7 +346,7 @@
         <rangedBlockChanceFactor>0.8</rangedBlockChanceFactor>
         <shieldTakeDamage>true</shieldTakeDamage>
         <shieldTakeDamageFactor>0.6</shieldTakeDamageFactor>
-        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
         <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
         <useFatigue>true</useFatigue>
         <damageToFatigueFactor>0.005</damageToFatigueFactor>
@@ -355,7 +356,7 @@
   <ThingDef ParentName="Hoplon">
     <defName>AR_HoplonMacedon</defName>
     <label>Macedonian Hoplon</label>
-    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The star drawn on its canter is the emblem of the Macedonian King's house sigil.</description>
+    <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The star drawn on its canter is the emblem of the Macedonian Diadochus' house sigil.</description>
     <graphicData>
       <texPath>Items/Shields/HoplonMacedon_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -365,13 +366,13 @@
       <li>ShieldsGreekMacedon</li>
     </weaponTags>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/HoplonMacedon</texPath>
           <drawSize>(0.7, 0.7 )</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -385,7 +386,7 @@
         <rangedBlockChanceFactor>0.8</rangedBlockChanceFactor>
         <shieldTakeDamage>true</shieldTakeDamage>
         <shieldTakeDamageFactor>0.6</shieldTakeDamageFactor>
-        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
         <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
         <useFatigue>true</useFatigue>
         <damageToFatigueFactor>0.005</damageToFatigueFactor>
@@ -405,13 +406,13 @@
       <li>ShieldsGreekSparta</li>
     </weaponTags>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/HoplonSparta</texPath>
           <drawSize>(0.7, 0.7 )</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -425,7 +426,7 @@
         <rangedBlockChanceFactor>0.8</rangedBlockChanceFactor>
         <shieldTakeDamage>true</shieldTakeDamage>
         <shieldTakeDamageFactor>0.6</shieldTakeDamageFactor>
-        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
         <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
         <useFatigue>true</useFatigue>
         <damageToFatigueFactor>0.005</damageToFatigueFactor>

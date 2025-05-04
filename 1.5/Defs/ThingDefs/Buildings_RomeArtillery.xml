@@ -52,7 +52,7 @@
       <li>ITab_Shells</li>
     </inspectorTabs>
     <comps>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
       <li Class="CompProperties_Mannable">
         <manWorkType>Violent</manWorkType>
       </li>
@@ -98,7 +98,7 @@
       <li>
         <compClass>CompEquippable</compClass>
       </li>
-      <li Class="CompProperties_ChangeableProjectile" />
+      <li Class="CompProperties_ChangeableProjectile"></li>
     </comps>
     <building>
       <fixedStorageSettings>
