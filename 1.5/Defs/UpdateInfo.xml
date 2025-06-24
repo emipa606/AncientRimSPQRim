@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="AncientRimSPQRim_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2458182631</linkUrl>
+		<banner>UpdateInfo/AncientRimSPQRim</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="AncientRimSPQRim_UpdateInfoBase" MayRequire="neronix17.toolbox">
+		<defName>AncientRimSPQRim_1_5_1</defName>
+		<date>2025/6/24</date>
+		<content>This mod will not be further updated, please use TurtleShroom Productions Proudly Presents: Ancient Rim (Continued) by TurtleShroom instead.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+

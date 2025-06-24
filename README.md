@@ -15,7 +15,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653
 - Added support for [Simple FX: Smoke](https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704)
 - Added support for [[K]Extra Stone](https://steamcommunity.com/sharedfiles/filedetails/?id=852103845) for mosaik-floors
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://i.imgur.com/3npT60J.png)
+
+This mod has been replaced by [TurtleShroom Productions Proudly Presents: Ancient Rim (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3507862392) by TurtleShroom
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -47,6 +49,6 @@ I haven't tested the mod much for compatibility issues with other mods but Ancie
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
-
+ 
 
 [![Image](https://img.shields.io/github/v/release/emipa606/AncientRimSPQRim?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2458182631)
